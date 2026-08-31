@@ -1,0 +1,14 @@
+metric,value,unit,note
+Total canonical parcel cases,128,parcels,Each parcel is represented across all six current-year sources.
+Harmonized parcels,60,parcels,No configured cross-source mismatch exceeds tolerance.
+Revenue records,128,records,Current-year revenue-style source records.
+Registration records,128,records,Current-year registration-style source records.
+Survey records,128,records,Includes native CRS and EPSG:4326 display geometry.
+MCD records,128,records,Municipal property assessment-style records.
+DDA records,128,records,Zone K-II planning-reference records.
+GeoJSON parcel features,128,features,Map-ready canonical parcel layer in EPSG:4326.
+Open conflict cases,68,parcels,Covers 17 mismatch families with four examples each.
+Timeline-enabled parcels,128,parcels,"Every parcel has 2012, 2016, 2020 and 2025 snapshots."
+High-confidence parcels,72,parcels,Confidence >= 0.85
+Medium-confidence parcels,32,parcels,0.65 <= confidence < 0.85
+Low-confidence parcels,24,parcels,confidence < 0.65

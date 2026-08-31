@@ -1,0 +1,21 @@
+{
+  "name": "layer5-parcel-timeline",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Standalone Layer 5 parcel lifecycle timeline",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n API,UI \"node backend/server.js\" \"npm run dev --workspace frontend\"",
+    "build": "npm run build --workspace frontend",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

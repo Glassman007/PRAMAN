@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parcel Intelligence Platform · Field Survey</title>
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand-row">
+        <button id="backButton" class="dashboard-back" type="button" aria-label="Back to Layer 1 Dashboard" title="Back to Layer 1 Dashboard"><span aria-hidden="true">←</span><span>Layer 1 Dashboard</span></button>
+        <div>
+          <div class="eyebrow">Parcel Intelligence Platform</div>
+          <h1>Field Survey Console</h1>
+        </div>
+      </div>
+      <div class="top-status">
+        <span id="datasetStatus" class="status-pill">Dataset checking…</span>
+        <span id="screenLabel" class="screen-pill">Survey Queue</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="queueScreen" class="screen active">
+        <div class="section-heading">
+          <div>
+            <span class="kicker">Layer 6 · Field Verification</span>
+            <h2>Survey Queue</h2>
+            <p>Parcels requiring physical verification, derived from the shared dataset and survey lifecycle evidence.</p>
+          </div>
+          <button id="refreshQueue" class="secondary-button">Refresh</button>
+        </div>
+        <div id="queueFilters" class="filter-row">
+          <button data-filter="all" class="filter active">All</button>
+          <button data-filter="never-verified" class="filter">Never Verified</button>
+          <button data-filter="boundary" class="filter">Boundary Conflict</button>
+          <button data-filter="ownership" class="filter">Ownership Conflict</button>
+          <button data-filter="high-priority" class="filter">High Priority</button>
+        </div>
+        <div class="table-shell panel">
+          <table>
+            <thead>
+              <tr>
+                <th>Parcel ID</th><th>Conflict Type</th><th>Confidence</th><th>Last Verified</th><th>Priority</th><th>Assignee</th><th>Status</th><th></th>
+              </tr>
+            </thead>
+            <tbody id="queueBody"></tbody>
+          </table>
+          <div id="queueEmpty" class="empty-state hidden"></div>
+        </div>
+      </section>
+
+      <section id="workspaceScreen" class="screen workspace-screen">
+        <div class="workspace-grid">
+          <aside class="queue-rail panel">
+            <div class="rail-title"><span>Survey Queue</span><button id="queueBack" class="mini-button">View all</button></div>
+            <div id="miniQueue" class="mini-queue"></div>
+          </aside>
+
+          <div class="map-panel panel">
+            <div class="map-toolbar">
+              <div>
+                <span class="kicker">Field Survey Workspace</span>
+                <h2 id="workspaceParcel">—</h2>
+              </div>
+              <div class="map-actions">
+                <button id="moveSurveyor" class="secondary-button">Move Surveyor</button>
+                <button id="browserPosition" class="secondary-button">Browser Position</button>
+              </div>
+            </div>
+            <div id="map"></div>
+            <div class="legend">
+              <span><i class="legend-canonical"></i>Canonical</span>
+              <span><i class="legend-revenue"></i>Revenue</span>
+              <span><i class="legend-survey"></i>Survey</span>
+              <span><i class="legend-field"></i>Field</span>
+              <span><i class="legend-position"></i>Surveyor</span>
+            </div>
+            <div class="capture-strip">
+              <button id="startCapture" class="primary-button">Start Boundary Capture</button>
+              <button id="capturePosition" class="primary-button hidden">Capture Current Position</button>
+              <button id="undoPoint" class="secondary-button">Undo Point</button>
+              <button id="closePolygon" class="secondary-button">Close Polygon</button>
+              <button id="resetSurvey" class="danger-button">Reset Survey</button>
+              <button id="continueVerification" class="secondary-button">Evidence & Verification →</button>
+            </div>
+          </div>
+
+          <aside class="info-panel panel">
+            <div class="side-section">
+              <span class="kicker">Parcel Info</span>
+              <div id="parcelInfo" class="detail-list"></div>
+            </div>
+            <div class="side-section">
+              <span class="kicker">GNSS Status</span>
+              <div id="gnssInfo" class="gnss-card"></div>
+            </div>
+            <div class="side-section">
+              <span class="kicker">Boundary Points</span>
+              <div id="pointList" class="point-list"></div>
+            </div>
+            <div class="side-section">
+              <span class="kicker">Assignment</span>
+              <div class="assign-row">
+                <input id="assigneeInput" placeholder="Survey team / official" />
+                <button id="assignButton" class="mini-button">Assign</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="verificationScreen" class="screen">
+        <div class="two-column verification-layout">
+          <div class="panel form-panel">
+            <div class="section-heading compact"><div><span class="kicker">Ground Verification</span><h2>Field Verification</h2></div></div>
+            <form id="verificationForm">
+              <div class="form-grid">
+                <label>Owner present?<select name="ownerPresent"><option value="">Select</option><option value="true">Yes</option><option value="false">No</option></select></label>
+                <label>Owner name<input name="ownerName" /></label>
+                <label>Neighbour present?<select name="neighbourPresent"><option value="">Select</option><option value="true">Yes</option><option value="false">No</option></select></label>
+                <label>Boundary acknowledgement<select name="boundaryAcknowledgement"><option value="">Select</option><option value="Confirmed">Confirmed</option><option value="Disputed">Disputed</option><option value="Unable to verify">Unable to verify</option></select></label>
+                <label>Physical marker found?<select name="physicalMarkerFound"><option value="">Select</option><option value="true">Yes</option><option value="false">No</option></select></label>
+                <label>Building matches map?<select name="buildingMatchesMap"><option value="">Select</option><option value="true">Yes</option><option value="false">No</option></select></label>
+                <label class="span-2">Field Notes<textarea name="fieldNotes" rows="5"></textarea></label>
+              </div>
+              <div class="evidence-box">
+                <div><span class="kicker">Evidence</span><p>Images and documents are stored locally as field evidence, separate from departmental source records.</p></div>
+                <input id="evidenceInput" type="file" multiple />
+                <button type="button" id="uploadEvidence" class="secondary-button">Upload Evidence</button>
+                <div id="evidenceList" class="evidence-list"></div>
+              </div>
+              <div class="form-actions">
+                <button type="button" id="backToWorkspace" class="secondary-button">← Boundary Capture</button>
+                <button type="submit" class="primary-button">Save Verification & Compare</button>
+              </div>
+            </form>
+          </div>
+          <div class="panel comparison-panel">
+            <span class="kicker">Field Comparison</span>
+            <h2>Geometry Evidence</h2>
+            <div id="comparisonContent" class="comparison-content"></div>
+            <button id="openReport" class="primary-button wide">Survey Completion Report →</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="reportScreen" class="screen">
+        <div class="report-shell panel">
+          <div class="section-heading">
+            <div><span class="kicker">Field Survey Report</span><h2 id="reportParcel">—</h2><p>Ground-truth evidence submitted into the reconciliation workflow.</p></div>
+            <span id="reportStatus" class="status-pill"></span>
+          </div>
+          <div id="reportMetrics" class="report-metrics"></div>
+          <div class="report-grid">
+            <div><span class="kicker">Findings</span><div id="reportFindings" class="findings"></div></div>
+            <div class="recommendation-card"><span class="kicker">Recommended Action</span><h3 id="recommendationTitle"></h3><p id="recommendationDetail"></p></div>
+          </div>
+          <div class="report-actions">
+            <button id="completeSurvey" class="primary-button">Complete Survey</button>
+            <button id="sendConflict" class="secondary-button">Send to Conflict Review</button>
+            <button id="requestResurvey" class="secondary-button">Request Re-Survey</button>
+            <button id="escalateSurvey" class="danger-button">Escalate</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
