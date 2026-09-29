@@ -1,0 +1,9 @@
+PRAMAN Evidence Graph — Search + Filter Integration package integrity
+- Automated tests: 125 / 125 passed
+- Source syntax: PASS
+- Performance benchmark final graph: 60 nodes / 146 edges
+- HTTP smoke checks: 4 / 4 returned 200
+- Search identifiers: 1,060 canonical/historical + 1,072 source parcel aliases = 2,132 real identifiers
+- PRAMAN_DATA SHA-256 comparison: 14 / 14 CSV files unchanged
+- Unsupported user filters removed: adapter execution, confidence quantile band
+- ZIP archive integrity: verified with unzip -t after packaging

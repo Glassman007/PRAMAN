@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PRAMAN · Evidence Graph</title>
+  <link rel="stylesheet" href="/src/evidence-graph/dashboard/evidenceGraph.css" />
+  <style>html,body,#app{margin:0;width:100%;height:100%;background:#071019}</style>
+</head>
+<body>
+  <main id="app"></main>
+  <script type="module">
+    import { mountEvidenceGraphDashboard } from '/src/evidence-graph/dashboard/EvidenceGraphDashboard.mjs';
+    mountEvidenceGraphDashboard({ container: document.getElementById('app'), datasetBaseUrl: '/public/PRAMAN_DATA', stylesheetUrl: null });
+  </script>
+</body>
+</html>

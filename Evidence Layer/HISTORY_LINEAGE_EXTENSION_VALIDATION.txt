@@ -1,0 +1,37 @@
+PRAMAN Evidence Graph — Individual Parcel History & Lineage Extension
+
+VALIDATION STATUS: PASS
+
+Architecture
+- Evidence Graph and GeoGit are represented as distinct concepts.
+- GeoGit is a supporting historical/version branch, not an upstream Evidence Graph stage.
+- No direct GeoGitEvent ↔ GeometryVersion edge is emitted.
+- Current active canonical geometry remains prominent; historical/superseded states are subdued.
+
+Dataset-derived current coverage
+- PARCEL_LINEAGE rows: 74
+- Deterministically grouped lineage transactions: 36
+- Split transactions: 14
+- Merge/redevelopment consolidation transactions: 22
+- Resurvey-related geometry versions: 65
+- Boundary-correction / road-widening geometry versions: 18
+- Superseded geometry versions: 61
+- GeoGit MUTATION_RECORDED events: 8
+- GeoGit ROLLBACK events: 8
+- GeoGit CANONICAL_STATE_UPDATED events: 731
+- GeoGit SPLIT events: 28
+- GeoGit MERGE events: 46
+- Data-layer ERROR diagnostics: 0
+
+Validated behavior
+- Selecting one split child reconstructs the complete recorded split transaction, including siblings.
+- Selecting one merge parent reconstructs all recorded co-parents and the resulting parcel.
+- Geometry supersession follows explicit supersedes_geometry_id only.
+- Resurvey and boundary-correction labels are derived from recorded change_reason values.
+- Mutation, rollback and canonical-version events come from real GEOGIT_EVENTS rows.
+- Historical parcel and geometry states are visually subdued.
+- Active current geometry is visually prominent.
+- GeoGit events do not connect directly to geometry versions.
+- Previous Evidence Graph stages and Individual Parcel Mode contracts remain intact.
+
+Automated regression suite: 75 / 75 passing.

@@ -1,0 +1,16 @@
+Preferred Layer 1 integration
+=============================
+Use a direct link to this package's production entry. Do not route through a
+legacy/intermediate map page.
+
+For the packaged sibling directory named "Unified Spatial View":
+  <a href="../Unified%20Spatial%20View/index.html">Unified Spatial View</a>
+  <script src="../Unified%20Spatial%20View/layer1-integration.js"></script>
+
+If the deployed directory is renamed, keep both references pointed at that same
+production directory. The optional bridge resolves index.html relative to its
+own script URL and captures matching Layer 1 clicks so an older click handler
+cannot redirect to an obsolete map first.
+
+The Unified Spatial View back link expects ../layer1/index.html. Adjust that
+single deployment path only if Layer 1 is mounted elsewhere.

@@ -1,47 +1,14 @@
 (() => {
-  const adapter = window.PARCEL_ADAPTER;
+  let adapter = null;
   const $ = (id) => document.getElementById(id);
-  const navigationTargets = {
-  map: '../layer2/index.html',
-
-  conflicts: 'http://localhost:5174/',
-
-  reconciliation: 'http://localhost:5173/',
-
-  disaster: '../layer2/index.html?layers=flood&impact=1',
-
-  timeline: 'http://localhost:5175/timeline/',
-
-  'field-survey': `http://localhost:3606/?returnTo=${encodeURIComponent(window.location.href)}`
-};
-
-  const SYSTEM_HEALTH = [
-    { label: 'API', status: 'Operational' },
-    { label: 'Dataset Adapter', status: 'Operational' },
-    { label: 'Geometry Engine', status: 'Operational' },
-    { label: 'Reconciliation Service', status: 'Operational' },
-    { label: 'Timeline Service', status: 'Operational' },
-    { label: 'Overall', status: 'Healthy', overall: true }
-  ];
-
-  const PRIMARY_DATA_SOURCES = [
-    { key: 'revenue', label: 'Revenue / Land Records' },
-    { key: 'registration', label: 'Registration & Stamps' },
-    { key: 'survey', label: 'Survey / Cadastral' },
-    { key: 'ulb', label: 'Urban Local Body (MCD)' },
-    { key: 'planning', label: 'Urban Planning (DDA)' }
-  ];
 
   const els = {
-    datasetState: $('datasetState'),
-    datasetStateText: $('datasetStateText'),
     search: $('searchInput'),
     filterToggle: $('filterToggle'),
     filterPanel: $('filterPanel'),
-    country: $('countryFilter'),
-    state: $('stateFilter'),
+    cell: $('cellFilter'),
+    landUse: $('landUseFilter'),
     area: $('areaFilter'),
-    harmonization: $('harmonizationFilter'),
     clear: $('clearFilters'),
     total: $('totalParcels'),
     integrated: $('integratedParcels'),
@@ -49,18 +16,9 @@
     review: $('reviewParcels'),
     reviewed: $('reviewedParcels'),
     cleared: $('clearedParcels'),
-    conflictBreakdown: $('conflictBreakdown'),
     clock: $('localTime'),
-    high: $('highConfidence'),
-    medium: $('mediumConfidence'),
-    low: $('lowConfidence'),
-    sources: {
-      revenue: $('srcRevenue'),
-      survey: $('srcSurvey'),
-      registration: $('srcRegistration'),
-      ulb: $('srcUlb'),
-      planning: $('srcPlanning')
-    }
+    sourceItems: $('sourceItems'),
+    datasetStatus: $('datasetStatus')
   };
 
   const normalize = (value) => String(value ?? '').trim().toLowerCase();
@@ -88,49 +46,44 @@
   }
 
   function initializeFilters() {
-    const options = adapter?.filterOptions || { countries: [], states: [], areas: [], hasHarmonizationDates: false };
+    const options = adapter?.filterOptions || { cells: [], landUses: [], areas: [] };
 
-    setSelectOptions(els.country, options.countries, 'All countries', 'Not recorded in dataset');
-    setSelectOptions(els.state, options.states, 'All states', 'Not recorded in dataset');
-    setSelectOptions(els.area, options.areas, 'All areas', 'No area values');
-
-    if (!options.hasHarmonizationDates) {
-      els.harmonization.innerHTML = '<option value="">No timestamp in dataset</option>';
-      els.harmonization.disabled = true;
-    }
+    setSelectOptions(els.cell, options.cells, 'All cells', 'No cell values');
+    setSelectOptions(els.landUse, options.landUses, 'All land uses', 'No land-use values');
+    setSelectOptions(els.area, options.areas, 'All localities', 'No locality values');
   }
 
   function parcelMatches(parcel) {
     const query = normalize(els.search.value);
     if (query && !parcel.searchText.includes(query)) return false;
-    if (els.country.value && parcel.country !== els.country.value) return false;
-    if (els.state.value && parcel.state !== els.state.value) return false;
+    if (els.cell.value && parcel.cell !== els.cell.value) return false;
+    if (els.landUse.value && parcel.landUse !== els.landUse.value) return false;
     if (els.area.value && parcel.area !== els.area.value) return false;
-
-    if (els.harmonization.value) {
-      if (!parcel.lastHarmonization) return false;
-      const date = new Date(parcel.lastHarmonization);
-      if (Number.isNaN(date.getTime())) return false;
-      const ageMs = Date.now() - date.getTime();
-      if (ageMs < 0 || ageMs > Number(els.harmonization.value) * 86400000) return false;
-    }
 
     return true;
   }
 
   function renderSourceCoverage(parcels) {
-    adapter.requiredSources.forEach((source) => {
-      const count = parcels.filter((parcel) => parcel.sources.includes(source)).length;
-      els.sources[source].textContent = count.toLocaleString();
+    if (!els.sourceItems || !adapter) return;
+    const fragment = document.createDocumentFragment();
+    const visibleIds = new Set(parcels.map((parcel) => parcel.parcelId));
 
-      const quality = adapter.sourceQuality[source];
-      if (!quality) return;
-      const verified = quality.field_verified_or_doc_verified;
-      const records = quality.records;
-      els.sources[source].title = Number.isFinite(verified)
-        ? `${verified}/${records} source records verified in the supplied dataset`
-        : `${records} source records in the supplied dataset`;
+    adapter.sources.forEach((source) => {
+      const item = document.createElement('div');
+      item.className = 'source-item';
+      const dot = document.createElement('span');
+      dot.className = 'source-dot';
+      const label = document.createElement('span');
+      label.textContent = source.label;
+      const count = document.createElement('strong');
+      const visibleCount = parcels.filter((parcel) => parcel.sources.includes(source.key)).length;
+      count.textContent = visibleCount.toLocaleString();
+      item.title = `${source.recordCount.toLocaleString()} observations/records in PRAMAN_DATA`;
+      item.append(dot, label, count);
+      fragment.append(item);
     });
+
+    els.sourceItems.replaceChildren(fragment);
   }
 
   function createStatusRows(container, rows) {
@@ -152,12 +105,9 @@
   }
 
   function initializeFooterMenus() {
-    createStatusRows($('systemHealthRows'), SYSTEM_HEALTH);
-
-    const availableSources = new Set(adapter?.requiredSources || []);
-    createStatusRows($('dataSourceRows'), PRIMARY_DATA_SOURCES.map((source) => ({
+    createStatusRows($('dataSourceRows'), (adapter?.sources || []).map((source) => ({
       label: source.label,
-      status: availableSources.has(source.key) ? 'Connected' : 'Unavailable'
+      status: `${source.activeParcelCount.toLocaleString()} active parcels`
     })));
 
     document.querySelectorAll('.status-menu-wrapper').forEach((wrapper) => {
@@ -199,103 +149,6 @@
     window.addEventListener('pagehide', () => window.clearInterval(timerId), { once: true });
   }
 
-  function mountNavigationVisuals() {
-    if (!window.React || !window.ReactDOM) return;
-
-    const { createElement: h } = window.React;
-
-    function VisualFrame({ type }) {
-      const common = {
-        className: `nav-visual-svg nav-visual-${type}`,
-        viewBox: '0 0 120 58',
-        preserveAspectRatio: 'xMidYMid meet',
-        focusable: 'false',
-        'aria-hidden': 'true'
-      };
-
-      const line = (key, x1, y1, x2, y2, className = 'visual-line') => h('line', { key, x1, y1, x2, y2, className });
-      const polygon = (key, points, className = 'visual-shape') => h('polygon', { key, points, className });
-      const circle = (key, cx, cy, r, className = 'visual-node') => h('circle', { key, cx, cy, r, className });
-
-      if (type === 'map') {
-        return h('svg', common,
-          h('g', { className: 'visual-grid' }, [
-            line('g1', 18, 8, 18, 50), line('g2', 42, 8, 42, 50), line('g3', 66, 8, 66, 50), line('g4', 90, 8, 90, 50),
-            line('g5', 8, 18, 112, 18), line('g6', 8, 34, 112, 34)
-          ]),
-          polygon('p1', '14,12 40,10 43,31 18,34', 'visual-shape visual-shape-soft'),
-          polygon('p2', '45,11 73,13 68,33 43,31', 'visual-shape'),
-          polygon('p3', '70,34 103,30 108,48 74,50', 'visual-shape visual-shape-highlight'),
-          h('path', { d: 'M20 42 C39 35, 52 45, 66 38 S93 38, 104 20', className: 'visual-route' })
-        );
-      }
-
-      if (type === 'conflicts') {
-        return h('svg', common,
-          polygon('base', '18,12 70,10 78,42 26,46', 'visual-shape visual-shape-soft'),
-          polygon('conflict', '48,18 98,14 104,42 56,48', 'visual-shape visual-conflict-shape'),
-          h('path', { d: 'M53 19 L72 17 L77 42 L58 45 Z', className: 'visual-conflict-zone' }),
-          circle('n1', 72, 30, 3.2, 'visual-node visual-node-alert'),
-          line('c1', 72, 23, 72, 30, 'visual-alert-line')
-        );
-      }
-
-      if (type === 'reconciliation') {
-        return h('svg', common,
-          polygon('left', '10,14 42,11 45,43 13,46', 'visual-shape visual-shape-soft'),
-          polygon('right', '78,12 110,15 106,45 76,42', 'visual-shape visual-shape-soft'),
-          polygon('mid', '48,16 73,16 75,42 47,42', 'visual-shape visual-shape-highlight'),
-          h('path', { d: 'M39 28 H51 M47 24 L52 28 L47 32', className: 'visual-route' }),
-          h('path', { d: 'M82 28 H70 M74 24 L69 28 L74 32', className: 'visual-route' }),
-          circle('ok', 61, 29, 7, 'visual-node visual-node-core'),
-          h('path', { d: 'M57 29 L60 32 L65 26', className: 'visual-check' })
-        );
-      }
-
-      if (type === 'disaster') {
-        return h('svg', common,
-          polygon('parcel', '16,10 103,12 106,47 20,49', 'visual-shape visual-shape-soft'),
-          h('path', { d: 'M8 34 C22 25 34 42 49 33 S78 25 92 35 S108 39 116 32 L116 56 L8 56 Z', className: 'visual-flood' }),
-          circle('risk1', 36, 24, 4, 'visual-node visual-node-alert'),
-          circle('risk2', 82, 22, 3, 'visual-node visual-node-alert'),
-          h('path', { d: 'M34 24 l2 -6 l2 6 z', className: 'visual-alert-triangle' })
-        );
-      }
-
-      if (type === 'field-survey') {
-        return h('svg', common,
-          polygon('parcel', '18,13 91,10 105,39 72,49 24,43', 'visual-shape visual-shape-soft'),
-          h('path', { d: 'M25 39 L34 20 L59 16 L91 23 L98 38 L72 45 Z', className: 'visual-field-boundary' }),
-          circle('fp1', 34, 20, 2.7, 'visual-field-point'),
-          circle('fp2', 59, 16, 2.7, 'visual-field-point'),
-          circle('fp3', 91, 23, 2.7, 'visual-field-point'),
-          circle('fp4', 98, 38, 2.7, 'visual-field-point'),
-          circle('fp5', 72, 45, 2.7, 'visual-field-point'),
-          circle('surveyor', 52, 31, 5.4, 'visual-surveyor'),
-          h('path', { d: 'M52 25 L52 18 M48 22 L52 18 L56 22', className: 'visual-route' })
-        );
-      }
-
-      return h('svg', common,
-        line('timeline', 10, 29, 110, 29, 'visual-route'),
-        circle('t1', 18, 29, 4, 'visual-node'),
-        circle('t2', 45, 29, 4, 'visual-node'),
-        circle('t3', 74, 29, 4, 'visual-node'),
-        circle('t4', 103, 29, 5, 'visual-node visual-node-core'),
-        polygon('s1', '11,10 28,9 30,21 13,22', 'visual-shape visual-shape-soft'),
-        polygon('s2', '38,38 51,36 55,49 40,50', 'visual-shape visual-shape-soft'),
-        polygon('s3', '67,9 82,11 81,22 65,21', 'visual-shape visual-shape-highlight'),
-        h('path', { d: 'M98 11 L103 7 L108 11', className: 'visual-route' })
-      );
-    }
-
-    document.querySelectorAll('.nav-visual-root').forEach((mount) => {
-      const type = mount.dataset.visual;
-      if (!type) return;
-      window.ReactDOM.createRoot(mount).render(h(VisualFrame, { type }));
-    });
-  }
-
   function mountIndiaMap() {
     const mount = $('india-map-root');
     if (!mount || !window.React || !window.ReactDOM) {
@@ -305,8 +158,9 @@
 
     const { createElement: h, useEffect, useMemo, useRef, useState } = window.React;
     const VIEW_WIDTH = 320;
-    const VIEW_HEIGHT = 190;
-    const DELHI = [77.2090, 28.6139];
+    const VIEW_HEIGHT = 350;
+    const datasetMarker = Array.isArray(adapter?.mapCenter) ? adapter.mapCenter : null;
+    const datasetMarkerLabel = adapter?.mapLabel || 'PRAMAN dataset';
     const MIN_ZOOM = 1;
     const MAX_ZOOM = 5;
 
@@ -328,26 +182,13 @@
     }
 
     function IndiaMap() {
-      const [geoJson, setGeoJson] = useState(null);
+      const [geoJson, setGeoJson] = useState(window.INDIA_STATES || null);
       const [failed, setFailed] = useState(false);
       const [transform, setTransform] = useState({ scale: 1, x: 0, y: 0 });
       const dragRef = useRef(null);
 
       useEffect(() => {
-        const controller = new AbortController();
-        fetch('assets/india-states-simplified.geojson', { signal: controller.signal })
-          .then((response) => {
-            if (!response.ok) throw new Error(`India boundary request failed (${response.status})`);
-            return response.json();
-          })
-          .then(setGeoJson)
-          .catch((error) => {
-            if (error.name !== 'AbortError') {
-              console.error('[Layer 1 map]', error);
-              setFailed(true);
-            }
-          });
-        return () => controller.abort();
+        if (!window.INDIA_STATES) setFailed(true);
       }, []);
 
       const scene = useMemo(() => {
@@ -386,7 +227,7 @@
             key: feature.properties?.ST_NM || feature.properties?.name || index,
             path: geometryRings(feature.geometry).map(ringPath).join(' ')
           })),
-          delhi: project(DELHI)
+          datasetPoint: datasetMarker ? project(datasetMarker) : null
         };
       }, [geoJson]);
 
@@ -405,13 +246,13 @@
 
       const resetView = () => setTransform({ scale: 1, x: 0, y: 0 });
 
-      const focusDelhi = () => {
+      const focusDataset = () => {
         if (!scene) return;
         const targetScale = 3.4;
         setTransform(clampTransform({
           scale: targetScale,
-          x: VIEW_WIDTH / 2 - scene.delhi[0] * targetScale,
-          y: VIEW_HEIGHT / 2 - scene.delhi[1] * targetScale
+          x: scene.datasetPoint ? VIEW_WIDTH / 2 - scene.datasetPoint[0] * targetScale : 0,
+          y: scene.datasetPoint ? VIEW_HEIGHT / 2 - scene.datasetPoint[1] * targetScale : 0
         }));
       };
 
@@ -469,7 +310,7 @@
       const markerSize = 5.5 / transform.scale;
       const markerHeight = 9 / transform.scale;
       const labelSize = 8.5 / transform.scale;
-      const [delhiX, delhiY] = scene.delhi;
+      const [markerX, markerY] = scene.datasetPoint || [null, null];
 
       return h('div', { className: 'india-map-interactive' },
         h('svg', {
@@ -487,7 +328,7 @@
           onKeyDown
         },
           h('title', { id: 'indiaMapTitle' }, 'Interactive administrative map of India'),
-          h('desc', { id: 'indiaMapDescription' }, 'Drag the map after zooming, use the zoom controls or mouse wheel, and select the Delhi triangle to focus Delhi.'),
+          h('desc', { id: 'indiaMapDescription' }, 'Drag the map after zooming, use the zoom controls or mouse wheel, and select the dataset marker to focus the dataset area.'),
           h('g', { transform: `translate(${transform.x} ${transform.y}) scale(${transform.scale})` },
             h('g', { className: 'india-map-geography' }, scene.paths.map((item) => h('path', {
               key: item.key,
@@ -498,27 +339,27 @@
               className: 'delhi-marker',
               role: 'button',
               tabIndex: 0,
-              'aria-label': 'Delhi — focus map',
-              onClick: (event) => { event.stopPropagation(); focusDelhi(); },
+              'aria-label': `${datasetMarkerLabel} — focus map`,
+              onClick: (event) => { event.stopPropagation(); focusDataset(); },
               onKeyDown: (event) => {
                 if (event.key === 'Enter' || event.key === ' ') {
                   event.preventDefault();
-                  focusDelhi();
+                  focusDataset();
                 }
               }
             },
-              h('circle', { cx: delhiX, cy: delhiY, r: 8 / transform.scale, className: 'delhi-marker-hit' }),
-              h('polygon', {
-                points: `${delhiX},${delhiY - markerHeight} ${delhiX - markerSize},${delhiY + markerSize} ${delhiX + markerSize},${delhiY + markerSize}`,
+              scene.datasetPoint ? h('circle', { cx: markerX, cy: markerY, r: 8 / transform.scale, className: 'delhi-marker-hit' }) : null,
+              scene.datasetPoint ? h('polygon', {
+                points: `${markerX},${markerY - markerHeight} ${markerX - markerSize},${markerY + markerSize} ${markerX + markerSize},${markerY + markerSize}`,
                 className: 'delhi-marker-triangle',
                 vectorEffect: 'non-scaling-stroke'
-              }),
-              h('text', {
-                x: delhiX + 8 / transform.scale,
-                y: delhiY - 3 / transform.scale,
+              }) : null,
+              scene.datasetPoint ? h('text', {
+                x: markerX + 8 / transform.scale,
+                y: markerY - 3 / transform.scale,
                 className: 'delhi-marker-label',
                 style: { fontSize: `${labelSize}px` }
-              }, 'Delhi')
+              }, datasetMarkerLabel) : null
             )
           )
         ),
@@ -534,40 +375,17 @@
   }
 
   function render() {
-    if (!adapter || !adapter.parcels.length) {
-      els.datasetState.classList.remove('ready');
-      els.datasetState.classList.add('empty');
-      els.datasetStateText.textContent = 'Dataset not mounted';
-      return;
-    }
+    if (!adapter) return;
 
     const visible = adapter.parcels.filter(parcelMatches);
-    const confidenceCounts = { high: 0, medium: 0, low: 0 };
-    visible.forEach((parcel) => {
-      if (parcel.confidence) confidenceCounts[parcel.confidence] += 1;
-    });
 
     const dashboardMetrics = adapter.calculateDashboardMetrics(visible);
-    const autoReconcilableCount = visible.filter((parcel) => parcel.autoReconcilable).length;
-
-    els.datasetState.classList.remove('empty');
-    els.datasetState.classList.add('ready');
-    els.datasetStateText.textContent = `${adapter.rawCount.toLocaleString()} source records • ${adapter.parcels.length.toLocaleString()} canonical parcels`;
-
     els.total.textContent = dashboardMetrics.totalParcels.toLocaleString();
     els.conflicts.textContent = dashboardMetrics.conflictedParcels.toLocaleString();
     els.integrated.textContent = dashboardMetrics.integrated.toLocaleString();
     els.review.textContent = dashboardMetrics.needsReview.toLocaleString();
     els.reviewed.textContent = dashboardMetrics.reviewed.toLocaleString();
     els.cleared.textContent = dashboardMetrics.cleared.toLocaleString();
-    els.conflictBreakdown.textContent = dashboardMetrics.conflictedParcels
-      ? `${autoReconcilableCount.toLocaleString()} recommendation-ready • ${dashboardMetrics.needsReview.toLocaleString()} expert review`
-      : 'No cross-source discrepancies in the current view';
-
-    els.high.textContent = confidenceCounts.high.toLocaleString();
-    els.medium.textContent = confidenceCounts.medium.toLocaleString();
-    els.low.textContent = confidenceCounts.low.toLocaleString();
-
     renderSourceCoverage(visible);
   }
 
@@ -576,35 +394,49 @@
     els.filterToggle.setAttribute('aria-expanded', String(!collapsed));
   });
 
-  [els.search, els.country, els.state, els.area, els.harmonization].forEach((control) => {
+  [els.search, els.cell, els.landUse, els.area].forEach((control) => {
     control.addEventListener(control.tagName === 'INPUT' ? 'input' : 'change', render);
   });
 
   els.clear.addEventListener('click', () => {
     els.search.value = '';
-    [els.country, els.state, els.area, els.harmonization].forEach((select) => {
+    [els.cell, els.landUse, els.area].forEach((select) => {
       select.value = '';
     });
     render();
   });
 
-  document.querySelectorAll('.nav-item').forEach((item) => {
-    item.addEventListener('click', () => {
-      const target = navigationTargets[item.dataset.page];
-      if (target) {
-        window.location.href = target;
-        return;
-      }
-
-      document.querySelectorAll('.nav-item').forEach((navItem) => navItem.classList.remove('active'));
-      item.classList.add('active');
-    });
-  });
-
-  initializeFilters();
-  initializeFooterMenus();
+  const information = {
+    contact: ['Contact Us', 'Contact details have not been configured for this project.'],
+    terms: ['Terms of Use and Service', 'Layer 1 reads its dashboard state from the project PRAMAN_DATA directory at runtime. Project-specific legal terms have not been supplied.']
+  };
+  function showInfo(key) {
+    const [title, body] = information[key];
+    $('infoTitle').textContent = title;
+    $('infoBody').textContent = body;
+    $('infoDialog').showModal();
+  }
+  document.querySelectorAll('[data-info]').forEach(button => button.addEventListener('click', () => showInfo(button.dataset.info)));
+  document.querySelector('.dialog-close').addEventListener('click', () => $('infoDialog').close());
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') document.querySelector('.architecture-menu').open = false; });
+  document.addEventListener('click', event => { if (!event.target.closest('.architecture-menu')) document.querySelector('.architecture-menu').open = false; });
   initializeClock();
-  mountNavigationVisuals();
-  mountIndiaMap();
-  render();
+  els.datasetStatus.textContent = 'Loading PRAMAN_DATA…';
+
+  window.PRAMAN_DATA_READY.then((loadedAdapter) => {
+    adapter = loadedAdapter;
+    window.PARCEL_ADAPTER = loadedAdapter;
+    initializeFilters();
+    initializeFooterMenus();
+    mountIndiaMap();
+    render();
+    els.datasetStatus.textContent = `Live dataset: ${loadedAdapter.counts.activeCanonical.toLocaleString()} active canonical parcels`;
+    els.datasetStatus.classList.add('is-ready');
+  }).catch((error) => {
+    console.error(error);
+    els.datasetStatus.textContent = 'PRAMAN_DATA could not be loaded. Start Layer 1 from the project root (the folder that contains both layer1 and PRAMAN_DATA).';
+    els.datasetStatus.classList.add('is-error');
+    [els.total, els.conflicts, els.integrated, els.review, els.reviewed, els.cleared].forEach((node) => { node.textContent = '—'; });
+    mountIndiaMap();
+  });
 })();

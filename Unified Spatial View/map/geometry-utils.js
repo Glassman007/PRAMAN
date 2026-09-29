@@ -1,0 +1,6 @@
+export const ringsOf=g=>g?.type==='Polygon'?g.coordinates:g?.type==='MultiPolygon'?g.coordinates.flat():[];
+export function segmentsOf(g){return ringsOf(g).flatMap(r=>r.slice(1).map((p,i)=>[r[i],p]));}
+const distance=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
+export function changedEdges(oldGeometry,newGeometry){const a=segmentsOf(oldGeometry),b=segmentsOf(newGeometry),same=(s,t)=>distance(s[0],t[0])<.0001&&distance(s[1],t[1])<.0001||distance(s[0],t[1])<.0001&&distance(s[1],t[0])<.0001;return {old:a.filter(s=>!b.some(t=>same(s,t))),next:b.filter(s=>!a.some(t=>same(s,t)))};}
+// Collinear overlap, including partially shared edges. Tolerance is display-only.
+export function sharedEdges(geometries){const result=[];for(let i=0;i<geometries.length;i++)for(let j=i+1;j<geometries.length;j++)for(const [a,b] of segmentsOf(geometries[i]))for(const [c,d] of segmentsOf(geometries[j])){const dx=b[0]-a[0],dz=b[1]-a[1],len=Math.hypot(dx,dz);if(!len)continue;const cross=p=>Math.abs((p[0]-a[0])*dz-(p[1]-a[1])*dx)/len;if(cross(c)>.001||cross(d)>.001)continue;const t=p=>((p[0]-a[0])*dx+(p[1]-a[1])*dz)/(len*len),lo=Math.max(0,Math.min(t(c),t(d))),hi=Math.min(1,Math.max(t(c),t(d)));if((hi-lo)*len>.001)result.push([[a[0]+lo*dx,a[1]+lo*dz],[a[0]+hi*dx,a[1]+hi*dz]]);}return result;}

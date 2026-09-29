@@ -1,0 +1,49 @@
+PRAMAN Evidence Graph — Stage 3 Global Normalization validation
+
+RESULT: PASS
+
+Dataset-backed normalization model
+- Normalized/pre-match rows: 4,366
+- Source observation IDs preserved: 4,366 / 4,366
+- Source datasets represented: 7
+- Locality-scale normalization clusters: 1
+- Active adapter → normalized-space routes: 6
+- Data-layer ERROR diagnostics: 0
+
+Explicit geometry/reference-frame evidence
+- Observation-level original CRS distribution:
+  - EPSG:32643: 3,314
+  - EPSG:4326: 1,052
+- Observation-level normalized CRS distribution:
+  - EPSG:4326: 4,366
+- Observations with changed CRS: 3,314
+- Observations with changed geometry representation: 3,314
+- Geometry QC flags across normalized observation membership:
+  - NORMALIZED: 3,829
+  - CONFLICT_AFFECTED: 537
+- Recorded normalization method:
+  - CRS normalization + deterministic source-error perturbation + observed-area alignment: 4,366 observations
+
+Source-state preservation checks
+- Source clusters remain present in cumulative replay: PASS
+- Same observation_id is retained between SOURCE_OBSERVATIONS and MATCHING_INPUT_VIEW: PASS
+- Original source_record_id/source_parcel_id remain inspectable: PASS
+- Original geometry CRS/WKT remain inspectable through SOURCE_GEOMETRIES: PASS
+- Normalized geometry CRS/WKT remain inspectable through SOURCE_GEOMETRIES: PASS
+- Source-specific details remain inspectable: PASS
+- Raw source-record contents are not fabricated: PASS
+
+Inspector checks
+- BEFORE · AVAILABLE SOURCE STATE: PASS
+- APPLIED / REPRESENTED TRANSFORMATIONS: PASS
+- NORMALIZED REPRESENTATION: PASS
+- CRS/reference-frame normalization: PASS
+- geometry representation normalization: PASS
+- units metadata / limitations: PASS
+- identifier/source namespace preservation: PASS
+- field names/schema normalization: PASS
+- dates/timestamps limitation handling: PASS
+- positional uncertainty / quality propagation: PASS
+
+Automated regression suite: 31 / 31 passed
+All .mjs syntax checks: PASS

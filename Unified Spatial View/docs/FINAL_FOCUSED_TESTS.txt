@@ -1,0 +1,4 @@
+after [{"width":1366,"height":768,"map":{"x":0,"y":214,"width":1366,"height":554},"overflow":false},{"width":1440,"height":900,"map":{"x":0,"y":214,"width":1440,"height":686},"overflow":false},{"width":1920,"height":1080,"map":{"x":0,"y":214,"width":1920,"height":866},"overflow":false}] []
+PASS: actual responsive views, all toolbar groups, readable text, inspector no overlap, semantic parcel cases, cadastral inspection context and empty filter state.
+PASS: evidence overlays, multi-source differences, shared-edge identity/picking, ownership vs geometry, issues filters, decision-support fields, existing panels, navigation return context, temporal authority safety, 1366×768 and no page errors.
+PASS: temporal modes, historical search, split/merge/cross-cell playback, boundary changes, proposed/rejected separation, rollback, time reconstruction, history navigation and independent buildings.

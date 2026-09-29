@@ -1,0 +1,1 @@
+PASS: evidence overlays, multi-source differences, shared-edge identity/picking, ownership vs geometry, issues filters, decision-support fields, existing panels, navigation return context, temporal authority safety, 1366×768 and no page errors.

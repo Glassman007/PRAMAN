@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Asset audit</title>
+<script type="importmap">{"imports":{"three":"../vendor/three-0.180.0/build/three.module.js","three/addons/":"../vendor/three-0.180.0/addons/"}}</script></head><body>
+<script type="module">
+import * as T from 'three';import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';import {inspectAsset} from '../map/asset-audit.js';
+window.runAudit=async()=>{
+const inventory=await (await fetch('../data/asset-inventory.json')).json(),loader=new GLTFLoader(),result=[];
+const scene=new T.Scene();scene.background=new T.Color('white');scene.add(new T.HemisphereLight(0xffffff,0x888888,2));const light=new T.DirectionalLight(0xffffff,2.2);light.position.set(3,6,4);scene.add(light);
+const renderer=new T.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setSize(360,280);document.body.append(renderer.domElement);const camera=new T.PerspectiveCamera(40,360/280,0.01,1000);
+for(const item of inventory){try{const gltf=await loader.loadAsync('../'+item.path);const audit=inspectAsset(gltf);const root=gltf.scene;const box=new T.Box3().setFromObject(root,true),size=box.getSize(new T.Vector3()),center=box.getCenter(new T.Vector3());const wrapper=new T.Group();wrapper.add(root);wrapper.scale.setScalar(10/Math.max(size.x,size.y,size.z));root.position.sub(center);scene.add(wrapper);camera.position.set(13,10,16);camera.lookAt(0,0,0);renderer.render(scene,camera);const preview=renderer.domElement.toDataURL('image/png');result.push({...item,...audit,preview});scene.remove(wrapper);
+const gs=new Set(),ms=new Set(),ts=new Set();root.traverse(o=>{if(o.geometry)gs.add(o.geometry);(Array.isArray(o.material)?o.material:[o.material]).filter(Boolean).forEach(m=>{ms.add(m);Object.values(m).forEach(v=>{if(v?.isTexture)ts.add(v);});});});gs.forEach(g=>g.dispose());ms.forEach(m=>m.dispose());ts.forEach(t=>{t.source?.data?.close?.();t.dispose();});
+}catch(e){result.push({...item,error:e.message});}}
+renderer.dispose();return result;};
+</script></body></html>

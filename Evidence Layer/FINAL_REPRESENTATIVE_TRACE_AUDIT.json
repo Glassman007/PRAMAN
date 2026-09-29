@@ -1,0 +1,619 @@
+{
+  "cases": [
+    {
+      "kind": "clean",
+      "parcelId": "IN-DL-110054-1-1",
+      "recordStatus": "ACTIVE",
+      "matchStatus": "AUTO_MATCHED",
+      "sourceCount": 4,
+      "sourceObservationIds": [
+        "OBS-000001",
+        "OBS-000002",
+        "OBS-000003",
+        "OBS-000004"
+      ],
+      "conflictIds": [],
+      "conflictStatuses": [],
+      "unresolvedConflictIds": [],
+      "requiresHumanReview": false,
+      "humanReviewEventIds": [],
+      "lineageEvents": [],
+      "geometryChanges": [
+        {
+          "id": "GEO-01-001-G1",
+          "version": "G1",
+          "reason": "Initial canonical geometry",
+          "status": "AUTHORITATIVE"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 29,
+      "projectionEdges": 41,
+      "stageSummary": {
+        "sources": 8,
+        "adapters": 5,
+        "normalization": 4,
+        "matching": 5,
+        "reconciliation": 1,
+        "authority-review": 2,
+        "canonical-state": 1,
+        "history-lineage": 3
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {
+        "conflict-detection": "No explicit CONFLICTS rows are recorded for this parcel; the conflict operation contains no fabricated conflict node."
+      }
+    },
+    {
+      "kind": "multi-source",
+      "parcelId": "IN-DL-110054-1-1",
+      "recordStatus": "ACTIVE",
+      "matchStatus": "AUTO_MATCHED",
+      "sourceCount": 4,
+      "sourceObservationIds": [
+        "OBS-000001",
+        "OBS-000002",
+        "OBS-000003",
+        "OBS-000004"
+      ],
+      "conflictIds": [],
+      "conflictStatuses": [],
+      "unresolvedConflictIds": [],
+      "requiresHumanReview": false,
+      "humanReviewEventIds": [],
+      "lineageEvents": [],
+      "geometryChanges": [
+        {
+          "id": "GEO-01-001-G1",
+          "version": "G1",
+          "reason": "Initial canonical geometry",
+          "status": "AUTHORITATIVE"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 29,
+      "projectionEdges": 41,
+      "stageSummary": {
+        "sources": 8,
+        "adapters": 5,
+        "normalization": 4,
+        "matching": 5,
+        "reconciliation": 1,
+        "authority-review": 2,
+        "canonical-state": 1,
+        "history-lineage": 3
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {
+        "conflict-detection": "No explicit CONFLICTS rows are recorded for this parcel; the conflict operation contains no fabricated conflict node."
+      }
+    },
+    {
+      "kind": "conflicted",
+      "parcelId": "IN-DL-110054-1-4",
+      "recordStatus": "ACTIVE",
+      "matchStatus": "HUMAN_REVIEW_REQUIRED",
+      "sourceCount": 5,
+      "sourceObservationIds": [
+        "OBS-000013",
+        "OBS-000014",
+        "OBS-000015",
+        "OBS-000016",
+        "OBS-000017"
+      ],
+      "conflictIds": [
+        "CNF-00254",
+        "CNF-00326"
+      ],
+      "conflictStatuses": [
+        "RESOLVED",
+        "OPEN"
+      ],
+      "unresolvedConflictIds": [
+        "CNF-00326"
+      ],
+      "requiresHumanReview": true,
+      "humanReviewEventIds": [
+        "EVT-000154"
+      ],
+      "lineageEvents": [],
+      "geometryChanges": [
+        {
+          "id": "GEO-01-004-G1",
+          "version": "G1",
+          "reason": "Initial canonical geometry",
+          "status": "AUTHORITATIVE"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 33,
+      "projectionEdges": 54,
+      "stageSummary": {
+        "sources": 9,
+        "adapters": 5,
+        "normalization": 5,
+        "matching": 6,
+        "conflict-detection": 2,
+        "reconciliation": 1,
+        "authority-review": 2,
+        "canonical-state": 1,
+        "history-lineage": 2
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {}
+    },
+    {
+      "kind": "reconciled",
+      "parcelId": "IN-DL-110054-1-74",
+      "recordStatus": "ACTIVE",
+      "matchStatus": "RECONCILED",
+      "sourceCount": 3,
+      "sourceObservationIds": [
+        "OBS-000279",
+        "OBS-000280",
+        "OBS-000281"
+      ],
+      "conflictIds": [
+        "CNF-00622"
+      ],
+      "conflictStatuses": [
+        "RESOLVED"
+      ],
+      "unresolvedConflictIds": [],
+      "requiresHumanReview": false,
+      "humanReviewEventIds": [],
+      "lineageEvents": [],
+      "geometryChanges": [
+        {
+          "id": "GEO-01-074-G1",
+          "version": "G1",
+          "reason": "Initial canonical geometry",
+          "status": "AUTHORITATIVE"
+        }
+      ],
+      "rollbackEventIds": [
+        "EVT-000529"
+      ],
+      "projectionNodes": 27,
+      "projectionEdges": 39,
+      "stageSummary": {
+        "sources": 6,
+        "adapters": 4,
+        "normalization": 3,
+        "matching": 4,
+        "conflict-detection": 1,
+        "reconciliation": 1,
+        "authority-review": 2,
+        "canonical-state": 1,
+        "history-lineage": 5
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {}
+    },
+    {
+      "kind": "unresolved",
+      "parcelId": "IN-DL-110054-1-4",
+      "recordStatus": "ACTIVE",
+      "matchStatus": "HUMAN_REVIEW_REQUIRED",
+      "sourceCount": 5,
+      "sourceObservationIds": [
+        "OBS-000013",
+        "OBS-000014",
+        "OBS-000015",
+        "OBS-000016",
+        "OBS-000017"
+      ],
+      "conflictIds": [
+        "CNF-00254",
+        "CNF-00326"
+      ],
+      "conflictStatuses": [
+        "RESOLVED",
+        "OPEN"
+      ],
+      "unresolvedConflictIds": [
+        "CNF-00326"
+      ],
+      "requiresHumanReview": true,
+      "humanReviewEventIds": [
+        "EVT-000154"
+      ],
+      "lineageEvents": [],
+      "geometryChanges": [
+        {
+          "id": "GEO-01-004-G1",
+          "version": "G1",
+          "reason": "Initial canonical geometry",
+          "status": "AUTHORITATIVE"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 33,
+      "projectionEdges": 54,
+      "stageSummary": {
+        "sources": 9,
+        "adapters": 5,
+        "normalization": 5,
+        "matching": 6,
+        "conflict-detection": 2,
+        "reconciliation": 1,
+        "authority-review": 2,
+        "canonical-state": 1,
+        "history-lineage": 2
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {}
+    },
+    {
+      "kind": "human-reviewed",
+      "parcelId": "IN-DL-110054-1-4",
+      "recordStatus": "ACTIVE",
+      "matchStatus": "HUMAN_REVIEW_REQUIRED",
+      "sourceCount": 5,
+      "sourceObservationIds": [
+        "OBS-000013",
+        "OBS-000014",
+        "OBS-000015",
+        "OBS-000016",
+        "OBS-000017"
+      ],
+      "conflictIds": [
+        "CNF-00254",
+        "CNF-00326"
+      ],
+      "conflictStatuses": [
+        "RESOLVED",
+        "OPEN"
+      ],
+      "unresolvedConflictIds": [
+        "CNF-00326"
+      ],
+      "requiresHumanReview": true,
+      "humanReviewEventIds": [
+        "EVT-000154"
+      ],
+      "lineageEvents": [],
+      "geometryChanges": [
+        {
+          "id": "GEO-01-004-G1",
+          "version": "G1",
+          "reason": "Initial canonical geometry",
+          "status": "AUTHORITATIVE"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 33,
+      "projectionEdges": 54,
+      "stageSummary": {
+        "sources": 9,
+        "adapters": 5,
+        "normalization": 5,
+        "matching": 6,
+        "conflict-detection": 2,
+        "reconciliation": 1,
+        "authority-review": 2,
+        "canonical-state": 1,
+        "history-lineage": 2
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {}
+    },
+    {
+      "kind": "split",
+      "parcelId": "IN-DL-110054-8-101",
+      "recordStatus": "HISTORICAL_RETIRED",
+      "matchStatus": "NEEDS_ADDITIONAL_EVIDENCE",
+      "sourceCount": 2,
+      "sourceObservationIds": [
+        "OBS-004331",
+        "OBS-004332"
+      ],
+      "conflictIds": [
+        "CNF-00682"
+      ],
+      "conflictStatuses": [
+        "OPEN"
+      ],
+      "unresolvedConflictIds": [
+        "CNF-00682"
+      ],
+      "requiresHumanReview": true,
+      "humanReviewEventIds": [],
+      "lineageEvents": [
+        {
+          "id": "LIN-0001",
+          "type": "SPLIT",
+          "parent": "IN-DL-110054-8-101",
+          "child": "IN-DL-110054-8-91"
+        },
+        {
+          "id": "LIN-0002",
+          "type": "SPLIT",
+          "parent": "IN-DL-110054-8-101",
+          "child": "IN-DL-110054-8-92"
+        }
+      ],
+      "geometryChanges": [
+        {
+          "id": "HIST-IN-DL-110054-8-101",
+          "version": "H1",
+          "reason": "SPLIT reconstructed as union of child G1 geometries: IN-DL-110054-8-91;IN-DL-110054-8-92. Retired 2008-03-15: Subdivision mutation in CELL-08",
+          "status": "HISTORICAL"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 28,
+      "projectionEdges": 39,
+      "stageSummary": {
+        "sources": 4,
+        "adapters": 4,
+        "normalization": 2,
+        "matching": 7,
+        "conflict-detection": 1,
+        "reconciliation": 1,
+        "authority-review": 1,
+        "canonical-state": 1,
+        "history-lineage": 7
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {
+        "authority-review": "No HUMAN_REVIEW / PROPOSAL_ACCEPTED / PROPOSAL_REJECTED event is recorded for this parcel; the stored authoritative state remains visible without fabricating a decision event."
+      }
+    },
+    {
+      "kind": "merged",
+      "parcelId": "IN-DL-110054-7-102",
+      "recordStatus": "HISTORICAL_RETIRED",
+      "matchStatus": "NEEDS_ADDITIONAL_EVIDENCE",
+      "sourceCount": 1,
+      "sourceObservationIds": [
+        "OBS-004325"
+      ],
+      "conflictIds": [
+        "CNF-00678"
+      ],
+      "conflictStatuses": [
+        "OPEN"
+      ],
+      "unresolvedConflictIds": [
+        "CNF-00678"
+      ],
+      "requiresHumanReview": true,
+      "humanReviewEventIds": [],
+      "lineageEvents": [
+        {
+          "id": "LIN-0011",
+          "type": "MERGE",
+          "parent": "IN-DL-110054-7-102",
+          "child": "IN-DL-110054-7-93"
+        }
+      ],
+      "geometryChanges": [
+        {
+          "id": "HIST-IN-DL-110054-7-102",
+          "version": "H1",
+          "reason": "RETIRED_MERGED reconstructed as x-axis proportional partition of successor IN-DL-110054-7-93 G1 using historical source area. Retired 2010-07-10: Plot consolidation in CELL-07",
+          "status": "HISTORICAL"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 20,
+      "projectionEdges": 23,
+      "stageSummary": {
+        "sources": 2,
+        "adapters": 4,
+        "normalization": 1,
+        "matching": 3,
+        "conflict-detection": 1,
+        "reconciliation": 1,
+        "authority-review": 1,
+        "canonical-state": 1,
+        "history-lineage": 6
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {
+        "authority-review": "No HUMAN_REVIEW / PROPOSAL_ACCEPTED / PROPOSAL_REJECTED event is recorded for this parcel; the stored authoritative state remains visible without fabricating a decision event."
+      }
+    },
+    {
+      "kind": "historical",
+      "parcelId": "IN-DL-110054-1-101",
+      "recordStatus": "HISTORICAL_RETIRED",
+      "matchStatus": "NEEDS_ADDITIONAL_EVIDENCE",
+      "sourceCount": 1,
+      "sourceObservationIds": [
+        "OBS-004271"
+      ],
+      "conflictIds": [
+        "CNF-00648"
+      ],
+      "conflictStatuses": [
+        "OPEN"
+      ],
+      "unresolvedConflictIds": [
+        "CNF-00648"
+      ],
+      "requiresHumanReview": true,
+      "humanReviewEventIds": [],
+      "lineageEvents": [
+        {
+          "id": "LIN-0003",
+          "type": "SPLIT",
+          "parent": "IN-DL-110054-1-101",
+          "child": "IN-DL-110054-1-91"
+        },
+        {
+          "id": "LIN-0004",
+          "type": "SPLIT",
+          "parent": "IN-DL-110054-1-101",
+          "child": "IN-DL-110054-1-92"
+        }
+      ],
+      "geometryChanges": [
+        {
+          "id": "HIST-IN-DL-110054-1-101",
+          "version": "H1",
+          "reason": "SPLIT reconstructed as union of child G1 geometries: IN-DL-110054-1-91;IN-DL-110054-1-92. Retired 2009-03-15: Subdivision mutation in CELL-01",
+          "status": "HISTORICAL"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 22,
+      "projectionEdges": 26,
+      "stageSummary": {
+        "sources": 2,
+        "adapters": 4,
+        "normalization": 1,
+        "matching": 4,
+        "conflict-detection": 1,
+        "reconciliation": 1,
+        "authority-review": 1,
+        "canonical-state": 1,
+        "history-lineage": 7
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {
+        "authority-review": "No HUMAN_REVIEW / PROPOSAL_ACCEPTED / PROPOSAL_REJECTED event is recorded for this parcel; the stored authoritative state remains visible without fabricating a decision event."
+      }
+    },
+    {
+      "kind": "resurveyed/geometry-updated",
+      "parcelId": "IN-DL-110054-1-23",
+      "recordStatus": "ACTIVE",
+      "matchStatus": "HUMAN_REVIEW_REQUIRED",
+      "sourceCount": 7,
+      "sourceObservationIds": [
+        "OBS-000092",
+        "OBS-000093",
+        "OBS-000094",
+        "OBS-000095",
+        "OBS-000096",
+        "OBS-000097",
+        "OBS-000098"
+      ],
+      "conflictIds": [
+        "CNF-00340",
+        "CNF-00462",
+        "CNF-00628"
+      ],
+      "conflictStatuses": [
+        "RESOLVED",
+        "OPEN"
+      ],
+      "unresolvedConflictIds": [
+        "CNF-00462",
+        "CNF-00628"
+      ],
+      "requiresHumanReview": true,
+      "humanReviewEventIds": [
+        "EVT-000256"
+      ],
+      "lineageEvents": [],
+      "geometryChanges": [
+        {
+          "id": "GEO-01-023-G1",
+          "version": "G1",
+          "reason": "Initial canonical geometry",
+          "status": "AUTHORITATIVE"
+        },
+        {
+          "id": "GEO-01-023-G2",
+          "version": "G2",
+          "reason": "GNSS/CORS resurvey",
+          "status": "PROPOSED"
+        }
+      ],
+      "rollbackEventIds": [],
+      "projectionNodes": 43,
+      "projectionEdges": 74,
+      "stageSummary": {
+        "sources": 12,
+        "adapters": 6,
+        "normalization": 7,
+        "matching": 8,
+        "conflict-detection": 3,
+        "reconciliation": 1,
+        "authority-review": 2,
+        "canonical-state": 1,
+        "history-lineage": 3
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {}
+    },
+    {
+      "kind": "rollback",
+      "parcelId": "IN-DL-110054-1-74",
+      "recordStatus": "ACTIVE",
+      "matchStatus": "RECONCILED",
+      "sourceCount": 3,
+      "sourceObservationIds": [
+        "OBS-000279",
+        "OBS-000280",
+        "OBS-000281"
+      ],
+      "conflictIds": [
+        "CNF-00622"
+      ],
+      "conflictStatuses": [
+        "RESOLVED"
+      ],
+      "unresolvedConflictIds": [],
+      "requiresHumanReview": false,
+      "humanReviewEventIds": [],
+      "lineageEvents": [],
+      "geometryChanges": [
+        {
+          "id": "GEO-01-074-G1",
+          "version": "G1",
+          "reason": "Initial canonical geometry",
+          "status": "AUTHORITATIVE"
+        }
+      ],
+      "rollbackEventIds": [
+        "EVT-000529"
+      ],
+      "projectionNodes": 27,
+      "projectionEdges": 39,
+      "stageSummary": {
+        "sources": 6,
+        "adapters": 4,
+        "normalization": 3,
+        "matching": 4,
+        "conflict-detection": 1,
+        "reconciliation": 1,
+        "authority-review": 2,
+        "canonical-state": 1,
+        "history-lineage": 5
+      },
+      "provenanceOk": true,
+      "provenanceErrors": [],
+      "omittedStageNotes": {}
+    }
+  ],
+  "hasDistinctRestorationEvent": false,
+  "eventTypes": [
+    "CANONICAL_STATE_UPDATED",
+    "CONFLICT_DETECTED",
+    "EVIDENCE_ADDED",
+    "HUMAN_REVIEW",
+    "MATCH_PROPOSED",
+    "MERGE",
+    "MUTATION_RECORDED",
+    "PARCEL_CREATED",
+    "PROPOSAL_ACCEPTED",
+    "PROPOSAL_REJECTED",
+    "ROLLBACK",
+    "SOURCE_IMPORTED",
+    "SPLIT"
+  ]
+}

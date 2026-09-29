@@ -1,0 +1,105 @@
+PRAMAN Layer 4 — State Separation Validation
+Generated: 2026-09-27
+
+== Adapter regression ==
+Layer 4 history/lineage adapter tests: PASS
+{
+  "sourceMetadata": 7,
+  "sourceObservations": 4366,
+  "conflicts": 715,
+  "conflictEvidence": 1715,
+  "reconciledParcels": 1060,
+  "canonicalParcels": 1000,
+  "geometryVersions": 1143,
+  "historicalParcels": 60,
+  "parcelLineage": 74,
+  "geogitEvents": 5602
+}
+
+== Landing regression ==
+{
+  "ok": true,
+  "rows": 1060,
+  "currentCanonical": 1000,
+  "historicalRetired": 60,
+  "historicalWithDescendants": 60,
+  "facets": {
+    "statuses": [
+      "ACTIVE",
+      "HISTORICAL",
+      "PROPOSED",
+      "SUPERSEDED"
+    ],
+    "landUses": [
+      "COMMERCIAL",
+      "GOVERNMENT",
+      "HEALTHCARE",
+      "INSTITUTIONAL",
+      "MIXED_USE",
+      "PUBLIC_OPEN_SPACE",
+      "REDEVELOPMENT",
+      "RELIGIOUS_COMMUNITY",
+      "RESIDENTIAL",
+      "TRANSPORT_ACCESS",
+      "UTILITY",
+      "VACANT"
+    ],
+    "cells": [
+      "CELL-01",
+      "CELL-02",
+      "CELL-03",
+      "CELL-04",
+      "CELL-05",
+      "CELL-06",
+      "CELL-07",
+      "CELL-08",
+      "CELL-09",
+      "CELL-10"
+    ],
+    "historyTypes": [
+      "CONFLICT",
+      "GEOMETRY_CHANGE",
+      "MERGE",
+      "MUTATION",
+      "OFFICIAL_APPROVAL",
+      "SPLIT",
+      "SURVEY_OBSERVATION"
+    ]
+  }
+}
+
+== History screen regression ==
+{
+  "ok": true,
+  "parcels": 1060,
+  "activeWithCurrent": 1000,
+  "historicalWithoutCurrent": 60,
+  "geometryChangeEvents": 83,
+  "mutationWithoutGeometryTransition": 16,
+  "splitEvents": 56,
+  "mergeEvents": 92,
+  "undatedEvents": 44,
+  "acceptedApprovalEvents": 731,
+  "rejectedDecisionEvents": 26
+}
+
+== State separation semantics ==
+{
+  "ok": true,
+  "authoritativeCount": 1000,
+  "historicalIdentityCount": 60,
+  "historicalStateCount": 121,
+  "pendingProposalCount": 243,
+  "rejectedProposalCount": 26,
+  "proposalDiffCount": 22,
+  "acceptedEventCount": 731,
+  "acceptedEventWithCanonicalUpdateCount": 731,
+  "historySelectionExample": {
+    "parcelId": "IN-DL-110054-1-26",
+    "selectedHistoricalGeometry": "GEO-01-026-G1",
+    "currentGeometryAfterSelection": "GEO-01-026-G2"
+  }
+}
+
+== JavaScript syntax checks ==
+Non-JSX JavaScript syntax: PASS

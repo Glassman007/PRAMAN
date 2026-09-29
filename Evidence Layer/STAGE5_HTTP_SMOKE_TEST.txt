@@ -1,0 +1,21 @@
+PRAMAN Evidence Graph Stage 5 HTTP smoke test
+conflicts=715
+conflicted_parcels=530
+conflict_categories=10
+conflict_evidence_records=1715
+open_conflicts=329
+resolved_conflicts=386
+ownership_party=134
+parcel_area=77
+geometry_boundary=164
+tenure_status=22
+identifier_identity=64
+temporal_version=92
+topology=28
+source_disagreement=46
+survey_discrepancy=22
+split_merge_lineage=66
+stage5_aggregate_nodes=10
+stage5_conflict_edges=24
+unmapped_conflicts=0
+data_layer_errors=0

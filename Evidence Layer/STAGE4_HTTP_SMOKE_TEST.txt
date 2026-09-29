@@ -1,0 +1,13 @@
+PRAMAN Evidence Graph Stage 4 HTTP smoke test
+candidate_associations=4583
+primary_candidates=4366
+alternate_candidates=217
+parcel_match_outcomes=1060
+accepted=753
+ambiguous=281
+rejected=26
+unmatched_observations=0
+distortion_signal_observations=118
+distortion_signal_parcels=111
+stage4_aggregate_nodes=7
+data_layer_errors=0

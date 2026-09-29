@@ -1,0 +1,29 @@
+{
+  "name": "praman-conflict-reconcile",
+  "private": true,
+  "version": "7.1.0-layer3-4-fixed",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/build-dataset-manifest.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/build-dataset-manifest.mjs",
+    "build": "node scripts/production-build.mjs",
+    "preview": "vite preview",
+    "audit:migration": "node scripts/audit-migration.mjs",
+    "audit:runtime": "node scripts/validate-runtime.mjs",
+    "audit:conflict-ui": "node scripts/validate-conflict-explorer.mjs",
+    "audit:case-workspace": "node scripts/validate-conflict-case-workspace.mjs",
+    "audit:reconciliation": "node scripts/validate-reconciliation-workspace.mjs",
+    "audit:final": "node scripts/final-regression-audit.mjs",
+    "build:vite": "vite build",
+    "audit:layer34-fixes": "node scripts/validate-layer34-fixes.mjs",
+    "verify:compile": "node scripts/verify-source-compile.mjs"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  }
+}

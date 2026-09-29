@@ -1,0 +1,13 @@
+PRAMAN Evidence Graph Performance HTTP Smoke Test
+HTTP dataset load: PASS
+HTTP load ms: 1249.07
+Data-layer ERROR diagnostics: 0
+Global final nodes: 61
+Global final edges: 146
+Global graph aggregate-only: PASS
+Parcel selected: IN-DL-110054-1-4
+Parcel detailed nodes: 33
+Parcel detailed edges: 54
+Parcel has record-level source observations: PASS
+Parcel has normalized evidence: PASS
+Result: PASS

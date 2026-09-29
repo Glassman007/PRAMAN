@@ -1,0 +1,825 @@
+PRAMAN Evidence Graph - Final Code Cleanup Test Results
+
+=== Batch 1 ===
+TAP version 13
+# Subtest: adapter registry contains the seven PRAMAN conceptual families with explicit non-vague processing
+ok 1 - adapter registry contains the seven PRAMAN conceptual families with explicit non-vague processing
+  ---
+  duration_ms: 1.805984
+  type: 'test'
+  ...
+# Subtest: current source types route to the architecture-defined adapters and may fan out
+ok 2 - current source types route to the architecture-defined adapters and may fan out
+  ---
+  duration_ms: 1482.925058
+  type: 'test'
+  ...
+# Subtest: Surface / 3D remains defined but is not rendered when no current surface/point-cloud source exists
+ok 3 - Surface / 3D remains defined but is not rendered when no current surface/point-cloud source exists
+  ---
+  duration_ms: 892.642478
+  type: 'test'
+  ...
+# Subtest: processed and successful-output counts are derived from real observation and normalized rows
+ok 4 - processed and successful-output counts are derived from real observation and normalized rows
+  ---
+  duration_ms: 1315.003351
+  type: 'test'
+  ...
+# Subtest: quality warnings are real source-geometry flags and quarantine is explicitly unavailable
+ok 5 - quality warnings are real source-geometry flags and quarantine is explicitly unavailable
+  ---
+  duration_ms: 1209.53967
+  type: 'test'
+  ...
+# Subtest: Adapter operation renders one evidence-backed node per active adapter and source-to-adapter routes
+ok 6 - Adapter operation renders one evidence-backed node per active adapter and source-to-adapter routes
+  ---
+  duration_ms: 1265.089037
+  type: 'test'
+  ...
+# Subtest: Normalization operation continues the real route from adapters into normalized observations
+ok 7 - Normalization operation continues the real route from adapters into normalized observations
+  ---
+  duration_ms: 1435.803497
+  type: 'test'
+  ...
+# Subtest: adapter inspector exposes INPUT, PROCESSING, OUTPUT, explicit transformations, warnings and execution caveat
+ok 8 - adapter inspector exposes INPUT, PROCESSING, OUTPUT, explicit transformations, warnings and execution caveat
+  ---
+  duration_ms: 1.496626
+  type: 'test'
+  ...
+# Subtest: final summary is calculated from the current production tables
+ok 9 - final summary is calculated from the current production tables
+  ---
+  duration_ms: 1954.239392
+  type: 'test'
+  ...
+# Subtest: Canonical-state operation converges governed state into one registry while retaining cell membership
+ok 10 - Canonical-state operation converges governed state into one registry while retaining cell membership
+  ---
+  duration_ms: 1302.072016
+  type: 'test'
+  ...
+# Subtest: canonical replay is cumulative and does not hide earlier evidence operations
+ok 11 - canonical replay is cumulative and does not hide earlier evidence operations
+  ---
+  duration_ms: 1660.509008
+  type: 'test'
+  ...
+# Subtest: every active canonical parcel has a supported trace back to source observations
+ok 12 - every active canonical parcel has a supported trace back to source observations
+  ---
+  duration_ms: 882.44747
+  type: 'test'
+  ...
+# Subtest: clean parcels pass conflict detection without a fabricated conflict node
+ok 13 - clean parcels pass conflict detection without a fabricated conflict node
+  ---
+  duration_ms: 1107.342151
+  type: 'test'
+  ...
+# Subtest: canonical materialization does not relabel pending governance as accepted
+ok 14 - canonical materialization does not relabel pending governance as accepted
+  ---
+  duration_ms: 1183.378136
+  type: 'test'
+  ...
+# Subtest: expected active count is optional and discrepancies are reported rather than hidden
+ok 15 - expected active count is optional and discrepancies are reported rather than hidden
+  ---
+  duration_ms: 1171.985528
+  type: 'test'
+  ...
+# Subtest: dashboard renders the final dataset summary and parcel trace inspector without hardcoding the active total
+ok 16 - dashboard renders the final dataset summary and parcel trace inspector without hardcoding the active total
+  ---
+  duration_ms: 2.270227
+  type: 'test'
+  ...
+# Subtest: Authority / Review uses explicit governance vocabulary and counts from production tables
+ok 17 - Authority / Review uses explicit governance vocabulary and counts from production tables
+  ---
+  duration_ms: 1775.83223
+  type: 'test'
+  ...
+# Subtest: confidence is explicitly independent of authority state
+ok 18 - confidence is explicitly independent of authority state
+  ---
+  duration_ms: 1102.470593
+  type: 'test'
+  ...
+# Subtest: authority flow separates inference, proposal, recorded governance path, decisions and authority state
+ok 19 - authority flow separates inference, proposal, recorded governance path, decisions and authority state
+  ---
+  duration_ms: 1504.963756
+  type: 'test'
+  ...
+# Subtest: review decision inspection exposes proposal, evidence, confidence, action, timestamp and resulting authority state
+ok 20 - review decision inspection exposes proposal, evidence, confidence, action, timestamp and resulting authority state
+  ---
+  duration_ms: 1430.819968
+  type: 'test'
+  ...
+# Subtest: human review remains a review event and is not silently treated as acceptance
+ok 21 - human review remains a review event and is not silently treated as acceptance
+  ---
+  duration_ms: 1093.223201
+  type: 'test'
+  ...
+# Subtest: dashboard makes the authority principle explicit and never asks for officer names
+ok 22 - dashboard makes the authority principle explicit and never asks for officer names
+  ---
+  duration_ms: 6.313131
+  type: 'test'
+  ...
+# Subtest: Conflict operation categorizes every explicit CONFLICTS row exactly once and creates no synthetic conflict records
+ok 23 - Conflict operation categorizes every explicit CONFLICTS row exactly once and creates no synthetic conflict records
+  ---
+  duration_ms: 1575.69374
+  type: 'test'
+  ...
+# Subtest: Conflict operation is aggregated by dataset-backed conflict category, not status/criticality pseudo-taxonomies
+ok 24 - Conflict operation is aggregated by dataset-backed conflict category, not status/criticality pseudo-taxonomies
+  ---
+  duration_ms: 1399.245279
+  type: 'test'
+  ...
+# Subtest: conflict category nodes are downstream of matching outcomes and do not replace identity matching
+ok 25 - conflict category nodes are downstream of matching outcomes and do not replace identity matching
+  ---
+  duration_ms: 1531.744169
+  type: 'test'
+  ...
+# Subtest: individual conflict inspection exposes parcel, field, competing values, provenance, quality and reconciliation state
+ok 26 - individual conflict inspection exposes parcel, field, competing values, provenance, quality and reconciliation state
+  ---
+  duration_ms: 620.878073
+  type: 'test'
+  ...
+# Subtest: category aggregate counts reconcile to actual conflict_type populations and affected parcels
+ok 27 - category aggregate counts reconcile to actual conflict_type populations and affected parcels
+  ---
+  duration_ms: 674.816687
+  type: 'test'
+  ...
+# Subtest: Conflict operation provides conflict inspection and a non-duplicating Conflict Explorer handoff
+ok 28 - Conflict operation provides conflict inspection and a non-duplicating Conflict Explorer handoff
+  ---
+  duration_ms: 1.518365
+  type: 'test'
+  ...
+# Subtest: dashboard deep links carry only relevant PRAMAN context plus exact returnTo
+ok 29 - dashboard deep links carry only relevant PRAMAN context plus exact returnTo
+  ---
+  duration_ms: 4.881873
+  type: 'test'
+  ...
+# Subtest: Evidence Graph URL state round-trips parcel, stage, search, selection, speed and replay position without deleting host filters
+ok 30 - Evidence Graph URL state round-trips parcel, stage, search, selection, speed and replay position without deleting host filters
+  ---
+  duration_ms: 2.865413
+  type: 'test'
+  ...
+# Subtest: inbound contextual parameters do not invent replay position and can infer direct context
+ok 31 - inbound contextual parameters do not invent replay position and can infer direct context
+  ---
+  duration_ms: 0.295139
+  type: 'test'
+  ...
+# Subtest: node context resolver derives parcel, source, conflict and version IDs from actual evidence records
+ok 32 - node context resolver derives parcel, source, conflict and version IDs from actual evidence records
+  ---
+  duration_ms: 1746.48976
+  type: 'test'
+  ...
+# Subtest: contextual actions are restrained to identifiers available for the selected evidence node
+ok 33 - contextual actions are restrained to identifiers available for the selected evidence node
+  ---
+  duration_ms: 2.540583
+  type: 'test'
+  ...
+# Subtest: Unified Spatial bridge applies transferred parcel context through the existing stable spatial API
+ok 34 - Unified Spatial bridge applies transferred parcel context through the existing stable spatial API
+  ---
+  duration_ms: 0.653383
+  type: 'test'
+  ...
+# Subtest: generic target context reader understands the dashboard-specific source-selection parameter
+ok 35 - generic target context reader understands the dashboard-specific source-selection parameter
+  ---
+  duration_ms: 0.333272
+  type: 'test'
+  ...
+# Subtest: dashboard exposes all five contextual actions and return-state navigation without importing target dashboards
+ok 36 - dashboard exposes all five contextual actions and return-state navigation without importing target dashboards
+  ---
+  duration_ms: 21.069796
+  type: 'test'
+  ...
+# Subtest: landing summary is fully dataset-derived
+ok 37 - landing summary is fully dataset-derived
+  ---
+  duration_ms: 1285.533305
+  type: 'test'
+  ...
+# Subtest: dashboard source contains no hardcoded production totals
+ok 38 - dashboard source contains no hardcoded production totals
+  ---
+  duration_ms: 0.953077
+  type: 'test'
+  ...
+# Subtest: landing state leaves the drawer closed and has no stage timeline UI
+ok 39 - landing state leaves the drawer closed and has no stage timeline UI
+  ---
+  duration_ms: 1.103366
+  type: 'test'
+  ...
+# Subtest: integration is additive and route-scoped
+ok 40 - integration is additive and route-scoped
+  ---
+  duration_ms: 0.211437
+  type: 'test'
+  ...
+# Subtest: header summary and overview aggregates derive from the same loaded PRAMAN_DATA tables
+ok 41 - header summary and overview aggregates derive from the same loaded PRAMAN_DATA tables
+  ---
+  duration_ms: 1796.75766
+  type: 'test'
+  ...
+# Subtest: every complete-overview node and edge resolves to a real record or deterministic candidate relationship
+ok 42 - every complete-overview node and edge resolves to a real record or deterministic candidate relationship
+  ---
+  duration_ms: 1447.378975
+  type: 'test'
+  ...
+# Subtest: representative clean, conflict, review, rejection, lineage, rollback, resurvey and historical traces are provenance-clean
+ok 43 - representative clean, conflict, review, rejection, lineage, rollback, resurvey and historical traces are provenance-clean
+  ---
+  duration_ms: 1008.483067
+  type: 'test'
+  ...
+# Subtest: optional paths remain optional rather than generating placeholder evidence
+ok 44 - optional paths remain optional rather than generating placeholder evidence
+  ---
+  duration_ms: 644.749288
+  type: 'test'
+  ...
+# Subtest: no fake lifecycle-data arrays or phrase-based distortion classifier remain
+ok 45 - no fake lifecycle-data arrays or phrase-based distortion classifier remain
+  ---
+  duration_ms: 3.423481
+  type: 'test'
+  ...
+1..45
+# tests 45
+# suites 0
+# pass 45
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 14782.660901
+
+=== Batch 2 ===
+TAP version 13
+# Subtest: Matching operation uses the recorded candidate population rather than recalculating nearest polygons
+ok 1 - Matching operation uses the recorded candidate population rather than recalculating nearest polygons
+  ---
+  duration_ms: 1584.800127
+  type: 'test'
+  ...
+# Subtest: accepted ambiguous and rejected groups are deterministic mappings of parcel-level match_status
+ok 2 - accepted ambiguous and rejected groups are deterministic mappings of parcel-level match_status
+  ---
+  duration_ms: 1203.194312
+  type: 'test'
+  ...
+# Subtest: unmatched is not fabricated when every observation has a primary candidate
+ok 3 - unmatched is not fabricated when every observation has a primary candidate
+  ---
+  duration_ms: 1649.697451
+  type: 'test'
+  ...
+# Subtest: matching projection is aggregated and follows normalized → candidate relationships → recorded evidence → parcel outcomes
+ok 4 - matching projection is aggregated and follows normalized → candidate relationships → recorded evidence → parcel outcomes
+  ---
+  duration_ms: 1674.124953
+  type: 'test'
+  ...
+# Subtest: no structured distortion population is fabricated from narrative phrases
+ok 5 - no structured distortion population is fabricated from narrative phrases
+  ---
+  duration_ms: 2005.680315
+  type: 'test'
+  ...
+# Subtest: individual observation inspection exposes recorded evidence and marks unsupported pair features unavailable
+ok 6 - individual observation inspection exposes recorded evidence and marks unsupported pair features unavailable
+  ---
+  duration_ms: 1108.914599
+  type: 'test'
+  ...
+# Subtest: area comparison is inspectable but never labelled as a recorded classifier score
+ok 7 - area comparison is inspectable but never labelled as a recorded classifier score
+  ---
+  duration_ms: 1425.698399
+  type: 'test'
+  ...
+# Subtest: dashboard matching inspector names only stored or explicitly unavailable evidence
+ok 8 - dashboard matching inspector names only stored or explicitly unavailable evidence
+  ---
+  duration_ms: 1.660705
+  type: 'test'
+  ...
+# Subtest: filter catalog is derived from actual current PRAMAN values
+ok 9 - filter catalog is derived from actual current PRAMAN values
+  ---
+  duration_ms: 1994.483098
+  type: 'test'
+  ...
+# Subtest: filter catalog exposes only direct PRAMAN_DATA dimensions and no UI-created confidence or adapter buckets
+ok 10 - filter catalog exposes only direct PRAMAN_DATA dimensions and no UI-created confidence or adapter buckets
+  ---
+  duration_ms: 1013.639689
+  type: 'test'
+  ...
+# Subtest: source filter retains only observations from that dataset and downstream contextual graph nodes
+ok 11 - source filter retains only observations from that dataset and downstream contextual graph nodes
+  ---
+  duration_ms: 1460.413141
+  type: 'test'
+  ...
+# Subtest: unresolved-only and match-status filters operate on real reconciliation parcel membership
+ok 12 - unresolved-only and match-status filters operate on real reconciliation parcel membership
+  ---
+  duration_ms: 1313.690087
+  type: 'test'
+  ...
+# Subtest: lineage filter values are actual event types and retain their participating parcels
+ok 13 - lineage filter values are actual event types and retain their participating parcels
+  ---
+  duration_ms: 1148.661842
+  type: 'test'
+  ...
+# Subtest: clear filters restores the unfiltered projection
+ok 14 - clear filters restores the unfiltered projection
+  ---
+  duration_ms: 1841.494263
+  type: 'test'
+  ...
+# Subtest: parcel mode filters only the selected parcel evidence and never imports unrelated observations
+ok 15 - parcel mode filters only the selected parcel evidence and never imports unrelated observations
+  ---
+  duration_ms: 1729.15553
+  type: 'test'
+  ...
+# Subtest: filter state round-trips through Evidence Graph URL return state
+ok 16 - filter state round-trips through Evidence Graph URL return state
+  ---
+  duration_ms: 2.177912
+  type: 'test'
+  ...
+# Subtest: filtered locality graph preserves a contextual path from retained source evidence to canonical state
+ok 17 - filtered locality graph preserves a contextual path from retained source evidence to canonical state
+  ---
+  duration_ms: 1704.966115
+  type: 'test'
+  ...
+# Subtest: final summary is derived from the same PRAMAN_DATA tables and recorded statuses
+ok 18 - final summary is derived from the same PRAMAN_DATA tables and recorded statuses
+  ---
+  duration_ms: 1572.827895
+  type: 'test'
+  ...
+# Subtest: renderer completion state participates in structural invalidation and semantic hidden state wins CSS
+ok 19 - renderer completion state participates in structural invalidation and semantic hidden state wins CSS
+  ---
+  duration_ms: 2.939597
+  type: 'test'
+  ...
+# Subtest: complete overview waterfall stays within desktop bounds without layout-box overlap
+ok 20 - complete overview waterfall stays within desktop bounds without layout-box overlap
+  ---
+  duration_ms: 1008.232093
+  type: 'test'
+  ...
+# Subtest: user-facing dashboard/renderer do not contain numbered-stage presentation controls
+ok 21 - user-facing dashboard/renderer do not contain numbered-stage presentation controls
+  ---
+  duration_ms: 3.38102
+  type: 'test'
+  ...
+# Subtest: full overview still resolves to the expected data-backed graph cardinality
+ok 22 - full overview still resolves to the expected data-backed graph cardinality
+  ---
+  duration_ms: 1022.615351
+  type: 'test'
+  ...
+# Subtest: global normalization model is backed by the complete MATCHING_INPUT_VIEW population
+ok 23 - global normalization model is backed by the complete MATCHING_INPUT_VIEW population
+  ---
+  duration_ms: 1760.219016
+  type: 'test'
+  ...
+# Subtest: CRS and geometry normalization statistics are recomputed from explicit source geometry before/after fields
+ok 24 - CRS and geometry normalization statistics are recomputed from explicit source geometry before/after fields
+  ---
+  duration_ms: 1105.315761
+  type: 'test'
+  ...
+# Subtest: Normalization operation converges all normalized evidence into one locality-scale evidence space
+ok 25 - Normalization operation converges all normalized evidence into one locality-scale evidence space
+  ---
+  duration_ms: 1970.78868
+  type: 'test'
+  ...
+# Subtest: adapter outputs converge into the global normalized node without fabricated observation IDs
+ok 26 - adapter outputs converge into the global normalized node without fabricated observation IDs
+  ---
+  duration_ms: 1668.358685
+  type: 'test'
+  ...
+# Subtest: individual normalization inspection reconstructs actual before, transformations and normalized representation
+ok 27 - individual normalization inspection reconstructs actual before, transformations and normalized representation
+  ---
+  duration_ms: 1768.772274
+  type: 'test'
+  ...
+# Subtest: normalization inspection does not fabricate raw values or unsupported conversion metadata
+ok 28 - normalization inspection does not fabricate raw values or unsupported conversion metadata
+  ---
+  duration_ms: 1395.687386
+  type: 'test'
+  ...
+# Subtest: dashboard exposes source preservation and before-to-normalized observation inspection
+ok 29 - dashboard exposes source preservation and before-to-normalized observation inspection
+  ---
+  duration_ms: 1.457758
+  type: 'test'
+  ...
+# Subtest: split lineage is reconstructed as one parent to all recorded children
+ok 30 - split lineage is reconstructed as one parent to all recorded children
+  ---
+  duration_ms: 2139.526307
+  type: 'test'
+  ...
+# Subtest: merge lineage is reconstructed as all recorded parents to one resulting parcel
+ok 31 - merge lineage is reconstructed as all recorded parents to one resulting parcel
+  ---
+  duration_ms: 923.69838
+  type: 'test'
+  ...
+# Subtest: geometry history exposes resurvey, boundary correction and supersession only where recorded
+ok 32 - geometry history exposes resurvey, boundary correction and supersession only where recorded
+  ---
+  duration_ms: 1194.466853
+  type: 'test'
+  ...
+# Subtest: mutation, rollback and new canonical version are surfaced from actual GeoGit events
+ok 33 - mutation, rollback and new canonical version are surfaced from actual GeoGit events
+  ---
+  duration_ms: 1108.725578
+  type: 'test'
+  ...
+# Subtest: GeoGit remains supporting history evidence and is never linked directly to geometry versions
+ok 34 - GeoGit remains supporting history evidence and is never linked directly to geometry versions
+  ---
+  duration_ms: 880.738809
+  type: 'test'
+  ...
+# Subtest: current canonical geometry is prominent while historical parcel and geometry states are subdued
+ok 35 - current canonical geometry is prominent while historical parcel and geometry states are subdued
+  ---
+  duration_ms: 1089.52407
+  type: 'test'
+  ...
+# Subtest: dashboard states the Evidence Graph / GeoGit distinction and has a dedicated history inspector
+ok 36 - dashboard states the Evidence Graph / GeoGit distinction and has a dedicated history inspector
+  ---
+  duration_ms: 3.871928
+  type: 'test'
+  ...
+# Subtest: parcel autocomplete index uses exactly the real canonical/historical and source parcel identifiers present in PRAMAN_DATA
+ok 37 - parcel autocomplete index uses exactly the real canonical/historical and source parcel identifiers present in PRAMAN_DATA
+  ---
+  duration_ms: 1859.53294
+  type: 'test'
+  ...
+# Subtest: focused parcel graph contains exactly the selected reconciliation observation membership
+ok 38 - focused parcel graph contains exactly the selected reconciliation observation membership
+  ---
+  duration_ms: 1397.125825
+  type: 'test'
+  ...
+# Subtest: adapter nodes are project-architecture routes over real contributing source types, never fake executions
+ok 39 - adapter nodes are project-architecture routes over real contributing source types, never fake executions
+  ---
+  duration_ms: 1249.257408
+  type: 'test'
+  ...
+# Subtest: parcel matching shows only recorded candidate associations plus the parcel-level outcome
+ok 40 - parcel matching shows only recorded candidate associations plus the parcel-level outcome
+  ---
+  duration_ms: 998.305863
+  type: 'test'
+  ...
+# Subtest: a clean parcel omits conflict nodes and records the non-applicable operation instead of fabricating a case
+ok 41 - a clean parcel omits conflict nodes and records the non-applicable operation instead of fabricating a case
+  ---
+  duration_ms: 863.880405
+  type: 'test'
+  ...
+# Subtest: reviewed parcel exposes the real review event, review requirement, proposal and authoritative state
+ok 42 - reviewed parcel exposes the real review event, review requirement, proposal and authoritative state
+  ---
+  duration_ms: 607.534077
+  type: 'test'
+  ...
+# Subtest: historical parcel mode expands only the selected parcel lineage transactions and their recorded co-participants
+ok 43 - historical parcel mode expands only the selected parcel lineage transactions and their recorded co-participants
+  ---
+  duration_ms: 640.322557
+  type: 'test'
+  ...
+# Subtest: Replay This Parcel uses the same state machine but only the selected parcel projection
+ok 44 - Replay This Parcel uses the same state machine but only the selected parcel projection
+  ---
+  duration_ms: 720.296767
+  type: 'test'
+  ...
+# Subtest: dashboard exposes autocomplete, parcel replay action and the parcel summary contract without numbered stages
+ok 45 - dashboard exposes autocomplete, parcel replay action and the parcel summary contract without numbered stages
+  ---
+  duration_ms: 5.542058
+  type: 'test'
+  ...
+1..45
+# tests 45
+# suites 0
+# pass 45
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 21052.877286
+
+=== Batch 3 ===
+TAP version 13
+# Subtest: global replay remains aggregate rather than rendering source observations or canonical parcels one-by-one
+ok 1 - global replay remains aggregate rather than rendering source observations or canonical parcels one-by-one
+  ---
+  duration_ms: 2152.647264
+  type: 'test'
+  ...
+# Subtest: expensive dataset-derived selectors and locality projection are memoized per immutable data layer
+ok 2 - expensive dataset-derived selectors and locality projection are memoized per immutable data layer
+  ---
+  duration_ms: 1775.098067
+  type: 'test'
+  ...
+# Subtest: parcel detail is built on demand and reused without losing record-level evidence
+ok 3 - parcel detail is built on demand and reused without losing record-level evidence
+  ---
+  duration_ms: 1063.939658
+  type: 'test'
+  ...
+# Subtest: replay progress reuses structural node/edge arrays instead of recomputing the graph each tick
+ok 4 - replay progress reuses structural node/edge arrays instead of recomputing the graph each tick
+  ---
+  duration_ms: 1419.3041
+  type: 'test'
+  ...
+# Subtest: virtualization keeps the complete snapshot but materializes only viewport nodes/edges above the render budget
+ok 5 - virtualization keeps the complete snapshot but materializes only viewport nodes/edges above the render budget
+  ---
+  duration_ms: 2.399479
+  type: 'test'
+  ...
+# Subtest: replay registry matches the requested lifecycle and includes supported history
+ok 6 - replay registry matches the requested lifecycle and includes supported history
+  ---
+  duration_ms: 2.995166
+  type: 'test'
+  ...
+# Subtest: locality replay projections are cumulative and every rendered node/edge is evidence-backed
+ok 7 - locality replay projections are cumulative and every rendered node/edge is evidence-backed
+  ---
+  duration_ms: 2108.13272
+  type: 'test'
+  ...
+# Subtest: adapter and matching operations preserve audited data limitations
+ok 8 - adapter and matching operations preserve audited data limitations
+  ---
+  duration_ms: 1211.754518
+  type: 'test'
+  ...
+# Subtest: history projection does not fabricate a GeoGit-to-geometry foreign key
+ok 9 - history projection does not fabricate a GeoGit-to-geometry foreign key
+  ---
+  duration_ms: 1158.047571
+  type: 'test'
+  ...
+# Subtest: parcel replay is a focused dataset-backed projection with conceptual adapter routes
+ok 10 - parcel replay is a focused dataset-backed projection with conceptual adapter routes
+  ---
+  duration_ms: 1145.252131
+  type: 'test'
+  ...
+# Subtest: replay controller is a reusable continuous state machine with transport, restoration positioning and speed
+ok 11 - replay controller is a reusable continuous state machine with transport, restoration positioning and speed
+  ---
+  duration_ms: 1150.034727
+  type: 'test'
+  ...
+# Subtest: selected node is part of replay snapshot, never a synthetic animation marker
+ok 12 - selected node is part of replay snapshot, never a synthetic animation marker
+  ---
+  duration_ms: 1576.650259
+  type: 'test'
+  ...
+# Subtest: legacy manual stage navigation APIs are absent from the production controller
+ok 13 - legacy manual stage navigation APIs are absent from the production controller
+  ---
+  duration_ms: 0.441991
+  type: 'test'
+  ...
+# Subtest: dashboard exposes one continuous lifecycle controller without stage navigation
+ok 14 - dashboard exposes one continuous lifecycle controller without stage navigation
+  ---
+  duration_ms: 2.065635
+  type: 'test'
+  ...
+# Subtest: continuous playback accumulates evidence, uses lifecycle states, and replay resets safely
+ok 15 - continuous playback accumulates evidence, uses lifecycle states, and replay resets safely
+  ---
+  duration_ms: 1447.102963
+  type: 'test'
+  ...
+# Subtest: playback never creates overlapping timers or duplicate rendered evidence IDs
+ok 16 - playback never creates overlapping timers or duplicate rendered evidence IDs
+  ---
+  duration_ms: 1069.382728
+  type: 'test'
+  ...
+# Subtest: acceptance 1: full dataset playback completes as the unfiltered dataset-driven waterfall
+ok 17 - acceptance 1: full dataset playback completes as the unfiltered dataset-driven waterfall
+  ---
+  duration_ms: 1843.133829
+  type: 'test'
+  ...
+# Subtest: acceptance 2: canonical and source parcel searches resolve to the same focused Evidence Graph system
+ok 18 - acceptance 2: canonical and source parcel searches resolve to the same focused Evidence Graph system
+  ---
+  duration_ms: 1149.036834
+  type: 'test'
+  ...
+# Subtest: acceptance 3: filter-only playback uses recorded source membership and excludes stale unrelated evidence
+ok 19 - acceptance 3: filter-only playback uses recorded source membership and excludes stale unrelated evidence
+  ---
+  duration_ms: 1633.193752
+  type: 'test'
+  ...
+# Subtest: acceptance 4: parcel + filter keeps only the selected parcel evidence supported by that filter
+ok 20 - acceptance 4: parcel + filter keeps only the selected parcel evidence supported by that filter
+  ---
+  duration_ms: 1274.552764
+  type: 'test'
+  ...
+# Subtest: acceptance 5: replay after parcel search preserves the parcel and produces the same data-driven lifecycle
+ok 21 - acceptance 5: replay after parcel search preserves the parcel and produces the same data-driven lifecycle
+  ---
+  duration_ms: 996.333803
+  type: 'test'
+  ...
+# Subtest: acceptance 6: replay and live regeneration after filters preserve current filter state without stale graph data
+ok 22 - acceptance 6: replay and live regeneration after filters preserve current filter state without stale graph data
+  ---
+  duration_ms: 1688.890108
+  type: 'test'
+  ...
+# Subtest: acceptance 7: clearing filters restores the complete overview projection and source contains an explicit parcel reset path
+ok 23 - acceptance 7: clearing filters restores the complete overview projection and source contains an explicit parcel reset path
+  ---
+  duration_ms: 1253.640783
+  type: 'test'
+  ...
+# Subtest: supported filter dimensions are direct dataset fields/relationships and selected-node inspection exposes provenance
+ok 24 - supported filter dimensions are direct dataset fields/relationships and selected-node inspection exposes provenance
+  ---
+  duration_ms: 3.152875
+  type: 'test'
+  ...
+# Subtest: Source operation renders exactly one source cluster per actual SOURCE_METADATA record
+ok 25 - Source operation renders exactly one source cluster per actual SOURCE_METADATA record
+  ---
+  duration_ms: 2085.194056
+  type: 'test'
+  ...
+# Subtest: every source cluster exposes the exact source-observation membership and count
+ok 26 - every source cluster exposes the exact source-observation membership and count
+  ---
+  duration_ms: 1315.323074
+  type: 'test'
+  ...
+# Subtest: source nature and source inspector metadata are deterministic from production tables
+ok 27 - source nature and source inspector metadata are deterministic from production tables
+  ---
+  duration_ms: 998.941903
+  type: 'test'
+  ...
+# Subtest: source inspector states unavailable adapter execution and dataset version instead of fabricating them
+ok 28 - source inspector states unavailable adapter execution and dataset version instead of fabricating them
+  ---
+  duration_ms: 1.180212
+  type: 'test'
+  ...
+# Subtest: landing state presents one clear lifecycle action without implying a replay already happened
+ok 29 - landing state presents one clear lifecycle action without implying a replay already happened
+  ---
+  duration_ms: 1.521164
+  type: 'test'
+  ...
+# Subtest: central lifecycle action starts the existing real replay controller and replay appears only after completion
+ok 30 - central lifecycle action starts the existing real replay controller and replay appears only after completion
+  ---
+  duration_ms: 0.352718
+  type: 'test'
+  ...
+# Subtest: parcel mode exposes an explicit return-to-overview treatment without adding another route
+ok 31 - parcel mode exposes an explicit return-to-overview treatment without adding another route
+  ---
+  duration_ms: 0.274624
+  type: 'test'
+  ...
+# Subtest: selected-node UX preserves upstream/downstream context instead of hiding graph evidence
+ok 32 - selected-node UX preserves upstream/downstream context instead of hiding graph evidence
+  ---
+  duration_ms: 0.220629
+  type: 'test'
+  ...
+# Subtest: edge styling distinguishes candidate, rejected, conflict and historical relationships
+ok 33 - edge styling distinguishes candidate, rejected, conflict and historical relationships
+  ---
+  duration_ms: 0.249347
+  type: 'test'
+  ...
+# Subtest: continuous lifecycle uses a single waterfall surface with lightweight operation wayfinding
+ok 34 - continuous lifecycle uses a single waterfall surface with lightweight operation wayfinding
+  ---
+  duration_ms: 1.398145
+  type: 'test'
+  ...
+# Subtest: inspector remains usable with document-flow scrolling and collapses advanced audit detail
+ok 35 - inspector remains usable with document-flow scrolling and collapses advanced audit detail
+  ---
+  duration_ms: 0.657536
+  type: 'test'
+  ...
+# Subtest: confidence remains dimension-specific in the renderer
+ok 36 - confidence remains dimension-specific in the renderer
+  ---
+  duration_ms: 0.274868
+  type: 'test'
+  ...
+# Subtest: dataset load failure shows a polished user-facing state while retaining the real error event
+ok 37 - dataset load failure shows a polished user-facing state while retaining the real error event
+  ---
+  duration_ms: 0.341494
+  type: 'test'
+  ...
+# Subtest: waterfall layout places every real overview relationship downstream
+ok 38 - waterfall layout places every real overview relationship downstream
+  ---
+  duration_ms: 1148.489658
+  type: 'test'
+  ...
+# Subtest: real branching and convergence remain represented by the source graph
+ok 39 - real branching and convergence remain represented by the source graph
+  ---
+  duration_ms: 887.510754
+  type: 'test'
+  ...
+# Subtest: waterfall operation captions describe logic without numbered stage presentation
+ok 40 - waterfall operation captions describe logic without numbered stage presentation
+  ---
+  duration_ms: 1.284398
+  type: 'test'
+  ...
+# Subtest: active waterfall uses natural document flow rather than a fixed-height internal canvas
+ok 41 - active waterfall uses natural document flow rather than a fixed-height internal canvas
+  ---
+  duration_ms: 0.95474
+  type: 'test'
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 12547.583043
+
+TOTAL: 131 tests passed, 0 failed (45 + 45 + 41).

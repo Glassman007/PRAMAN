@@ -1,0 +1,15 @@
+Stage 1 — SOURCE ARRIVAL validation
+Source clusters: 7
+Individual source-observation nodes: 0
+Aggregate edges: 0
+
+Source ID | Source type | Source observations | Spatial nature | Reliability | Nominal accuracy
+SRC-A-REV | CADASTRAL_REVENUE | 1061 | Spatially referenced | 0.84 | 1.5-5 m
+SRC-B-MCD | MUNICIPAL_PROPERTY | 1052 | Spatially referenced | 0.78 | 3-10 m / address linked
+SRC-C-DDA | DDA_DEVELOPMENT_AUTHORITY | 287 | Spatially referenced | 0.9 | 1-3 m
+SRC-D-GIS | BUILDING_GIS | 765 | Spatially referenced | 0.82 | 0.5-1.5 m
+SRC-E-UAV | DRONE_ORTHOPHOTO | 782 | Spatially referenced | 0.8 | 0.2-0.8 m
+SRC-F-GNSS | GNSS_CORS_SURVEY | 229 | Spatially referenced | 0.97 | 0.02-0.08 m
+SRC-G-UTIL | UTILITY_INFRASTRUCTURE | 190 | Spatially referenced | 0.7 | 0.5-2 m
+
+Data-layer ERROR diagnostics: 0

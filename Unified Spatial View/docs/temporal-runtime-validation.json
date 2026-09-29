@@ -1,0 +1,194 @@
+{
+  "baseline": {
+    "state": {
+      "mode": "current",
+      "point": "current",
+      "selected": null,
+      "eventId": null,
+      "phase": 0,
+      "playing": false,
+      "emphasizedEdges": 0,
+      "playback": null,
+      "currentShown": true,
+      "contextShown": true,
+      "visibleRecords": [],
+      "snapshot": null
+    },
+    "current": 1000,
+    "model": 6781,
+    "visible": true
+  },
+  "playback": [
+    {
+      "type": "SPLIT",
+      "eventId": "LIN-0001",
+      "phaseCounts": [
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "type": "MERGE",
+      "eventId": "LIN-0011",
+      "phaseCounts": [
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "CROSS_CELL_SPLIT",
+      "eventId": "LIN-0067",
+      "phaseCounts": [
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "type": "CROSS_CELL_MERGE",
+      "eventId": "LIN-0069",
+      "phaseCounts": [
+        2,
+        2,
+        1,
+        1
+      ]
+    }
+  ],
+  "correction": {
+    "old": {
+      "mode": "combined",
+      "point": "current",
+      "selected": "IN-DL-110054-1-26",
+      "eventId": "GEO-01-026-G2",
+      "phase": 0,
+      "playing": false,
+      "emphasizedEdges": 0,
+      "playback": "GEO-01-026-G2",
+      "currentShown": false,
+      "contextShown": false,
+      "visibleRecords": [
+        {
+          "id": "IN-DL-110054-1-26",
+          "geometryId": "GEO-01-026-G1",
+          "category": "EVENT PREVIOUS GEOMETRY",
+          "style": "before"
+        }
+      ],
+      "snapshot": null
+    },
+    "compare": {
+      "mode": "combined",
+      "point": "current",
+      "selected": "IN-DL-110054-1-26",
+      "eventId": "GEO-01-026-G2",
+      "phase": 1,
+      "playing": false,
+      "emphasizedEdges": 4,
+      "playback": "GEO-01-026-G2",
+      "currentShown": false,
+      "contextShown": false,
+      "visibleRecords": [
+        {
+          "id": "IN-DL-110054-1-26",
+          "geometryId": "GEO-01-026-G1",
+          "category": "EVENT PREVIOUS GEOMETRY",
+          "style": "before"
+        },
+        {
+          "id": "IN-DL-110054-1-26",
+          "geometryId": "GEO-01-026-G2",
+          "category": "CURRENT / AUTHORITATIVE",
+          "style": "after"
+        }
+      ],
+      "snapshot": null
+    },
+    "accepted": {
+      "mode": "combined",
+      "point": "current",
+      "selected": "IN-DL-110054-1-26",
+      "eventId": "GEO-01-026-G2",
+      "phase": 2,
+      "playing": false,
+      "emphasizedEdges": 0,
+      "playback": "GEO-01-026-G2",
+      "currentShown": false,
+      "contextShown": false,
+      "visibleRecords": [
+        {
+          "id": "IN-DL-110054-1-26",
+          "geometryId": "GEO-01-026-G2",
+          "category": "CURRENT / AUTHORITATIVE",
+          "style": "after"
+        }
+      ],
+      "snapshot": null
+    }
+  },
+  "proposals": [
+    [
+      {
+        "id": "IN-DL-110054-1-23",
+        "geometryId": "GEO-01-023-G1",
+        "category": "EVENT PREVIOUS GEOMETRY",
+        "style": "before"
+      },
+      {
+        "id": "IN-DL-110054-1-23",
+        "geometryId": "GEO-01-023-G2",
+        "category": "UNDER REVIEW",
+        "style": "review"
+      }
+    ],
+    [
+      {
+        "id": "IN-DL-110054-5-88",
+        "geometryId": "GEO-05-088-G1",
+        "category": "EVENT PREVIOUS GEOMETRY",
+        "style": "before"
+      },
+      {
+        "id": "IN-DL-110054-5-88",
+        "geometryId": "GEO-05-088-G2",
+        "category": "REJECTED",
+        "style": "rejected"
+      }
+    ]
+  ],
+  "rollback": {
+    "state": {
+      "mode": "combined",
+      "point": "current",
+      "selected": "IN-DL-110054-1-74",
+      "eventId": "EVT-000529",
+      "phase": 0,
+      "playing": false,
+      "emphasizedEdges": 0,
+      "playback": "EVT-000529",
+      "currentShown": true,
+      "contextShown": false,
+      "visibleRecords": [],
+      "snapshot": null
+    },
+    "url": "./parcel-history.html?parcelId=IN-DL-110054-1-74&eventId=EVT-000529&versionId=V1",
+    "id": "EVT-000529"
+  },
+  "reconstruction": {
+    "active": 973,
+    "superseded": 55,
+    "notYet": 32,
+    "unknown": 0,
+    "missingGeometry": 0
+  },
+  "independence": {
+    "checked": 318,
+    "intact": true
+  },
+  "errors": []
+}

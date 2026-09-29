@@ -1,0 +1,101 @@
+PRAMAN LAYER 4 — VISUAL CLEANUP VALIDATION
+==========================================
+
+RESULT: PASS
+
+Presentation/accessibility checks
+---------------------------------
+PASS  Selected timeline event has persistent visual + aria-pressed state
+PASS  Event types remain labelled by text/icon, not colour alone
+PASS  Geometry vs Merge use different marker shapes/icons
+PASS  Mutation vs Split use different marker shapes/icons
+PASS  Current authoritative panel uses solid explicit authority treatment
+PASS  Historical panel remains explicitly historical and readable
+PASS  Proposed panel remains dashed and explicitly non-authoritative
+PASS  Technical Provenance remains visually subordinate/collapsed
+PASS  Tablet/mobile order is identity -> state -> timeline -> event inspector
+PASS  Parcel Lineage Fit Graph has 0.84 readable scale floor
+PASS  Parcel Lineage retains pan/scroll instead of over-shrinking labels
+PASS  Directory, History, and Lineage use restrained skeleton states
+PASS  Skeletons contain no fake parcel values
+PASS  Event Inspector receives/restores keyboard focus and supports Escape
+PASS  Geometry dialog receives/restores keyboard focus and supports Escape
+PASS  Shared focus-visible treatment present
+PASS  prefers-reduced-motion handling present
+PASS  JSX syntax parsed with installed TypeScript parser
+
+Event accent contrast against #07090c
+------------------------------------
+Survey      #6aa9ff   8.29:1
+Geometry    #c08cff   8.01:1
+Approval    #67d39e  10.81:1
+Mutation    #f09b52   9.03:1
+Split       #e5c95f  12.20:1
+Merge       #777ee8   5.63:1
+Conflict    #ef7777   7.19:1
+Metadata    #8b95a3   6.57:1
+
+All checked event accent ratios exceed 4.5:1 against the Layer 4 background.
+
+Semantic/data regression suites
+-------------------------------
+PASS  History/lineage adapter
+      canonical parcels: 1,000
+      historical parcels: 60
+      source observations: 4,366
+      conflicts: 715
+      geometry versions: 1,143
+      explicit lineage rows: 74
+      GeoGit events: 5,602
+
+PASS  Parcel directory
+      unique identities: 1,060
+      current canonical: 1,000
+      historical retired: 60
+
+PASS  Parcel History semantics
+      genuine geometry changes: 83
+      mutations without inferred geometry change: 16
+      split events: 56
+      merge events: 92
+      accepted approvals: 731
+      rejected decisions: 26
+
+PASS  State separation
+      authoritative states: 1,000
+      historical states: 121
+      pending proposals: 243
+      rejected proposals: 26
+
+PASS  Event Inspector
+      survey events: 229
+      structured conflict events: 536
+      events with historical-state inspection: 195
+
+PASS  Spatial History
+      lazy geometry resources: 1,143
+      lineage parcel geometry refs resolved: 296 / 296
+
+PASS  Parcel Lineage
+      parcel identities: 1,060
+      explicit lineage edges: 74
+      true cross-cell edges: 4
+
+PASS  PRAMAN cross-dashboard integration
+      Layer 4 return-state/routing contract preserved
+
+Semantic-file checksum verification
+-----------------------------------
+PASS  layer4.historyLineage.adapter.cjs unchanged
+PASS  src/historyStateSemantics.js unchanged
+PASS  src/lineageGraph.js unchanged
+PASS  src/layer4DeepLinks.js unchanged
+PASS  src/layer4NavigationState.js unchanged
+PASS  src/api.js unchanged
+PASS  scripts/build-layer4-index.cjs unchanged
+
+Production build
+----------------
+NOT EXECUTED: npm dependency installation timed out in the execution container.
+The installed TypeScript parser successfully parsed the modified JSX files.
+No node_modules directory, package-lock.json, or stale dist output is included.

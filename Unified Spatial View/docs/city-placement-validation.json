@@ -1,0 +1,13 @@
+{
+  "active": 1000,
+  "storedHistorical": 60,
+  "buildingRecords": 961,
+  "placements": 1925,
+  "buildingModels": 361,
+  "markers": 600,
+  "cells": 10,
+  "setbackViolations": 0,
+  "overlapOrClearanceViolations": 0,
+  "missingBuildingIdentities": 0,
+  "cadastreSHA256": "f9f9b76fb2e9f98e72ffd999c4dfaf57b41e63c0422464bddc7b883a65a35c0e"
+}

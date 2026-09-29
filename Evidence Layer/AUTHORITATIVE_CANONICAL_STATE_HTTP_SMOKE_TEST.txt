@@ -1,0 +1,14 @@
+Stage 8 HTTP smoke test: PASS
+activeCanonicalParcels=1000
+historicalRetiredParcels=60
+sourceObservations=4366
+acceptedMatches=753
+ambiguousCases=281
+unmatchedObservationCases=0
+conflicts=715
+reconciledCases=56
+unresolvedCases=286
+humanReviewCases=264
+traceCoverage=1000/1000
+registryVsActiveReconciliationDiscrepancy=NO
+errorDiagnostics=0

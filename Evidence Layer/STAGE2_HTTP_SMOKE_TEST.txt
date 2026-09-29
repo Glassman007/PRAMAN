@@ -1,0 +1,2 @@
+HTTP loader smoke test: PASS
+{"sources":7,"observations":4366,"activeAdapters":6,"routeEdges":17,"errors":0}

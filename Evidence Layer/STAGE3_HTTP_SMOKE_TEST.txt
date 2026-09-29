@@ -1,0 +1,2 @@
+HTTP loader Stage-3 smoke test: PASS
+{"normalizedObservations":4366,"sourceCoverage":4366,"sourceDatasets":7,"crsChanged":3314,"geometryChanged":3314,"stage3Nodes":1,"stage3Edges":6,"sampleObservation":"OBS-000001","sampleBeforeCrs":"EPSG:32643","sampleNormalizedCrs":"EPSG:4326","errors":0}

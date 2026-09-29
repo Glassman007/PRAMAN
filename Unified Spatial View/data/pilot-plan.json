@@ -1,0 +1,5540 @@
+{
+  "parkingMarkings": [
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.6244553632323,
+          -441.93516564566517
+        ],
+        [
+          1579.6235742134795,
+          -442.02888160698234
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.577600159774,
+          -444.43472652508314
+        ],
+        [
+          1579.5767162065433,
+          -444.5284424338449
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.5307449563156,
+          -446.9342874045011
+        ],
+        [
+          1579.529858199607,
+          -447.02800326070746
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.4838897528573,
+          -449.4338482839191
+        ],
+        [
+          1579.4830001926707,
+          -449.52756408757006
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.437034549399,
+          -451.93340916333705
+        ],
+        [
+          1579.4361421857345,
+          -452.02712491443265
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.3901793459406,
+          -454.432970042755
+        ],
+        [
+          1579.389284178798,
+          -454.52668574129524
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.3433241424823,
+          -456.932530922173
+        ],
+        [
+          1579.342426171862,
+          -457.02624656815783
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.296468939024,
+          -459.43209180159096
+        ],
+        [
+          1579.2955681649257,
+          -459.5258073950204
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "points": [
+        [
+          1574.2496137355656,
+          -461.9316526810089
+        ],
+        [
+          1579.2487101579895,
+          -462.02536822188296
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1835.1932639065792,
+          -473.2484162535437
+        ],
+        [
+          1835.0994449072668,
+          -478.24753597559123
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1832.6937040455553,
+          -473.2015067538875
+        ],
+        [
+          1832.599885046243,
+          -478.200626475935
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1830.1941441845313,
+          -473.1545972542312
+        ],
+        [
+          1830.100325185219,
+          -478.1537169762788
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1827.6945843235073,
+          -473.10768775457495
+        ],
+        [
+          1827.600765324195,
+          -478.1068074766226
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1825.1950244624834,
+          -473.0607782549187
+        ],
+        [
+          1825.101205463171,
+          -478.0598979769664
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1822.6954646014594,
+          -473.0138687552625
+        ],
+        [
+          1822.601645602147,
+          -478.01298847731016
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1820.1959047404357,
+          -472.9669592556062
+        ],
+        [
+          1820.1020857411231,
+          -477.9660789776539
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1817.6963448794118,
+          -472.92004975594995
+        ],
+        [
+          1817.6025258800992,
+          -477.91916947799774
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1815.1967850183878,
+          -472.8731402562937
+        ],
+        [
+          1815.1029660190752,
+          -477.8722599783415
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "points": [
+        [
+          1812.6972251573638,
+          -472.8262307566375
+        ],
+        [
+          1812.6034061580513,
+          -477.8253504786853
+        ]
+      ],
+      "role": "Illustrative parking bay paint, not surveyed geometry"
+    }
+  ],
+  "seedAlgorithm": "SHA256 stable identity; deterministic candidate ranking",
+  "selectionMethod": "Breadth-first shared-edge adjacency from actual CELL-10 road until declared semantic coverage is reached",
+  "parcelIds": [
+    "IN-DL-110054-10-96",
+    "IN-DL-110054-10-86",
+    "IN-DL-110054-10-95",
+    "IN-DL-110054-10-97",
+    "IN-DL-110054-10-85",
+    "IN-DL-110054-10-76",
+    "IN-DL-110054-10-94",
+    "IN-DL-110054-10-98",
+    "IN-DL-110054-10-75",
+    "IN-DL-110054-10-84",
+    "IN-DL-110054-10-77",
+    "IN-DL-110054-10-66",
+    "IN-DL-110054-10-93",
+    "IN-DL-110054-10-88",
+    "IN-DL-110054-10-99",
+    "IN-DL-110054-10-74",
+    "IN-DL-110054-10-65",
+    "IN-DL-110054-10-83",
+    "IN-DL-110054-10-78",
+    "IN-DL-110054-10-67",
+    "IN-DL-110054-10-56",
+    "IN-DL-110054-10-92",
+    "IN-DL-110054-10-89",
+    "IN-DL-110054-10-100",
+    "IN-DL-110054-10-64",
+    "IN-DL-110054-10-73",
+    "IN-DL-110054-10-55",
+    "IN-DL-110054-10-82",
+    "IN-DL-110054-10-68",
+    "IN-DL-110054-10-79",
+    "IN-DL-110054-10-57",
+    "IN-DL-110054-10-46",
+    "IN-DL-110054-10-90",
+    "IN-DL-110054-10-63",
+    "IN-DL-110054-10-72",
+    "IN-DL-110054-10-45",
+    "IN-DL-110054-10-81",
+    "IN-DL-110054-10-69",
+    "IN-DL-110054-10-58",
+    "IN-DL-110054-10-80",
+    "IN-DL-110054-10-47",
+    "IN-DL-110054-10-36"
+  ],
+  "propertyTypes": {
+    "IN-DL-110054-10-96": "ROAD_ACCESS_CORRIDOR",
+    "IN-DL-110054-10-86": "COLLEGE_TRAINING_CENTRE",
+    "IN-DL-110054-10-95": "WATER_INFRASTRUCTURE",
+    "IN-DL-110054-10-97": "LOCAL_SHOPPING_COMPLEX",
+    "IN-DL-110054-10-85": "GOVERNMENT_LAND",
+    "IN-DL-110054-10-76": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-94": "ELECTRICAL_SUBSTATION",
+    "IN-DL-110054-10-98": "OFFICE_COMMERCIAL_PLOT",
+    "IN-DL-110054-10-75": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-84": "MIXED_USE_BUILDING",
+    "IN-DL-110054-10-77": "BUILDER_FLOOR",
+    "IN-DL-110054-10-66": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-93": "UTILITY_PARCEL",
+    "IN-DL-110054-10-88": "GREEN_BELT",
+    "IN-DL-110054-10-99": "PUBLIC_PARK",
+    "IN-DL-110054-10-74": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-65": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-83": "MIXED_USE_BUILDING",
+    "IN-DL-110054-10-78": "BUILDER_FLOOR",
+    "IN-DL-110054-10-67": "BUILDER_FLOOR",
+    "IN-DL-110054-10-56": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-92": "PARKING_AREA",
+    "IN-DL-110054-10-89": "WATER_INFRASTRUCTURE",
+    "IN-DL-110054-10-100": "VACANT_PLOT",
+    "IN-DL-110054-10-64": "UTILITY_PARCEL",
+    "IN-DL-110054-10-73": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-55": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-82": "OFFICE_COMMERCIAL_PLOT",
+    "IN-DL-110054-10-68": "BUILDER_FLOOR",
+    "IN-DL-110054-10-79": "BUILDER_FLOOR",
+    "IN-DL-110054-10-57": "BUILDER_FLOOR",
+    "IN-DL-110054-10-46": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-90": "PARKING_AREA",
+    "IN-DL-110054-10-63": "PUBLIC_PARK",
+    "IN-DL-110054-10-72": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-45": "APARTMENT_BLOCK",
+    "IN-DL-110054-10-81": "RETAIL_SHOP",
+    "IN-DL-110054-10-69": "BUILDER_FLOOR",
+    "IN-DL-110054-10-58": "BUILDER_FLOOR",
+    "IN-DL-110054-10-80": "BUILDER_FLOOR",
+    "IN-DL-110054-10-47": "BUILDER_FLOOR",
+    "IN-DL-110054-10-36": "UNDER_CONSTRUCTION_PLOT"
+  },
+  "adjacency": {
+    "IN-DL-110054-10-96": [
+      "IN-DL-110054-10-86",
+      "IN-DL-110054-10-95",
+      "IN-DL-110054-10-97"
+    ],
+    "IN-DL-110054-10-86": [
+      "IN-DL-110054-10-76",
+      "IN-DL-110054-10-85",
+      "IN-DL-110054-10-96"
+    ],
+    "IN-DL-110054-10-95": [
+      "IN-DL-110054-10-85",
+      "IN-DL-110054-10-94",
+      "IN-DL-110054-10-96"
+    ],
+    "IN-DL-110054-10-97": [
+      "IN-DL-110054-10-96",
+      "IN-DL-110054-10-98"
+    ],
+    "IN-DL-110054-10-85": [
+      "IN-DL-110054-10-75",
+      "IN-DL-110054-10-84",
+      "IN-DL-110054-10-86",
+      "IN-DL-110054-10-95"
+    ],
+    "IN-DL-110054-10-76": [
+      "IN-DL-110054-10-66",
+      "IN-DL-110054-10-75",
+      "IN-DL-110054-10-77",
+      "IN-DL-110054-10-86"
+    ],
+    "IN-DL-110054-10-94": [
+      "IN-DL-110054-10-84",
+      "IN-DL-110054-10-93",
+      "IN-DL-110054-10-95"
+    ],
+    "IN-DL-110054-10-98": [
+      "IN-DL-110054-10-88",
+      "IN-DL-110054-10-97",
+      "IN-DL-110054-10-99"
+    ],
+    "IN-DL-110054-10-75": [
+      "IN-DL-110054-10-65",
+      "IN-DL-110054-10-74",
+      "IN-DL-110054-10-76",
+      "IN-DL-110054-10-85"
+    ],
+    "IN-DL-110054-10-84": [
+      "IN-DL-110054-10-74",
+      "IN-DL-110054-10-83",
+      "IN-DL-110054-10-85",
+      "IN-DL-110054-10-94"
+    ],
+    "IN-DL-110054-10-77": [
+      "IN-DL-110054-10-67",
+      "IN-DL-110054-10-76",
+      "IN-DL-110054-10-78"
+    ],
+    "IN-DL-110054-10-66": [
+      "IN-DL-110054-10-56",
+      "IN-DL-110054-10-65",
+      "IN-DL-110054-10-67",
+      "IN-DL-110054-10-76"
+    ],
+    "IN-DL-110054-10-93": [
+      "IN-DL-110054-10-83",
+      "IN-DL-110054-10-92",
+      "IN-DL-110054-10-94"
+    ],
+    "IN-DL-110054-10-88": [
+      "IN-DL-110054-10-78",
+      "IN-DL-110054-10-89",
+      "IN-DL-110054-10-98"
+    ],
+    "IN-DL-110054-10-99": [
+      "IN-DL-110054-10-89",
+      "IN-DL-110054-10-98",
+      "IN-DL-110054-10-100"
+    ],
+    "IN-DL-110054-10-74": [
+      "IN-DL-110054-10-64",
+      "IN-DL-110054-10-73",
+      "IN-DL-110054-10-75",
+      "IN-DL-110054-10-84"
+    ],
+    "IN-DL-110054-10-65": [
+      "IN-DL-110054-10-55",
+      "IN-DL-110054-10-64",
+      "IN-DL-110054-10-66",
+      "IN-DL-110054-10-75"
+    ],
+    "IN-DL-110054-10-83": [
+      "IN-DL-110054-10-73",
+      "IN-DL-110054-10-82",
+      "IN-DL-110054-10-84",
+      "IN-DL-110054-10-93"
+    ],
+    "IN-DL-110054-10-78": [
+      "IN-DL-110054-10-68",
+      "IN-DL-110054-10-77",
+      "IN-DL-110054-10-79",
+      "IN-DL-110054-10-88"
+    ],
+    "IN-DL-110054-10-67": [
+      "IN-DL-110054-10-57",
+      "IN-DL-110054-10-66",
+      "IN-DL-110054-10-68",
+      "IN-DL-110054-10-77"
+    ],
+    "IN-DL-110054-10-56": [
+      "IN-DL-110054-10-46",
+      "IN-DL-110054-10-55",
+      "IN-DL-110054-10-57",
+      "IN-DL-110054-10-66"
+    ],
+    "IN-DL-110054-10-92": [
+      "IN-DL-110054-10-82",
+      "IN-DL-110054-10-93"
+    ],
+    "IN-DL-110054-10-89": [
+      "IN-DL-110054-10-79",
+      "IN-DL-110054-10-88",
+      "IN-DL-110054-10-90",
+      "IN-DL-110054-10-99"
+    ],
+    "IN-DL-110054-10-100": [
+      "IN-DL-110054-10-90",
+      "IN-DL-110054-10-99"
+    ],
+    "IN-DL-110054-10-64": [
+      "IN-DL-110054-10-63",
+      "IN-DL-110054-10-65",
+      "IN-DL-110054-10-74"
+    ],
+    "IN-DL-110054-10-73": [
+      "IN-DL-110054-10-63",
+      "IN-DL-110054-10-72",
+      "IN-DL-110054-10-74",
+      "IN-DL-110054-10-83"
+    ],
+    "IN-DL-110054-10-55": [
+      "IN-DL-110054-10-45",
+      "IN-DL-110054-10-56",
+      "IN-DL-110054-10-65"
+    ],
+    "IN-DL-110054-10-82": [
+      "IN-DL-110054-10-72",
+      "IN-DL-110054-10-81",
+      "IN-DL-110054-10-83",
+      "IN-DL-110054-10-92"
+    ],
+    "IN-DL-110054-10-68": [
+      "IN-DL-110054-10-58",
+      "IN-DL-110054-10-67",
+      "IN-DL-110054-10-69",
+      "IN-DL-110054-10-78"
+    ],
+    "IN-DL-110054-10-79": [
+      "IN-DL-110054-10-69",
+      "IN-DL-110054-10-78",
+      "IN-DL-110054-10-80",
+      "IN-DL-110054-10-89"
+    ],
+    "IN-DL-110054-10-57": [
+      "IN-DL-110054-10-47",
+      "IN-DL-110054-10-56",
+      "IN-DL-110054-10-58",
+      "IN-DL-110054-10-67"
+    ],
+    "IN-DL-110054-10-46": [
+      "IN-DL-110054-10-36",
+      "IN-DL-110054-10-45",
+      "IN-DL-110054-10-47",
+      "IN-DL-110054-10-56"
+    ],
+    "IN-DL-110054-10-90": [
+      "IN-DL-110054-10-80",
+      "IN-DL-110054-10-89",
+      "IN-DL-110054-10-100"
+    ],
+    "IN-DL-110054-10-63": [
+      "IN-DL-110054-10-64",
+      "IN-DL-110054-10-73"
+    ],
+    "IN-DL-110054-10-72": [
+      "IN-DL-110054-10-73",
+      "IN-DL-110054-10-82"
+    ],
+    "IN-DL-110054-10-45": [
+      "IN-DL-110054-10-46",
+      "IN-DL-110054-10-55"
+    ],
+    "IN-DL-110054-10-81": [
+      "IN-DL-110054-10-82"
+    ],
+    "IN-DL-110054-10-69": [
+      "IN-DL-110054-10-68",
+      "IN-DL-110054-10-79"
+    ],
+    "IN-DL-110054-10-58": [
+      "IN-DL-110054-10-57",
+      "IN-DL-110054-10-68"
+    ],
+    "IN-DL-110054-10-80": [
+      "IN-DL-110054-10-79",
+      "IN-DL-110054-10-90"
+    ],
+    "IN-DL-110054-10-47": [
+      "IN-DL-110054-10-46",
+      "IN-DL-110054-10-57"
+    ],
+    "IN-DL-110054-10-36": [
+      "IN-DL-110054-10-46"
+    ]
+  },
+  "roadParcelIds": [
+    "IN-DL-110054-10-96"
+  ],
+  "placements": [
+    {
+      "id": "IN-DL-110054-10-96:light:0",
+      "parcelId": "IN-DL-110054-10-96",
+      "assetId": "props-lantern-3",
+      "kind": "prop",
+      "position": [
+        1688.066396061913,
+        0,
+        -450.18455809913576
+      ],
+      "rotationY": 0.018754665738493485,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1688.273783538568,
+              -450.39987416913095
+            ],
+            [
+              1688.2817121319083,
+              -449.97717062248074
+            ],
+            [
+              1687.8590085852582,
+              -449.96924202914056
+            ],
+            [
+              1687.851079991918,
+              -450.39194557579077
+            ],
+            [
+              1688.273783538568,
+              -450.39987416913095
+            ]
+          ]
+        ]
+      },
+      "setback": 0.8,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 3.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-96:light:1",
+      "parcelId": "IN-DL-110054-10-96",
+      "assetId": "props-lantern-3",
+      "kind": "prop",
+      "position": [
+        1708.066396061913,
+        0,
+        -442.18455809913576
+      ],
+      "rotationY": 0.018754665738493485,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1708.273783538568,
+              -442.39987416913095
+            ],
+            [
+              1708.2817121319083,
+              -441.97717062248074
+            ],
+            [
+              1707.8590085852582,
+              -441.96924202914056
+            ],
+            [
+              1707.851079991918,
+              -442.39194557579077
+            ],
+            [
+              1708.273783538568,
+              -442.39987416913095
+            ]
+          ]
+        ]
+      },
+      "setback": 0.8,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 3.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-96:light:2",
+      "parcelId": "IN-DL-110054-10-96",
+      "assetId": "props-lantern-3",
+      "kind": "prop",
+      "position": [
+        1724.066396061913,
+        0,
+        -458.18455809913576
+      ],
+      "rotationY": 0.018754665738493485,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1724.273783538568,
+              -458.39987416913095
+            ],
+            [
+              1724.2817121319083,
+              -457.97717062248074
+            ],
+            [
+              1723.8590085852582,
+              -457.96924202914056
+            ],
+            [
+              1723.851079991918,
+              -458.39194557579077
+            ],
+            [
+              1724.273783538568,
+              -458.39987416913095
+            ]
+          ]
+        ]
+      },
+      "setback": 0.8,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 3.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-96:light:3",
+      "parcelId": "IN-DL-110054-10-96",
+      "assetId": "props-lantern-3",
+      "kind": "prop",
+      "position": [
+        1702.066396061913,
+        0,
+        -466.18455809913576
+      ],
+      "rotationY": 0.018754665738493485,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1702.273783538568,
+              -466.39987416913095
+            ],
+            [
+              1702.2817121319083,
+              -465.97717062248074
+            ],
+            [
+              1701.8590085852582,
+              -465.96924202914056
+            ],
+            [
+              1701.851079991918,
+              -466.39194557579077
+            ],
+            [
+              1702.273783538568,
+              -466.39987416913095
+            ]
+          ]
+        ]
+      },
+      "setback": 0.8,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 3.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00953",
+      "parcelId": "IN-DL-110054-10-86",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1719.5772828522604,
+        0,
+        -474.26335028512403
+      ],
+      "rotationY": -1.5520398682009926,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1721.6144417755247,
+              -472.30121279723875
+            ],
+            [
+              1717.6151453643752,
+              -472.2261913618598
+            ],
+            [
+              1717.540123928996,
+              -476.2254877730093
+            ],
+            [
+              1721.5394203401456,
+              -476.3005092083883
+            ],
+            [
+              1721.6144417755247,
+              -472.30121279723875
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": "BLD-00953",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00954",
+      "parcelId": "IN-DL-110054-10-86",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1713.5772828522604,
+        0,
+        -474.26335028512403
+      ],
+      "rotationY": -1.5520398682009926,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1715.6144417755247,
+              -472.30121279723875
+            ],
+            [
+              1711.6151453643752,
+              -472.2261913618598
+            ],
+            [
+              1711.540123928996,
+              -476.2254877730093
+            ],
+            [
+              1715.5394203401456,
+              -476.3005092083883
+            ],
+            [
+              1715.6144417755247,
+              -472.30121279723875
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": "BLD-00954",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-86:tree:0",
+      "parcelId": "IN-DL-110054-10-86",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1707.5772828522604,
+        0,
+        -472.26335028512403
+      ],
+      "rotationY": -1.5520398682009926,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1710.2537009486964,
+              -470.58231150760344
+            ],
+            [
+              1704.9657935676037,
+              -470.48311745917664
+            ],
+            [
+              1704.9008647558244,
+              -473.94438906264463
+            ],
+            [
+              1710.1887721369171,
+              -474.0435831110714
+            ],
+            [
+              1710.2537009486964,
+              -470.58231150760344
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-86:tree:1",
+      "parcelId": "IN-DL-110054-10-86",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1701.5772828522604,
+        0,
+        -472.26335028512403
+      ],
+      "rotationY": -1.5520398682009926,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1704.2537009486964,
+              -470.58231150760344
+            ],
+            [
+              1698.9657935676037,
+              -470.48311745917664
+            ],
+            [
+              1698.9008647558244,
+              -473.94438906264463
+            ],
+            [
+              1704.1887721369171,
+              -474.0435831110714
+            ],
+            [
+              1704.2537009486964,
+              -470.58231150760344
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00959",
+      "parcelId": "IN-DL-110054-10-95",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1680.439004990505,
+        0,
+        -463.43144110171124
+      ],
+      "rotationY": 0.01875184388028339,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1682.4011518792745,
+              -465.4685909702512
+            ],
+            [
+              1682.476154859045,
+              -461.4692942129418
+            ],
+            [
+              1678.4768581017356,
+              -461.39429123317126
+            ],
+            [
+              1678.4018551219651,
+              -465.3935879904807
+            ],
+            [
+              1682.4011518792745,
+              -465.4685909702512
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": "BLD-00959",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00960",
+      "parcelId": "IN-DL-110054-10-97",
+      "assetId": "commercial-com-1",
+      "kind": "building",
+      "position": [
+        1738.21793520567,
+        0,
+        -448.7639731001109
+      ],
+      "rotationY": 0.018757713178173933,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1747.5399173081232,
+              -454.4067676057767
+            ],
+            [
+              1747.7450003541378,
+              -443.47478508979367
+            ],
+            [
+              1728.895953103217,
+              -443.1211785944451
+            ],
+            [
+              1728.6908700572023,
+              -454.0531611104281
+            ],
+            [
+              1747.5399173081232,
+              -454.4067676057767
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": "BLD-00960",
+      "height": 18.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00952",
+      "parcelId": "IN-DL-110054-10-85",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1679.9499491900206,
+        0,
+        -473.51022932026535
+      ],
+      "rotationY": -1.552043313126132,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1681.987101353856,
+              -471.5480848145317
+            ],
+            [
+              1677.9878046842869,
+              -471.47307715642995
+            ],
+            [
+              1677.9127970261852,
+              -475.472373825999
+            ],
+            [
+              1681.9120936957543,
+              -475.54738148410075
+            ],
+            [
+              1681.987101353856,
+              -471.5480848145317
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "edge adjoining actual road parcel IN-DL-110054-10-96",
+      "illustrative": true,
+      "buildingId": "BLD-00952",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00943",
+      "parcelId": "IN-DL-110054-10-76",
+      "assetId": "apartments-app-4",
+      "kind": "building",
+      "position": [
+        1719.1297399962787,
+        0,
+        -502.1255012238398
+      ],
+      "rotationY": -3.122837847070807,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1715.9917789190201,
+              -497.4200501027119
+            ],
+            [
+              1715.8175279051175,
+              -506.70996640953814
+            ],
+            [
+              1722.2677010735372,
+              -506.8309523449677
+            ],
+            [
+              1722.4419520874399,
+              -497.5410360381415
+            ],
+            [
+              1715.9917789190201,
+              -497.4200501027119
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00943",
+      "height": 12.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-76:tree:0",
+      "parcelId": "IN-DL-110054-10-76",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1701.1297399962787,
+        0,
+        -498.1255012238398
+      ],
+      "rotationY": -3.122837847070807,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1699.6042447803875,
+              -496.31814855397505
+            ],
+            [
+              1699.5375406151527,
+              -499.8743752781147
+            ],
+            [
+              1702.6552352121698,
+              -499.9328538937046
+            ],
+            [
+              1702.7219393774046,
+              -496.3766271695649
+            ],
+            [
+              1699.6042447803875,
+              -496.31814855397505
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-76:tree:1",
+      "parcelId": "IN-DL-110054-10-76",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1713.1297399962787,
+        0,
+        -498.1255012238398
+      ],
+      "rotationY": -3.122837847070807,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1712.0486697847361,
+              -496.7495547488996
+            ],
+            [
+              1711.9978310947229,
+              -499.4599388367552
+            ],
+            [
+              1714.2108102078212,
+              -499.50144769878005
+            ],
+            [
+              1714.2616488978344,
+              -496.7910636109244
+            ],
+            [
+              1712.0486697847361,
+              -496.7495547488996
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00958",
+      "parcelId": "IN-DL-110054-10-94",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1654.3583463097457,
+        0,
+        -462.9508239305578
+      ],
+      "rotationY": -1.5520469429351407,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1656.3954913513578,
+              -460.98867203036383
+            ],
+            [
+              1652.3961944095518,
+              -460.91367888894564
+            ],
+            [
+              1652.3212012681336,
+              -464.9129758307518
+            ],
+            [
+              1656.3204982099396,
+              -464.98796897217
+            ],
+            [
+              1656.3954913513578,
+              -460.98867203036383
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00958",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00961",
+      "parcelId": "IN-DL-110054-10-98",
+      "assetId": "commercial-com-1",
+      "kind": "building",
+      "position": [
+        1765.1037387045799,
+        0,
+        -453.2653432074003
+      ],
+      "rotationY": -1.5520362984351577,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1770.7465547923116,
+              -443.94337416906586
+            ],
+            [
+              1759.8145727511624,
+              -443.7382658135276
+            ],
+            [
+              1759.4609226168482,
+              -462.5873122457347
+            ],
+            [
+              1770.3929046579974,
+              -462.79242060127297
+            ],
+            [
+              1770.7465547923116,
+              -443.94337416906586
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00961",
+      "height": 18.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00942",
+      "parcelId": "IN-DL-110054-10-75",
+      "assetId": "apartments-app-1",
+      "kind": "building",
+      "position": [
+        1677.5024588638917,
+        0,
+        -501.3723766300827
+      ],
+      "rotationY": -3.122840668935921,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1672.7477973945279,
+              -497.7525635440837
+            ],
+            [
+              1672.6154152954703,
+              -504.81136741607975
+            ],
+            [
+              1682.2571203332554,
+              -504.9921897160817
+            ],
+            [
+              1682.389502432313,
+              -497.9333858440857
+            ],
+            [
+              1672.7477973945279,
+              -497.7525635440837
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00942",
+      "height": 12.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-75:tree:0",
+      "parcelId": "IN-DL-110054-10-75",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1669.5024588638917,
+        0,
+        -497.3723766300827
+      ],
+      "rotationY": -3.122840668935921,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1668.4213847696183,
+              -495.9964332057823
+            ],
+            [
+              1668.3705537279432,
+              -498.706817437087
+            ],
+            [
+              1670.583532958165,
+              -498.74832005438316
+            ],
+            [
+              1670.6343639998402,
+              -496.03793582307844
+            ],
+            [
+              1668.4213847696183,
+              -495.9964332057823
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-75:tree:1",
+      "parcelId": "IN-DL-110054-10-75",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1665.5024588638917,
+        0,
+        -499.3723766300827
+      ],
+      "rotationY": -3.122840668935921,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1663.8214081122537,
+              -496.69596605454024
+            ],
+            [
+              1663.7222377216085,
+              -501.9838738793683
+            ],
+            [
+              1667.1835096155296,
+              -502.0487872056252
+            ],
+            [
+              1667.2826800061748,
+              -496.7608793807972
+            ],
+            [
+              1663.8214081122537,
+              -496.69596605454024
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00951",
+      "parcelId": "IN-DL-110054-10-84",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1653.8693534140475,
+        0,
+        -473.02960961684585
+      ],
+      "rotationY": -3.122843113663544,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1651.9072018317836,
+              -470.9924642690075
+            ],
+            [
+              1651.8322080662092,
+              -474.9917611991097
+            ],
+            [
+              1655.8315049963114,
+              -475.0667549646842
+            ],
+            [
+              1655.9064987618858,
+              -471.067458034582
+            ],
+            [
+              1651.9072018317836,
+              -470.9924642690075
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00951",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00944",
+      "parcelId": "IN-DL-110054-10-77",
+      "assetId": "buildings-building-9",
+      "kind": "building",
+      "position": [
+        1735.2811068936717,
+        0,
+        -504.70492206932977
+      ],
+      "rotationY": -3.1228347996219563,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1727.1286858767903,
+              -498.88999552787004
+            ],
+            [
+              1726.9163222607597,
+              -510.20998493582493
+            ],
+            [
+              1743.433527910553,
+              -510.5198486107895
+            ],
+            [
+              1743.6458915265837,
+              -499.1998592028346
+            ],
+            [
+              1727.1286858767903,
+              -498.88999552787004
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00944",
+      "height": 18.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-77:tree:0",
+      "parcelId": "IN-DL-110054-10-77",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1747.2811068936717,
+        0,
+        -500.70492206932977
+      ],
+      "rotationY": -3.1228347996219563,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1745.7556171856024,
+              -498.8975647506048
+            ],
+            [
+              1745.6889021829488,
+              -502.45379127145037
+            ],
+            [
+              1748.806596601741,
+              -502.51227938805476
+            ],
+            [
+              1748.8733116043945,
+              -498.95605286720917
+            ],
+            [
+              1745.7556171856024,
+              -498.8975647506048
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-77:tree:1",
+      "parcelId": "IN-DL-110054-10-77",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1751.2811068936717,
+        0,
+        -498.70492206932977
+      ],
+      "rotationY": -3.1228347996219563,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1750.2000408752608,
+              -497.32897229988976
+            ],
+            [
+              1750.1491939254906,
+              -500.0393562328045
+            ],
+            [
+              1752.3621729120825,
+              -500.0808718387698
+            ],
+            [
+              1752.4130198618527,
+              -497.37048790585504
+            ],
+            [
+              1750.2000408752608,
+              -497.32897229988976
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00933",
+      "parcelId": "IN-DL-110054-10-66",
+      "assetId": "apartments-app-1",
+      "kind": "building",
+      "position": [
+        1703.625960889555,
+        0,
+        -531.4352794683073
+      ],
+      "rotationY": -3.122837718324264,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1698.8713101008746,
+              -527.8154523531645
+            ],
+            [
+              1698.7389071740286,
+              -534.8742558345216
+            ],
+            [
+              1708.3806116782355,
+              -535.0551065834501
+            ],
+            [
+              1708.5130146050815,
+              -527.996303102093
+            ],
+            [
+              1698.8713101008746,
+              -527.8154523531645
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "contained source-observed footprint OBS-004112",
+      "illustrative": true,
+      "buildingId": "BLD-00933",
+      "height": 12.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-66:tree:0",
+      "parcelId": "IN-DL-110054-10-66",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1720.6510133112315,
+        0,
+        -523.650134362746
+      ],
+      "rotationY": 0.018754935301581527,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1722.3320561657174,
+              -526.3265498984654
+            ],
+            [
+              1722.4312421591153,
+              -521.0386423662773
+            ],
+            [
+              1718.9699704567456,
+              -520.9737188270267
+            ],
+            [
+              1718.8707844633477,
+              -526.2616263592148
+            ],
+            [
+              1722.3320561657174,
+              -526.3265498984654
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-66:tree:1",
+      "parcelId": "IN-DL-110054-10-66",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1714.6510133112315,
+        0,
+        -523.650134362746
+      ],
+      "rotationY": 0.018754935301581527,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1716.3320561657174,
+              -526.3265498984654
+            ],
+            [
+              1716.4312421591153,
+              -521.0386423662773
+            ],
+            [
+              1712.9699704567456,
+              -520.9737188270267
+            ],
+            [
+              1712.8707844633477,
+              -526.2616263592148
+            ],
+            [
+              1716.3320561657174,
+              -526.3265498984654
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00957",
+      "parcelId": "IN-DL-110054-10-93",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1627.1304679932073,
+        0,
+        -462.424262794666
+      ],
+      "rotationY": 0.018746839607255112,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1629.0926250764062,
+              -464.4614028440617
+            ],
+            [
+              1629.167608042603,
+              -460.462105711467
+            ],
+            [
+              1625.1683109100084,
+              -460.3871227452703
+            ],
+            [
+              1625.0933279438116,
+              -464.38641987786497
+            ],
+            [
+              1629.0926250764062,
+              -464.4614028440617
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00957",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00955",
+      "parcelId": "IN-DL-110054-10-88",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1760.6144663605373,
+        0,
+        -475.34414108656347
+      ],
+      "rotationY": 0.018760184465505064,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1762.5765962582163,
+              -477.3813073204859
+            ],
+            [
+              1762.65163259446,
+              -473.3820111888844
+            ],
+            [
+              1758.6523364628583,
+              -473.306974852641
+            ],
+            [
+              1758.5773001266148,
+              -477.30627098424253
+            ],
+            [
+              1762.5765962582163,
+              -477.3813073204859
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00955",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-88:tree:0",
+      "parcelId": "IN-DL-110054-10-88",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1759.8614157752477,
+        0,
+        -482.7175914622171
+      ],
+      "rotationY": 0.018760184465505064,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1761.3869012712707,
+              -484.5249523360874
+            ],
+            [
+              1761.4536245617016,
+              -480.9687259707306
+            ],
+            [
+              1758.3359302792246,
+              -480.91023058834685
+            ],
+            [
+              1758.2692069887937,
+              -484.46645695370364
+            ],
+            [
+              1761.3869012712707,
+              -484.5249523360874
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-88:tree:1",
+      "parcelId": "IN-DL-110054-10-88",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1768.6144663605373,
+        0,
+        -475.34414108656347
+      ],
+      "rotationY": 0.018760184465505064,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1770.4656199430851,
+              -478.17423201528226
+            ],
+            [
+              1770.5704782323246,
+              -472.5854816642311
+            ],
+            [
+              1766.7633127779895,
+              -472.5140501578447
+            ],
+            [
+              1766.65845448875,
+              -478.1028005088958
+            ],
+            [
+              1770.4656199430851,
+              -478.17423201528226
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-88:tree:2",
+      "parcelId": "IN-DL-110054-10-88",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1778.5788467169148,
+        0,
+        -483.39050067072407
+      ],
+      "rotationY": 0.018760184465505064,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1780.4300002994626,
+              -486.22059159944286
+            ],
+            [
+              1780.534858588702,
+              -480.6318412483917
+            ],
+            [
+              1776.727693134367,
+              -480.5604097420053
+            ],
+            [
+              1776.6228348451275,
+              -486.1491600930564
+            ],
+            [
+              1780.4300002994626,
+              -486.22059159944286
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-88:tree:3",
+      "parcelId": "IN-DL-110054-10-88",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1768.6144663605373,
+        0,
+        -491.34414108656347
+      ],
+      "rotationY": 0.018760184465505064,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1770.4656199430851,
+              -494.17423201528226
+            ],
+            [
+              1770.5704782323246,
+              -488.5854816642311
+            ],
+            [
+              1766.7633127779895,
+              -488.5140501578447
+            ],
+            [
+              1766.65845448875,
+              -494.1028005088958
+            ],
+            [
+              1770.4656199430851,
+              -494.17423201528226
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-88:bench:0",
+      "parcelId": "IN-DL-110054-10-88",
+      "assetId": "props-park_bench",
+      "kind": "prop",
+      "position": [
+        1758.6144663605373,
+        0,
+        -471.34414108656347
+      ],
+      "rotationY": 0.018760184465505064,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1759.7095420411276,
+              -471.61691648884
+            ],
+            [
+              1759.7190035523279,
+              -471.1126356692208
+            ],
+            [
+              1757.519390679947,
+              -471.07136568428695
+            ],
+            [
+              1757.5099291687468,
+              -471.5756465039061
+            ],
+            [
+              1759.7095420411276,
+              -471.61691648884
+            ]
+          ]
+        ]
+      },
+      "setback": 1.2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 0.6449601229767906,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-88:bench:1",
+      "parcelId": "IN-DL-110054-10-88",
+      "assetId": "props-park_bench",
+      "kind": "prop",
+      "position": [
+        1758.6144663605373,
+        0,
+        -479.34414108656347
+      ],
+      "rotationY": 0.018760184465505064,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1759.7095420411276,
+              -479.61691648884
+            ],
+            [
+              1759.7190035523279,
+              -479.1126356692208
+            ],
+            [
+              1757.519390679947,
+              -479.07136568428695
+            ],
+            [
+              1757.5099291687468,
+              -479.5756465039061
+            ],
+            [
+              1759.7095420411276,
+              -479.61691648884
+            ]
+          ]
+        ]
+      },
+      "setback": 1.2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 0.6449601229767906,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-99:tree:0",
+      "parcelId": "IN-DL-110054-10-99",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1787.0842335372338,
+        0,
+        -456.53101590144774
+      ],
+      "rotationY": 1.5895586306230884,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1785.2768694303104,
+              -458.05649756701416
+            ],
+            [
+              1788.8330956542484,
+              -458.1232283943785
+            ],
+            [
+              1788.8915976441572,
+              -455.0055342358813
+            ],
+            [
+              1785.3353714202192,
+              -454.938803408517
+            ],
+            [
+              1785.2768694303104,
+              -458.05649756701416
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-99:tree:1",
+      "parcelId": "IN-DL-110054-10-99",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1795.8053694403202,
+        0,
+        -445.5833218373506
+      ],
+      "rotationY": 1.5895586306230884,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1793.9980053333968,
+              -447.108803502917
+            ],
+            [
+              1797.5542315573348,
+              -447.1755343302813
+            ],
+            [
+              1797.6127335472436,
+              -444.05784017178416
+            ],
+            [
+              1794.0565073233056,
+              -443.99110934441984
+            ],
+            [
+              1793.9980053333968,
+              -447.108803502917
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-99:tree:2",
+      "parcelId": "IN-DL-110054-10-99",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1803.825826042099,
+        0,
+        -455.75925456313416
+      ],
+      "rotationY": 1.5895586306230884,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1800.9957311901208,
+              -457.6104021476886
+            ],
+            [
+              1806.5844813189265,
+              -457.71527228151683
+            ],
+            [
+              1806.655920894077,
+              -453.9081069785797
+            ],
+            [
+              1801.0671707652714,
+              -453.8032368447515
+            ],
+            [
+              1800.9957311901208,
+              -457.6104021476886
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-99:tree:3",
+      "parcelId": "IN-DL-110054-10-99",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1796.710239080732,
+        0,
+        -466.5251753616632
+      ],
+      "rotationY": 1.5895586306230884,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1795.3342845007128,
+              -467.606235257279
+            ],
+            [
+              1798.0446682073389,
+              -467.6570942678787
+            ],
+            [
+              1798.0861936607512,
+              -465.4441154660473
+            ],
+            [
+              1795.375809954125,
+              -465.39325645544767
+            ],
+            [
+              1795.3342845007128,
+              -467.606235257279
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-99:bench:0",
+      "parcelId": "IN-DL-110054-10-99",
+      "assetId": "props-park_bench",
+      "kind": "prop",
+      "position": [
+        1785.825826042099,
+        0,
+        -443.75925456313416
+      ],
+      "rotationY": 1.5895586306230884,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1785.5530483189605,
+              -444.854329665612
+            ],
+            [
+              1786.0573291185262,
+              -444.8637922455662
+            ],
+            [
+              1786.0986037652374,
+              -442.6641794606563
+            ],
+            [
+              1785.5943229656716,
+              -442.65471688070215
+            ],
+            [
+              1785.5530483189605,
+              -444.854329665612
+            ]
+          ]
+        ]
+      },
+      "setback": 1.2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 0.6449601229767906,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-99:bench:1",
+      "parcelId": "IN-DL-110054-10-99",
+      "assetId": "props-park_bench",
+      "kind": "prop",
+      "position": [
+        1785.825826042099,
+        0,
+        -447.75925456313416
+      ],
+      "rotationY": 1.5895586306230884,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1785.5530483189605,
+              -448.854329665612
+            ],
+            [
+              1786.0573291185262,
+              -448.8637922455662
+            ],
+            [
+              1786.0986037652374,
+              -446.6641794606563
+            ],
+            [
+              1785.5943229656716,
+              -446.65471688070215
+            ],
+            [
+              1785.5530483189605,
+              -448.854329665612
+            ]
+          ]
+        ]
+      },
+      "setback": 1.2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 0.6449601229767906,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00941",
+      "parcelId": "IN-DL-110054-10-74",
+      "assetId": "apartments-app-4",
+      "kind": "building",
+      "position": [
+        1653.4219206464477,
+        0,
+        -500.8917546099983
+      ],
+      "rotationY": -3.1228429729709277,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1650.283935449558,
+              -496.1863195738073
+            ],
+            [
+              1650.1097320548408,
+              -505.4762367737048
+            ],
+            [
+              1656.5599058433374,
+              -505.59718964618935
+            ],
+            [
+              1656.7341092380545,
+              -496.30727244629185
+            ],
+            [
+              1650.283935449558,
+              -496.1863195738073
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00941",
+      "height": 12.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-74:tree:0",
+      "parcelId": "IN-DL-110054-10-74",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1647.4219206464477,
+        0,
+        -496.8917546099983
+      ],
+      "rotationY": -3.1228429729709277,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1646.3408433819552,
+              -495.5158136765341
+            ],
+            [
+              1646.2900185851006,
+              -498.22619802494813
+            ],
+            [
+              1648.5029979109402,
+              -498.26769554346254
+            ],
+            [
+              1648.5538227077948,
+              -495.5573111950485
+            ],
+            [
+              1646.3408433819552,
+              -495.5158136765341
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-74:tree:1",
+      "parcelId": "IN-DL-110054-10-74",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1647.4219206464477,
+        0,
+        -502.8917546099983
+      ],
+      "rotationY": -3.1228429729709277,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1645.570737337161,
+              -500.061683125669
+            ],
+            [
+              1645.465937751304,
+              -505.6504345778272
+            ],
+            [
+              1649.2731039557343,
+              -505.72182609432764
+            ],
+            [
+              1649.3779035415914,
+              -500.13307464216945
+            ],
+            [
+              1645.570737337161,
+              -500.061683125669
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00932",
+      "parcelId": "IN-DL-110054-10-65",
+      "assetId": "apartments-app-6",
+      "kind": "building",
+      "position": [
+        1671.023788368795,
+        0,
+        -522.8970058858395
+      ],
+      "rotationY": -3.122840540141176,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1667.108142830454,
+              -520.0704793097619
+            ],
+            [
+              1667.0049144717843,
+              -525.5747260107087
+            ],
+            [
+              1674.9394339071362,
+              -525.723532461917
+            ],
+            [
+              1675.0426622658058,
+              -520.2192857609703
+            ],
+            [
+              1667.108142830454,
+              -520.0704793097619
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00932",
+      "height": 10.999999999999998,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-65:tree:0",
+      "parcelId": "IN-DL-110054-10-65",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1679.023788368795,
+        0,
+        -522.8970058858395
+      ],
+      "rotationY": -3.122840540141176,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1677.342737961865,
+              -520.2205950937865
+            ],
+            [
+              1677.2435668901649,
+              -525.5085029058419
+            ],
+            [
+              1680.7048387757252,
+              -525.5734166778924
+            ],
+            [
+              1680.8040098474253,
+              -520.2855088658371
+            ],
+            [
+              1677.342737961865,
+              -520.2205950937865
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-65:tree:1",
+      "parcelId": "IN-DL-110054-10-65",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1665.023788368795,
+        0,
+        -520.8970058858395
+      ],
+      "rotationY": -3.122840540141176,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1663.9427144517358,
+              -519.5210623223023
+            ],
+            [
+              1663.8918830609778,
+              -522.2314465470603
+            ],
+            [
+              1666.1048622858543,
+              -522.2729494493766
+            ],
+            [
+              1666.1556936766124,
+              -519.5625652246187
+            ],
+            [
+              1663.9427144517358,
+              -519.5210623223023
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00950",
+      "parcelId": "IN-DL-110054-10-83",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1626.6415450525237,
+        0,
+        -472.5030457084067
+      ],
+      "rotationY": -3.1228456579857844,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1624.679388287112,
+              -470.46590535292086
+            ],
+            [
+              1624.6044046970378,
+              -474.46520247381847
+            ],
+            [
+              1628.6037018179354,
+              -474.5401860638926
+            ],
+            [
+              1628.6786854080096,
+              -470.54088894299497
+            ],
+            [
+              1624.679388287112,
+              -470.46590535292086
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00950",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00945",
+      "parcelId": "IN-DL-110054-10-78",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1760.1667778954143,
+        0,
+        -501.2062972341664
+      ],
+      "rotationY": 0.01876032528744216,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1762.1289075062157,
+              -503.2434637443998
+            ],
+            [
+              1762.2039444056477,
+              -499.24416762336506
+            ],
+            [
+              1758.2046482846129,
+              -499.16913072393305
+            ],
+            [
+              1758.1296113851809,
+              -503.16842684496777
+            ],
+            [
+              1762.1289075062157,
+              -503.2434637443998
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00945",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-78:tree:0",
+      "parcelId": "IN-DL-110054-10-78",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1760.1667778954143,
+        0,
+        -507.2062972341664
+      ],
+      "rotationY": 0.01876032528744216,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1761.6922631369212,
+              -509.01365832285853
+            ],
+            [
+              1761.758986928147,
+              -505.45743196689784
+            ],
+            [
+              1758.6412926539074,
+              -505.3989361454743
+            ],
+            [
+              1758.5745688626816,
+              -508.955162501435
+            ],
+            [
+              1761.6922631369212,
+              -509.01365832285853
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-78:tree:1",
+      "parcelId": "IN-DL-110054-10-78",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1766.1667778954143,
+        0,
+        -501.2062972341664
+      ],
+      "rotationY": 0.01876032528744216,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1768.017931079423,
+              -504.0363884235682
+            ],
+            [
+              1768.1227901556813,
+              -498.44763808728345
+            ],
+            [
+              1764.3156247114055,
+              -498.3762060447646
+            ],
+            [
+              1764.2107656351473,
+              -503.9649563810494
+            ],
+            [
+              1768.017931079423,
+              -504.0363884235682
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00934",
+      "parcelId": "IN-DL-110054-10-67",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1728.8022921732627,
+        0,
+        -524.2295581949875
+      ],
+      "rotationY": 0.01875798279250516,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1730.764426556111,
+              -526.2667201089366
+            ],
+            [
+              1730.8394540872118,
+              -522.2674238121392
+            ],
+            [
+              1726.8401577904144,
+              -522.1923962810383
+            ],
+            [
+              1726.7651302593135,
+              -526.1916925778357
+            ],
+            [
+              1730.764426556111,
+              -526.2667201089366
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00934",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-67:tree:0",
+      "parcelId": "IN-DL-110054-10-67",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1734.8022921732627,
+        0,
+        -524.2295581949875
+      ],
+      "rotationY": 0.01875798279250516,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1736.4833268713885,
+              -526.9059788536573
+            ],
+            [
+              1736.5825289796364,
+              -521.6180716237621
+            ],
+            [
+              1733.1212574751369,
+              -521.5531375363176
+            ],
+            [
+              1733.022055366889,
+              -526.8410447662128
+            ],
+            [
+              1736.4833268713885,
+              -526.9059788536573
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-67:tree:1",
+      "parcelId": "IN-DL-110054-10-67",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1738.8022921732627,
+        0,
+        -524.2295581949875
+      ],
+      "rotationY": 0.01875798279250516,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1739.8833580144174,
+              -525.6055081036955
+            ],
+            [
+              1739.9342053133516,
+              -522.8951241773311
+            ],
+            [
+              1737.721226332108,
+              -522.8536082862795
+            ],
+            [
+              1737.6703790331737,
+              -525.5639922126438
+            ],
+            [
+              1739.8833580144174,
+              -525.6055081036955
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00925",
+      "parcelId": "IN-DL-110054-10-56",
+      "assetId": "apartments-app-2",
+      "kind": "building",
+      "position": [
+        1715.906412725919,
+        0,
+        -551.3501948369667
+      ],
+      "rotationY": -3.122837580496942,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1711.0217259461654,
+              -546.6176304069485
+            ],
+            [
+              1710.8476843894857,
+              -555.896247920548
+            ],
+            [
+              1720.7910995056725,
+              -556.0827592669849
+            ],
+            [
+              1720.9651410623521,
+              -546.8041417533854
+            ],
+            [
+              1711.0217259461654,
+              -546.6176304069485
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00925",
+      "height": 12.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-56:tree:0",
+      "parcelId": "IN-DL-110054-10-56",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1707.906412725919,
+        0,
+        -549.3501948369667
+      ],
+      "rotationY": -3.122837580496942,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1706.055244677746,
+              -546.5201133702207
+            ],
+            [
+              1705.9504149546935,
+              -552.1088642571686
+            ],
+            [
+              1709.7575807740918,
+              -552.1802763037127
+            ],
+            [
+              1709.8624104971443,
+              -546.5915254167647
+            ],
+            [
+              1706.055244677746,
+              -546.5201133702207
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-56:tree:1",
+      "parcelId": "IN-DL-110054-10-56",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1701.906412725919,
+        0,
+        -549.3501948369667
+      ],
+      "rotationY": -3.122837580496942,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1700.22537024022,
+              -546.6737790696143
+            ],
+            [
+              1700.1261835181945,
+              -551.9616865881354
+            ],
+            [
+              1703.587455211618,
+              -552.0266106043191
+            ],
+            [
+              1703.6866419336434,
+              -546.738703085798
+            ],
+            [
+              1700.22537024022,
+              -546.6737790696143
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00956",
+      "parcelId": "IN-DL-110054-10-89",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1787.3364938367158,
+        0,
+        -475.83805504301563
+      ],
+      "rotationY": 0.01876246001368331,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1789.2986190987199,
+              -477.87522574185397
+            ],
+            [
+              1789.373664535554,
+              -473.87592978101156
+            ],
+            [
+              1785.3743685747118,
+              -473.8008843441773
+            ],
+            [
+              1785.2993231378775,
+              -477.8001803050197
+            ],
+            [
+              1789.2986190987199,
+              -477.87522574185397
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00956",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00931",
+      "parcelId": "IN-DL-110054-10-64",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1652.943311720388,
+        0,
+        -522.416381388437
+      ],
+      "rotationY": 0.01874980938823378,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1654.9054627537187,
+              -524.4535272650005
+            ],
+            [
+              1654.9804575969515,
+              -520.4542303551065
+            ],
+            [
+              1650.9811606870574,
+              -520.3792355118735
+            ],
+            [
+              1650.9061658438245,
+              -524.3785324217675
+            ],
+            [
+              1654.9054627537187,
+              -524.4535272650005
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00931",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00940",
+      "parcelId": "IN-DL-110054-10-73",
+      "assetId": "apartments-app-5",
+      "kind": "building",
+      "position": [
+        1620.1941762942588,
+        0,
+        -498.36518816370517
+      ],
+      "rotationY": -3.1228455172587783,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1612.5236622864738,
+              -495.2203146824382
+            ],
+            [
+              1612.411166219801,
+              -501.22031837749404
+            ],
+            [
+              1627.8646903020438,
+              -501.51006164497215
+            ],
+            [
+              1627.9771863687165,
+              -495.5100579499163
+            ],
+            [
+              1612.5236622864738,
+              -495.2203146824382
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00940",
+      "height": 16.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-73:tree:0",
+      "parcelId": "IN-DL-110054-10-73",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1626.1941762942588,
+        0,
+        -504.36518816370517
+      ],
+      "rotationY": -3.1228455172587783,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1624.668667215678,
+              -502.55784719472865
+            ],
+            [
+              1624.6019903273725,
+              -506.1140744303972
+            ],
+            [
+              1627.7196853728396,
+              -506.1725291326817
+            ],
+            [
+              1627.786362261145,
+              -502.61630189701316
+            ],
+            [
+              1624.668667215678,
+              -502.55784719472865
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-73:tree:1",
+      "parcelId": "IN-DL-110054-10-73",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1626.1941762942588,
+        0,
+        -508.36518816370517
+      ],
+      "rotationY": -3.1228455172587783,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1625.11309552898,
+              -506.98924998081714
+            ],
+            [
+              1625.0622776281234,
+              -509.69963445853534
+            ],
+            [
+              1627.2752570595376,
+              -509.7411263465932
+            ],
+            [
+              1627.3260749603942,
+              -507.030741868875
+            ],
+            [
+              1625.11309552898,
+              -506.98924998081714
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00924",
+      "parcelId": "IN-DL-110054-10-55",
+      "assetId": "apartments-app-1",
+      "kind": "building",
+      "position": [
+        1676.2792751801899,
+        0,
+        -550.5970603204332
+      ],
+      "rotationY": 1.589548577981423,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1672.6594608269186,
+              -555.3517208249984
+            ],
+            [
+              1679.7182646636302,
+              -555.4841048054578
+            ],
+            [
+              1679.8990895334612,
+              -545.842399815868
+            ],
+            [
+              1672.8402856967496,
+              -545.7100158354086
+            ],
+            [
+              1672.6594608269186,
+              -555.3517208249984
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00924",
+      "height": 12.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-55:tree:0",
+      "parcelId": "IN-DL-110054-10-55",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1670.2792751801899,
+        0,
+        -546.5970603204332
+      ],
+      "rotationY": 1.589548577981423,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1668.9033314677479,
+              -547.6781340479728
+            ],
+            [
+              1671.6137156855045,
+              -547.7289658120537
+            ],
+            [
+              1671.6552188926319,
+              -545.5159865928937
+            ],
+            [
+              1668.9448346748752,
+              -545.4651548288127
+            ],
+            [
+              1668.9033314677479,
+              -547.6781340479728
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-55:tree:1",
+      "parcelId": "IN-DL-110054-10-55",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1664.2792751801899,
+        0,
+        -546.5970603204332
+      ],
+      "rotationY": 1.589548577981423,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1662.4719264084786,
+              -548.1225601547063
+            ],
+            [
+              1666.028153303058,
+              -548.1892552325993
+            ],
+            [
+              1666.0866239519012,
+              -545.0715604861601
+            ],
+            [
+              1662.5303970573218,
+              -545.0048654082672
+            ],
+            [
+              1662.4719264084786,
+              -548.1225601547063
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00949",
+      "parcelId": "IN-DL-110054-10-82",
+      "assetId": "commercial-com-1",
+      "kind": "building",
+      "position": [
+        1586.6782431072788,
+        0,
+        -475.917545133736
+      ],
+      "rotationY": -3.1228481971878503,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1577.3561862003808,
+              -470.27487420799685
+            ],
+            [
+              1577.1512480772303,
+              -481.20685944175926
+            ],
+            [
+              1596.000300014177,
+              -481.5602160594751
+            ],
+            [
+              1596.2052381373273,
+              -470.6282308257127
+            ],
+            [
+              1577.3561862003808,
+              -470.27487420799685
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00949",
+      "height": 18.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00935",
+      "parcelId": "IN-DL-110054-10-68",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1759.6878954552813,
+        0,
+        -524.7309359451756
+      ],
+      "rotationY": -3.1228321994644714,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1757.725766106944,
+              -522.6937691821456
+            ],
+            [
+              1757.6507286922513,
+              -526.6930652935127
+            ],
+            [
+              1761.6500248036184,
+              -526.7681027082056
+            ],
+            [
+              1761.7250622183112,
+              -522.7688065968384
+            ],
+            [
+              1757.725766106944,
+              -522.6937691821456
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00935",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-68:tree:0",
+      "parcelId": "IN-DL-110054-10-68",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1763.6878954552813,
+        0,
+        -522.7309359451756
+      ],
+      "rotationY": -3.1228321994644714,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1762.6068330145602,
+              -521.3549833647984
+            ],
+            [
+              1762.5559790173652,
+              -524.0653671654939
+            ],
+            [
+              1764.7689578960023,
+              -524.1068885255528
+            ],
+            [
+              1764.8198118931973,
+              -521.3965047248573
+            ],
+            [
+              1762.6068330145602,
+              -521.3549833647984
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-68:tree:1",
+      "parcelId": "IN-DL-110054-10-68",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1767.6878954552813,
+        0,
+        -524.7309359451756
+      ],
+      "rotationY": -3.1228321994644714,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1765.8367426358955,
+              -521.9008445172752
+            ],
+            [
+              1765.7318828395946,
+              -527.48959484005
+            ],
+            [
+              1769.539048274667,
+              -527.561027373076
+            ],
+            [
+              1769.6439080709679,
+              -521.9722770503012
+            ],
+            [
+              1765.8367426358955,
+              -521.9008445172752
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00946",
+      "parcelId": "IN-DL-110054-10-79",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1786.8887505977182,
+        0,
+        -501.7002135720104
+      ],
+      "rotationY": 0.018762600806634326,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1788.850875572903,
+              -503.73738454710207
+            ],
+            [
+              1788.9259215728098,
+              -499.7380885968256
+            ],
+            [
+              1784.9266256225333,
+              -499.66304259691873
+            ],
+            [
+              1784.8515796226266,
+              -503.6623385471952
+            ],
+            [
+              1788.850875572903,
+              -503.73738454710207
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00946",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-79:tree:0",
+      "parcelId": "IN-DL-110054-10-79",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1786.8887505977182,
+        0,
+        -507.7002135720104
+      ],
+      "rotationY": 0.018762600806634326,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1788.4142317265364,
+              -509.5075781319688
+            ],
+            [
+              1788.480963610023,
+              -505.9513519278486
+            ],
+            [
+              1785.3632694689,
+              -505.892849012052
+            ],
+            [
+              1785.2965375854133,
+              -509.4490752161722
+            ],
+            [
+              1788.4142317265364,
+              -509.5075781319688
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-79:tree:1",
+      "parcelId": "IN-DL-110054-10-79",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1790.8887505977182,
+        0,
+        -499.7002135720104
+      ],
+      "rotationY": 0.018762600806634326,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1791.9698100847052,
+              -501.076168473081
+            ],
+            [
+              1792.0206699002304,
+              -498.3657847815591
+            ],
+            [
+              1789.8076911107312,
+              -498.3242586709398
+            ],
+            [
+              1789.756831295206,
+              -501.0346423624617
+            ],
+            [
+              1791.9698100847052,
+              -501.076168473081
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00926",
+      "parcelId": "IN-DL-110054-10-57",
+      "assetId": "buildings-building-9",
+      "kind": "building",
+      "position": [
+        1732.05755465955,
+        0,
+        -555.9296233146451
+      ],
+      "rotationY": -1.5520382062139209,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1737.872483374552,
+              -547.7772038480998
+            ],
+            [
+              1726.5524940232167,
+              -547.5648372140115
+            ],
+            [
+              1726.242625944548,
+              -564.0820427811905
+            ],
+            [
+              1737.5626152958835,
+              -564.2944094152788
+            ],
+            [
+              1737.872483374552,
+              -547.7772038480998
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00926",
+      "height": 18.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-57:tree:0",
+      "parcelId": "IN-DL-110054-10-57",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1742.05755465955,
+        0,
+        -549.9296233146451
+      ],
+      "rotationY": -1.5520382062139209,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1744.8876417676956,
+              -548.0784638911205
+            ],
+            [
+              1739.2988912002409,
+              -547.9736171364166
+            ],
+            [
+              1739.2274675514045,
+              -551.7807827381698
+            ],
+            [
+              1744.8162181188593,
+              -551.8856294928737
+            ],
+            [
+              1744.8876417676956,
+              -548.0784638911205
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-57:tree:1",
+      "parcelId": "IN-DL-110054-10-57",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1748.05755465955,
+        0,
+        -547.9296233146451
+      ],
+      "rotationY": -1.5520382062139209,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1749.4335047172165,
+              -546.8485576630806
+            ],
+            [
+              1746.7231207978582,
+              -546.7977099906865
+            ],
+            [
+              1746.6816046018837,
+              -549.0106889662097
+            ],
+            [
+              1749.391988521242,
+              -549.0615366386038
+            ],
+            [
+              1749.4335047172165,
+              -546.8485576630806
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00915",
+      "parcelId": "IN-DL-110054-10-46",
+      "assetId": "apartments-app-2",
+      "kind": "building",
+      "position": [
+        1715.369679702213,
+        0,
+        -591.9670457858592
+      ],
+      "rotationY": -3.122837366181708,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1710.4849939367202,
+              -587.2344803089783
+            ],
+            [
+              1710.3109503914914,
+              -596.513097785278
+            ],
+            [
+              1720.2543654677058,
+              -596.6996112627402
+            ],
+            [
+              1720.4284090129347,
+              -587.4209937864405
+            ],
+            [
+              1710.4849939367202,
+              -587.2344803089783
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00915",
+      "height": 12.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-46:tree:0",
+      "parcelId": "IN-DL-110054-10-46",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1693.369679702213,
+        0,
+        -587.9670457858592
+      ],
+      "rotationY": -3.122837366181708,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1691.6886377901108,
+              -585.2906296582339
+            ],
+            [
+              1691.589449934806,
+              -590.5785371554977
+            ],
+            [
+              1695.0507216143153,
+              -590.6434619134845
+            ],
+            [
+              1695.14990946962,
+              -585.3555544162208
+            ],
+            [
+              1691.6886377901108,
+              -585.2906296582339
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-46:tree:1",
+      "parcelId": "IN-DL-110054-10-46",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1687.369679702213,
+        0,
+        -587.9670457858592
+      ],
+      "rotationY": -3.122837366181708,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1685.6886377901108,
+              -585.2906296582339
+            ],
+            [
+              1685.589449934806,
+              -590.5785371554977
+            ],
+            [
+              1689.0507216143153,
+              -590.6434619134845
+            ],
+            [
+              1689.14990946962,
+              -585.3555544162208
+            ],
+            [
+              1685.6886377901108,
+              -585.2906296582339
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00930",
+      "parcelId": "IN-DL-110054-10-63",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1625.7156358376378,
+        0,
+        -521.8898122268729
+      ],
+      "rotationY": -3.1228453884921388,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1623.7534796212226,
+              -519.8526713425983
+            ],
+            [
+              1623.6784949533633,
+              -523.8519684432882
+            ],
+            [
+              1627.677792054053,
+              -523.9269531111474
+            ],
+            [
+              1627.7527767219124,
+              -519.9276560104576
+            ],
+            [
+              1623.7534796212226,
+              -519.8526713425983
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00930",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-63:tree:0",
+      "parcelId": "IN-DL-110054-10-63",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1602.9809338200985,
+        0,
+        -528.1912075058257
+      ],
+      "rotationY": -3.1228453884921388,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1601.8998532319947,
+              -526.8152691837305
+            ],
+            [
+              1601.8490349821311,
+              -529.525653654905
+            ],
+            [
+              1604.0620144082022,
+              -529.5671458279209
+            ],
+            [
+              1604.1128326580658,
+              -526.8567613567463
+            ],
+            [
+              1601.8998532319947,
+              -526.8152691837305
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-63:tree:1",
+      "parcelId": "IN-DL-110054-10-63",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1616.1588252799065,
+        0,
+        -521.0984658261025
+      ],
+      "rotationY": -3.1228453884921388,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1614.6333164340508,
+              -519.2911246606913
+            ],
+            [
+              1614.566639087822,
+              -522.847351887774
+            ],
+            [
+              1617.6843341257622,
+              -522.9058069915137
+            ],
+            [
+              1617.751011471991,
+              -519.3495797644309
+            ],
+            [
+              1614.6333164340508,
+              -519.2911246606913
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-63:tree:2",
+      "parcelId": "IN-DL-110054-10-63",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1626.156585049408,
+        0,
+        -531.4782644278977
+      ],
+      "rotationY": -3.1228453884921388,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1624.6310762035523,
+              -529.6709232624864
+            ],
+            [
+              1624.5643988573236,
+              -533.2271504895692
+            ],
+            [
+              1627.6820938952637,
+              -533.2856055933089
+            ],
+            [
+              1627.7487712414925,
+              -529.7293783662261
+            ],
+            [
+              1624.6310762035523,
+              -529.6709232624864
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-63:tree:3",
+      "parcelId": "IN-DL-110054-10-63",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1613.7156358376378,
+        0,
+        -537.8898122268729
+      ],
+      "rotationY": -3.1228453884921388,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1611.8644456922589,
+              -535.0597452141244
+            ],
+            [
+              1611.7596596061496,
+              -540.6484969194119
+            ],
+            [
+              1615.5668259830168,
+              -540.7198792396214
+            ],
+            [
+              1615.671612069126,
+              -535.1311275343339
+            ],
+            [
+              1611.8644456922589,
+              -535.0597452141244
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-63:bench:0",
+      "parcelId": "IN-DL-110054-10-63",
+      "assetId": "props-park_bench",
+      "kind": "prop",
+      "position": [
+        1627.7156358376378,
+        0,
+        -525.8898122268729
+      ],
+      "rotationY": -3.1228453884921388,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1626.6205566330532,
+              -525.6170509723047
+            ],
+            [
+              1626.6111016368432,
+              -526.1213319141185
+            ],
+            [
+              1628.8107150422225,
+              -526.1625734814411
+            ],
+            [
+              1628.8201700384325,
+              -525.6582925396273
+            ],
+            [
+              1626.6205566330532,
+              -525.6170509723047
+            ]
+          ]
+        ]
+      },
+      "setback": 1.2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 0.6449601229767906,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-63:bench:1",
+      "parcelId": "IN-DL-110054-10-63",
+      "assetId": "props-park_bench",
+      "kind": "prop",
+      "position": [
+        1621.7156358376378,
+        0,
+        -519.8898122268729
+      ],
+      "rotationY": -3.1228453884921388,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1620.6205566330532,
+              -519.6170509723047
+            ],
+            [
+              1620.6111016368432,
+              -520.1213319141185
+            ],
+            [
+              1622.8107150422225,
+              -520.1625734814411
+            ],
+            [
+              1622.8201700384325,
+              -519.6582925396273
+            ],
+            [
+              1620.6205566330532,
+              -519.6170509723047
+            ]
+          ]
+        ]
+      },
+      "setback": 1.2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 0.6449601229767906,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00939",
+      "parcelId": "IN-DL-110054-10-72",
+      "assetId": "apartments-app-7",
+      "kind": "building",
+      "position": [
+        1590.2309316669125,
+        0,
+        -499.7796847666614
+      ],
+      "rotationY": 0.018744597080945776,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1596.0624868272996,
+              -504.80930179986996
+            ],
+            [
+              1596.2469014829292,
+              -494.9721708288599
+            ],
+            [
+              1584.3993765065254,
+              -494.7500677334528
+            ],
+            [
+              1584.2149618508959,
+              -504.5871987044629
+            ],
+            [
+              1596.0624868272996,
+              -504.80930179986996
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00939",
+      "height": 14.000000000000002,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-72:tree:0",
+      "parcelId": "IN-DL-110054-10-72",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1596.2309316669125,
+        0,
+        -507.7796847666614
+      ],
+      "rotationY": 0.018744597080945776,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1597.756445334779,
+              -509.58702186198303
+            ],
+            [
+              1597.8231131929342,
+              -506.03079445701667
+            ],
+            [
+              1594.705417999046,
+              -505.9723476713397
+            ],
+            [
+              1594.6387501408908,
+              -509.5285750763061
+            ],
+            [
+              1597.756445334779,
+              -509.58702186198303
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-72:tree:1",
+      "parcelId": "IN-DL-110054-10-72",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1592.2309316669125,
+        0,
+        -507.7796847666614
+      ],
+      "rotationY": 0.018744597080945776,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1593.756445334779,
+              -509.58702186198303
+            ],
+            [
+              1593.8231131929342,
+              -506.03079445701667
+            ],
+            [
+              1590.705417999046,
+              -505.9723476713397
+            ],
+            [
+              1590.6387501408908,
+              -509.5285750763061
+            ],
+            [
+              1593.756445334779,
+              -509.58702186198303
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00914",
+      "parcelId": "IN-DL-110054-10-45",
+      "assetId": "apartments-app-1",
+      "kind": "building",
+      "position": [
+        1675.742605155101,
+        0,
+        -591.2139069172554
+      ],
+      "rotationY": -1.5520438613594176,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1679.3624205270535,
+              -586.4592471882316
+            ],
+            [
+              1672.3036167187051,
+              -586.3268616954309
+            ],
+            [
+              1672.1227897831486,
+              -595.9685666462791
+            ],
+            [
+              1679.181593591497,
+              -596.1009521390798
+            ],
+            [
+              1679.3624205270535,
+              -586.4592471882316
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00914",
+      "height": 12.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-45:tree:0",
+      "parcelId": "IN-DL-110054-10-45",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1667.742605155101,
+        0,
+        -587.2139069172554
+      ],
+      "rotationY": -1.5520438613594176,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1670.4190165388616,
+              -585.5328574523867
+            ],
+            [
+              1665.1311087617134,
+              -585.4336845194126
+            ],
+            [
+              1665.0661937713405,
+              -588.8949563821241
+            ],
+            [
+              1670.3541015484886,
+              -588.9941293150981
+            ],
+            [
+              1670.4190165388616,
+              -585.5328574523867
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-45:tree:1",
+      "parcelId": "IN-DL-110054-10-45",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1661.742605155101,
+        0,
+        -587.2139069172554
+      ],
+      "rotationY": -1.5520438613594176,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1663.1185490991618,
+              -586.1328334845103
+            ],
+            [
+              1660.408164892296,
+              -586.0820011397325
+            ],
+            [
+              1660.3666612110403,
+              -588.2949803500004
+            ],
+            [
+              1663.077045417906,
+              -588.3458126947783
+            ],
+            [
+              1663.1185490991618,
+              -586.1328334845103
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00948",
+      "parcelId": "IN-DL-110054-10-81",
+      "assetId": "commercial-com-1",
+      "kind": "building",
+      "position": [
+        1563.021598524414,
+        0,
+        -479.3933229073882
+      ],
+      "rotationY": -1.552054170641266,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1568.6642480070925,
+              -470.0712530209704
+            ],
+            [
+              1557.7322623019504,
+              -469.86634004410115
+            ],
+            [
+              1557.3789490417355,
+              -488.715392793806
+            ],
+            [
+              1568.3109347468776,
+              -488.92030577067527
+            ],
+            [
+              1568.6642480070925,
+              -470.0712530209704
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00948",
+      "height": 18.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00936",
+      "parcelId": "IN-DL-110054-10-69",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1786.409809567267,
+        0,
+        -525.2248548283242
+      ],
+      "rotationY": -3.1228299238909143,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1784.4476848546578,
+              -523.1876836003298
+            ],
+            [
+              1784.3726383392727,
+              -527.1869795409334
+            ],
+            [
+              1788.3719342798763,
+              -527.2620260563185
+            ],
+            [
+              1788.4469807952614,
+              -523.2627301157149
+            ],
+            [
+              1784.4476848546578,
+              -523.1876836003298
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00936",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-69:tree:0",
+      "parcelId": "IN-DL-110054-10-69",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1786.409809567267,
+        0,
+        -531.2248548283242
+      ],
+      "rotationY": -3.1228299238909143,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1784.8843286714043,
+              -529.4174900717431
+            ],
+            [
+              1784.8175963295473,
+              -532.973716267262
+            ],
+            [
+              1787.9352904631298,
+              -533.0322195849052
+            ],
+            [
+              1788.0020228049868,
+              -529.4759933893863
+            ],
+            [
+              1784.8843286714043,
+              -529.4174900717431
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-69:tree:1",
+      "parcelId": "IN-DL-110054-10-69",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1792.409809567267,
+        0,
+        -525.2248548283242
+      ],
+      "rotationY": -3.1228299238909143,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1790.558663187967,
+              -522.3947591879967
+            ],
+            [
+              1790.453790674054,
+              -527.9835092721409
+            ],
+            [
+              1794.260955946567,
+              -528.0549504686517
+            ],
+            [
+              1794.36582846048,
+              -522.4662003845075
+            ],
+            [
+              1790.558663187967,
+              -522.3947591879967
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00927",
+      "parcelId": "IN-DL-110054-10-58",
+      "assetId": "buildings-building-9",
+      "kind": "building",
+      "position": [
+        1762.9430526121287,
+        0,
+        -556.4310050848871
+      ],
+      "rotationY": -1.5520357348275124,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1768.7580014748917,
+              -548.2785999893025
+            ],
+            [
+              1757.4380126484307,
+              -548.0662053791469
+            ],
+            [
+              1757.1281037493657,
+              -564.5834101804718
+            ],
+            [
+              1768.4480925758266,
+              -564.7958047906274
+            ],
+            [
+              1768.7580014748917,
+              -548.2785999893025
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00927",
+      "height": 18.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-58:tree:0",
+      "parcelId": "IN-DL-110054-10-58",
+      "assetId": "trees-tree-4",
+      "kind": "tree",
+      "position": [
+        1772.9430526121287,
+        0,
+        -550.4310050848871
+      ],
+      "rotationY": -1.5520357348275124,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1775.7731442951958,
+              -548.5798526556069
+            ],
+            [
+              1770.184393986875,
+              -548.4749920889412
+            ],
+            [
+              1770.1129609290615,
+              -552.2821575141674
+            ],
+            [
+              1775.7017112373824,
+              -552.3870180808331
+            ],
+            [
+              1775.7731442951958,
+              -548.5798526556069
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-58:tree:1",
+      "parcelId": "IN-DL-110054-10-58",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1772.9430526121287,
+        0,
+        -556.4310050848871
+      ],
+      "rotationY": -1.5520357348275124,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1775.619477656903,
+              -554.7499773700165
+            ],
+            [
+              1770.3315706858614,
+              -554.6507614646944
+            ],
+            [
+              1770.2666275673544,
+              -558.1120327997578
+            ],
+            [
+              1775.554534538396,
+              -558.2112487050799
+            ],
+            [
+              1775.619477656903,
+              -554.7499773700165
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00947",
+      "parcelId": "IN-DL-110054-10-80",
+      "assetId": "buildings-building-9",
+      "kind": "building",
+      "position": [
+        1819.2099940931657,
+        0,
+        -506.27417031442747
+      ],
+      "rotationY": -3.122827611636562,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1811.057614874102,
+              -500.45918517363475
+            ],
+            [
+              1810.8451698901586,
+              -511.7791730548306
+            ],
+            [
+              1827.3623733122295,
+              -512.0891554552202
+            ],
+            [
+              1827.574818296173,
+              -500.7691675740243
+            ],
+            [
+              1811.057614874102,
+              -500.45918517363475
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00947",
+      "height": 18.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-80:tree:0",
+      "parcelId": "IN-DL-110054-10-80",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1811.2099940931657,
+        0,
+        -514.2741703144275
+      ],
+      "rotationY": -3.122827611636562,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1810.1289379650896,
+              -512.8982127743362
+            ],
+            [
+              1810.0780715331207,
+              -515.6085963416938
+            ],
+            [
+              1812.291050221242,
+              -515.6501278545187
+            ],
+            [
+              1812.3419166532108,
+              -512.9397442871611
+            ],
+            [
+              1810.1289379650896,
+              -512.8982127743362
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-80:tree:1",
+      "parcelId": "IN-DL-110054-10-80",
+      "assetId": "trees-tree-2",
+      "kind": "tree",
+      "position": [
+        1815.2099940931657,
+        0,
+        -514.2741703144275
+      ],
+      "rotationY": -3.122827611636562,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1813.684517376394,
+              -512.4668020305514
+            ],
+            [
+              1813.617776811638,
+              -516.0230280717587
+            ],
+            [
+              1816.7354708099374,
+              -516.0815385983035
+            ],
+            [
+              1816.8022113746936,
+              -512.5253125570962
+            ],
+            [
+              1813.684517376394,
+              -512.4668020305514
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 5.5,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00916",
+      "parcelId": "IN-DL-110054-10-47",
+      "assetId": null,
+      "kind": "building",
+      "position": [
+        1727.5207229334628,
+        0,
+        -588.5464776130393
+      ],
+      "rotationY": -3.122834318696886,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1725.5585892679003,
+              -586.5093150082221
+            ],
+            [
+              1725.4835603286456,
+              -590.5086112786018
+            ],
+            [
+              1729.4828565990254,
+              -590.5836402178566
+            ],
+            [
+              1729.55788553828,
+              -586.5843439474768
+            ],
+            [
+              1725.5585892679003,
+              -586.5093150082221
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00916",
+      "height": 0,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-47:tree:0",
+      "parcelId": "IN-DL-110054-10-47",
+      "assetId": "trees-tree-3",
+      "kind": "tree",
+      "position": [
+        1733.5207229334628,
+        0,
+        -590.5464776130393
+      ],
+      "rotationY": -3.122834318696886,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1731.8396891777058,
+              -587.8700563624767
+            ],
+            [
+              1731.7404852075838,
+              -593.1579635574424
+            ],
+            [
+              1735.2017566892198,
+              -593.2228988636019
+            ],
+            [
+              1735.3009606593419,
+              -587.9349916686363
+            ],
+            [
+              1731.8396891777058,
+              -587.8700563624767
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.5,
+      "scale": 1
+    },
+    {
+      "id": "IN-DL-110054-10-47:tree:1",
+      "parcelId": "IN-DL-110054-10-47",
+      "assetId": "trees-tree-1",
+      "kind": "tree",
+      "position": [
+        1737.5207229334628,
+        0,
+        -588.5464776130393
+      ],
+      "rotationY": -3.122834318696886,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1736.4396575767807,
+              -587.1705273236877
+            ],
+            [
+              1736.3888093235191,
+              -589.8809112321485
+            ],
+            [
+              1738.601788290145,
+              -589.922427902391
+            ],
+            [
+              1738.6526365434065,
+              -587.2120439939301
+            ],
+            [
+              1736.4396575767807,
+              -587.1705273236877
+            ]
+          ]
+        ]
+      },
+      "setback": 1.5,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": null,
+      "height": 6.0,
+      "scale": 1
+    },
+    {
+      "id": "BLD-00908",
+      "parcelId": "IN-DL-110054-10-36",
+      "assetId": "props-construction_prop",
+      "kind": "building",
+      "position": [
+        1714.8909400338307,
+        0,
+        -621.4916816311888
+      ],
+      "rotationY": -3.122837211732454,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1711.156315703659,
+              -615.7409939873826
+            ],
+            [
+              1710.9432800359214,
+              -627.0982677408498
+            ],
+            [
+              1718.6255643640025,
+              -627.2423692749951
+            ],
+            [
+              1718.83860003174,
+              -615.8850955215279
+            ],
+            [
+              1711.156315703659,
+              -615.7409939873826
+            ]
+          ]
+        ]
+      },
+      "setback": 2,
+      "orientationBasis": "parcel longest oriented envelope edge",
+      "illustrative": true,
+      "buildingId": "BLD-00908",
+      "height": 3.3,
+      "scale": 1
+    }
+  ],
+  "issues": [
+    {
+      "parcelId": "IN-DL-110054-10-86",
+      "buildingId": "BLD-00953",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-86",
+      "buildingId": "BLD-00953",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-86",
+      "buildingId": "BLD-00954",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-95",
+      "buildingId": "BLD-00959",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-95",
+      "buildingId": "BLD-00959",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-97",
+      "buildingId": "BLD-00960",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-85",
+      "buildingId": "BLD-00952",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-85",
+      "buildingId": "BLD-00952",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-76",
+      "buildingId": "BLD-00943",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-94",
+      "buildingId": "BLD-00958",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-98",
+      "buildingId": "BLD-00961",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-75",
+      "buildingId": "BLD-00942",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-84",
+      "buildingId": "BLD-00951",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-84",
+      "buildingId": "BLD-00951",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-93",
+      "buildingId": "BLD-00957",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-93",
+      "buildingId": "BLD-00957",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-88",
+      "buildingId": "BLD-00955",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-88",
+      "buildingId": "BLD-00955",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-99",
+      "reason": "Park assembly does not fit; planting and benches used"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-74",
+      "buildingId": "BLD-00941",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-65",
+      "buildingId": "BLD-00932",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-83",
+      "buildingId": "BLD-00950",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-83",
+      "buildingId": "BLD-00950",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-78",
+      "buildingId": "BLD-00945",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-78",
+      "buildingId": "BLD-00945",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-67",
+      "buildingId": "BLD-00934",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-67",
+      "buildingId": "BLD-00934",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-92",
+      "reason": "Calibrated parking assemblies too large; parcel surface only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-89",
+      "buildingId": "BLD-00956",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-89",
+      "buildingId": "BLD-00956",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-64",
+      "buildingId": "BLD-00931",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-64",
+      "buildingId": "BLD-00931",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-73",
+      "buildingId": "BLD-00940",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-55",
+      "buildingId": "BLD-00924",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-82",
+      "buildingId": "BLD-00949",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-68",
+      "buildingId": "BLD-00935",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-68",
+      "buildingId": "BLD-00935",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-79",
+      "buildingId": "BLD-00946",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-79",
+      "buildingId": "BLD-00946",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-57",
+      "buildingId": "BLD-00926",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-46",
+      "buildingId": "BLD-00915",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-90",
+      "reason": "Calibrated parking assemblies too large; parcel surface only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-63",
+      "buildingId": "BLD-00930",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-63",
+      "buildingId": "BLD-00930",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-63",
+      "reason": "Park assembly does not fit; planting and benches used"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-72",
+      "buildingId": "BLD-00939",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-45",
+      "buildingId": "BLD-00914",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-81",
+      "buildingId": "BLD-00948",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-69",
+      "buildingId": "BLD-00936",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-69",
+      "buildingId": "BLD-00936",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-58",
+      "buildingId": "BLD-00927",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-80",
+      "buildingId": "BLD-00947",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-47",
+      "buildingId": "BLD-00916",
+      "reason": "No semantically suitable calibrated GLB fits; flat record marker only"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-47",
+      "buildingId": "BLD-00916",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    },
+    {
+      "parcelId": "IN-DL-110054-10-36",
+      "buildingId": "BLD-00908",
+      "reason": "Observed footprint crosses parcel; not used for placement"
+    }
+  ],
+  "policy": {
+    "buildingSetbackMetres": 2,
+    "treeSetbackMetres": 1.5,
+    "interObjectClearanceMetres": 0.6,
+    "note": "Illustrative placement parameters, not statutory setbacks. Registry scales unchanged; no parcel moved. Flat markers are records, not measured building footprints."
+  }
+}

@@ -1,0 +1,132 @@
+PRAMAN EVIDENCE GRAPH — UI / UX CLEANUP VALIDATION
+===================================================
+
+SCOPE
+-----
+Presentation/interaction cleanup only.
+No dataset values, matching logic, reconciliation logic, replay data model,
+filter semantics, history semantics, or cross-dashboard contracts were changed.
+No unrelated PRAMAN dashboard was modified.
+
+FILES CHANGED
+-------------
+- src/evidence-graph/dashboard/EvidenceGraphDashboard.mjs
+- src/evidence-graph/dashboard/EvidenceGraphRenderer.mjs
+- src/evidence-graph/dashboard/evidenceGraph.css
+- index.html (standalone background only)
+- tests/ui-ux-cleanup.test.mjs (new validation only)
+
+All replay/data/integration model modules outside the dashboard/renderer remain byte-identical
+to the performance-optimized input package.
+
+UI / UX ACCEPTANCE
+------------------
+1. Initial screen: PASS
+   - Intentional landing hierarchy: title, short explanation, Replay Reconciliation, Search Parcel.
+   - Dataset summary remains subordinate.
+   - Negative space retained; no landing wall of cards.
+
+2. Graph canvas: PASS
+   - Active replay compresses header/control chrome to reclaim vertical space.
+   - Canvas uses the majority of the workspace.
+   - Heavy vignette/decorative framing removed; stage boxes recede.
+
+3. Node hierarchy: PASS
+   - Restrained semantic families: input, process, conflict, governance, outcome, history.
+   - Canonical current state remains stable/prominent; historical state remains subdued.
+
+4. Selected node: PASS
+   - Selected node is unmistakable.
+   - Direct upstream parents and downstream children remain emphasized and labelled.
+   - Unrelated graph context is subdued, not hidden.
+
+5. Edges: PASS
+   - Normal flow, candidate, rejected, conflict, authority/canonical and history relationships have distinct restrained treatments.
+   - Selection dims unrelated edges and emphasizes directly connected evidence.
+
+6. Inspector: PASS
+   - Clearer title/status/fact hierarchy.
+   - Existing evidence/confidence/provenance remains visible.
+   - Advanced time/version metadata and recorded limitations collapse by default.
+   - No new raw JSON view introduced.
+
+7. Replay controls: PASS
+   - Compact icon transport, stage readout and speed control.
+
+8. Replay timeline: PASS
+   - Completed/current/future states are visually distinct.
+   - Clean connected stage progression with an unobtrusive scrubber.
+
+9. Animation: PASS
+   - Existing stage-progress edge animation retained only for the processing transition.
+   - No floating/spinning nodes, global glow or particle effects added.
+
+10. Confidence: PASS
+    - Dimension-specific cues remain separate for source reliability, matching confidence,
+      correction confidence and reconciliation confidence when a stored numeric dimension exists.
+    - No universal confidence score created.
+
+11. Conflicts: PASS
+    - OPEN conflicts receive local attention.
+    - RESOLVED conflicts remain traceable with reduced visual competition.
+
+12. Canonical parcel: PASS
+    - Canonical outcome has stable green/teal treatment.
+    - Earlier evidence remains present and traceable.
+
+13. Parcel mode: PASS
+    - Parcel graph remains focused on relevant evidence only.
+    - Explicit BACK TO RECONCILIATION OVERVIEW treatment added using the existing global replay action.
+    - No separate route or data model introduced.
+
+14. Typography: PASS
+    - PRAMAN-aligned Inter/system stack retained.
+    - Heading scale reduced, tiny labels raised where appropriate, uppercase use reduced.
+    - Parcel/search identifiers use compact monospace treatment where useful.
+
+15. Responsiveness: PASS (static responsive contract + runtime logic)
+    - Desktop inspector shifts canvas/timeline instead of covering the graph at >1100 px.
+    - 1366px-specific compact sizing included.
+    - <=1100 px uses overlay behavior; <=900/620 px reflows controls/search.
+    - Short laptop viewport rule included for <=820 px height.
+
+16. Loading / empty / error states: PASS
+    - Loading PRAMAN evidence state.
+    - Building evidence graph / parcel graph health state.
+    - Parcel-not-found state retained.
+    - No-conflict state retained and clarified.
+    - No-history state made explicit in parcel summary.
+    - Missing-evidence relationship trace-gap state added without fabricating links.
+    - Dataset-load failure now shows a polished user-facing message rather than raw JS errors.
+
+17. PRAMAN consistency: PASS
+    - Palette aligned to Source & Schema Mapping conventions:
+      #071019 background, #0b1621 surface, #203343 border,
+      #eef5f7 text, #8fa5b3 muted, #72e6ca primary accent,
+      #86b9ff secondary, #f3c66a review/warning, #ff8c8c conflict.
+    - Evidence Graph retains its own explainability/audit identity.
+
+SEMANTIC REGRESSION
+-------------------
+Complete test suite: 105 / 105 PASS
+Failures: 0
+
+HTTP DATA SMOKE
+---------------
+Data-layer ERROR diagnostics: 0
+Source datasets: 7
+Source observations: 4,366
+Active canonical parcels: 1,000
+Conflicts: 715
+Searchable active + historical parcels: 1,060
+Global canonical-stage projection during smoke: 57 nodes / 133 edges
+Sample parcel canonical-stage projection: 26 nodes / 38 edges
+
+SYNTAX / CSS
+------------
+All source/test .mjs files: PASS node --check
+CSS parse errors (tinycss2): 0
+
+RESULT
+------
+PASS

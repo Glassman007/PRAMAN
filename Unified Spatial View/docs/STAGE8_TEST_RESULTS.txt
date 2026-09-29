@@ -1,0 +1,50 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> praman-spatial-view@0.8.0 test
+> node --test tests/temporal-model.mjs tests/evidence-model.mjs && node tests/run.cjs
+
+✔ All source associations resolve without invented geometry or IDs (49.972982ms)
+✔ Missing source geometry fixture remains geometry-less with no canonical fallback (464.541826ms)
+✔ Conflict filtering uses actual types/statuses/cells and covers required real cases (4.311105ms)
+✔ Shared edges have one identity, two neighbours and associated evidence without invented rulings (276.796114ms)
+✔ Separate recorded confidences/proposals never alter authority and omit absent dimensions (50.25651ms)
+✔ Reconciliation and Evidence Graph preserve real route/return context (2.098027ms)
+✔ Authority is explicit, not newest/confidence/review state (3.219914ms)
+✔ One indexed event model preserves real GeoGit/version/lineage identities (9.345647ms)
+✔ Ordinary current parcel and historical identity expose shared records and local lineage (1.136506ms)
+✔ Every split/merge transaction reconstructs atomic lifecycle membership and actual geometry (291.486276ms)
+✔ Cross-cell lineage retains actual cell identities (0.513602ms)
+✔ Explicit supersedes links drive boundary correction without synthetic proposal/approval (1.06114ms)
+✔ Proposed/rejected geometries never replace authoritative geometry in current or reconstructed states (1.722725ms)
+✔ Rollback affects recorded state version only; no invented geometry or buildings (1.200359ms)
+✔ Time machine has no parcels before birth, no future geometry, and matches present lifecycle at latest point (250.250548ms)
+✔ History navigation preserves exact parcel/event/version context (2.102224ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2623.634033
+PASS: evidence overlays, multi-source differences, shared-edge identity/picking, ownership vs geometry, issues filters, decision-support fields, existing panels, navigation return context, temporal authority safety, 1366×768 and no page errors.
+PASS: temporal modes, historical search, split/merge/cross-cell playback, boundary changes, proposed/rejected separation, rollback, time reconstruction, history navigation and independent buildings.
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'IN-DL-110054-10-54'
+- 'IN-DL-110054-10-56'
+                    ^
+
+    at /workspace/scratch/d49fddd03ea6/layer2/tests/city.cjs:20:12 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'IN-DL-110054-10-54',
+  expected: 'IN-DL-110054-10-56',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+Error: city.cjs failed: 1
+    at ChildProcess.<anonymous> (/workspace/scratch/d49fddd03ea6/layer2/tests/run.cjs:4:492)
+    at ChildProcess.emit (node:events:509:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:295:12)

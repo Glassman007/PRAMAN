@@ -1,0 +1,6 @@
+{
+  "scannedRuntimeFiles": 36,
+  "patternFindings": [],
+  "syntaxErrors": [],
+  "note": "External dashboard/Layer 1 routes require host mounting; not bundled services. GLB/import/browser request checks are in runtime suites."
+}

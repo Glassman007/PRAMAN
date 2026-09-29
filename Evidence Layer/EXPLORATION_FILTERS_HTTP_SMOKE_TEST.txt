@@ -1,0 +1,10 @@
+PRAMAN Evidence Graph — Exploration Filters HTTP Smoke Test
+RESULT: PASS
+Data-layer ERROR diagnostics: 0
+Filter catalog: 7 sources | 6 active adapters | 10 cells | 7 match statuses | 27 conflict types | 5 lineage types
+Runtime filtered sample: conflictType=AMBIGUOUS_CANDIDATE_MATCH + unresolvedOnly=true
+Filtered parcels: 5
+Filtered observations: 24
+Filtered conflicts: 5
+Visible graph nodes/edges: 38/55
+Filtered flag: true

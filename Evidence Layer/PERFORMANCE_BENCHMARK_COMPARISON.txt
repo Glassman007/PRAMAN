@@ -1,0 +1,36 @@
+PRAMAN Evidence Graph — Pre-pass vs Optimized Benchmark
+=======================================================
+
+Method
+------
+Same current PRAMAN dataset, same Node runtime workload, three independent runs per build.
+Reported values are medians. Timings are environment-dependent and are not application thresholds.
+
+Metric                                      Pre-pass      Optimized      Change
+First full locality projection              768.981 ms    318.996 ms     ~58.5% lower / ~2.4x faster
+Re-open/recreate locality projection        639.062 ms      0.006 ms     cached; rebuild work effectively removed
+Repeated same-parcel model request            5.298 ms      0.003 ms     cached; repeated build effectively removed
+1000 same-stage replay progress ticks        48.025 ms      2.998 ms     ~93.8% lower / ~16.0x faster
+
+Raw three-run measurements
+--------------------------
+First full locality projection:
+  pre-pass: 768.981, 730.780, 1120.248 ms
+  optimized: 675.582, 269.398, 318.996 ms
+
+Re-open/recreate locality projection:
+  pre-pass: 639.062, 534.773, 826.271 ms
+  optimized: 0.005, 0.006, 0.007 ms
+
+Repeated same-parcel model request:
+  pre-pass: 5.298, 5.119, 13.149 ms
+  optimized: 0.002, 0.003, 0.003 ms
+
+1000 same-stage replay progress ticks:
+  pre-pass: 48.025, 45.733, 57.537 ms
+  optimized: 11.006, 2.703, 2.998 ms
+
+Notes
+-----
+The first parcel build remains an on-demand detailed reconstruction and is intentionally not replaced by a lossy summary.
+The optimization targets repeat work, global aggregation, filtering, replay ticks and rendering scale while retaining all evidence.

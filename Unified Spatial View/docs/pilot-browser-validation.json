@@ -1,0 +1,41 @@
+{
+  "count": 42,
+  "placements": 104,
+  "boundsErrors": 0,
+  "screen": [
+    812.5885666853319,
+    766.3127731676697
+  ],
+  "picked": "BLD-00960",
+  "target": "BLD-00960",
+  "parcel": "IN-DL-110054-10-97",
+  "parcelId": "IN-DL-110054-10-97",
+  "diagnostics": {
+    "threeRevision": "180",
+    "templateLoads": 15,
+    "renderCount": 23,
+    "drawCalls": 524,
+    "triangles": 423882,
+    "memory": {
+      "geometries": 203,
+      "textures": 20
+    },
+    "groups": [
+      "parcels",
+      "buildings",
+      "roads",
+      "parks",
+      "trees",
+      "props",
+      "sourceGeometry",
+      "historicalGeometry",
+      "conflicts",
+      "temporaryAnimations"
+    ],
+    "testOnly": false
+  },
+  "medianFrameMs": 16.600000000093132,
+  "p95FrameMs": 43.699999999953434,
+  "uniqueAssets": 15,
+  "errors": []
+}

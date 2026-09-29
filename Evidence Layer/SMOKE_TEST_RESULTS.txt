@@ -1,0 +1,9 @@
+Replay HTTP smoke test
+Dataset loader over HTTP: PASS
+Replay controller Stage 1: Sources (7 visible nodes, 0 visible edges)
+Replay controller Stage 3: Normalization (14 cumulative aggregate nodes, 23 cumulative aggregate edges)
+Replay controller final stage: History / Lineage (55 cumulative aggregate nodes, 119 cumulative aggregate edges)
+Stage-3 normalized observations: 4,366
+Stage-3 source-observation ID coverage: 4,366 / 4,366
+Data-layer ERROR diagnostics: 0
+All .mjs syntax checks: PASS

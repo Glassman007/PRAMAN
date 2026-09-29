@@ -1,0 +1,1023 @@
+{
+  "canonicalRecords": 1000,
+  "active": 1000,
+  "canonicalInactive": 0,
+  "historical": 60,
+  "totalStoredParcels": 1060,
+  "duplicateIds": [],
+  "malformedIds": [],
+  "idValidation": "Observed IN-DL-six-digit-postcode-positive-cell-positive-parcel format; no numeric parcel upper bound",
+  "cells": {
+    "CELL-01": 100,
+    "CELL-02": 100,
+    "CELL-03": 100,
+    "CELL-04": 100,
+    "CELL-05": 100,
+    "CELL-06": 100,
+    "CELL-07": 100,
+    "CELL-08": 100,
+    "CELL-09": 100,
+    "CELL-10": 100
+  },
+  "missingGeometry": [],
+  "invalidGeometry": [],
+  "joinErrors": [],
+  "activeMissingOrInvalid": 0,
+  "historicalMissingOrInvalid": 0,
+  "extentMetres": {
+    "width": 1586.5128501851577,
+    "depth": 616.8746488667093,
+    "boundsXZ": [
+      253.75985908391885,
+      -1029.8276307662018,
+      1840.2727092690766,
+      -412.95298189949244
+    ]
+  },
+  "maxRoundTripErrorDegrees": 2.0097183471152322e-14,
+  "topology": {
+    "touchingPairs": 3053,
+    "positiveAreaOverlapPairs": 135,
+    "pairRelationChanges": 0,
+    "overlapPairs": [
+      {
+        "parcelA": "IN-DL-110054-1-15",
+        "parcelB": "IN-DL-110054-1-26",
+        "overlapAreaSqm": 0.1060750867674862
+      },
+      {
+        "parcelA": "IN-DL-110054-1-16",
+        "parcelB": "IN-DL-110054-1-26",
+        "overlapAreaSqm": 19.313048550823645
+      },
+      {
+        "parcelA": "IN-DL-110054-1-25",
+        "parcelB": "IN-DL-110054-1-26",
+        "overlapAreaSqm": 59.856916693897304
+      },
+      {
+        "parcelA": "IN-DL-110054-1-46",
+        "parcelB": "IN-DL-110054-1-56",
+        "overlapAreaSqm": 10.8434704793272
+      },
+      {
+        "parcelA": "IN-DL-110054-1-55",
+        "parcelB": "IN-DL-110054-1-56",
+        "overlapAreaSqm": 92.01354346060299
+      },
+      {
+        "parcelA": "IN-DL-110054-1-57",
+        "parcelB": "IN-DL-110054-1-68",
+        "overlapAreaSqm": 0.36693029935650473
+      },
+      {
+        "parcelA": "IN-DL-110054-1-58",
+        "parcelB": "IN-DL-110054-1-68",
+        "overlapAreaSqm": 16.24740062256392
+      },
+      {
+        "parcelA": "IN-DL-110054-1-67",
+        "parcelB": "IN-DL-110054-1-68",
+        "overlapAreaSqm": 55.23034895746591
+      },
+      {
+        "parcelA": "IN-DL-110054-1-80",
+        "parcelB": "IN-DL-110054-1-90",
+        "overlapAreaSqm": 4.698722574869279
+      },
+      {
+        "parcelA": "IN-DL-110054-2-14",
+        "parcelB": "IN-DL-110054-2-25",
+        "overlapAreaSqm": 0.16541588225473777
+      },
+      {
+        "parcelA": "IN-DL-110054-2-14",
+        "parcelB": "IN-DL-110054-2-24",
+        "overlapAreaSqm": 8.46562650944994
+      },
+      {
+        "parcelA": "IN-DL-110054-2-14",
+        "parcelB": "IN-DL-110054-2-15",
+        "overlapAreaSqm": 18.377508546911784
+      },
+      {
+        "parcelA": "IN-DL-110054-2-50",
+        "parcelB": "IN-DL-110054-2-60",
+        "overlapAreaSqm": 8.748003752633196
+      },
+      {
+        "parcelA": "IN-DL-110054-2-51",
+        "parcelB": "IN-DL-110054-2-61",
+        "overlapAreaSqm": 5.145360696996735
+      },
+      {
+        "parcelA": "IN-DL-110054-2-52",
+        "parcelB": "IN-DL-110054-2-61",
+        "overlapAreaSqm": 0.0741185129333615
+      },
+      {
+        "parcelA": "IN-DL-110054-2-59",
+        "parcelB": "IN-DL-110054-2-60",
+        "overlapAreaSqm": 80.00907230272605
+      },
+      {
+        "parcelA": "IN-DL-110054-2-61",
+        "parcelB": "IN-DL-110054-2-62",
+        "overlapAreaSqm": 9.273059229527052
+      },
+      {
+        "parcelA": "IN-DL-110054-2-68",
+        "parcelB": "IN-DL-110054-2-79",
+        "overlapAreaSqm": 0.15651083211253228
+      },
+      {
+        "parcelA": "IN-DL-110054-2-68",
+        "parcelB": "IN-DL-110054-2-78",
+        "overlapAreaSqm": 7.988759096163283
+      },
+      {
+        "parcelA": "IN-DL-110054-2-68",
+        "parcelB": "IN-DL-110054-2-69",
+        "overlapAreaSqm": 18.592619260127172
+      },
+      {
+        "parcelA": "IN-DL-110054-2-81",
+        "parcelB": "IN-DL-110054-2-91",
+        "overlapAreaSqm": 5.145396643876738
+      },
+      {
+        "parcelA": "IN-DL-110054-2-82",
+        "parcelB": "IN-DL-110054-2-91",
+        "overlapAreaSqm": 0.07411903044970371
+      },
+      {
+        "parcelA": "IN-DL-110054-2-91",
+        "parcelB": "IN-DL-110054-2-92",
+        "overlapAreaSqm": 9.668426361985578
+      },
+      {
+        "parcelA": "IN-DL-110054-3-11",
+        "parcelB": "IN-DL-110054-3-21",
+        "overlapAreaSqm": 4.712328195805119
+      },
+      {
+        "parcelA": "IN-DL-110054-3-12",
+        "parcelB": "IN-DL-110054-3-21",
+        "overlapAreaSqm": 0.08777134156339694
+      },
+      {
+        "parcelA": "IN-DL-110054-3-21",
+        "parcelB": "IN-DL-110054-3-22",
+        "overlapAreaSqm": 12.800006564500578
+      },
+      {
+        "parcelA": "IN-DL-110054-3-58",
+        "parcelB": "IN-DL-110054-3-69",
+        "overlapAreaSqm": 0.2457379859123321
+      },
+      {
+        "parcelA": "IN-DL-110054-3-59",
+        "parcelB": "IN-DL-110054-3-69",
+        "overlapAreaSqm": 12.246648790782155
+      },
+      {
+        "parcelA": "IN-DL-110054-3-61",
+        "parcelB": "IN-DL-110054-3-71",
+        "overlapAreaSqm": 4.974186201246495
+      },
+      {
+        "parcelA": "IN-DL-110054-3-62",
+        "parcelB": "IN-DL-110054-3-71",
+        "overlapAreaSqm": 0.09264866441320416
+      },
+      {
+        "parcelA": "IN-DL-110054-3-68",
+        "parcelB": "IN-DL-110054-3-69",
+        "overlapAreaSqm": 63.93304671088633
+      },
+      {
+        "parcelA": "IN-DL-110054-3-71",
+        "parcelB": "IN-DL-110054-3-72",
+        "overlapAreaSqm": 12.717267108150827
+      },
+      {
+        "parcelA": "IN-DL-110054-3-74",
+        "parcelB": "IN-DL-110054-3-84",
+        "overlapAreaSqm": 6.745940980402482
+      },
+      {
+        "parcelA": "IN-DL-110054-3-74",
+        "parcelB": "IN-DL-110054-3-85",
+        "overlapAreaSqm": 0.15271372789296267
+      },
+      {
+        "parcelA": "IN-DL-110054-3-74",
+        "parcelB": "IN-DL-110054-3-75",
+        "overlapAreaSqm": 20.83753965944155
+      },
+      {
+        "parcelA": "IN-DL-110054-3-87",
+        "parcelB": "IN-DL-110054-3-98",
+        "overlapAreaSqm": 0.5234176983079794
+      },
+      {
+        "parcelA": "IN-DL-110054-3-88",
+        "parcelB": "IN-DL-110054-3-98",
+        "overlapAreaSqm": 13.141261238340558
+      },
+      {
+        "parcelA": "IN-DL-110054-3-88",
+        "parcelB": "IN-DL-110054-3-99",
+        "overlapAreaSqm": 0.4470925877543484
+      },
+      {
+        "parcelA": "IN-DL-110054-3-89",
+        "parcelB": "IN-DL-110054-3-99",
+        "overlapAreaSqm": 14.447964047139637
+      },
+      {
+        "parcelA": "IN-DL-110054-3-97",
+        "parcelB": "IN-DL-110054-3-98",
+        "overlapAreaSqm": 52.73168045656159
+      },
+      {
+        "parcelA": "IN-DL-110054-3-98",
+        "parcelB": "IN-DL-110054-3-99",
+        "overlapAreaSqm": 24.04158211962068
+      },
+      {
+        "parcelA": "IN-DL-110054-4-3",
+        "parcelB": "IN-DL-110054-4-4",
+        "overlapAreaSqm": 61.760910974133786
+      },
+      {
+        "parcelA": "IN-DL-110054-4-44",
+        "parcelB": "IN-DL-110054-4-54",
+        "overlapAreaSqm": 6.053041343242264
+      },
+      {
+        "parcelA": "IN-DL-110054-4-45",
+        "parcelB": "IN-DL-110054-4-55",
+        "overlapAreaSqm": 8.334990341507043
+      },
+      {
+        "parcelA": "IN-DL-110054-4-45",
+        "parcelB": "IN-DL-110054-4-56",
+        "overlapAreaSqm": 0.16345537219339512
+      },
+      {
+        "parcelA": "IN-DL-110054-4-45",
+        "parcelB": "IN-DL-110054-4-46",
+        "overlapAreaSqm": 18.422321212546727
+      },
+      {
+        "parcelA": "IN-DL-110054-4-53",
+        "parcelB": "IN-DL-110054-4-54",
+        "overlapAreaSqm": 87.84585701177252
+      },
+      {
+        "parcelA": "IN-DL-110054-4-70",
+        "parcelB": "IN-DL-110054-4-80",
+        "overlapAreaSqm": 6.8228591477244755
+      },
+      {
+        "parcelA": "IN-DL-110054-4-80",
+        "parcelB": "IN-DL-110054-4-90",
+        "overlapAreaSqm": 5.114228741018843
+      },
+      {
+        "parcelA": "IN-DL-110054-4-83",
+        "parcelB": "IN-DL-110054-4-93",
+        "overlapAreaSqm": 7.259381392311983
+      },
+      {
+        "parcelA": "IN-DL-110054-4-83",
+        "parcelB": "IN-DL-110054-4-94",
+        "overlapAreaSqm": 0.1683694271531925
+      },
+      {
+        "parcelA": "IN-DL-110054-4-83",
+        "parcelB": "IN-DL-110054-4-84",
+        "overlapAreaSqm": 17.100292469354848
+      },
+      {
+        "parcelA": "IN-DL-110054-4-91",
+        "parcelB": "IN-DL-110054-4-92",
+        "overlapAreaSqm": 18.925829179368716
+      },
+      {
+        "parcelA": "IN-DL-110054-5-5",
+        "parcelB": "IN-DL-110054-5-6",
+        "overlapAreaSqm": 70.63562297233234
+      },
+      {
+        "parcelA": "IN-DL-110054-5-10",
+        "parcelB": "IN-DL-110054-5-20",
+        "overlapAreaSqm": 4.720166748204206
+      },
+      {
+        "parcelA": "IN-DL-110054-5-40",
+        "parcelB": "IN-DL-110054-5-50",
+        "overlapAreaSqm": 4.720196941520627
+      },
+      {
+        "parcelA": "IN-DL-110054-5-72",
+        "parcelB": "IN-DL-110054-5-82",
+        "overlapAreaSqm": 7.219537902295543
+      },
+      {
+        "parcelA": "IN-DL-110054-5-72",
+        "parcelB": "IN-DL-110054-5-83",
+        "overlapAreaSqm": 0.16822344215807114
+      },
+      {
+        "parcelA": "IN-DL-110054-5-72",
+        "parcelB": "IN-DL-110054-5-73",
+        "overlapAreaSqm": 17.167315512238392
+      },
+      {
+        "parcelA": "IN-DL-110054-6-1",
+        "parcelB": "IN-DL-110054-6-11",
+        "overlapAreaSqm": 13.720919562423532
+      },
+      {
+        "parcelA": "IN-DL-110054-6-37",
+        "parcelB": "IN-DL-110054-6-48",
+        "overlapAreaSqm": 0.14910288764627913
+      },
+      {
+        "parcelA": "IN-DL-110054-6-37",
+        "parcelB": "IN-DL-110054-6-47",
+        "overlapAreaSqm": 8.101836092612782
+      },
+      {
+        "parcelA": "IN-DL-110054-6-37",
+        "parcelB": "IN-DL-110054-6-38",
+        "overlapAreaSqm": 21.065041715200383
+      },
+      {
+        "parcelA": "IN-DL-110054-6-48",
+        "parcelB": "IN-DL-110054-6-58",
+        "overlapAreaSqm": 7.656361319966547
+      },
+      {
+        "parcelA": "IN-DL-110054-6-50",
+        "parcelB": "IN-DL-110054-6-60",
+        "overlapAreaSqm": 5.475112047848637
+      },
+      {
+        "parcelA": "IN-DL-110054-6-51",
+        "parcelB": "IN-DL-110054-6-61",
+        "overlapAreaSqm": 4.891913037997786
+      },
+      {
+        "parcelA": "IN-DL-110054-6-52",
+        "parcelB": "IN-DL-110054-6-61",
+        "overlapAreaSqm": 0.08192233561515568
+      },
+      {
+        "parcelA": "IN-DL-110054-6-57",
+        "parcelB": "IN-DL-110054-6-58",
+        "overlapAreaSqm": 84.37509245723635
+      },
+      {
+        "parcelA": "IN-DL-110054-6-61",
+        "parcelB": "IN-DL-110054-6-62",
+        "overlapAreaSqm": 9.73966602560217
+      },
+      {
+        "parcelA": "IN-DL-110054-6-69",
+        "parcelB": "IN-DL-110054-6-79",
+        "overlapAreaSqm": 7.17934856772156
+      },
+      {
+        "parcelA": "IN-DL-110054-6-69",
+        "parcelB": "IN-DL-110054-6-80",
+        "overlapAreaSqm": 0.16839024128078053
+      },
+      {
+        "parcelA": "IN-DL-110054-6-69",
+        "parcelB": "IN-DL-110054-6-70",
+        "overlapAreaSqm": 17.07628342153461
+      },
+      {
+        "parcelA": "IN-DL-110054-7-3",
+        "parcelB": "IN-DL-110054-7-4",
+        "overlapAreaSqm": 52.962452023898436
+      },
+      {
+        "parcelA": "IN-DL-110054-7-10",
+        "parcelB": "IN-DL-110054-7-20",
+        "overlapAreaSqm": 5.668178850013312
+      },
+      {
+        "parcelA": "IN-DL-110054-7-21",
+        "parcelB": "IN-DL-110054-7-31",
+        "overlapAreaSqm": 6.910049740000263
+      },
+      {
+        "parcelA": "IN-DL-110054-7-21",
+        "parcelB": "IN-DL-110054-7-32",
+        "overlapAreaSqm": 0.1614470416803283
+      },
+      {
+        "parcelA": "IN-DL-110054-7-21",
+        "parcelB": "IN-DL-110054-7-22",
+        "overlapAreaSqm": 20.320177125805362
+      },
+      {
+        "parcelA": "IN-DL-110054-7-26",
+        "parcelB": "IN-DL-110054-7-37",
+        "overlapAreaSqm": 0.14007777282905123
+      },
+      {
+        "parcelA": "IN-DL-110054-7-26",
+        "parcelB": "IN-DL-110054-7-36",
+        "overlapAreaSqm": 11.04323078052321
+      },
+      {
+        "parcelA": "IN-DL-110054-7-26",
+        "parcelB": "IN-DL-110054-7-27",
+        "overlapAreaSqm": 22.816006187493578
+      },
+      {
+        "parcelA": "IN-DL-110054-7-45",
+        "parcelB": "IN-DL-110054-7-55",
+        "overlapAreaSqm": 7.419091549843871
+      },
+      {
+        "parcelA": "IN-DL-110054-7-45",
+        "parcelB": "IN-DL-110054-7-56",
+        "overlapAreaSqm": 0.16348873710646028
+      },
+      {
+        "parcelA": "IN-DL-110054-7-45",
+        "parcelB": "IN-DL-110054-7-46",
+        "overlapAreaSqm": 19.141154071999377
+      },
+      {
+        "parcelA": "IN-DL-110054-7-53",
+        "parcelB": "IN-DL-110054-7-64",
+        "overlapAreaSqm": 0.44111409834830234
+      },
+      {
+        "parcelA": "IN-DL-110054-7-54",
+        "parcelB": "IN-DL-110054-7-64",
+        "overlapAreaSqm": 12.285555610044094
+      },
+      {
+        "parcelA": "IN-DL-110054-7-63",
+        "parcelB": "IN-DL-110054-7-64",
+        "overlapAreaSqm": 56.44960240421169
+      },
+      {
+        "parcelA": "IN-DL-110054-7-66",
+        "parcelB": "IN-DL-110054-7-77",
+        "overlapAreaSqm": 0.21580397758752143
+      },
+      {
+        "parcelA": "IN-DL-110054-7-67",
+        "parcelB": "IN-DL-110054-7-77",
+        "overlapAreaSqm": 11.948212797046008
+      },
+      {
+        "parcelA": "IN-DL-110054-7-76",
+        "parcelB": "IN-DL-110054-7-87",
+        "overlapAreaSqm": 0.1302241755679444
+      },
+      {
+        "parcelA": "IN-DL-110054-7-76",
+        "parcelB": "IN-DL-110054-7-86",
+        "overlapAreaSqm": 10.587236327251256
+      },
+      {
+        "parcelA": "IN-DL-110054-7-76",
+        "parcelB": "IN-DL-110054-7-77",
+        "overlapAreaSqm": 85.34048686396969
+      },
+      {
+        "parcelA": "IN-DL-110054-8-6",
+        "parcelB": "IN-DL-110054-8-16",
+        "overlapAreaSqm": 17.281046282406074
+      },
+      {
+        "parcelA": "IN-DL-110054-8-15",
+        "parcelB": "IN-DL-110054-8-16",
+        "overlapAreaSqm": 70.02330042670104
+      },
+      {
+        "parcelA": "IN-DL-110054-8-17",
+        "parcelB": "IN-DL-110054-8-28",
+        "overlapAreaSqm": 0.15965584997384433
+      },
+      {
+        "parcelA": "IN-DL-110054-8-18",
+        "parcelB": "IN-DL-110054-8-28",
+        "overlapAreaSqm": 12.573146874123289
+      },
+      {
+        "parcelA": "IN-DL-110054-8-27",
+        "parcelB": "IN-DL-110054-8-38",
+        "overlapAreaSqm": 0.15451543595100836
+      },
+      {
+        "parcelA": "IN-DL-110054-8-27",
+        "parcelB": "IN-DL-110054-8-37",
+        "overlapAreaSqm": 6.368126664394763
+      },
+      {
+        "parcelA": "IN-DL-110054-8-27",
+        "parcelB": "IN-DL-110054-8-28",
+        "overlapAreaSqm": 84.73711289920867
+      },
+      {
+        "parcelA": "IN-DL-110054-8-36",
+        "parcelB": "IN-DL-110054-8-47",
+        "overlapAreaSqm": 0.14486506067574764
+      },
+      {
+        "parcelA": "IN-DL-110054-8-36",
+        "parcelB": "IN-DL-110054-8-46",
+        "overlapAreaSqm": 10.201031110651257
+      },
+      {
+        "parcelA": "IN-DL-110054-8-36",
+        "parcelB": "IN-DL-110054-8-37",
+        "overlapAreaSqm": 20.43865376401161
+      },
+      {
+        "parcelA": "IN-DL-110054-8-56",
+        "parcelB": "IN-DL-110054-8-66",
+        "overlapAreaSqm": 17.28546989504752
+      },
+      {
+        "parcelA": "IN-DL-110054-8-65",
+        "parcelB": "IN-DL-110054-8-66",
+        "overlapAreaSqm": 71.12785164990801
+      },
+      {
+        "parcelA": "IN-DL-110054-8-81",
+        "parcelB": "IN-DL-110054-8-91",
+        "overlapAreaSqm": 5.656589069944271
+      },
+      {
+        "parcelA": "IN-DL-110054-8-82",
+        "parcelB": "IN-DL-110054-8-91",
+        "overlapAreaSqm": 0.05656621363111273
+      },
+      {
+        "parcelA": "IN-DL-110054-8-91",
+        "parcelB": "IN-DL-110054-8-92",
+        "overlapAreaSqm": 6.756526922750453
+      },
+      {
+        "parcelA": "IN-DL-110054-9-2",
+        "parcelB": "IN-DL-110054-9-12",
+        "overlapAreaSqm": 6.6237488222699366
+      },
+      {
+        "parcelA": "IN-DL-110054-9-2",
+        "parcelB": "IN-DL-110054-9-13",
+        "overlapAreaSqm": 0.15274456238164416
+      },
+      {
+        "parcelA": "IN-DL-110054-9-2",
+        "parcelB": "IN-DL-110054-9-3",
+        "overlapAreaSqm": 20.248449207333366
+      },
+      {
+        "parcelA": "IN-DL-110054-9-3",
+        "parcelB": "IN-DL-110054-9-4",
+        "overlapAreaSqm": 65.78415623164399
+      },
+      {
+        "parcelA": "IN-DL-110054-9-30",
+        "parcelB": "IN-DL-110054-9-40",
+        "overlapAreaSqm": 7.0865221492094355
+      },
+      {
+        "parcelA": "IN-DL-110054-9-31",
+        "parcelB": "IN-DL-110054-9-41",
+        "overlapAreaSqm": 5.494646494749145
+      },
+      {
+        "parcelA": "IN-DL-110054-9-32",
+        "parcelB": "IN-DL-110054-9-41",
+        "overlapAreaSqm": 0.06241734217460666
+      },
+      {
+        "parcelA": "IN-DL-110054-9-41",
+        "parcelB": "IN-DL-110054-9-42",
+        "overlapAreaSqm": 7.944348636708745
+      },
+      {
+        "parcelA": "IN-DL-110054-10-1",
+        "parcelB": "IN-DL-110054-10-11",
+        "overlapAreaSqm": 4.988692084919237
+      },
+      {
+        "parcelA": "IN-DL-110054-10-2",
+        "parcelB": "IN-DL-110054-10-11",
+        "overlapAreaSqm": 0.09059152352198255
+      },
+      {
+        "parcelA": "IN-DL-110054-10-4",
+        "parcelB": "IN-DL-110054-10-15",
+        "overlapAreaSqm": 0.14549833949518315
+      },
+      {
+        "parcelA": "IN-DL-110054-10-4",
+        "parcelB": "IN-DL-110054-10-14",
+        "overlapAreaSqm": 6.9278339791485
+      },
+      {
+        "parcelA": "IN-DL-110054-10-4",
+        "parcelB": "IN-DL-110054-10-5",
+        "overlapAreaSqm": 20.979457651839528
+      },
+      {
+        "parcelA": "IN-DL-110054-10-11",
+        "parcelB": "IN-DL-110054-10-12",
+        "overlapAreaSqm": 11.128467608595132
+      },
+      {
+        "parcelA": "IN-DL-110054-10-16",
+        "parcelB": "IN-DL-110054-10-26",
+        "overlapAreaSqm": 10.868933909174524
+      },
+      {
+        "parcelA": "IN-DL-110054-10-16",
+        "parcelB": "IN-DL-110054-10-27",
+        "overlapAreaSqm": 0.14655720310355985
+      },
+      {
+        "parcelA": "IN-DL-110054-10-16",
+        "parcelB": "IN-DL-110054-10-17",
+        "overlapAreaSqm": 20.549037362164484
+      },
+      {
+        "parcelA": "IN-DL-110054-10-29",
+        "parcelB": "IN-DL-110054-10-39",
+        "overlapAreaSqm": 7.345213329559059
+      },
+      {
+        "parcelA": "IN-DL-110054-10-29",
+        "parcelB": "IN-DL-110054-10-40",
+        "overlapAreaSqm": 0.16836152855160255
+      },
+      {
+        "parcelA": "IN-DL-110054-10-29",
+        "parcelB": "IN-DL-110054-10-30",
+        "overlapAreaSqm": 17.15946454095372
+      },
+      {
+        "parcelA": "IN-DL-110054-10-44",
+        "parcelB": "IN-DL-110054-10-54",
+        "overlapAreaSqm": 6.590919645136053
+      },
+      {
+        "parcelA": "IN-DL-110054-10-53",
+        "parcelB": "IN-DL-110054-10-54",
+        "overlapAreaSqm": 89.84761671677373
+      },
+      {
+        "parcelA": "IN-DL-110054-10-61",
+        "parcelB": "IN-DL-110054-10-71",
+        "overlapAreaSqm": 4.726196044996716
+      },
+      {
+        "parcelA": "IN-DL-110054-10-62",
+        "parcelB": "IN-DL-110054-10-71",
+        "overlapAreaSqm": 0.08582477687089392
+      },
+      {
+        "parcelA": "IN-DL-110054-10-71",
+        "parcelB": "IN-DL-110054-10-72",
+        "overlapAreaSqm": 10.179784207124811
+      },
+      {
+        "parcelA": "IN-DL-110054-10-76",
+        "parcelB": "IN-DL-110054-10-87",
+        "overlapAreaSqm": 0.24994693270710946
+      },
+      {
+        "parcelA": "IN-DL-110054-10-77",
+        "parcelB": "IN-DL-110054-10-87",
+        "overlapAreaSqm": 15.067688631893354
+      },
+      {
+        "parcelA": "IN-DL-110054-10-81",
+        "parcelB": "IN-DL-110054-10-91",
+        "overlapAreaSqm": 10.82672608297146
+      },
+      {
+        "parcelA": "IN-DL-110054-10-86",
+        "parcelB": "IN-DL-110054-10-87",
+        "overlapAreaSqm": 60.10716664653425
+      }
+    ]
+  },
+  "geometryTypes": {
+    "Polygon": 5455
+  },
+  "crs": "EPSG:4326",
+  "projectedCRS": "EPSG:32643",
+  "origin": {
+    "easting": 717000.0,
+    "northing": 3174000.0,
+    "crs": "EPSG:32643"
+  },
+  "sourceTables": [
+    {
+      "table": "CANONICAL_PARCELS",
+      "path": "7 Authoritative_state/CANONICAL_PARCELS.csv",
+      "records": 1000,
+      "columns": [
+        "canonical_parcel_id",
+        "cell_id",
+        "parcel_number",
+        "locality",
+        "parcel_status",
+        "land_use",
+        "property_type",
+        "ownership_category",
+        "owner_entity",
+        "tenure_type",
+        "area_sqm",
+        "built_up_area_sqm",
+        "building_count",
+        "floor_count",
+        "society_name",
+        "government_agency",
+        "current_geometry_id",
+        "authoritative_version",
+        "latitude_centroid",
+        "longitude_centroid",
+        "special_condition",
+        "municipal_ward",
+        "canonical_state_version",
+        "authoritative_geometry_version"
+      ],
+      "sha256": "287490e6109f9c46d047af1701fb33f8aa145588e5b7274971852f39ee02a705"
+    },
+    {
+      "table": "HISTORICAL_PARCELS",
+      "path": "8 History/HISTORICAL_PARCELS.csv",
+      "records": 60,
+      "columns": [
+        "canonical_parcel_id",
+        "cell_id",
+        "parcel_number",
+        "record_status",
+        "lineage_status",
+        "former_owner",
+        "retired_date",
+        "retirement_reason",
+        "historical_geometry_id"
+      ],
+      "sha256": "3c3378d962ccea3b41bf1b971dd03a389ee3eff6213c4ccd533dedc218fbb273"
+    },
+    {
+      "table": "GEOMETRY_VERSIONS",
+      "path": "7 Authoritative_state/GEOMETRY_VERSIONS.csv",
+      "records": 1143,
+      "columns": [
+        "geometry_id",
+        "canonical_parcel_id",
+        "version_label",
+        "effective_date",
+        "geometry_status",
+        "source_type",
+        "area_sqm",
+        "change_reason",
+        "accepted_status",
+        "supersedes_geometry_id",
+        "geometry_wkt",
+        "crs"
+      ],
+      "sha256": "2b078111b037db7eb9ff86afb078407999ab8914b45b1acd9b6e29eed864ef57"
+    },
+    {
+      "table": "SOURCE_GEOMETRIES",
+      "path": "2 Source_geometry/SOURCE_GEOMETRIES.csv",
+      "records": 4312,
+      "columns": [
+        "geometry_id",
+        "source_type",
+        "observation_ids",
+        "source_record_ids",
+        "original_crs",
+        "original_geometry_wkt",
+        "normalized_crs",
+        "normalized_geometry_wkt",
+        "observed_area_sqm",
+        "positional_accuracy_m",
+        "normalization_method",
+        "geometry_quality_flag"
+      ],
+      "sha256": "596c26423bc9ed90ff73cb533d2f1baacc1dd231b4b6f74ecda840f3ac871cfe"
+    },
+    {
+      "table": "MATCHING_INPUT_VIEW",
+      "path": "3 Adapter/MATCHING_INPUT_VIEW.csv",
+      "records": 4366,
+      "columns": [
+        "observation_id",
+        "source_type",
+        "source_record_id",
+        "source_parcel_id",
+        "owner_name",
+        "address",
+        "land_use",
+        "geometry_id",
+        "observed_area",
+        "observation_date",
+        "source_reliability",
+        "geometry_confidence",
+        "attribute_confidence",
+        "temporal_freshness",
+        "identifier_confidence",
+        "positional_accuracy_m",
+        "source_specific_details"
+      ],
+      "sha256": "21f058a440d1852d60b2084338fc541a39d2f6293edb3eafcf62196362f770bb"
+    },
+    {
+      "table": "CONFLICTS",
+      "path": "5 Conflicts/CONFLICTS.csv",
+      "records": 715,
+      "columns": [
+        "conflict_id",
+        "canonical_parcel_id",
+        "conflict_type",
+        "source_a",
+        "source_b",
+        "attribute_or_geometry",
+        "source_a_value",
+        "source_b_value",
+        "severity",
+        "criticality",
+        "explanation",
+        "status",
+        "recommended_next_evidence",
+        "human_review_required",
+        "benchmark_case_ids",
+        "source_a_observation_id",
+        "source_b_observation_id"
+      ],
+      "sha256": "5f92ec0468add90a69d42a3468e365a83334e154fd35102a0a765856a3b6aeba"
+    },
+    {
+      "table": "CONFLICT_EVIDENCE",
+      "path": "5 Conflicts/CONFLICT_EVIDENCE.csv",
+      "records": 1715,
+      "columns": [
+        "conflict_evidence_id",
+        "conflict_id",
+        "observation_id",
+        "evidence_role",
+        "source_type",
+        "attribute_name",
+        "observed_value",
+        "geometry_id",
+        "temporal_role",
+        "supports_or_contradicts",
+        "notes",
+        "evidence_type",
+        "evidence_id",
+        "source_table"
+      ],
+      "sha256": "ee717097c99d2d8536edda70389631e7bc69e92d072b562e44d85e615297deee"
+    },
+    {
+      "table": "RECONCILED_PARCELS",
+      "path": "6 Reconciliation/RECONCILED_PARCELS.csv",
+      "records": 1060,
+      "columns": [
+        "canonical_parcel_id",
+        "record_status",
+        "lineage_status",
+        "parent_parcel_ids",
+        "child_parcel_ids",
+        "match_status",
+        "criticality_level",
+        "criticality_reason",
+        "source_count",
+        "matched_source_ids",
+        "overall_match_confidence",
+        "geometry_confidence",
+        "ownership_confidence",
+        "land_use_confidence",
+        "lineage_confidence",
+        "reconciliation_confidence",
+        "proposed_state",
+        "authoritative_state",
+        "requires_human_review",
+        "unresolved_conflicts",
+        "reconciliation_timestamp",
+        "benchmark_case_ids"
+      ],
+      "sha256": "b01e5a4fa1877b5fc4b1d6ea136680dd75d334ec0774166647d472a63370cbac"
+    },
+    {
+      "table": "PARCEL_LINEAGE",
+      "path": "8 History/PARCEL_LINEAGE.csv",
+      "records": 74,
+      "columns": [
+        "lineage_event_id",
+        "event_type",
+        "parent_parcel_id",
+        "child_parcel_id",
+        "effective_date",
+        "reason",
+        "source",
+        "accepted_status"
+      ],
+      "sha256": "be07fe7fe41d99d607dd3b24c62edc3fa9ed0331544aced44eeaee9c0b2522a6"
+    },
+    {
+      "table": "GEOGIT_EVENTS",
+      "path": "8 History/GEOGIT_EVENTS.csv",
+      "records": 5602,
+      "columns": [
+        "event_id",
+        "parcel_id",
+        "timestamp",
+        "event_type",
+        "previous_version",
+        "resulting_version",
+        "source",
+        "actor_type",
+        "reason",
+        "related_parcel_ids"
+      ],
+      "sha256": "aed8a3c86b48c76663eb631a745167fd37981b5583d39187ef3e2d4902da74c0"
+    },
+    {
+      "table": "SOURCE_METADATA",
+      "path": "1 Source_inputs/SOURCE_METADATA.csv",
+      "records": 7,
+      "columns": [
+        "source_id",
+        "source_name",
+        "source_type",
+        "authority",
+        "acquisition_date",
+        "nominal_accuracy",
+        "temporal_currency",
+        "reliability",
+        "CRS",
+        "update_frequency"
+      ],
+      "sha256": "2349a7d3d85a87a208b239119df3f14dd7bf701ebcd11d809aa134f2bc4fe99a"
+    },
+    {
+      "table": "SOURCE_SPECIFIC_SCHEMA",
+      "path": "1 Source_inputs/SOURCE_SPECIFIC_SCHEMA.csv",
+      "records": 7,
+      "columns": [
+        "source_type",
+        "source_specific_keys",
+        "required_keys",
+        "historical_nullable_keys",
+        "lifecycle_metadata_fields",
+        "purpose"
+      ],
+      "sha256": "48d8efb1fa8a1acd154b6534c3c1e7260ec007e7fb8d298c28716079e8a2a3a1"
+    },
+    {
+      "table": "BUILDINGS",
+      "path": "9 Visual World/BUILDINGS.csv",
+      "records": 961,
+      "columns": [
+        "building_id",
+        "canonical_parcel_id",
+        "building_type",
+        "footprint_area",
+        "floors",
+        "construction_status",
+        "source",
+        "confidence"
+      ],
+      "sha256": "c5f2895e74c48eab983d45f0757a7fcf4d1572c6100876afdbb8fe75ff9ad92b"
+    },
+    {
+      "table": "SOCIETIES_AND_COMPLEXES",
+      "path": "9 Visual World/SOCIETIES_AND_COMPLEXES.csv",
+      "records": 6,
+      "columns": [
+        "complex_id",
+        "complex_name",
+        "complex_type",
+        "cell_id",
+        "associated_parcel_ids",
+        "number_of_buildings",
+        "number_of_units",
+        "common_area_parcels",
+        "park_parcels",
+        "parking_parcels"
+      ],
+      "sha256": "67bfbde5724007860bcb5f99797768ba4eca4849ca9c71fba06a927ae1f9fbe7"
+    }
+  ]
+}

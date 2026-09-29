@@ -1,0 +1,78 @@
+PRAMAN Evidence Graph — Dedicated Performance Pass Validation
+============================================================
+
+Scope
+-----
+Performance-only optimization. No matching, conflict, reconciliation,
+authority, canonical-state, lineage, filter or cross-dashboard semantics were changed.
+
+Implemented
+-----------
+1. Global cluster-level rendering remains the primary locality representation.
+2. Stage projections are pruned by replay stage before rendering.
+3. Locality replay frames and cumulative stage projections are memoized per data layer.
+4. Adapter processing aggregation was changed from repeated array membership scans to
+   source-level precomputation/reuse.
+5. Source/adapter/normalization/matching/conflict/authority/canonical and filter models
+   use memoized selectors where their inputs are immutable for the data-layer lifetime.
+6. Parcel evidence/history projections are lazy: no parcel graph is created during
+   locality browsing/autocomplete. A selected parcel is built once and cached.
+7. Replay controller structural snapshots are cached by stage + filter state.
+   Playback progress no longer rebuilds/filter-runs the evidence graph each tick.
+8. Renderer performs incremental progress-only updates when graph structure is unchanged.
+9. Renderer uses delegated node click handling.
+10. Dense detailed graphs use viewport virtualization with overscan. The controller
+    still owns the complete evidence snapshot; virtualization only limits live DOM/SVG nodes.
+11. CSS containment is applied to graph surface, node and stage-column paint/layout units.
+12. No force-layout worker or WebGL dependency was added because PRAMAN uses a fixed
+    stage-column layout; virtualization addresses the relevant rendering scale directly.
+
+Current dataset shape
+---------------------
+Final global locality projection: 61 aggregate nodes / 146 aggregate edges.
+Largest current individual parcel projection found by benchmark:
+IN-DL-110054-9-84 — 53 nodes / 79 edges.
+Virtualization threshold: 80 nodes.
+This means the current dataset stays comfortably below the detail render budget per parcel,
+while larger future parcel graphs automatically virtualize without deleting evidence.
+
+Measured comparison
+-------------------
+Three-run medians in this execution environment, same current dataset and benchmark workload:
+
+Metric                                      Pre-pass      Optimized
+First full locality projection              768.981 ms    318.996 ms
+Re-open/recreate locality projection        639.062 ms      0.006 ms
+Repeated same-parcel model request            5.298 ms      0.003 ms
+1000 same-stage replay progress ticks        48.025 ms      2.998 ms
+
+Observed improvement:
+- first locality projection: ~58.5% lower measured time (~2.4x faster)
+- repeated locality projection: cache hit, effectively eliminates rebuild work
+- repeated parcel projection: cache hit, effectively eliminates rebuild work
+- replay progress loop: ~16x faster computational path
+
+Timings are environment-dependent and are not UI constants or functional thresholds.
+`PERFORMANCE_BENCHMARK_CURRENT.txt` contains a reproducible current-run benchmark.
+
+Synthetic large-graph virtualization
+------------------------------------
+The benchmark retains a 10,000-node / 9,999-edge synthetic snapshot and computes a
+900x600 viewport render plan. Only the viewport/overscan subset is materialized; the full
+snapshot totals remain unchanged and available for subsequent viewport movement.
+
+Semantic regression
+-------------------
+Complete suite validated in three execution batches because a single command exceeded
+this environment's execution ceiling while independently reloading the CSV dataset.
+
+Tests: 97
+Pass: 97
+Fail: 0
+
+HTTP browser-loader smoke test: PASS
+Data-layer ERROR diagnostics: 0
+Global final graph remains aggregate-only: PASS
+Parcel detail retains record-level source + normalized evidence: PASS
+
+Result: PASS

@@ -1,0 +1,177 @@
+{
+  "markerPick": {
+    "kind": "conflict",
+    "id": "CNF-00358",
+    "conflictIds": [
+      "CNF-00358"
+    ],
+    "parcelId": "IN-DL-110054-3-69",
+    "representation": "Parcel record marker; not a conflict footprint",
+    "point": [
+      1144.9482919630063,
+      0.8499999940395355,
+      -834.2422747230177
+    ],
+    "instanceId": 0
+  },
+  "familyCoverage": {
+    "BUILDING_GIS": 292,
+    "CADASTRAL_REVENUE": 422,
+    "DDA_DEVELOPMENT_AUTHORITY": 151,
+    "DRONE_ORTHOPHOTO": 312,
+    "GNSS_CORS_SURVEY": 78,
+    "MUNICIPAL_PROPERTY": 419,
+    "UTILITY_INFRASTRUCTURE": 93
+  },
+  "start": {
+    "active": 1000,
+    "state": {
+      "selected": null,
+      "selectedConflict": null,
+      "selectedEdge": null,
+      "chosen": [],
+      "type": "",
+      "status": "",
+      "cell": "",
+      "issuesOnly": false,
+      "showEdges": false,
+      "showConflicts": false,
+      "scope": "selected",
+      "allowed": true,
+      "sourceObservationIds": [],
+      "comparisonObservationIds": []
+    },
+    "model": {
+      "observations": 4366,
+      "sourceGeometryRecords": 4312,
+      "associations": 4366,
+      "comparisons": 4366,
+      "missingComparisons": 0,
+      "sharedEdges": 1600,
+      "canonicalOverlapPairs": 135,
+      "conflicts": 715,
+      "conflictParcels": 530,
+      "sourceFamilies": {
+        "CADASTRAL_REVENUE": 1061,
+        "MUNICIPAL_PROPERTY": 1052,
+        "BUILDING_GIS": 765,
+        "DRONE_ORTHOPHOTO": 782,
+        "UTILITY_INFRASTRUCTURE": 190,
+        "GNSS_CORS_SURVEY": 229,
+        "DDA_DEVELOPMENT_AUTHORITY": 287
+      }
+    }
+  },
+  "target": {
+    "id": "IN-DL-110054-1-4",
+    "observations": [
+      "OBS-000013",
+      "OBS-000014"
+    ]
+  },
+  "pickSource": {
+    "kind": "source",
+    "id": "OBS-000013",
+    "parcelId": "IN-DL-110054-1-4",
+    "category": "DERIVED COMPARISON — NOT AUTHORITY",
+    "point": [
+      347.7569580078069,
+      0.14000000000005686,
+      -976.054402669265
+    ]
+  },
+  "edge": {
+    "id": "EDGE-fdfe438268d6943d",
+    "pids": [
+      "IN-DL-110054-1-12",
+      "IN-DL-110054-1-2"
+    ]
+  },
+  "pickEdge": {
+    "kind": "edge",
+    "id": "EDGE-fdfe438268d6943d",
+    "parcelId": "IN-DL-110054-1-12",
+    "parcelIds": [
+      "IN-DL-110054-1-12",
+      "IN-DL-110054-1-2"
+    ],
+    "point": [
+      299.0401106967512,
+      0.3400000035762787,
+      -973.94100943463
+    ]
+  },
+  "owner": {
+    "id": "CNF-00358",
+    "parcelId": "IN-DL-110054-3-69"
+  },
+  "issues": {
+    "count": 36,
+    "text": "36 matching conflicts · 36 parcels · 13 matching parcels in visible cells",
+    "subdued": true,
+    "buildings": false,
+    "summary": "36"
+  },
+  "navigation": {
+    "target": "reconciliation",
+    "href": "http://127.0.0.1:43021/conflict-explorer?parcel=IN-DL-110054-3-69&conflict=CNF-00358&source=SRC-A-REV&sources=SRC-A-REV%2CSRC-B-MCD&observations=OBS-001119%2COBS-001120&view=reconcile&context=parcel-conflict-case&open_conflicts=CNF-00292%2CCNF-00358&ce_type=OWNERSHIP_DISAGREEMENT&ce_status=OPEN&ce_source=CADASTRAL_REVENUE&returnTo=http%3A%2F%2F127.0.0.1%3A43021%2F%3FparcelId%3DIN-DL-110054-3-69%26conflictId%3DCNF-00358%26source%3DSRC-A-REV%26observationIds%3DOBS-001119%252COBS-001120%26issueType%3DOWNERSHIP_DISAGREEMENT%26issueStatus%3DOPEN%26issues%3D1",
+    "context": {
+      "openConflictIds": [
+        "CNF-00292",
+        "CNF-00358"
+      ],
+      "parcelId": "IN-DL-110054-3-69",
+      "conflictId": "CNF-00358",
+      "sourceIds": [
+        "SRC-A-REV",
+        "SRC-B-MCD"
+      ],
+      "observationIds": [
+        "OBS-001119",
+        "OBS-001120"
+      ],
+      "sourceType": "CADASTRAL_REVENUE",
+      "type": "OWNERSHIP_DISAGREEMENT",
+      "status": "OPEN",
+      "cell": "",
+      "issues": true
+    },
+    "returnTo": "http://127.0.0.1:43021/?parcelId=IN-DL-110054-3-69&conflictId=CNF-00358&source=SRC-A-REV&observationIds=OBS-001119%2COBS-001120&issueType=OWNERSHIP_DISAGREEMENT&issueStatus=OPEN&issues=1"
+  },
+  "graph": {
+    "target": "evidenceGraph",
+    "href": "http://127.0.0.1:43021/evidence-graph?parcel=IN-DL-110054-3-69&conflict=CNF-00358&source=SRC-A-REV&sources=SRC-A-REV%2CSRC-B-MCD&observations=OBS-001119%2COBS-001120&returnTo=http%3A%2F%2F127.0.0.1%3A43021%2F%3FparcelId%3DIN-DL-110054-3-69%26conflictId%3DCNF-00358%26source%3DSRC-A-REV%26observationIds%3DOBS-001119%252COBS-001120%26issueType%3DOWNERSHIP_DISAGREEMENT%26issueStatus%3DOPEN%26issues%3D1",
+    "context": {
+      "openConflictIds": [
+        "CNF-00292",
+        "CNF-00358"
+      ],
+      "parcelId": "IN-DL-110054-3-69",
+      "conflictId": "CNF-00358",
+      "sourceIds": [
+        "SRC-A-REV",
+        "SRC-B-MCD"
+      ],
+      "observationIds": [
+        "OBS-001119",
+        "OBS-001120"
+      ],
+      "sourceType": "CADASTRAL_REVENUE",
+      "type": "OWNERSHIP_DISAGREEMENT",
+      "status": "OPEN",
+      "cell": "",
+      "issues": true
+    },
+    "returnTo": "http://127.0.0.1:43021/?parcelId=IN-DL-110054-3-69&conflictId=CNF-00358&source=SRC-A-REV&observationIds=OBS-001119%2COBS-001120&issueType=OWNERSHIP_DISAGREEMENT&issueStatus=OPEN&issues=1"
+  },
+  "noConflicts": "IN-DL-110054-1-1",
+  "review": "IN-DL-110054-1-4",
+  "layout": {
+    "mapLeft": 360,
+    "panelRight": 360,
+    "mapHeight": 554,
+    "bodyWidth": 1366,
+    "viewport": 1366
+  },
+  "errors": []
+}

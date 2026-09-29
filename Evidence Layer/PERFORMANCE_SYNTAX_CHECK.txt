@@ -1,0 +1,30 @@
+PRAMAN Evidence Graph — Performance Pass Syntax Check
+=====================================================
+PASS src/evidence-graph/dashboard/EvidenceGraphDashboard.mjs
+PASS src/evidence-graph/dashboard/EvidenceGraphRenderer.mjs
+PASS src/evidence-graph/dashboard/index.mjs
+PASS src/evidence-graph/data/constants.mjs
+PASS src/evidence-graph/data/csv.mjs
+PASS src/evidence-graph/data/dataLayer.mjs
+PASS src/evidence-graph/data/index.mjs
+PASS src/evidence-graph/data/loaders/browser.mjs
+PASS src/evidence-graph/data/utils.mjs
+PASS src/evidence-graph/integration/dashboardLinks.mjs
+PASS src/evidence-graph/integration/index.mjs
+PASS src/evidence-graph/integration/navigation.mjs
+PASS src/evidence-graph/integration/targetBridges.mjs
+PASS src/evidence-graph/replay/ReplayController.mjs
+PASS src/evidence-graph/replay/adapterProcessing.mjs
+PASS src/evidence-graph/replay/authoritativeCanonicalState.mjs
+PASS src/evidence-graph/replay/authorityReview.mjs
+PASS src/evidence-graph/replay/conflictDetection.mjs
+PASS src/evidence-graph/replay/distortionAwareMatching.mjs
+PASS src/evidence-graph/replay/explorationFilters.mjs
+PASS src/evidence-graph/replay/globalNormalization.mjs
+PASS src/evidence-graph/replay/historyLineage.mjs
+PASS src/evidence-graph/replay/index.mjs
+PASS src/evidence-graph/replay/individualParcelMode.mjs
+PASS src/evidence-graph/replay/projection.mjs
+PASS src/evidence-graph/replay/sourceArrival.mjs
+PASS src/evidence-graph/replay/stages.mjs
+Result: PASS

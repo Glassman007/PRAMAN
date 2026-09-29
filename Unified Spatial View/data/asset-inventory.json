@@ -1,0 +1,296 @@
+[
+  {
+    "id": "apartments-app-1",
+    "path": "assets/apartments/app-1.glb",
+    "category": "apartments",
+    "sha256": "400b13f977499046cddc8418a5a2b48684c5721885a6ddf91528ab248262c8b3",
+    "bytes": 672836
+  },
+  {
+    "id": "apartments-app-2",
+    "path": "assets/apartments/app-2.glb",
+    "category": "apartments",
+    "sha256": "3c70f9adced7dc6a4b635b94b2157e10347fe61af36156594cd8496c1b7bec49",
+    "bytes": 338396
+  },
+  {
+    "id": "apartments-app-3",
+    "path": "assets/apartments/app-3.glb",
+    "category": "apartments",
+    "sha256": "e2e234c96af3161dbc90d9e4c226c42848b2d2c82e6e08e5b2667607f64f04c4",
+    "bytes": 483880
+  },
+  {
+    "id": "apartments-app-4",
+    "path": "assets/apartments/app-4.glb",
+    "category": "apartments",
+    "sha256": "2f37311aa85ff713cdfb1139bc7acacfe3f77dade0244b553ec459c5179f2e03",
+    "bytes": 269584
+  },
+  {
+    "id": "apartments-app-5",
+    "path": "assets/apartments/app-5.glb",
+    "category": "apartments",
+    "sha256": "7a026f8b81eed4505d81374540b679c0d66dbe251edce9c7ba1d505b9a9907de",
+    "bytes": 555004
+  },
+  {
+    "id": "apartments-app-6",
+    "path": "assets/apartments/app-6.glb",
+    "category": "apartments",
+    "sha256": "b2f8e90af1d1cfeee987027707fc08181d331c6f1f2f8cd019b51982cbee7a76",
+    "bytes": 193980
+  },
+  {
+    "id": "apartments-app-7",
+    "path": "assets/apartments/app-7.glb",
+    "category": "apartments",
+    "sha256": "8644b05d1badd556dc8b1ef06d5aca2c96fe1b429e1b9cb392b9337a28621a1d",
+    "bytes": 361740
+  },
+  {
+    "id": "buildings-building-1",
+    "path": "assets/buildings/building-1.glb",
+    "category": "buildings",
+    "sha256": "dde0ce1fdb9a07e994cf4c22b8dbbaf37092deb585e1261f2989267c9148f3dd",
+    "bytes": 498812
+  },
+  {
+    "id": "buildings-building-10",
+    "path": "assets/buildings/building-10.glb",
+    "category": "buildings",
+    "sha256": "dead8dd08cb23196b23cbfb7cdbcd056863d1968209e93868d1156974d813248",
+    "bytes": 465344
+  },
+  {
+    "id": "buildings-building-2",
+    "path": "assets/buildings/building-2.glb",
+    "category": "buildings",
+    "sha256": "71c8f227bb4f8208bbf4af5aae12133c993949610cb10d9b13fede72c8b154db",
+    "bytes": 476852
+  },
+  {
+    "id": "buildings-building-3",
+    "path": "assets/buildings/building-3.glb",
+    "category": "buildings",
+    "sha256": "b72b6d652095dbd3c37aa07dc33444153c8c13b6f2d64179579df67c65d8fbf9",
+    "bytes": 483996
+  },
+  {
+    "id": "buildings-building-4",
+    "path": "assets/buildings/building-4.glb",
+    "category": "buildings",
+    "sha256": "aa8ae6adde622170ae54b4717a4a125223af57876415dbaa70001975823f0f51",
+    "bytes": 459064
+  },
+  {
+    "id": "buildings-building-5",
+    "path": "assets/buildings/building-5.glb",
+    "category": "buildings",
+    "sha256": "a4bb3ffebbc8b9c3efb1ea3777a053dfd074c508c66d3219e5e465321ec756bd",
+    "bytes": 479904
+  },
+  {
+    "id": "buildings-building-6",
+    "path": "assets/buildings/building-6.glb",
+    "category": "buildings",
+    "sha256": "e9fa472c8e08f5beced516cc054d91f138524aa27742328093d9e2f1e26722d5",
+    "bytes": 463340
+  },
+  {
+    "id": "buildings-building-7",
+    "path": "assets/buildings/building-7.glb",
+    "category": "buildings",
+    "sha256": "9596719f13303da4112baef6e4426e2b7a717cf8fabec7a249d04023c45f489f",
+    "bytes": 467024
+  },
+  {
+    "id": "buildings-building-8",
+    "path": "assets/buildings/building-8.glb",
+    "category": "buildings",
+    "sha256": "3d631d7e308d93eb8a86ae56f3fb803b8cfc2f68cc7bfc3d1847179e20205001",
+    "bytes": 453096
+  },
+  {
+    "id": "buildings-building-9",
+    "path": "assets/buildings/building-9.glb",
+    "category": "buildings",
+    "sha256": "ba82d06afa11dd64ce02c52b0931e1c38e9dd8edc46a6e22b0410a89df32d016",
+    "bytes": 458052
+  },
+  {
+    "id": "commercial-com-1",
+    "path": "assets/commercial/com-1.glb",
+    "category": "commercial",
+    "sha256": "a7c3129d53f560fb85361f00c3e32275ff8d7482aa5080784de56ba6928b8261",
+    "bytes": 405428
+  },
+  {
+    "id": "commercial-com-2",
+    "path": "assets/commercial/com-2.glb",
+    "category": "commercial",
+    "sha256": "f4e8945bf37c2f9407cbe653d0b3616e2421297f0a9ab3152a44d5ddee7ce4bc",
+    "bytes": 405032
+  },
+  {
+    "id": "commercial-com-3",
+    "path": "assets/commercial/com-3.glb",
+    "category": "commercial",
+    "sha256": "8550ad8f890b46311a5dea357f6e1ea303e9462f3e72263bebdb2c9e6b06e3fe",
+    "bytes": 407492
+  },
+  {
+    "id": "government-gov-1",
+    "path": "assets/government/gov-1.glb",
+    "category": "government",
+    "sha256": "1d857f1b66b69b7504a8a28f6631aff3a37ed2d946efd3bc8632ac47b6dc72ac",
+    "bytes": 400320
+  },
+  {
+    "id": "government-gov-2",
+    "path": "assets/government/gov-2.glb",
+    "category": "government",
+    "sha256": "259fe03864a985d2fc006d16d0079a8f949d50c92cde61d0674bea1494ffc51c",
+    "bytes": 395656
+  },
+  {
+    "id": "government-gov-3",
+    "path": "assets/government/gov-3.glb",
+    "category": "government",
+    "sha256": "c83f139e5f7897200ba1a5d5ca1140f2217f320b030cc661bbc4a13cd0c6459a",
+    "bytes": 395308
+  },
+  {
+    "id": "parks-park-1",
+    "path": "assets/parks/park-1.glb",
+    "category": "parks",
+    "sha256": "351ca38657ae2bb1356eb629768ea9f7f496c418c594f16c88bf478bf0bbd66c",
+    "bytes": 394208
+  },
+  {
+    "id": "parks-park-2",
+    "path": "assets/parks/park-2.glb",
+    "category": "parks",
+    "sha256": "4652d0c34dda7e5d8c4176978f269cda834ed1d337849d26842a43618fb4f63e",
+    "bytes": 393836
+  },
+  {
+    "id": "parks-park-3",
+    "path": "assets/parks/park-3.glb",
+    "category": "parks",
+    "sha256": "25b73861d67227217a6f4ddc90fad256b6205328edcdec4ba970406601be4519",
+    "bytes": 398600
+  },
+  {
+    "id": "props-barn",
+    "path": "assets/props/barn.glb",
+    "category": "props",
+    "sha256": "2eef4bff36333f0e77a546c3892a3bc9d7ba4675a708791dd5cc2c4bca8ff170",
+    "bytes": 182828
+  },
+  {
+    "id": "props-bench",
+    "path": "assets/props/bench.glb",
+    "category": "props",
+    "sha256": "bf665eec6d0794acb93a58217d26f09813131811a24e48505e88eef2004d9469",
+    "bytes": 13508
+  },
+  {
+    "id": "props-construction",
+    "path": "assets/props/construction.glb",
+    "category": "props",
+    "sha256": "52dbdc821bd279e58cf0f4088a84ebd9de1af4c5b33e30a98e7b7ebf52f26f07",
+    "bytes": 394144
+  },
+  {
+    "id": "props-construction_prop",
+    "path": "assets/props/construction_prop.glb",
+    "category": "props",
+    "sha256": "55232244ed177f85a64a64db0d83097851d0edd0049bb75f61038d11b225ab33",
+    "bytes": 413340
+  },
+  {
+    "id": "props-lantern-2",
+    "path": "assets/props/lantern-2.glb",
+    "category": "props",
+    "sha256": "47f6bd2beb10d2bbb4a3dab682de0f064c012f3b6ca598dd51070332b3a8d7dd",
+    "bytes": 124472
+  },
+  {
+    "id": "props-lantern-3",
+    "path": "assets/props/lantern-3.glb",
+    "category": "props",
+    "sha256": "081785509cd54d466b6b38d46d883c11a3fd7ee4975c498b2a27236edaabd402",
+    "bytes": 54748
+  },
+  {
+    "id": "props-lantern",
+    "path": "assets/props/lantern.glb",
+    "category": "props",
+    "sha256": "bfaf93abc65bde18b8e8f3a5a7adafcfd5601fa2502eea64b5a88b1764cd4ff7",
+    "bytes": 426684
+  },
+  {
+    "id": "props-park_bench",
+    "path": "assets/props/park_bench.glb",
+    "category": "props",
+    "sha256": "2846db73e5fe14fa7146e861ab34d435ed0402e2655388816945265f3a6513d4",
+    "bytes": 390708
+  },
+  {
+    "id": "props-parking_lot",
+    "path": "assets/props/parking_lot.glb",
+    "category": "props",
+    "sha256": "ff9ffe8dae3f9418509d759912b597bc84b14c05108f5890f9027d28760ea563",
+    "bytes": 410056
+  },
+  {
+    "id": "props-toninos_parking_lots",
+    "path": "assets/props/toninos_parking_lots.glb",
+    "category": "props",
+    "sha256": "ed7f5dd794bcfb7c18fbf21624ca2b1e8385f5d26ef505be7b8c350b5ac310c3",
+    "bytes": 393992
+  },
+  {
+    "id": "props-warehouse_building_construction_site",
+    "path": "assets/props/warehouse_building_construction_site.glb",
+    "category": "props",
+    "sha256": "aa6766baa7674c342a69f8772a52ecbf65434db56dcf09e617c53fdcad81431c",
+    "bytes": 440656
+  },
+  {
+    "id": "props-windmill",
+    "path": "assets/props/windmill.glb",
+    "category": "props",
+    "sha256": "2958bafd09a8b0bcbd1fb16e239ebadd9aad308de831438fa0c0da3fba519f10",
+    "bytes": 318364
+  },
+  {
+    "id": "trees-tree-1",
+    "path": "assets/trees/tree-1.glb",
+    "category": "trees",
+    "sha256": "44b21292d5e4e1162ab9ef9e0a23c9086a2bf32aa8570e0efa0c5d554690e98b",
+    "bytes": 86724
+  },
+  {
+    "id": "trees-tree-2",
+    "path": "assets/trees/tree-2.glb",
+    "category": "trees",
+    "sha256": "5b42d9b09b0e5da740a42f65485ef28b4aa40ba1382355c8247f37f4f82131d0",
+    "bytes": 73288
+  },
+  {
+    "id": "trees-tree-3",
+    "path": "assets/trees/tree-3.glb",
+    "category": "trees",
+    "sha256": "662ada5b78827c5764ba7c99236ba3551a209f1959f73c6d1735866ce5db1b80",
+    "bytes": 159004
+  },
+  {
+    "id": "trees-tree-4",
+    "path": "assets/trees/tree-4.glb",
+    "category": "trees",
+    "sha256": "3e7cf69e6cfb1f7263fbc8d8848f0ca6f328ee604cfae6bd59b9832d27853566",
+    "bytes": 155692
+  }
+]

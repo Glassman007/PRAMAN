@@ -1,0 +1,64 @@
+PRAMAN LAYER 4 — PARCEL LINEAGE VIEW VALIDATION
+================================================
+
+RESULT: PASS
+
+Existing regression suites
+--------------------------
+PASS — History/Lineage adapter
+PASS — Parcel directory / landing screen
+PASS — Parcel History timeline semantics
+PASS — Current/Historical/Proposed state separation
+PASS — Event Inspector
+PASS — Spatial History
+
+Parcel Lineage suite
+--------------------
+PASS — 1,060 parcel identities remain available through the established Layer 4 detail contract.
+PASS — 74 unique explicit lineage edges are rendered without creating duplicate graph rows.
+PASS — Graph edges come only from explicit lineage data; no parcel-ID similarity inference is used.
+PASS — Relationship subtypes are dataset-derived: SPLIT, MERGE, REDEVELOPMENT_CONSOLIDATION, CROSS_CELL_SPLIT, CROSS_CELL_MERGE.
+PASS — 8 CROSS_CELL_* lineage edges are retained.
+PASS — 4 explicit edges actually cross from one recorded cell to another and remain connected.
+PASS — Current/active parcels default to Ancestors.
+PASS — Historical parcels default to Full Lineage.
+PASS — Current selected parcel is positioned above earlier ancestry.
+PASS — In Full Lineage, later descendants are above the selected historical parcel and earlier ancestry is below it.
+PASS — Pending proposal markers do not replace CURRENT AUTHORITATIVE parcel-node semantics.
+PASS — Node clicks open the node inspector before any navigation.
+PASS — OPEN FULL HISTORY is an explicit secondary action.
+PASS — Expand Earlier / Expand Descendants operate on the visible frontier only.
+PASS — No whole-directory fetch is performed by the lineage view.
+PASS — Survey, conflict, approval, metadata and other history-only events are not rendered as lineage nodes/edges.
+PASS — Selected parcel remains visible even when no explicit identity-changing lineage edge exists.
+PASS — Parcel History remains a separate view; Lineage opens only through PARCEL LINEAGE VIEW / view=lineage.
+PASS — Back to Parcel History and All Parcels preserve unrelated Layer 4 query/search state.
+PASS — App.jsx, ParcelTimeline.jsx and ParcelLineage.jsx parse with zero TypeScript/JSX syntax diagnostics.
+
+Current dataset depth
+---------------------
+Maximum explicit ancestor depth: 1 relationship generation
+Maximum explicit descendant depth: 1 relationship generation
+
+The UI does not synthesize additional ancestry. Expansion controls disable when the recorded branch is exhausted.
+
+Change-scope validation
+-----------------------
+Modified existing files:
+- src/App.jsx
+- src/ParcelTimeline.jsx
+- src/parcelTimeline.css
+
+Added files:
+- src/ParcelLineage.jsx
+- src/lineageGraph.js
+- src/parcelLineage.css
+- layer4.lineageView.test.mjs
+- LAYER4_LINEAGE_VIEW_IMPLEMENTATION.md
+- LAYER4_LINEAGE_VIEW_TEST_RESULTS.txt
+
+All other files from PRAMAN_Layer4_Spatial_History.zip remain unchanged.
+
+Environment note
+----------------
+The project archive does not contain node_modules, so a Vite production bundle was not executed in this isolated container. JSX syntax was validated through the installed TypeScript parser, and all Layer 4 semantic/data regression suites passed against the current PRAMAN_DATA dataset.

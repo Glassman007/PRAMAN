@@ -1,0 +1,53 @@
+{
+  "deleted": [
+    "SMOKE_TEST_RESULTS.txt",
+    "STAGE1_SOURCE_ARRIVAL_VALIDATION.txt",
+    "STAGE2_ADAPTER_PROCESSING_VALIDATION.txt",
+    "STAGE2_HTTP_SMOKE_TEST.txt",
+    "STAGE3_GLOBAL_NORMALIZATION_VALIDATION.txt",
+    "STAGE3_HTTP_SMOKE_TEST.txt",
+    "STAGE4_DISTORTION_AWARE_MATCHING_VALIDATION.txt",
+    "STAGE4_HTTP_SMOKE_TEST.txt",
+    "STAGE4_SYNTAX_CHECK.txt",
+    "STAGE5_CONFLICT_DETECTION_VALIDATION.txt",
+    "STAGE5_HTTP_SMOKE_TEST.txt",
+    "STAGE5_SYNTAX_CHECK.txt",
+    "STAGE5_ZIP_INTEGRITY.txt"
+  ],
+  "added": [
+    "FINAL_CODE_CLEANUP_REPORT.md",
+    "FINAL_CSS_CHECK.txt"
+  ],
+  "changed": [
+    "FINAL_BROWSER_AUDIT.json",
+    "FINAL_DATASET_BYTE_INTEGRITY.json",
+    "FINAL_HTTP_SMOKE_TEST.txt",
+    "FINAL_PERFORMANCE_BENCHMARK.txt",
+    "FINAL_SYNTAX_CHECK.txt",
+    "FINAL_TEST_RESULTS.txt",
+    "FINAL_ZIP_INTEGRITY.txt",
+    "INTEGRATION.md",
+    "README.md",
+    "src/evidence-graph/dashboard/EvidenceGraphDashboard.mjs",
+    "src/evidence-graph/dashboard/evidenceGraph.css",
+    "src/evidence-graph/integration/dashboardLinks.mjs",
+    "src/evidence-graph/replay/ReplayController.mjs",
+    "src/evidence-graph/replay/authorityReview.mjs",
+    "src/evidence-graph/replay/distortionAwareMatching.mjs",
+    "src/evidence-graph/replay/historyLineage.mjs",
+    "src/evidence-graph/replay/individualParcelMode.mjs",
+    "src/evidence-graph/replay/projection.mjs",
+    "src/evidence-graph/replay/provenanceAudit.mjs",
+    "src/evidence-graph/replay/stages.mjs",
+    "tests/adapter-processing.test.mjs",
+    "tests/authoritative-canonical-state.test.mjs",
+    "tests/conflict-detection.test.mjs",
+    "tests/distortion-aware-matching.test.mjs",
+    "tests/global-normalization.test.mjs",
+    "tests/individual-parcel-mode.test.mjs",
+    "tests/performance-benchmark.mjs",
+    "tests/replay-engine.test.mjs",
+    "tests/source-arrival.test.mjs"
+  ],
+  "unchanged_common": 90
+}

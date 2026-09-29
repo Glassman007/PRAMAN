@@ -1,0 +1,56 @@
+{
+  "base": "https://praman.test/",
+  "checks": {
+    "initial": {
+      "title": "Evidence Graph",
+      "play_visible": true,
+      "replay_hidden": true,
+      "summary_items": 4,
+      "graph_hidden": true,
+      "numbered_stage_text_matches": 0,
+      "filter_indicator_hidden": true
+    },
+    "completed": {
+      "state": "COMPLETED",
+      "nodes": 60,
+      "unique_nodes": 60,
+      "edges": 146,
+      "replay_visible": true,
+      "final_summary_visible": true,
+      "graph_height": 4213.38,
+      "document_scroll_height": 4362,
+      "horizontal_overflow": false
+    },
+    "replay": {
+      "state_after_click": "RUNNING",
+      "node_ids_unique": true
+    },
+    "search": {
+      "search_message": "Parcel evidence lifecycle playing",
+      "parcel_replay_visible": true,
+      "overview_control_label": "BACK TO RECONCILIATION OVERVIEW",
+      "graph_visible": true
+    },
+    "filter": {
+      "panel_open": "true",
+      "source_filter": "SRC-E-UAV",
+      "indicator_visible": true,
+      "indicator_text": "FILTERED \u00b7 1 filter \u00b7 selected parcel included"
+    },
+    "parcel_replay": {
+      "state": "RUNNING",
+      "source_filter_after_replay": "SRC-E-UAV"
+    },
+    "reset": {
+      "parcel_replay_hidden": true,
+      "source_filter_cleared": true
+    },
+    "runtime": {
+      "console_errors": 0,
+      "page_errors": 0
+    }
+  },
+  "console_errors": [],
+  "page_errors": [],
+  "transport": "Chromium set_content + intercepted cleaned-file requests"
+}

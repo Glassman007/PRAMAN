@@ -1,0 +1,17 @@
+{
+  "name": "praman-spatial-view",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PRAMAN dataset-backed 2D spatial evidence workspace",
+  "scripts": {
+    "test": "node --test tests/temporal-model.mjs tests/evidence-model.mjs tests/final-integrity.mjs tests/semantic-spatial-integrity.mjs tests/flat-layer-architecture.mjs tests/flat-map-runtime.mjs tests/city-search-index.mjs && node tests/flat-layer-wiring.cjs && node tests/routing-contract.cjs && node tests/layer1-bridge.cjs && node tests/asset-free-production.cjs && node tests/repository-cleanup.cjs",
+    "test:geometry": "python tests/test_import.py",
+    "test:evidence-geometry": "python tests/test_evidence_geometry.py",
+    "test:semantic": "node --test tests/semantic-spatial-integrity.mjs tests/flat-layer-architecture.mjs tests/flat-map-runtime.mjs tests/city-search-index.mjs && node tests/flat-layer-wiring.cjs",
+    "import:dataset": "python tools/import_dataset.py",
+    "import:temporal": "python tools/import_temporal.py",
+    "audit:temporal": "python tools/audit_temporal_geometry.py",
+    "build:evidence": "python tools/build_evidence.py"
+  }
+}

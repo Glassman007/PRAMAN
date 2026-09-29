@@ -1,0 +1,30 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> praman-spatial-view@0.7.0 test
+> node --test tests/temporal-model.mjs && node tests/run.cjs
+
+✔ Authority is explicit, not newest/confidence/review state (1.607117ms)
+✔ One indexed event model preserves real GeoGit/version/lineage identities (2.501882ms)
+✔ Ordinary current parcel and historical identity expose shared records and local lineage (0.580271ms)
+✔ Every split/merge transaction reconstructs atomic lifecycle membership and actual geometry (126.929113ms)
+✔ Cross-cell lineage retains actual cell identities (0.320555ms)
+✔ Explicit supersedes links drive boundary correction without synthetic proposal/approval (0.824507ms)
+✔ Proposed/rejected geometries never replace authoritative geometry in current or reconstructed states (1.081734ms)
+✔ Rollback affects recorded state version only; no invented geometry or buildings (0.621259ms)
+✔ Time machine has no parcels before birth, no future geometry, and matches present lifecycle at latest point (112.043607ms)
+✔ History navigation preserves exact parcel/event/version context (1.263708ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 746.159699
+PASS: temporal modes, historical search, split/merge/cross-cell playback, boundary changes, proposed/rejected separation, rollback, time reconstruction, history navigation and independent buildings.
+PASS: full locality, all cell loads/evictions, batching identities, historical/source/Khasra search, cell filters, 1366x768 inspector layout, runtime metrics and no browser errors.
+PASS: pilot bounds, ground contact, parcel/building picking, template reuse, deterministic reload, no browser errors. {"count":42,"placements":104,"boundsErrors":0,"screen":[812.5885666853319,766.3127731676697],"picked":"BLD-00960","target":"BLD-00960","parcel":"IN-DL-110054-10-97","parcelId":"IN-DL-110054-10-97","diagnostics":{"threeRevision":"180","templateLoads":15,"renderCount":23,"drawCalls":524,"triangles":423882,"memory":{"geometries":203,"textures":20},"groups":["parcels","buildings","roads","parks","trees","props","sourceGeometry","historicalGeometry","conflicts","temporaryAnimations"],"testOnly":false},"medianFrameMs":16.100000000558794,"p95FrameMs":367,"uniqueAssets":15}
+PASS: actual parcel coordinates, cell membership, picking, layer visibility, no buildings/GLB loads, evaluation exclusion, zero browser errors.
+PASS: all 42 paths, hashes, GLTF loads, diagnostics, finite calibrated bounds, metre dimensions, ground contact, instancing gates and viewer switches.
+PASS: local-only renderer, GLTFLoader, 10 groups, metre calibration, camera orbit/pan/zoom/reset, independent parcel/building and instance picking, template reuse, distance/frustum query, cell lifecycle, idle rendering, zero page errors.
+PASS: test scene shell, layer state, URL controls, 1,000 active + historical records, selection, all tabs, duplicate/dangling/lifecycle rejection, no fabricated geometry, atomic loads, zero browser errors.

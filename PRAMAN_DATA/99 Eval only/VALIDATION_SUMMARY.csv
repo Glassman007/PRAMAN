@@ -1,0 +1,71 @@
+﻿validation_check,result,detail
+"Exactly 1,000 active parcels",PASS,count=1000
+Exactly 100 active parcels per cell,PASS,all 10 cells contain 100 active parcels
+Canonical IDs unique,PASS,unique=1000
+Historical IDs unique and separate,PASS,60 historical IDs; no reuse
+All active parcels have >=2 source observations,PASS,"min=2, max=8"
+Observation parcel references valid,PASS,all enriched-master candidate IDs resolve; MATCHING_INPUT_VIEW excludes candidate/alternate/source parcel identity labels
+All lineage parents/children exist,PASS,edges=74
+Retired parcels excluded from active count,PASS,no retired ID counted active
+Geometry areas positive,PASS,min_area=573.73
+Building-to-parcel references valid,PASS,buildings=961
+Society references valid,PASS,all associated parcels exist
+Confidence values within 0-1,PASS,"min=0.100, max=1.000"
+Unresolved parcels not accidentally authoritative,PASS,authority gate preserved
+GeoGit event chronology valid,PASS,bad_parcels=0
+No child exists before lineage event,PASS,violations=0
+Split/merge lineage reciprocal,PASS,bad_edges=0
+All 25 benchmark case families exist,PASS,"TC01_CLEAN_ONE_TO_ONE:80, TC02_SLIGHT_GEOMETRY_SHIFT:70, TC03_SIGNIFICANT_LOCAL_DISTORTION:24, TC04_DUPLICATE_SOURCE_PARCEL:18, TC05_ONE_CADASTRAL_TO_SEVERAL_MUNICIPAL:24, TC06_SEVERAL_HISTORICAL_TO_ONE_CURRENT:20, TC07_PARCEL_SPLIT:24, TC08_CROSS_CELL_MERGE:2, TC09_CROSS_CELL_SPLIT:4, TC10_OWNERSHIP_CONFLICT:36, TC11_GOVERNMENT_PRIVATE_OWNERSHIP_CONFLICT:14, TC12_DDA_VS_MUNICIPAL_DISAGREEMENT:18, TC13_BUILDING_CROSSES_BOUNDARY:28, TC14_PHYSICAL_OCCUPATION_VS_LEGAL_GEOMETRY:24, TC15_GNSS_CONTRADICTS_OLD_CADASTRE:22, TC16_OUTDATED_SOURCE_CONTAINS_RETIRED_PARCEL:24, TC17_MISSING_SOURCE_RECORD:28, TC18_AMBIGUOUS_CANDIDATE_MATCH:26, TC19_ENCROACHMENT_INTO_PUBLIC_LAND:16, TC20_PARK_BOUNDARY_DISAGREEMENT:12, TC21_ROAD_WIDENING_BOUNDARY_CORRECTION:18, TC22_REDEVELOPMENT_CONSOLIDATION:18, TC23_INCORRECT_MUTATION_ROLLED_BACK:8, TC24_HISTORICAL_ID_STILL_REFERENCED:20, TC25_STRONG_EVIDENCE_PENDING_APPROVAL:22"
+All requested reconciliation statuses represented,PASS,"{'AUTO_MATCHED': 508, 'HUMAN_REVIEW_REQUIRED': 118, 'MATCHED_WITH_MINOR_CONFLICT': 189, 'TENTATIVE': 100, 'REJECTED_MATCH': 26, 'RECONCILED': 34, 'NEEDS_ADDITIONAL_EVIDENCE': 25}"
+Conflict evidence provenance valid,PASS,invalid parcel refs=0; invalid observation refs=0; cross-parcel obs refs=0; unsupported observation-backed source sides=0; ambiguous exact provenance=0
+Conflict semantic evidence valid,PASS,active evidenced conflicts=715; unresolved quarantined conflicts=0; previously quarantined and restored=73; normalized evidence rows=1498
+DATASET_METRIC,VALUE,
+Active canonical parcels,1000,
+Historical/retired parcels,60,
+Reconciled/history-aware rows,1060,
+Source observations,4366,"original 4,354 + 12 semantically necessary source observations added to instantiate previously unsupported benchmark evidence"
+Detected/evidenced conflicts,715,all 73 previously quarantined conflicts restored after evidence repair
+Building records,961,
+Parcel-lineage edges,74,
+GeoGit/history events,5602,
+Geometry versions,1143,includes 60 historical geometry rows
+Benchmark case families,25,
+Generation seed,26013,
+Governance gate mismatches,PASS,0 unjustified requires_human_review mismatches after recomputing active OPEN conflicts
+Open review-required conflicts bypassed,PASS,0
+Authoritative updates with open approval-required conflict,PASS,0
+Rejected matches overwriting authoritative state,PASS,0; rejected proposals explicitly marked REJECTED and prior authority retained
+Pending active proposals incorrectly authoritative,PASS,0
+GeoGit governance decisions using stale proposal version,PASS,0 after 20 HUMAN_REVIEW and 8 PROPOSAL_REJECTED chain alignments
+Prompt 3 parcel repairs,PASS,changed_parcels=134; rejected_match_ambiguities_resolved=26; geogit_governance_events_repaired=28
+Historical geometry references,PASS,60/60 historical SYNTHETIC_GROUND_TRUTH geometry references resolve to unique HISTORICAL GEOMETRY_VERSIONS rows
+Active current geometry references,PASS,1000/1000 CANONICAL_PARCELS.current_geometry_id values resolve
+Current geometry lifecycle,PASS,0 current geometries marked SUPERSEDED; all canonical current geometries are AUTHORITATIVE/ACCEPTED
+Pending geometry authority,PASS,20 G2 geometries remain PROPOSED/PENDING_HUMAN_APPROVAL and do not replace G1; 2 rejected G2 geometries are marked REJECTED
+Geometry CRS,PASS,EPSG:4326 documented on all 1143 geometry rows after coordinate verification
+Geometry WKT and area,PASS,0 invalid WKT; 0 non-positive geometry areas
+Geometry lineage temporal/topology,PASS,0 temporal violations; split parents cover child G1 geometries; merge/redevelopment parent partitions are disjoint and reconstruct successor G1
+Geometry centroid validation,PASS,1000/1000 canonical centroids are contained by their current authoritative geometry
+Historical source-specific schema drift,PASS,84/84 repaired: 60 CADASTRAL_REVENUE and 24 MUNICIPAL_PROPERTY
+Undocumented source-specific keys,PASS,0 across all SOURCE_OBSERVATIONS
+Required source-specific keys,PASS,0 missing required keys; historical nullable fields explicitly documented
+Historical lifecycle metadata preservation,PASS,84/84 retain OUTDATED_RETIRED_PARCEL plus lineage_reference/notes; observation and parcel IDs unchanged
+Historical source values,PASS,Unavailable historical tenure/map-sheet/survey/property/building/tax values remain null; no arbitrary values manufactured
+Complete data-dictionary coverage,PASS,260/260 fields documented across all 20 workbook sheets
+Data-dictionary semantic types,PASS,0 known semantic type/storage mismatches; VALIDATION_SUMMARY.result documented as Text / Number; canonical-state and geometry-version semantics explicitly separated
+Benchmark ID referential integrity,PASS,0 invalid benchmark_case_ids references; all 25 BENCHMARK_CASES.case_id values are represented
+Benchmark scenario counts preserved,PASS,25/25 BENCHMARK_CASES.instance_count values still equal SYNTHETIC_GROUND_TRUTH reference counts
+Ground-truth anomaly semantics,PASS,1060/1060 deliberate_anomalies_introduced values are human-readable descriptions; 0 contain TC case-ID syntax; 0 equal benchmark_case_ids
+Benchmark scenarios retained,PASS,25/25 benchmark families retained; previously unsupported expected conflicts restored to active evidence instead of only preserving labels
+Matching input leakage isolation,PASS,"MATCHING_INPUT_VIEW has 17 feature/evidence columns; 0 direct canonical parcel IDs; candidate, alternate-candidate, source parcel and lineage target fields excluded"
+Expected conflict semantics represented,PASS,0 active ground-truth expected conflict types missing from CONFLICTS; 73 previously quarantined conflicts restored with observation provenance
+Reconciliation outcome vs ground truth,PASS,0 active expected_reconciliation_outcome mismatches
+Canonical state version vs GeoGit,PASS,1000/1000 canonical_state_version values agree with final accepted/rollback canonical-state history; legacy authoritative_version retained only as a geometry-generation marker
+Lifecycle scenario preservation,PASS,26 rejected matches retained; 8 rollback events retained; 74 lineage edges retained; 20 pending G2 and 2 rejected G2 geometries remain non-authoritative
+Evidence Graph cross-sheet readiness,PASS,"source evidence, conflicts, reconciliation gates, canonical state version, geometry lifecycle, GeoGit, lineage and ground truth now tell consistent benchmark stories"
+FINAL_SOURCE_GEOMETRY_RESOLUTION,PASS,4312 source geometries; unresolved refs=0
+FINAL_FUTURE_EVIDENCE_VS_RECONCILIATION,PASS,observations after reconciliation date=0
+FINAL_SOURCE_ACQUISITION_COVERAGE,PASS,observations after acquisition date=0
+FINAL_MATCHING_INPUT_LEAKAGE,PASS,Derived record_status/notes/canonical truth fields removed from MATCHING_INPUT_VIEW
+FINAL_CONFLICT_EVIDENCE_COVERAGE,PASS,conflicts with zero evidence rows=0
+FINAL_TC25_PENDING_APPROVAL_SEMANTICS,PASS,TC25 active instances=20; inconsistent=0

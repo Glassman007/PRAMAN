@@ -1,0 +1,82 @@
+{
+  "screens": [
+    {
+      "width": 1366,
+      "height": 768,
+      "mapWidth": 1366,
+      "mapHeight": 554,
+      "overflow": false,
+      "selected": {
+        "panelRight": 360,
+        "mapLeft": 360,
+        "mapHeight": 554,
+        "tiny": []
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "mapWidth": 1440,
+      "mapHeight": 686,
+      "overflow": false,
+      "selected": {
+        "panelRight": 360,
+        "mapLeft": 360,
+        "mapHeight": 686,
+        "tiny": []
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "mapWidth": 1920,
+      "mapHeight": 866,
+      "overflow": false,
+      "selected": {
+        "panelRight": 360,
+        "mapLeft": 360,
+        "mapHeight": 866,
+        "tiny": []
+      }
+    }
+  ],
+  "cases": [
+    {
+      "kind": "vacant",
+      "id": "IN-DL-110054-1-87",
+      "type": "VACANT_PLOT"
+    },
+    {
+      "kind": "residential",
+      "id": "IN-DL-110054-1-11",
+      "type": "INDEPENDENT_HOUSE"
+    },
+    {
+      "kind": "apartment",
+      "id": "IN-DL-110054-10-41",
+      "type": "APARTMENT_BLOCK"
+    },
+    {
+      "kind": "commercial",
+      "id": "IN-DL-110054-10-81",
+      "type": "RETAIL_SHOP"
+    },
+    {
+      "kind": "government",
+      "id": "IN-DL-110054-10-85",
+      "type": "GOVERNMENT_LAND"
+    },
+    {
+      "kind": "park",
+      "id": "IN-DL-110054-1-81",
+      "type": "PUBLIC_PARK"
+    },
+    {
+      "kind": "multiple buildings",
+      "id": "IN-DL-110054-1-83",
+      "count": 2
+    }
+  ],
+  "errors": [],
+  "missing": []
+}

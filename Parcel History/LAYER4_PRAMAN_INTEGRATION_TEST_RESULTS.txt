@@ -1,0 +1,81 @@
+PRAMAN LAYER 4 — CROSS-DASHBOARD INTEGRATION VALIDATION
+=======================================================
+
+RESULT: PASS
+
+Existing Layer 4 regression suites
+----------------------------------
+History/lineage adapter: PASS
+- source observations: 4,366
+- conflicts: 715
+- canonical parcels: 1,000
+- historical parcels: 60
+- geometry versions: 1,143
+- explicit lineage rows: 74
+- GeoGit events: 5,602
+
+Landing screen: PASS
+- unique parcel identities: 1,060
+- current canonical: 1,000
+- historical retired: 60
+
+Parcel History semantics: PASS
+- genuine geometry-change events: 83
+- mutations without inferred geometry transition: 16
+- split events: 56
+- merge events: 92
+- accepted approval events: 731
+- rejected decisions: 26
+
+State separation: PASS
+- current authoritative states: 1,000
+- historical states: 121
+- pending proposals: 243
+- rejected proposals: 26
+- rejected/proposed state does not overwrite current authority
+
+Event Inspector: PASS
+- survey events: 229
+- structured conflict events: 536
+- events with historical-state inspection: 195
+
+Spatial History: PASS
+- lazy geometry resources: 1,143
+- current geometry refs: 1,000
+- historical geometry refs: 121
+- proposed geometry refs: 22
+- split/merge parcel geometry refs resolved: 296/296
+
+Parcel Lineage: PASS
+- parcel identities: 1,060
+- explicit unique lineage edges: 74
+- cross-cell subtype edges: 8
+- true cross-cell edges: 4
+
+Cross-dashboard integration: PASS
+---------------------------------
+Configured defaults:
+- Conflict Explorer: /conflict-explorer
+- Evidence Graph: /evidence-graph
+- Unified Spatial View: /unified-spatial-view
+
+Verified return context example:
+/layer4?q=110054&status=ACTIVE&landUse=RESIDENTIAL&cell=CELL-01&historyType=SPLIT&historical=1&parcel=IN-DL-110054-1-91&event=EVT-91
+
+Verified:
+- selected timeline event is URL-backed
+- filters remain in Layer 4 URL
+- selected parcel remains in Layer 4 URL
+- outbound links carry exact returnTo context
+- switching parcel clears stale selected event
+- lineage stays a Layer 4 sub-view via view=lineage
+- Conflict Explorer is linked, not embedded
+- Evidence Graph is linked, not embedded
+- Unified Spatial View is linked, not embedded
+- GeoGit UI data remains Technical Provenance only
+- no Three.js / Mapbox / MapLibre / Leaflet city-map renderer imported into Layer 4
+
+Frontend production build
+-------------------------
+NOT EXECUTED: npm dependency installation timed out in the execution container.
+No partial node_modules, package-lock.json or stale dist bundle is included.

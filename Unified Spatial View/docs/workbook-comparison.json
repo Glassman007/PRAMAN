@@ -1,0 +1,102 @@
+[
+  {
+    "sheet": "CANONICAL_PARCELS",
+    "rows": 1000,
+    "exportRows": 1000
+  },
+  {
+    "sheet": "HISTORICAL_PARCELS",
+    "rows": 60,
+    "exportRows": 60
+  },
+  {
+    "sheet": "RECONCILED_PARCELS",
+    "rows": 1060,
+    "exportRows": 1060
+  },
+  {
+    "sheet": "SOURCE_OBSERVATIONS",
+    "rows": 4366,
+    "exportRows": 4366
+  },
+  {
+    "sheet": "CONFLICTS",
+    "rows": 715,
+    "exportRows": 715
+  },
+  {
+    "sheet": "PARCEL_LINEAGE",
+    "rows": 74,
+    "exportRows": 74
+  },
+  {
+    "sheet": "GEOGIT_EVENTS",
+    "rows": 5602,
+    "exportRows": 5602
+  },
+  {
+    "sheet": "BUILDINGS",
+    "rows": 961,
+    "exportRows": 961
+  },
+  {
+    "sheet": "SOCIETIES_AND_COMPLEXES",
+    "rows": 6,
+    "exportRows": 6
+  },
+  {
+    "sheet": "SOURCE_METADATA",
+    "rows": 7,
+    "exportRows": 7
+  },
+  {
+    "sheet": "DATA_DICTIONARY",
+    "rows": 260,
+    "exportRows": 275
+  },
+  {
+    "sheet": "SOURCE_SPECIFIC_SCHEMA",
+    "rows": 7,
+    "exportRows": 7
+  },
+  {
+    "sheet": "GEOMETRY_VERSIONS",
+    "rows": 1143,
+    "exportRows": 1143
+  },
+  {
+    "sheet": "SYNTHETIC_GROUND_TRUTH",
+    "rows": 1060,
+    "exportRows": 1060
+  },
+  {
+    "sheet": "BENCHMARK_CASES",
+    "rows": 25,
+    "exportRows": 25
+  },
+  {
+    "sheet": "VALIDATION_SUMMARY",
+    "rows": 64,
+    "exportRows": 70
+  },
+  {
+    "sheet": "INTEGRITY_REPAIR_AUDIT",
+    "rows": 1789,
+    "exportRows": 1795
+  },
+  {
+    "sheet": "CONFLICT_EVIDENCE",
+    "rows": 1498,
+    "exportRows": 1715
+  },
+  {
+    "sheet": "CONFLICTS_REJECTED_PROVENANCE",
+    "rows": 73,
+    "exportRows": 73
+  },
+  {
+    "sheet": "MATCHING_INPUT_VIEW",
+    "rows": 4366,
+    "exportRows": 4366
+  }
+]

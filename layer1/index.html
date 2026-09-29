@@ -1,243 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Parcel Intelligence Platform — Layer 1 cadastral data trust dashboard" />
-  <title>Parcel Intelligence Platform</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="P.R.A.M.A.N — Parcel Reconciliation and Multi-source Audit Network">
+  <title>P.R.A.M.A.N · Parcel Reconciliation and Multi-source Audit Network</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="app-shell">
-    <header class="top-header">
-      <div class="brand-wrap">
-        <button class="nav-item brand-home active" type="button" data-page="overview" aria-label="Overview">
-          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-        </button>
-        <div class="brand-copy">
-          <div class="brand-name">Parcel Intelligence Platform</div>
-          <div class="brand-layer">Layer 1 · Cadastral trust overview</div>
-        </div>
-      </div>
-
-      <div class="dataset-state" id="datasetState">
-        <span class="state-dot"></span>
-        <span id="datasetStateText">Checking dataset…</span>
-      </div>
-    </header>
+    <header class="top-header"><h1 class="brand-name">P.R.A.M.A.N</h1><div class="header-line"></div><p class="brand-subtitle">Parcel Reconciliation and Multi-source Audit Network</p></header>
 
     <main class="workspace">
       <section class="controls" aria-label="Parcel search and filters">
         <div class="search-row">
-          <label class="search-box" aria-label="Search parcels">
+          <details class="architecture-menu"><summary>Understand the Architecture <span aria-hidden="true">⌄</span></summary><div class="architecture-content"><strong>From source records to accepted parcels</strong><ol><li>Ingest imagery, spatial layers, surveys and records.</li><li>Harmonize source schemas and common references.</li><li>Match parcels using identifiers, geometry and supporting evidence.</li><li>Propose spatial corrections and reconcile conflicts.</li><li>Review evidence and authorize the canonical state.</li><li>Synchronize accepted changes and preserve parcel history.</li></ol></div></details><label class="search-box" aria-label="Search parcels">
             <span class="blur-search-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                 <circle cx="11" cy="11" r="7"></circle>
                 <path d="M20 20l-3.6-3.6"></path>
               </svg>
             </span>
-            <input id="searchInput" type="search" placeholder="Search by parcel ID, owner, locality or address" autocomplete="off" />
+            <input id="searchInput" type="search" placeholder="Search by parcel ID, owner, locality or address" autocomplete="off">
           </label>
 
-          <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="true" aria-controls="filterPanel">
+          <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false" aria-controls="filterPanel">
             <span class="filter-glyph" aria-hidden="true">≡</span>
             Filters
           </button>
           <button class="clear-filters" id="clearFilters" type="button">Clear</button>
         </div>
 
-        <div class="filter-panel" id="filterPanel">
+        <div class="filter-panel collapsed" id="filterPanel">
           <label class="filter-field">
-            <span>Country</span>
-            <select id="countryFilter"><option value="">All countries</option></select>
+            <span>Cell</span>
+            <select id="cellFilter"><option value="">All cells</option></select>
           </label>
           <label class="filter-field">
-            <span>State</span>
-            <select id="stateFilter"><option value="">All states</option></select>
+            <span>Land use</span>
+            <select id="landUseFilter"><option value="">All land uses</option></select>
           </label>
           <label class="filter-field">
-            <span>Area</span>
-            <select id="areaFilter"><option value="">All areas</option></select>
-          </label>
-          <label class="filter-field">
-            <span>Last harmonization</span>
-            <select id="harmonizationFilter">
-              <option value="">Any time</option>
-              <option value="30">Last 30 days</option>
-              <option value="90">Last 90 days</option>
-              <option value="365">Last year</option>
-            </select>
+            <span>Locality</span>
+            <select id="areaFilter"><option value="">All localities</option></select>
           </label>
         </div>
       </section>
+      <div id="datasetStatus" class="dataset-status" role="status" aria-live="polite"></div>
 
-      <div class="dashboard-grid">
-        <aside class="navigation-panel" aria-label="Primary navigation">
-          <nav class="nav-section">
-            <button class="nav-item nav-card" type="button" data-page="map">
-              <img class="nav-card-image nav-card-image-cover" src="assets/nav-cards/unified-map.png" alt="" aria-hidden="true" />
-              <span class="nav-card-label">Unified<br />Map</span>
-            </button>
-            <button class="nav-item nav-card" type="button" data-page="conflicts">
-              <img class="nav-card-image nav-card-image-contain" src="assets/nav-cards/conflict-explorer.png" alt="" aria-hidden="true" />
-              <span class="nav-card-label">Conflict<br />Explorer</span>
-            </button>
-            <button class="nav-item nav-card" type="button" data-page="reconciliation">
-              <img class="nav-card-image nav-card-image-contain" src="assets/nav-cards/reconciliation.png" alt="" aria-hidden="true" />
-              <span class="nav-card-label">Reconciliation</span>
-            </button>
-            <button class="nav-item nav-card" type="button" data-page="disaster">
-              <img class="nav-card-image nav-card-image-cover" src="assets/nav-cards/disaster-impact.png" alt="" aria-hidden="true" />
-              <span class="nav-card-label">Disaster<br />Impact</span>
-            </button>
-            <button class="nav-item nav-card" type="button" data-page="timeline">
-              <img class="nav-card-image nav-card-image-contain" src="assets/nav-cards/timeline.png" alt="" aria-hidden="true" />
-              <span class="nav-card-label">Timeline</span>
-            </button>
-            <button class="nav-item nav-card" type="button" data-page="field-survey">
-              <img class="nav-card-image nav-card-image-cover" src="assets/nav-cards/field-survey.png" alt="" aria-hidden="true" />
-              <span class="nav-card-label">Field<br />Survey</span>
-            </button>
-          </nav>
-        </aside>
-
-        <section class="dashboard-body">
-          <section class="location-panel" aria-label="Location detail and parcel summary">
-            <div class="panel-title">Location's Detail</div>
-
-            <div class="location-content">
-              <div class="scope-preview">
+      <div class="dashboard-grid"><section class="map-column" aria-label="Map and parcel summary"><div class="scope-preview">
                 <div id="india-map-root" class="current-view-map"></div>
-                <span class="scope-label">CURRENT VIEW</span>
+                
               </div>
 
               <section class="metric-grid" aria-label="Parcel summary">
                 <article class="metric-card">
                   <div class="metric-topline"><span>Total Parcels</span><span class="metric-icon">▱</span></div>
                   <div class="metric-value" id="totalParcels">—</div>
-                  <p class="metric-caption">Canonical parcel entities in the current view</p>
-                </article>
+                  </article>
                 <article class="metric-card">
                   <div class="metric-topline"><span>Conflicted Parcels</span><span class="metric-icon">!</span></div>
                   <div class="metric-value" id="conflictParcels">—</div>
-                  <p class="metric-caption" id="conflictBreakdown">Cross-source discrepancies detected</p>
-                </article>
+                  </article>
                 <article class="metric-card">
                   <div class="metric-topline"><span>Integrated</span><span class="metric-icon">⇄</span></div>
                   <div class="metric-value" id="integratedParcels">—</div>
-                  <p class="metric-caption">Successfully linked across all 5 departmental sources</p>
-                </article>
+                  </article>
                 <article class="metric-card">
                   <div class="metric-topline"><span>Needs Review</span><span class="metric-icon">?</span></div>
                   <div class="metric-value" id="reviewParcels">—</div>
-                  <p class="metric-caption">Manual or blocked cases requiring expert review</p>
-                </article>
+                  </article>
                 <article class="metric-card">
                   <div class="metric-topline"><span>Reviewed</span><span class="metric-icon">✓</span></div>
                   <div class="metric-value" id="reviewedParcels">—</div>
-                  <p class="metric-caption">Cases with an authorised review or reconciliation decision</p>
-                </article>
+                  </article>
                 <article class="metric-card">
                   <div class="metric-topline"><span>Cleared</span><span class="metric-icon">○</span></div>
                   <div class="metric-value" id="clearedParcels">—</div>
-                  <p class="metric-caption">Resolved cases with no outstanding review requirement</p>
-                </article>
+                  </article>
               </section>
-            </div>
-
-            <p class="status-definition"><strong>Integrated</strong> means records from the five departments have been linked to one canonical parcel. It does not mean the data is conflict-free or fully harmonized.</p>
-          </section>
-
-          <section class="source-strip" aria-label="Data source coverage">
+            </section><section class="navigation-panel" aria-label="Dashboards"><nav class="nav-section"><a class="nav-item nav-card" data-page="map" href="../Unified%20Spatial%20View/index.html"><canvas id="cityModelCanvas" class="city-model-canvas" aria-hidden="true"></canvas><span class="nav-card-label">Unified Spatial View</span></a><a class="nav-item nav-card" data-page="conflicts" href="http://localhost:5174/"><img class="nav-card-image" src="assets/nav-cards/conflict-conveyor.png" alt=""><span class="nav-card-label">Conflict View</span></a><a class="nav-item nav-card" data-page="schema" href="http://localhost:5173/"><img class="nav-card-image" src="assets/nav-cards/schema-vessel.png" alt=""><span class="nav-card-label"><span>Source and</span><span>Schema Mapping</span></span></a><a class="nav-item nav-card" data-page="evidence" href="http://localhost:4173/"><canvas id="evidenceCardCanvas" class="evidence-card-canvas" aria-hidden="true"></canvas><span class="nav-card-label">Evidence Graph</span></a><a class="nav-item nav-card" data-page="timeline" href="http://localhost:5175/timeline/"><img class="nav-card-image" src="assets/nav-cards/parcel-roots-horizontal.png" alt=""><span class="nav-card-label">Parcel History</span></a></nav><section class="source-strip" aria-label="Data source coverage">
             <div class="source-heading">
-              <span>Source:</span>
+              <span>Sources:</span>
               <span class="source-heading-dot" aria-hidden="true"></span>
             </div>
             <div class="source-ticker" aria-label="Source coverage ticker">
-              <div class="source-items">
-                <div class="source-item"><span class="source-dot"></span><span>Revenue</span><strong id="srcRevenue">—</strong></div>
-                <div class="source-item"><span class="source-dot"></span><span>Survey</span><strong id="srcSurvey">—</strong></div>
-                <div class="source-item"><span class="source-dot"></span><span>Registration</span><strong id="srcRegistration">—</strong></div>
-                <div class="source-item"><span class="source-dot"></span><span>ULB</span><strong id="srcUlb">—</strong></div>
-                <div class="source-item"><span class="source-dot"></span><span>Planning</span><strong id="srcPlanning">—</strong></div>
-              </div>
+              <div class="source-items" id="sourceItems" aria-live="polite"></div>
             </div>
           </section>
 
-          <section class="integrity-section">
-            <div class="section-heading">
-              <p class="eyebrow">DATA TRUST</p>
-            </div>
-
-            <div class="integrity-grid">
-              <article class="integrity-card high">
-                <div class="integrity-badge">H</div>
-                <div class="integrity-content">
-                  <div class="integrity-status-row">
-                    <h3>HIGH</h3>
-                    <div class="integrity-value" id="highConfidence">—</div>
-                  </div>
-                  <p>Confidence ≥ 0.85 in the supplied conflict data.</p>
-                </div>
-              </article>
-
-              <article class="integrity-card medium">
-                <div class="integrity-badge">M</div>
-                <div class="integrity-content">
-                  <div class="integrity-status-row">
-                    <h3>MEDIUM</h3>
-                    <div class="integrity-value" id="mediumConfidence">—</div>
-                  </div>
-                  <p>0.65 ≤ confidence &lt; 0.85 in the supplied conflict data.</p>
-                </div>
-              </article>
-
-              <article class="integrity-card low">
-                <div class="integrity-badge">L</div>
-                <div class="integrity-content">
-                  <div class="integrity-status-row">
-                    <h3>LOW</h3>
-                    <div class="integrity-value" id="lowConfidence">—</div>
-                  </div>
-                  <p>Confidence &lt; 0.65 in the supplied conflict data.</p>
-                </div>
-              </article>
-            </div>
-          </section>
-        </section>
-      </div>
+          </section></div>
     </main>
 
-    <footer class="bottom-bar" aria-label="Secondary navigation">
-      <div class="status-menu-wrapper data-sources-menu">
+    <footer class="bottom-bar" aria-label="Secondary navigation"><div class="status-menu-wrapper data-sources-menu">
         <button class="nav-item footer-nav" type="button" data-page="sources" aria-haspopup="true" aria-expanded="false" aria-controls="dataSourcesDropdown"><span class="nav-icon">▤</span><span>Data Sources</span></button>
         <div class="status-dropdown" id="dataSourcesDropdown" role="status" aria-label="Primary data sources">
           <div class="status-dropdown-title">Data Sources</div>
           <div id="dataSourceRows"></div>
         </div>
       </div>
-      <div class="footer-view" aria-label="Current local time">[ <time id="localTime" datetime="">--:--:--</time> ]</div>
-      <div class="status-menu-wrapper system-health-menu">
-        <button class="nav-item footer-nav" type="button" data-page="health" aria-haspopup="true" aria-expanded="false" aria-controls="systemHealthDropdown"><span class="nav-icon">◉</span><span>System Health</span></button>
-        <div class="status-dropdown" id="systemHealthDropdown" role="status" aria-label="System health details">
-          <div class="status-dropdown-title">System Health</div>
-          <div id="systemHealthRows"></div>
-        </div>
-      </div>
-    </footer>
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>PRAMAN</span><span class="footer-dot" aria-hidden="true">·</span><button type="button" data-info="contact">Contact Us</button><span class="footer-dot" aria-hidden="true">·</span><button type="button" data-info="terms">Terms of Use and Service</button><span class="footer-dot" aria-hidden="true">·</span></div><div class="footer-view" aria-label="Current local time">[ <time id="localTime" datetime="">--:--:--</time> ]</div>
+      </footer>
   </div>
 
-  <script src="data/parcels.js"></script>
-  <script src="data/conflicts.js"></script>
-  <script src="data/reconciliation.js"></script>
-  <script src="data/metrics.js"></script>
-  <script src="data/source_quality.js"></script>
-  <script src="parcel_adapter.js"></script>
+  <dialog id="infoDialog"><button class="dialog-close" type="button" aria-label="Close">×</button><h2 id="infoTitle"></h2><div id="infoBody"></div></dialog>
+  <script src="assets/city_model_data.js"></script>
+  <script src="city_model_viewer.js"></script>
+  <script src="assets/evidence_graph_fallback.js"></script>
+  <script src="evidence_card_viewer.js"></script>
   <script src="vendor/react.production.min.js"></script>
   <script src="vendor/react-dom.production.min.js"></script>
+  <script src="assets/india-states.js"></script>
+  <script src="praman_data_runtime.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

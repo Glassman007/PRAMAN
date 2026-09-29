@@ -1,0 +1,15 @@
+PRAMAN Evidence Graph — UI/UX HTTP Smoke Test
+
+Served from local HTTP root: PASS
+SOURCE_METADATA fetch: PASS
+Browser-style evidence data loader: PASS
+Data-layer ERROR diagnostics: 0
+Sources: 7
+Source observations: 4366
+Active canonical parcels: 1000
+Conflicts: 715
+Searchable parcel IDs: 1060
+Global canonical-stage graph: 57 nodes / 133 edges
+Sample parcel canonical-stage graph: 26 nodes / 38 edges
+
+Result: PASS

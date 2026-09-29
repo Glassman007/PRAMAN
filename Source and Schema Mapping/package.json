@@ -1,0 +1,23 @@
+{
+  "name": "praman-source-schema-mapping",
+  "private": true,
+  "version": "5.0.0",
+  "type": "module",
+  "scripts": {
+    "sync-contract": "python scripts/refresh_contract.py --required",
+    "predev": "python scripts/refresh_contract.py --if-present",
+    "dev": "vite",
+    "prebuild": "python scripts/refresh_contract.py --if-present",
+    "build": "vite build",
+    "test:module": "node test/service.test.mjs && node test/dashboardSelectors.test.mjs && node test/schemaMappingWorkspace.test.mjs && node test/qualityLineageHistory.test.mjs && node test/historyMetadataVariation.test.mjs && node test/futureMetadataActivation.test.mjs && node test/recordSpecificProvenance.test.mjs && node test/noHardwiredUnavailable.test.mjs && node test/finalUiAuditRegression.test.mjs && node test/overviewPresentationCleanup.test.mjs && node test/mappingRelationshipAudit.test.mjs && node test/schemaMappingPresentation.test.mjs && node test/schemaMappingScrollInteraction.test.mjs && node test/schemaMappingExplanatoryUx.test.mjs && node test/remainingTabsExplanatoryUx.test.mjs && node test/finalEndToEndAudit.test.mjs",
+    "test:dataset": "python test/validate_contract.py ../PRAMAN_DATA data-contract.json && python test/full_integrity_audit.py ../PRAMAN_DATA data-contract.json && python test/dataset_replacement_test.py ../PRAMAN_DATA && python scripts/audit_mapping_relationships.py ../PRAMAN_DATA data-contract.json mapping-relationship-audit.json",
+    "test": "npm run test:module && npm run test:dataset",
+    "audit:mappings": "python scripts/audit_mapping_relationships.py ../PRAMAN_DATA data-contract.json mapping-relationship-audit.json"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.8"
+  },
+  "devDependencies": {}
+}

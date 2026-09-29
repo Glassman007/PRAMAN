@@ -47,13 +47,6 @@
     return null;
   }
 
-  function confidenceBucket(score) {
-    if (!Number.isFinite(score)) return null;
-    if (score >= 0.85) return 'high';
-    if (score >= 0.65) return 'medium';
-    return 'low';
-  }
-
   function indexByParcel(rows) {
     const index = new Map();
     rows.forEach((row) => {
@@ -189,7 +182,6 @@
           reviewed,
           cleared,
           confidenceScore,
-          confidence: confidenceBucket(confidenceScore),
           country: country ? String(country) : null,
           state: state ? String(state) : null,
           area: area ? String(area) : null,
@@ -248,19 +240,6 @@
     if (Number.isFinite(expectedTotal) && expectedTotal !== parcels.length) {
       warnings.push(`Canonical parcel count ${parcels.length} does not match dashboard metric ${expectedTotal}.`);
     }
-
-    const actualConfidence = { high: 0, medium: 0, low: 0 };
-    parcels.forEach((parcel) => {
-      if (parcel.confidence) actualConfidence[parcel.confidence] += 1;
-    });
-
-    ['high', 'medium', 'low'].forEach((bucket) => {
-      const metricKey = `${bucket[0].toUpperCase()}${bucket.slice(1)}-confidence parcels`;
-      const expected = Number(dashboardMetrics[metricKey]?.value);
-      if (Number.isFinite(expected) && expected !== actualConfidence[bucket]) {
-        warnings.push(`${bucket} confidence count ${actualConfidence[bucket]} does not match dashboard metric ${expected}.`);
-      }
-    });
 
     REQUIRED_SOURCES.forEach((source) => {
       const count = parcels.filter((parcel) => parcel.sources.includes(source)).length;

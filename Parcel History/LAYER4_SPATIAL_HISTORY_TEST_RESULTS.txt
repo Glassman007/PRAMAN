@@ -1,0 +1,53 @@
+PRAMAN LAYER 4 — SPATIAL HISTORY VALIDATION
+===========================================
+
+RESULT: PASS
+
+Existing regression suites
+--------------------------
+PASS — History/Lineage adapter
+PASS — Parcel directory / landing screen
+PASS — Parcel History timeline semantics
+PASS — Current/Historical/Proposed state separation
+PASS — Event Inspector
+
+Spatial-history suite
+---------------------
+PASS — 1,143 / 1,143 GEOMETRY_VERSIONS records emitted as separate lazy geometry resources.
+PASS — All 1,143 WKT polygons parse successfully in the Layer 4 SVG renderer.
+PASS — Initial parcel-history JSON contains no geometryWkt coordinates.
+PASS — 1,000 current canonical states reference dataset-backed authoritative geometry resources.
+PASS — All current geometry resources remain AUTHORITATIVE + ACCEPTED.
+PASS — 121 historical state geometry references resolve to actual geometry resources.
+PASS — 22 proposal geometry references remain non-authoritative/non-accepted.
+PASS — All 83 geometry-change events have real before and after geometry resources.
+PASS — Geometry-change area difference is calculated only from recorded before/after area values.
+PASS — Split/merge spatial inspection is opt-in and not part of initial history rendering.
+PASS — 148 split/merge timeline records validated.
+PASS — 296 / 296 related parent/child parcel references resolve to actual Layer 4 geometry where available.
+PASS — Historical split/merge resolution never selects a geometry effective later than the relationship event.
+PASS — Missing geometry uses the explicit unavailable state; no synthetic polygon fallback exists.
+PASS — Official, historical and proposed geometry have separate labels and visual semantics.
+PASS — Proposed geometry never replaces official current geometry.
+PASS — Geometry coordinates are requested through a dedicated lazy `fetchGeometryVersion()` path only after user interaction.
+
+JSX parse validation
+--------------------
+PASS — src/ParcelTimeline.jsx: 0 parse errors
+PASS — src/SpatialHistory.jsx: 0 parse errors
+
+Dataset totals retained
+-----------------------
+1,060 parcel identities
+1,000 active canonical parcels
+60 retired historical parcel identities
+1,143 geometry versions
+83 genuine geometry-change events
+56 split event records
+92 merge event records
+243 pending proposals
+26 rejected proposals
+
+Environment note
+----------------
+A Vite production bundle was not executed because this isolated working environment does not contain the project's npm dependencies. No stale dist output or node_modules directory is included. Source JSX was parsed successfully with the installed TypeScript parser and all data/semantic regression tests passed.

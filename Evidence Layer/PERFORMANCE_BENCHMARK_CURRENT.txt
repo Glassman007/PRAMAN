@@ -1,0 +1,11 @@
+PRAMAN Evidence Graph — Performance Benchmark
+Global final snapshot: 61 nodes / 146 edges
+First locality projection: 224.58 ms
+Cached locality projection: 0.017 ms
+Representative parcel first build (IN-DL-110054-1-4): 11.694 ms · 33 nodes / 54 edges
+Representative parcel cached build: 0.009 ms
+1000 same-stage replay progress ticks: 5.14 ms
+Largest current parcel projection: IN-DL-110054-9-84 · 53 nodes / 79 edges
+Virtualization threshold: 80 nodes
+Synthetic 10,000-node viewport plan: 7.75 ms · 60 nodes / 48 edges materialized
+Synthetic snapshot retained: 10000 nodes / 9999 edges

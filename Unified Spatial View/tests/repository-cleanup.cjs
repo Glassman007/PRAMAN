@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const forbiddenNames=new Set(['UPDATE_NOTES.txt']);
+const forbiddenDirs=['assets','vendor','data/city'];
+for(const d of forbiddenDirs)assert.equal(fs.existsSync(path.join(root,d)),false,`${d} should be removed`);
+for(const n of forbiddenNames)assert.equal(fs.existsSync(path.join(root,n)),false,`${n} should be removed`);
+const allowedDocs=new Set(['FINAL_REPOSITORY_CLEANUP.md','FINAL_REPOSITORY_CLEANUP.json']);
+if(fs.existsSync(path.join(root,'docs')))for(const f of fs.readdirSync(path.join(root,'docs')))assert(allowedDocs.has(f),`stale generated documentation remains: docs/${f}`);
+const activeRuntime=['index.html','styles.css','app.js','layer1-integration.js','data/data-adapter.js','data/normalized-map.json','data/temporal-model.js','data/temporal-details.json','data/temporal-geometry-audit.json','data/evidence-model.js','data/evidence-map.json','data/dashboard-routes.json','map/bootstrap.js','map/flat-main.js','map/flat-svg.js','map/flat-layer-model.js','map/geometry-utils.js','map/city-search.js','map/temporal-view.js','map/evidence-view.js','map/evidence-navigation.js','map/ui-shell.js','map/parcel-history-page.js','parcel-history.html'];
+for(const f of activeRuntime)assert(fs.existsSync(path.join(root,f)),`required runtime file missing: ${f}`);
+const index=fs.readFileSync(path.join(root,'index.html'),'utf8'),app=fs.readFileSync(path.join(root,'app.js'),'utf8'),css=fs.readFileSync(path.join(root,'styles.css'),'utf8');
+assert.doesNotMatch(index,/calibration|floodImpactPanel|importmap|three/i);
+assert.doesNotMatch(app,/floodImpact|openFloodImpactPanel|Pilot neighbourhood|Calibration only|unavailable context layers/i);
+assert.doesNotMatch(css,/calibration-|spatial-canvas|renderer-hint|pilot-note|flood-impact|compensation-/i);
+console.log('PASS: stale 3D/asset/debug surfaces and generated historical artifacts are absent; required 2D runtime files remain.');

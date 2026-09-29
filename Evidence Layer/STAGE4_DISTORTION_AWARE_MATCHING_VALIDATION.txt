@@ -1,0 +1,94 @@
+PRAMAN EVIDENCE GRAPH — STAGE 4 VALIDATION
+==========================================
+Stage: DISTORTION-AWARE PARCEL MATCHING
+
+IMPLEMENTED FLOW
+----------------
+PRAMAN Normalized Evidence Space
+→ Candidate generation
+→ Pair evidence / classifier inputs
+→ Global assignment / solver output
+→ Accepted / ambiguous / rejected relationship groups
+
+A separate distortion / uncertainty context is displayed beside matching.
+It does not apply geometry correction before parcel identity.
+Principle enforced: IDENTITY FIRST → CORRECTION SECOND.
+
+DATA-BACKED RUNTIME RESULTS
+---------------------------
+Recorded candidate associations: 4,583
+  Primary candidate associations: 4,366
+  Alternate candidate associations: 217
+  Observations with alternate candidates: 198
+Pair-evidence observations: 4,366
+Parcel-level match outcomes: 1,060
+  Accepted: 753
+  Ambiguous: 281
+  Rejected: 26
+Unmatched source observations: 0
+Recorded distortion-signal observations: 118
+Recorded distortion-signal parcel outcomes: 111
+Stage-4 locality aggregate nodes: 7
+Data-layer ERROR diagnostics: 0
+
+OUTCOME GROUP MAPPING
+---------------------
+ACCEPTED:
+- AUTO_MATCHED
+- MATCHED_WITH_MINOR_CONFLICT
+- RECONCILED
+
+AMBIGUOUS:
+- HUMAN_REVIEW_REQUIRED
+- TENTATIVE
+- NEEDS_ADDITIONAL_EVIDENCE
+
+REJECTED:
+- REJECTED_MATCH
+
+UNMATCHED:
+- only a real SOURCE_OBSERVATIONS row with no primary candidate
+- current dataset contains zero such rows, so no empty/fake unmatched cluster is rendered
+
+MATCH EVIDENCE EXPOSED
+----------------------
+Available from stored fields / deterministic inspection:
+- geometry confidence / geometry QC / positional accuracy
+- observed area and deterministic candidate-area delta where candidate area exists
+- identifier confidence and source identifiers
+- temporal freshness and observation date
+- source reliability / authority / nominal accuracy
+- positional uncertainty
+- exact recorded shift/distortion/GNSS contradiction notes
+
+Explicitly unavailable and NOT fabricated:
+- pairwise classifier probability
+- per-alternative match score
+- per-edge solver acceptance/rejection log
+- solver cost/objective contribution
+- veto flags
+- pair-level neighbourhood/adjacency feature vector
+- pair-level topology feature/vector
+- covariance matrix / Mahalanobis distance
+
+DISTORTION SEMANTICS
+--------------------
+Observation-level distortion context is derived only from exact recorded SOURCE_OBSERVATIONS.notes signals:
+- slight systematic cadastral shift
+- local spatial distortion
+- old cadastral geometry contradicted by GNSS
+
+Parcel-level distortion context is derived only from exact recorded RECONCILED_PARCELS.criticality_reason signals:
+- Slight spatial shift but identity remains strong.
+- Local scale/rotation distortion affects boundaries.
+- High-accuracy survey materially contradicts old cadastral geometry.
+
+No geometry correction is simulated in Stage 4.
+
+REGRESSION STATUS
+-----------------
+39 / 39 automated tests pass.
+All Stage 1–3 tests continue to pass.
+Downstream Conflict Detection and Reconciliation remain connected through the new matching outcome groups.
+HTTP data-loader smoke test passes with 0 ERROR diagnostics.
+All JS/MJS sources and tests pass syntax validation.

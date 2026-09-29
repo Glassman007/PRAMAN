@@ -1,0 +1,77 @@
+PRAMAN EVIDENCE GRAPH — AUTHORITATIVE CANONICAL STATE VALIDATION
+================================================================
+
+Scope
+-----
+Final primary replay stage only. No production CSV was modified.
+
+Core principle
+--------------
+CANONICAL STATE PRESERVES THE EVIDENCE CHAIN.
+The Stage-8 registry is an additive governed projection. Stages 1–7 remain cumulative and visible; Stage 8 does not delete source evidence, normalized observations, matching context, conflict detection, reconciliation or authority/review state.
+
+Runtime summary derived from current production tables
+------------------------------------------------------
+Active canonical parcels: 1000
+Historical / retired parcels: 60
+Source observations: 4366
+Accepted parcel-level match outcomes: 753
+Ambiguous parcel-level match outcomes: 281
+Unmatched source observations: 0
+Rejected parcel-level match outcomes: 26
+Explicit conflicts: 715
+Open conflicts: 329
+Resolved conflicts: 386
+RECONCILED parcel cases: 56
+Parcels with unresolved_conflicts membership: 286
+Cases with requires_human_review=true: 264
+Explicit HUMAN_REVIEW GeoGit events: 243
+
+Count semantics
+---------------
+- Accepted and ambiguous values are deterministic groups over RECONCILED_PARCELS.match_status.
+- Unmatched is observation-level because the supplied matching table has no unmatched parcel outcome; every SOURCE_OBSERVATIONS row currently has a primary candidate.
+- Reconciled cases means rows whose match_status is exactly RECONCILED.
+- Unresolved cases means parcel reconciliation rows with at least one explicit unresolved_conflicts ID.
+- Human-review cases means reconciliation rows whose stored requires_human_review flag is true.
+
+Registry consistency
+--------------------
+CANONICAL_PARCELS active rows: 1000
+RECONCILED_PARCELS rows marked ACTIVE: 1000
+Discrepancy: none
+
+No expected active-parcel total is hardcoded into the runtime model. The model supports an optional external specification expectation and reports a difference when supplied and mismatched.
+
+Traceability validation
+-----------------------
+Active canonical parcels checked: 1000
+Complete supported traces: 1000
+Trace gaps: 0
+Active parcels with explicit conflicts: 492
+Active parcels with no recorded conflict: 508
+
+A clean parcel does not receive a fake conflict. Instead the trace records a deterministic NO_RECORDED_CONFLICT conflict-detection checkpoint backed by the absence of any CONFLICTS row for that parcel.
+
+Stage continuity
+----------------
+- Stage 6 reconciliation proposal clusters bridge into Stage 7 system inference/governance.
+- Stage 7 recorded authority states materialize into the Stage-8 registry through MATERIALIZED_IN_REGISTRY.
+- UNCHANGED_PENDING is not relabelled as accepted.
+- Stage-8 registry membership is backed only by CANONICAL_PARCELS canonical_parcel_id values.
+- Cell clusters remain backed by the same real active registry rows.
+
+Final UI
+--------
+- Final dataset summary panel appears at Stage 8 and remains available into supported history replay.
+- Registry/cell nodes can inspect an individual active canonical parcel.
+- Parcel inspection shows canonical state, authority/review, reconciliation, conflict checkpoint, matching outcome, normalized observation IDs, conceptual adapter routes, and original source-observation/source-dataset provenance.
+- The graph remains cumulative; no earlier evidence stage is hidden at convergence.
+
+Validation results
+------------------
+Automated tests: 59 / 59 PASS
+HTTP dataset-loader smoke test: PASS
+Data-layer ERROR diagnostics: 0
+Active trace coverage: 1000 / 1000
+JavaScript/MJS syntax checks: PASS

@@ -1,0 +1,108 @@
+.geometry-card {
+  margin: 16px 0 18px;
+  padding: 13px;
+  border: 1px solid #303741;
+  border-radius: 10px;
+  background: #0b0e12;
+}
+
+.geometry-card--historical { border-color: #3a414d; background: #0c0f13; }
+.geometry-card--proposed { border-style: dashed; border-color: #6f6650; background: #0e0d09; }
+.geometry-card--official { border-color: #34493f; }
+
+.geometry-card-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.geometry-card-heading > div { display: grid; gap: 4px; min-width: 0; }
+.geometry-card-heading span { color: #8d97a4; font-size: 9px; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+.geometry-card-heading strong { color: #e8ebef; font-size: 12px; overflow-wrap: anywhere; }
+.geometry-card-heading em { border: 1px solid #766a4b; border-radius: 999px; padding: 3px 7px; color: #d8c48e; font-size: 8px; font-style: normal; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.geometry-card-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 8px; color: #77818e; font-size: 10px; }
+.geometry-load-button, .spatial-inspect-button {
+  width: 100%; margin-top: 12px; border: 1px solid #323a45; border-radius: 8px; background: #10141a; color: #cbd2da; padding: 9px 11px; cursor: pointer; font-size: 10px; font-weight: 800; letter-spacing: .04em;
+}
+.geometry-load-button:hover, .spatial-inspect-button:hover { border-color: #4b5868; background: #141922; }
+.geometry-loading, .geometry-card-unavailable, .lineage-geometry-missing, .geometry-unavailable-inline { padding: 14px 0; color: #7f8995; font-size: 11px; line-height: 1.5; }
+.geometry-thumbnail-button { width: 100%; display: grid; gap: 7px; margin-top: 12px; padding: 0; border: 0; background: transparent; color: #8d97a4; cursor: pointer; text-align: left; font-size: 9px; }
+.geometry-thumbnail-button > span { text-align: right; }
+.geometry-svg { width: 100%; height: auto; display: block; overflow: visible; }
+.geometry-svg-bg { fill: #080a0d; stroke: #252c35; }
+.geometry-shape { vector-effect: non-scaling-stroke; stroke-width: 1.7; }
+.geometry-shape--official { fill: rgba(96, 158, 125, .10); stroke: #74b291; }
+.geometry-shape--historical { fill: rgba(139, 149, 163, .08); stroke: #8993a1; }
+.geometry-shape--proposed { fill: rgba(214, 184, 105, .07); stroke: #d4b969; stroke-dasharray: 5 4; }
+.geometry-shape--before { fill: rgba(160, 117, 225, .09); stroke: #a879e7; }
+.geometry-shape--after { fill: rgba(101, 168, 255, .08); stroke: #6aa9ff; }
+.geometry-shape--lineage-parent { fill: rgba(226, 190, 85, .08); stroke: #d7ba5c; }
+.geometry-shape--lineage-child { fill: rgba(120, 126, 245, .08); stroke: #8588ff; }
+
+.geometry-modal-backdrop { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; padding: 24px; background: rgba(2, 4, 7, .78); backdrop-filter: blur(5px); }
+.geometry-modal { width: min(820px, 100%); max-height: min(760px, 90vh); overflow: auto; border: 1px solid #313946; border-radius: 14px; background: #0a0d11; box-shadow: 0 28px 80px rgba(0,0,0,.42); padding: 18px; }
+.geometry-modal-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+.geometry-modal-header span { color: #747f8d; font-size: 9px; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+.geometry-modal-header h3 { margin: 4px 0 0; font-size: 17px; }
+.geometry-modal-header button { width: 32px; height: 32px; border: 1px solid #303844; border-radius: 8px; background: transparent; color: #b7c0ca; cursor: pointer; font-size: 19px; }
+.geometry-svg--expanded { min-height: 360px; }
+.geometry-modal-note { color: #737e8c; font-size: 10px; }
+
+.spatial-event-viewer { margin-top: 14px; padding-top: 14px; border-top: 1px solid #282f38; }
+.spatial-event-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; align-items: center; margin-bottom: 12px; }
+.spatial-event-heading > div:first-child { display: grid; gap: 3px; }
+.spatial-event-heading span { color: #788391; font-size: 8px; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.spatial-event-heading strong { color: #dfe4ea; font-size: 10px; letter-spacing: .05em; }
+.geometry-view-toggle { display: inline-flex; gap: 4px; border: 1px solid #2d3540; border-radius: 8px; padding: 3px; }
+.geometry-view-toggle button { border: 0; border-radius: 5px; background: transparent; color: #788391; padding: 5px 7px; cursor: pointer; font-size: 9px; }
+.geometry-view-toggle button.active { background: #1b222c; color: #e1e6ec; }
+.geometry-side-by-side, .lineage-geometry-flow { display: grid; grid-template-columns: minmax(0,1fr) 24px minmax(0,1fr); gap: 8px; align-items: center; }
+.geometry-side-by-side > div:not(.geometry-change-arrow), .lineage-geometry-group { min-width: 0; display: grid; gap: 7px; }
+.geometry-side-by-side > div > span, .lineage-geometry-group > span { color: #8b95a2; font-size: 9px; font-weight: 800; letter-spacing: .06em; }
+.geometry-change-arrow { color: #5f6976; text-align: center; }
+.geometry-overlay-view { position: relative; }
+.geometry-legend { display: flex; gap: 14px; margin-top: 6px; color: #8c96a3; font-size: 9px; }
+.geometry-legend span::before { content: ''; display: inline-block; width: 14px; height: 2px; margin-right: 5px; vertical-align: middle; }
+.geometry-legend .before::before { background: #a879e7; }
+.geometry-legend .after::before { background: #6aa9ff; }
+.geometry-area-delta { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; margin-top: 12px; }
+.geometry-area-delta > div { display: grid; gap: 4px; padding: 8px; border: 1px solid #252d37; border-radius: 7px; background: #0b0e12; }
+.geometry-area-delta span { color: #747e8b; font-size: 8px; text-transform: uppercase; letter-spacing: .07em; }
+.geometry-area-delta strong { color: #d6dce3; font-size: 10px; }
+.lineage-geometry-ids { display: grid; gap: 3px; }
+.lineage-geometry-ids small { color: #737e8c; font-size: 8px; overflow-wrap: anywhere; }
+
+@media (max-width: 760px) {
+  .geometry-side-by-side, .lineage-geometry-flow { grid-template-columns: 1fr; }
+  .geometry-change-arrow { transform: rotate(90deg); }
+  .geometry-area-delta { grid-template-columns: 1fr; }
+  .geometry-modal-backdrop { padding: 10px; }
+  .geometry-svg--expanded { min-height: 240px; }
+}
+
+.spatial-context-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
+  color: #aeb8c5;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.spatial-context-link:hover,
+.spatial-context-link:focus-visible { color: #eef3f8; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Spatial history cleanup: focused geometry only, with explicit keyboard focus. */
+.geometry-card { border-radius: 7px; background: #090d11; }
+.geometry-card--historical { background: #0b0f13; }
+.geometry-card--proposed { background: #0d0c09; }
+.geometry-load-button,
+.spatial-inspect-button { border-radius: 6px; background: #0e1318; }
+.geometry-thumbnail-button:focus-visible,
+.geometry-load-button:focus-visible,
+.spatial-inspect-button:focus-visible,
+.geometry-modal-header button:focus-visible,
+.geometry-view-toggle button:focus-visible {
+  outline: 2px solid var(--l4-focus, #8ab4ee);
+  outline-offset: 3px;
+}
+.geometry-modal { border-radius: 9px; background: #090c10; }
+.geometry-area-delta > div { border-radius: 5px; background: #090d11; }

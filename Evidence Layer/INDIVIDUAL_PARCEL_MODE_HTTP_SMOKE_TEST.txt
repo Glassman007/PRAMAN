@@ -1,0 +1,17 @@
+INDIVIDUAL PARCEL MODE HTTP SMOKE TEST
+parcel search universe: 1060
+active IDs: 1000
+historical IDs: 60
+data-layer ERROR diagnostics: 0
+reviewed: IN-DL-110054-1-4
+  nodes=37 edges=58 sources=5 adapters=5 conflicts=2 lineage=0
+  applicable=sources -> adapters -> normalization -> matching -> conflict-detection -> reconciliation -> authority-review -> canonical-state -> history-lineage
+clean: IN-DL-110054-1-1
+  nodes=32 edges=44 sources=4 adapters=5 conflicts=0 lineage=0
+  applicable=sources -> adapters -> normalization -> matching -> reconciliation -> authority-review -> canonical-state -> history-lineage
+historical: IN-DL-110054-8-101
+  nodes=27 edges=36 sources=2 adapters=4 conflicts=1 lineage=2
+  applicable=sources -> adapters -> normalization -> matching -> conflict-detection -> reconciliation -> authority-review -> canonical-state -> history-lineage
+clean conflict nodes: 0
+reviewed review events: 1
+historical direct lineage events: 2

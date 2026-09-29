@@ -1,0 +1,242 @@
+{
+  "checked": 59,
+  "allUnchanged": true,
+  "files": [
+    {
+      "path": "layer2/assets/apartments/app-1.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/apartments/app-2.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/apartments/app-3.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/apartments/app-4.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/apartments/app-5.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/apartments/app-6.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/apartments/app-7.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-1.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-10.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-2.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-3.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-4.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-5.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-6.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-7.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-8.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/building-9.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/compression_report.json",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/buildings/compression_report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/commercial/com-1.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/commercial/com-2.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/commercial/com-3.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/government/gov-1.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/government/gov-2.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/government/gov-3.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/parks/park-1.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/parks/park-2.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/parks/park-3.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/barn.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/bench.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/construction.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/construction_prop.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/lantern-2.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/lantern-3.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/lantern.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/park_bench.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/parking_lot.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/toninos_parking_lots.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/warehouse_building_construction_site.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/props/windmill.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/trees/tree-1.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/trees/tree-2.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/trees/tree-3.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/assets/trees/tree-4.glb",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/data/normalized-map.json",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/data/pilot-plan.json",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/data/temporal-details.json",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/data/temporal-model.js",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/map/asset-registry.js",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/map/temporal-view.js",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/README.md",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/three-0.180.0/LICENSE",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/three-0.180.0/SHA256SUMS.json",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/three-0.180.0/addons/controls/OrbitControls.js",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/three-0.180.0/addons/loaders/GLTFLoader.js",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/three-0.180.0/addons/utils/BufferGeometryUtils.js",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/three-0.180.0/addons/utils/SkeletonUtils.js",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/three-0.180.0/build/three.core.js",
+      "unchanged": true
+    },
+    {
+      "path": "layer2/vendor/three-0.180.0/build/three.module.js",
+      "unchanged": true
+    }
+  ]
+}

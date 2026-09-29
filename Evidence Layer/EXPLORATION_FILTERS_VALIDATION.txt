@@ -1,0 +1,59 @@
+PRAMAN Evidence Graph — Exploration Filters Validation
+======================================================
+
+RESULT: PASS
+
+Current dataset-derived filter catalog
+--------------------------------------
+Source datasets: 7
+Active adapter routes: 6
+Cells / spatial regions: 10
+Recorded match_status values: 7
+Recorded conflict_type values: 27
+Recorded lineage event_type values: 5
+Unresolved parcels: 286
+
+Confidence bands
+----------------
+Bands are runtime terciles over RECONCILED_PARCELS.overall_match_confidence.
+Current boundaries/counts:
+- Lower third: 0.461–0.850 -> 375 parcels
+- Middle third: 0.850–0.871 -> 336 parcels
+- Upper third: 0.871–0.940 -> 349 parcels
+Total represented confidence rows: 1,060
+No fixed confidence threshold is hardcoded as PRAMAN policy.
+
+Recorded post-reconciliation states used by the Reconciliation State filter:
+- AUTHORITATIVE: 817
+- UNCHANGED_PENDING: 243
+The dataset has no standalone reconciliation_status column; this filter uses the explicit state stored in authoritative_state.state.
+
+Review-status population:
+- requires_human_review=true: 264
+- requires_human_review=false: 796
+
+Current/historical population:
+- ACTIVE: 1,000
+- HISTORICAL_RETIRED: 60
+
+Actual lineage filter vocabulary:
+- CROSS_CELL_MERGE: 4 lineage rows
+- CROSS_CELL_SPLIT: 4 lineage rows
+- MERGE: 20 lineage rows
+- REDEVELOPMENT_CONSOLIDATION: 22 lineage rows
+- SPLIT: 24 lineage rows
+
+Behavior validated
+------------------
+- source options come from SOURCE_METADATA and real source-observation membership
+- adapter options include only adapter routes active for current source types
+- cells/status/type options are generated from current tables
+- source filtering removes unrelated source observations
+- unresolved + match-status filtering resolves the exact intersection of reconciliation rows
+- split/merge filtering retains actual participating parent/child parcels
+- individual parcel filtering never imports another parcel's source observations
+- connector nodes required for the source-to-canonical explanation path remain visible
+- every filtered edge has visible endpoints
+- Clear Filters restores the original node/edge projection
+- active filters are preserved in Evidence Graph URL/returnTo state
+- no production record counts or option lists are hardcoded into the filter UI

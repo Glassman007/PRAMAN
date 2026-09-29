@@ -1,0 +1,69 @@
+PRAMAN Evidence Graph — Stage 2 Adapter Processing Validation
+================================================================
+Adapter families defined: 7
+Active adapter families: 6
+Inactive adapter families: Surface / 3D Observation
+Real source datasets: 7
+Unique source observations: 4366
+Source→adapter routes: 17
+Data-layer ERROR diagnostics: 0
+
+Document Ingestion
+  active: true
+  source types: CADASTRAL_REVENUE, MUNICIPAL_PROPERTY, DDA_DEVELOPMENT_AUTHORITY
+  records processed (routed observations): 2400
+  successful outputs (MATCHING_INPUT_VIEW rows): 2400
+  output coverage: 100%
+  geometry QC warning flags: 334
+  quarantine execution records available: false
+Image Observation
+  active: true
+  source types: DRONE_ORTHOPHOTO
+  records processed (routed observations): 782
+  successful outputs (MATCHING_INPUT_VIEW rows): 782
+  output coverage: 100%
+  geometry QC warning flags: 100
+  quarantine execution records available: false
+Surface / 3D Observation
+  active: false
+  source types: none in current dataset
+  records processed (routed observations): 0
+  successful outputs (MATCHING_INPUT_VIEW rows): 0
+  output coverage: 0%
+  geometry QC warning flags: 0
+  quarantine execution records available: false
+Survey Observation
+  active: true
+  source types: GNSS_CORS_SURVEY
+  records processed (routed observations): 229
+  successful outputs (MATCHING_INPUT_VIEW rows): 229
+  output coverage: 100%
+  geometry QC warning flags: 50
+  quarantine execution records available: false
+Parcel / Spatial-Unit
+  active: true
+  source types: CADASTRAL_REVENUE, MUNICIPAL_PROPERTY, DDA_DEVELOPMENT_AUTHORITY, BUILDING_GIS, UTILITY_INFRASTRUCTURE
+  records processed (routed observations): 3355
+  successful outputs (MATCHING_INPUT_VIEW rows): 3355
+  output coverage: 100%
+  geometry QC warning flags: 380
+  quarantine execution records available: false
+Administrative / Legal Record
+  active: true
+  source types: CADASTRAL_REVENUE, MUNICIPAL_PROPERTY, DDA_DEVELOPMENT_AUTHORITY
+  records processed (routed observations): 2400
+  successful outputs (MATCHING_INPUT_VIEW rows): 2400
+  output coverage: 100%
+  geometry QC warning flags: 334
+  quarantine execution records available: false
+Context Feature
+  active: true
+  source types: CADASTRAL_REVENUE, MUNICIPAL_PROPERTY, BUILDING_GIS, UTILITY_INFRASTRUCTURE
+  records processed (routed observations): 3068
+  successful outputs (MATCHING_INPUT_VIEW rows): 3068
+  output coverage: 100%
+  geometry QC warning flags: 378
+  quarantine execution records available: false
+
+Semantics: processed/output counts are architecture-routing coverage over real records, not adapter execution logs.
+Multi-adapter counts must not be summed to obtain unique source records.

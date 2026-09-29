@@ -1,0 +1,15 @@
+PRAMAN Evidence Graph anti-fake-data audit: PASS
+
+No production-path occurrences found for:
+- hardcoded IN-DL parcel IDs
+- hardcoded OBS IDs
+- hardcoded CNF IDs
+- hardcoded SRC IDs
+- Math.random()
+- SYNTHETIC_GROUND_TRUTH / BENCHMARK_CASES imports
+- mock/demo production datasets
+- fake reconciliation decisions
+- placeholder lineage
+- random confidence generation
+
+Current dataset totals are calculated from loaded production tables.

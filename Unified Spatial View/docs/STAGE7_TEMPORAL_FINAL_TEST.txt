@@ -1,0 +1,1 @@
+PASS: temporal modes, historical search, split/merge/cross-cell playback, boundary changes, proposed/rejected separation, rollback, time reconstruction, history navigation and independent buildings.

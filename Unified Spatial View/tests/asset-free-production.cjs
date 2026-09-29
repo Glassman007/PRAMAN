@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const forbiddenExt=/\.(?:glb|gltf|obj|mtl)$/i;
+for(const dir of ['assets','vendor'])assert.equal(fs.existsSync(path.join(root,dir)),false,`${dir}/ must not remain after final cleanup`);
+for(const p of ['map/main.js','map/asset-loader.js','map/asset-registry.js','map/calibration-viewer.js','map/camera.js','map/city-assets.js','map/city-builder.js','map/city-fabric.js','map/controls.js','map/current-city.js','map/evidence-renderer.js','map/interaction.js','map/parcel-fabric.js','map/parcel-renderer.js','map/pilot-neighbourhood.js','map/scene.js','map/spatial-index.js','map/temporal-renderer.js','data/pilot-plan.json','data/asset-registry.json','data/asset-inventory.json','data/asset-native-audit.json','data/map-data.js'])assert.equal(fs.existsSync(path.join(root,p)),false,`${p} must be removed`);
+const textFiles=[];function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){if(['node_modules','.git','tests','docs'].includes(e.name))continue;const p=path.join(d,e.name);if(e.isDirectory())walk(p);else if(/\.(?:js|mjs|cjs|html|css|json|md|txt|py)$/i.test(e.name))textFiles.push(p);}}for(const target of ['map','data','tools'])walk(path.join(root,target));for(const f of ['index.html','parcel-history.html','app.js','styles.css','layer1-integration.js','package.json','package-lock.json'])textFiles.push(path.join(root,f));
+for(const p of textFiles){const src=fs.readFileSync(p,'utf8');assert.doesNotMatch(src,/\bfrom\s+['"]three(?:\/|['"])|\bimport\s*\(\s*['"]three(?:\/|['"])/,`${path.relative(root,p)} imports Three.js`);assert.doesNotMatch(src,/three-0\.180\.0|GLTFLoader|OrbitControls|SkeletonUtils|\.glb\b|\.gltf\b|\.obj\b|\.mtl\b/,`${path.relative(root,p)} retains a removed 3D/model reference`);}
+const pkg=JSON.parse(read('package.json'));assert.ok(!pkg.dependencies?.three,'package.json must not retain Three.js');
+const lock=JSON.parse(read('package-lock.json'));assert.ok(!lock.packages?.['node_modules/three'],'package lock must not retain Three.js');
+const dataset=JSON.parse(read('data/normalized-map.json'));assert.equal(dataset.parcels.length,1000);assert.equal(dataset.buildingFootprints.length,765);assert.ok(dataset.sourceGeometry.length>0);
+console.log('PASS: physical 3D assets, Three.js runtime/dependency, model routes and obsolete 3D modules are absent while PRAMAN spatial data remains.');

@@ -1,0 +1,510 @@
+{
+  "errors": [],
+  "screens": [
+    {
+      "width": 1366,
+      "height": 768,
+      "map": {
+        "x": 240,
+        "y": 364,
+        "width": 956,
+        "height": 404
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "map": {
+        "x": 240,
+        "y": 364,
+        "width": 1030,
+        "height": 536
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "map": {
+        "x": 240,
+        "y": 325,
+        "width": 1510,
+        "height": 755
+      },
+      "overflow": false
+    }
+  ],
+  "measurements": {
+    "overview": {
+      "diagnostics": {
+        "threeRevision": "180",
+        "templateLoads": 0,
+        "renderCount": 24,
+        "drawCalls": 49,
+        "triangles": 2722,
+        "memory": {
+          "geometries": 40,
+          "textures": 0
+        },
+        "groups": [
+          "parcels",
+          "buildings",
+          "roads",
+          "parks",
+          "trees",
+          "props",
+          "sourceGeometry",
+          "historicalGeometry",
+          "conflicts",
+          "temporaryAnimations"
+        ],
+        "testOnly": false,
+        "city": {
+          "cellLoads": 0,
+          "cellUnloads": 0,
+          "planRequests": 10,
+          "loadErrors": [],
+          "planned": {
+            "activeParcels": 1000,
+            "buildingInstances": 361,
+            "markerOnlyBuildings": 600,
+            "buildingRecords": 961,
+            "parcelsByBuildingCount": {
+              "zero": 132,
+              "one": 775,
+              "multiple": 93
+            },
+            "instancesByCategory": {
+              "trees": 770,
+              "buildings": 121,
+              "props": 216,
+              "parks": 4,
+              "apartments": 124,
+              "commercial": 90
+            },
+            "trees": 770,
+            "props": 190,
+            "placements": 1925
+          },
+          "visibleDetailBatches": 0,
+          "visibleGLBInstances": 0,
+          "visibleBuildingGLBInstances": 0,
+          "hoverPicks": 0,
+          "storedHistorical": 60,
+          "activeParcelsStored": 1000,
+          "activeParcelsVisible": 1000,
+          "loadedCells": [],
+          "detailedBuildingInstances": 0,
+          "visibleCellIds": [
+            "CELL-01",
+            "CELL-02",
+            "CELL-03",
+            "CELL-04",
+            "CELL-05",
+            "CELL-06",
+            "CELL-07",
+            "CELL-08",
+            "CELL-09",
+            "CELL-10"
+          ],
+          "filter": null
+        }
+      },
+      "objects": 96,
+      "instances": 600,
+      "materials": 5,
+      "textures": 0,
+      "heap": 116000000,
+      "medianMs": 16.699999999953434,
+      "p95Ms": 17.0999999998603
+    },
+    "detail": {
+      "diagnostics": {
+        "threeRevision": "180",
+        "templateLoads": 17,
+        "renderCount": 40,
+        "drawCalls": 108,
+        "triangles": 208476,
+        "memory": {
+          "geometries": 86,
+          "textures": 12
+        },
+        "groups": [
+          "parcels",
+          "buildings",
+          "roads",
+          "parks",
+          "trees",
+          "props",
+          "sourceGeometry",
+          "historicalGeometry",
+          "conflicts",
+          "temporaryAnimations"
+        ],
+        "testOnly": false,
+        "city": {
+          "cellLoads": 3,
+          "cellUnloads": 0,
+          "planRequests": 10,
+          "loadErrors": [],
+          "planned": {
+            "activeParcels": 1000,
+            "buildingInstances": 361,
+            "markerOnlyBuildings": 600,
+            "buildingRecords": 961,
+            "parcelsByBuildingCount": {
+              "zero": 132,
+              "one": 775,
+              "multiple": 93
+            },
+            "instancesByCategory": {
+              "trees": 770,
+              "buildings": 121,
+              "props": 216,
+              "parks": 4,
+              "apartments": 124,
+              "commercial": 90
+            },
+            "trees": 770,
+            "props": 190,
+            "placements": 1925
+          },
+          "visibleDetailBatches": 16,
+          "visibleGLBInstances": 34,
+          "visibleBuildingGLBInstances": 13,
+          "hoverPicks": 0,
+          "storedHistorical": 60,
+          "activeParcelsStored": 1000,
+          "activeParcelsVisible": 400,
+          "loadedCells": [
+            "CELL-09",
+            "CELL-10",
+            "CELL-05"
+          ],
+          "detailedBuildingInstances": 134,
+          "visibleCellIds": [
+            "CELL-05",
+            "CELL-08",
+            "CELL-09",
+            "CELL-10"
+          ],
+          "filter": null
+        }
+      },
+      "objects": 1435,
+      "instances": 2225,
+      "materials": 94,
+      "textures": 29,
+      "heap": 116000000,
+      "medianMs": 16.5,
+      "p95Ms": 17.800000000046566
+    },
+    "source": {
+      "diagnostics": {
+        "threeRevision": "180",
+        "templateLoads": 18,
+        "renderCount": 60,
+        "drawCalls": 61,
+        "triangles": 125325,
+        "memory": {
+          "geometries": 92,
+          "textures": 12
+        },
+        "groups": [
+          "parcels",
+          "buildings",
+          "roads",
+          "parks",
+          "trees",
+          "props",
+          "sourceGeometry",
+          "historicalGeometry",
+          "conflicts",
+          "temporaryAnimations"
+        ],
+        "testOnly": false,
+        "city": {
+          "cellLoads": 4,
+          "cellUnloads": 3,
+          "planRequests": 10,
+          "loadErrors": [],
+          "planned": {
+            "activeParcels": 1000,
+            "buildingInstances": 361,
+            "markerOnlyBuildings": 600,
+            "buildingRecords": 961,
+            "parcelsByBuildingCount": {
+              "zero": 132,
+              "one": 775,
+              "multiple": 93
+            },
+            "instancesByCategory": {
+              "trees": 770,
+              "buildings": 121,
+              "props": 216,
+              "parks": 4,
+              "apartments": 124,
+              "commercial": 90
+            },
+            "trees": 770,
+            "props": 190,
+            "placements": 1925
+          },
+          "visibleDetailBatches": 11,
+          "visibleGLBInstances": 17,
+          "visibleBuildingGLBInstances": 6,
+          "hoverPicks": 0,
+          "storedHistorical": 60,
+          "activeParcelsStored": 1000,
+          "activeParcelsVisible": 100,
+          "loadedCells": [
+            "CELL-01"
+          ],
+          "detailedBuildingInstances": 26,
+          "visibleCellIds": [
+            "CELL-01"
+          ],
+          "filter": null
+        }
+      },
+      "objects": 494,
+      "instances": 1038,
+      "materials": 74,
+      "textures": 20,
+      "heap": 116000000,
+      "medianMs": 16.799999999813735,
+      "p95Ms": 17.700000000186265
+    },
+    "historical": {
+      "diagnostics": {
+        "threeRevision": "180",
+        "templateLoads": 18,
+        "renderCount": 75,
+        "drawCalls": 64,
+        "triangles": 125857,
+        "memory": {
+          "geometries": 94,
+          "textures": 12
+        },
+        "groups": [
+          "parcels",
+          "buildings",
+          "roads",
+          "parks",
+          "trees",
+          "props",
+          "sourceGeometry",
+          "historicalGeometry",
+          "conflicts",
+          "temporaryAnimations"
+        ],
+        "testOnly": false,
+        "city": {
+          "cellLoads": 4,
+          "cellUnloads": 3,
+          "planRequests": 10,
+          "loadErrors": [],
+          "planned": {
+            "activeParcels": 1000,
+            "buildingInstances": 361,
+            "markerOnlyBuildings": 600,
+            "buildingRecords": 961,
+            "parcelsByBuildingCount": {
+              "zero": 132,
+              "one": 775,
+              "multiple": 93
+            },
+            "instancesByCategory": {
+              "trees": 770,
+              "buildings": 121,
+              "props": 216,
+              "parks": 4,
+              "apartments": 124,
+              "commercial": 90
+            },
+            "trees": 770,
+            "props": 190,
+            "placements": 1925
+          },
+          "visibleDetailBatches": 11,
+          "visibleGLBInstances": 17,
+          "visibleBuildingGLBInstances": 6,
+          "hoverPicks": 0,
+          "storedHistorical": 60,
+          "activeParcelsStored": 1000,
+          "activeParcelsVisible": 100,
+          "loadedCells": [
+            "CELL-01"
+          ],
+          "detailedBuildingInstances": 26,
+          "visibleCellIds": [
+            "CELL-01"
+          ],
+          "filter": null
+        }
+      },
+      "objects": 496,
+      "instances": 1038,
+      "materials": 76,
+      "textures": 20,
+      "heap": 116000000,
+      "medianMs": 16.899999999906868,
+      "p95Ms": 17.100000000093132
+    },
+    "event": {
+      "diagnostics": {
+        "threeRevision": "180",
+        "templateLoads": 18,
+        "renderCount": 91,
+        "drawCalls": 5,
+        "triangles": 8,
+        "memory": {
+          "geometries": 89,
+          "textures": 12
+        },
+        "groups": [
+          "parcels",
+          "buildings",
+          "roads",
+          "parks",
+          "trees",
+          "props",
+          "sourceGeometry",
+          "historicalGeometry",
+          "conflicts",
+          "temporaryAnimations"
+        ],
+        "testOnly": false,
+        "city": {
+          "cellLoads": 4,
+          "cellUnloads": 4,
+          "planRequests": 10,
+          "loadErrors": [],
+          "planned": {
+            "activeParcels": 1000,
+            "buildingInstances": 361,
+            "markerOnlyBuildings": 600,
+            "buildingRecords": 961,
+            "parcelsByBuildingCount": {
+              "zero": 132,
+              "one": 775,
+              "multiple": 93
+            },
+            "instancesByCategory": {
+              "trees": 770,
+              "buildings": 121,
+              "props": 216,
+              "parks": 4,
+              "apartments": 124,
+              "commercial": 90
+            },
+            "trees": 770,
+            "props": 190,
+            "placements": 1925
+          },
+          "visibleDetailBatches": 0,
+          "visibleGLBInstances": 0,
+          "visibleBuildingGLBInstances": 0,
+          "hoverPicks": 0,
+          "storedHistorical": 60,
+          "activeParcelsStored": 1000,
+          "activeParcelsVisible": 0,
+          "loadedCells": [],
+          "detailedBuildingInstances": 0,
+          "visibleCellIds": [],
+          "filter": null
+        }
+      },
+      "objects": 101,
+      "instances": 600,
+      "materials": 10,
+      "textures": 0,
+      "heap": 116000000,
+      "medianMs": 16.699999999953434,
+      "p95Ms": 17.100000000093132
+    }
+  },
+  "pointerClick": {
+    "milliseconds": 22.557929000000513,
+    "expected": "IN-DL-110054-10-56",
+    "selected": "IN-DL-110054-10-56",
+    "measurement": "Browser input to next frame; includes driver round trips"
+  },
+  "latencies": {
+    "hoverPickMs": 0.2600000000093132,
+    "clickSelectionMs": 15.699999999953434,
+    "layerToggleMs": 35.4000000001397,
+    "sourceCompareMs": 134.89999999990687,
+    "historicalModeMs": 19
+  },
+  "animation": {
+    "elapsedMs": 327.0999999998603,
+    "playingEvent": "LIN-0001",
+    "medianMs": 16.699999999953434,
+    "p95Ms": 17.300000000046566,
+    "diagnostics": {
+      "threeRevision": "180",
+      "templateLoads": 18,
+      "renderCount": 110,
+      "drawCalls": 5,
+      "triangles": 8,
+      "memory": {
+        "geometries": 89,
+        "textures": 12
+      },
+      "groups": [
+        "parcels",
+        "buildings",
+        "roads",
+        "parks",
+        "trees",
+        "props",
+        "sourceGeometry",
+        "historicalGeometry",
+        "conflicts",
+        "temporaryAnimations"
+      ],
+      "testOnly": false,
+      "city": {
+        "cellLoads": 4,
+        "cellUnloads": 4,
+        "planRequests": 10,
+        "loadErrors": [],
+        "planned": {
+          "activeParcels": 1000,
+          "buildingInstances": 361,
+          "markerOnlyBuildings": 600,
+          "buildingRecords": 961,
+          "parcelsByBuildingCount": {
+            "zero": 132,
+            "one": 775,
+            "multiple": 93
+          },
+          "instancesByCategory": {
+            "trees": 770,
+            "buildings": 121,
+            "props": 216,
+            "parks": 4,
+            "apartments": 124,
+            "commercial": 90
+          },
+          "trees": 770,
+          "props": 190,
+          "placements": 1925
+        },
+        "visibleDetailBatches": 0,
+        "visibleGLBInstances": 0,
+        "visibleBuildingGLBInstances": 0,
+        "hoverPicks": 0,
+        "storedHistorical": 60,
+        "activeParcelsStored": 1000,
+        "activeParcelsVisible": 0,
+        "loadedCells": [],
+        "detailedBuildingInstances": 0,
+        "visibleCellIds": [],
+        "filter": null
+      }
+    }
+  }
+}

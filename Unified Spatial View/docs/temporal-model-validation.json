@@ -1,0 +1,32 @@
+{
+  "events": 6781,
+  "geoGitRecords": 5602,
+  "lineageRows": 74,
+  "lineageTransactions": 36,
+  "geometryVersions": 1143,
+  "categories": {
+    "CURRENT / AUTHORITATIVE": 1000,
+    "UNDER REVIEW": 20,
+    "HISTORICAL / SUPERSEDED": 121,
+    "REJECTED": 2
+  },
+  "rollbackEvents": 8,
+  "points": 82,
+  "issues": [],
+  "earliest": "1972-01-01",
+  "latest": "2026-09-10",
+  "at1995": {
+    "active": 584,
+    "superseded": 0,
+    "notYet": 476,
+    "unknown": 0,
+    "missingGeometry": 556
+  },
+  "atLatest": {
+    "active": 1000,
+    "superseded": 60,
+    "notYet": 0,
+    "unknown": 0,
+    "missingGeometry": 0
+  }
+}

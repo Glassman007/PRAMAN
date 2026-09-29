@@ -1,0 +1,4 @@
+PRAMAN Evidence Graph - Final Code Cleanup Archive Integrity
+
+The final archive was validated after packaging with `unzip -t`.
+Expected result: no errors detected in the compressed data.

@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "representativeCases": {
+    "ordinary": "IN-DL-110054-1-1",
+    "survey": "IN-DL-110054-1-8",
+    "corrected": "IN-DL-110054-1-26",
+    "conflict": "IN-DL-110054-1-4",
+    "mutation": "IN-DL-110054-1-74",
+    "split": "IN-DL-110054-1-101",
+    "merge": "IN-DL-110054-1-93",
+    "historical": "IN-DL-110054-1-101",
+    "pending": "IN-DL-110054-1-4",
+    "rejected": "IN-DL-110054-1-20",
+    "accepted": "IN-DL-110054-1-1",
+    "crossCell": "IN-DL-110054-3-1",
+    "rollback": "IN-DL-110054-1-74"
+  },
+  "crossCellEdge": {
+    "lineageEventId": "LIN-0068",
+    "parent": "IN-DL-110054-2-106",
+    "parentCell": "CELL-02",
+    "child": "IN-DL-110054-3-1",
+    "childCell": "CELL-03",
+    "subtype": "CROSS_CELL_SPLIT"
+  },
+  "verified": {
+    "parcelIdentities": 1060,
+    "currentAuthoritativeStates": 1000,
+    "historicalIdentities": 60,
+    "pendingProposals": 243,
+    "rejectedProposals": 26,
+    "acceptedProposalEvents": 731,
+    "rollbackEvents": 8,
+    "explicitLineageEdges": 74
+  }
+}

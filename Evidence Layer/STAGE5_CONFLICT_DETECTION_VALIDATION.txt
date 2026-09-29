@@ -1,0 +1,39 @@
+PRAMAN Evidence Graph Stage 5 — Conflict Detection Validation
+
+Principle: MATCHING DETERMINES IDENTITY → CONFLICT DETECTION DETERMINES DISAGREEMENT
+Explicit conflicts: 715
+Affected parcels: 530
+Conflict evidence rows: 1715
+Open conflicts: 329
+Resolved conflicts: 386
+Rendered conflict categories: 10
+Unmapped conflict records: 0
+Data-layer ERROR diagnostics: 0
+
+Category counts (derived from CONFLICTS.conflict_type):
+- Ownership / party information: 134 conflicts across 133 parcels
+  Types: OWNER_NAME_VARIATION, OWNERSHIP_DISAGREEMENT, GOVERNMENT_PRIVATE_OWNERSHIP
+- Parcel area: 77 conflicts across 77 parcels
+  Types: AREA_MISMATCH
+- Geometry / boundary: 164 conflicts across 157 parcels
+  Types: SHIFTED_GEOMETRY, LOCAL_SPATIAL_DISTORTION, PHYSICAL_OCCUPATION_VS_LEGAL_GEOMETRY, ENCROACHMENT_PUBLIC_LAND, PARK_BOUNDARY_DISAGREEMENT, ROAD_WIDENING_BOUNDARY_CORRECTION
+- Tenure / authority status: 22 conflicts across 22 parcels
+  Types: LEGAL_APPROVAL_DECIDED_REJECTED, LEGAL_APPROVAL_PENDING
+- Identifier / identity: 64 conflicts across 64 parcels
+  Types: DUPLICATE_PARCEL_CANDIDATE, AMBIGUOUS_CANDIDATE_MATCH, HISTORICAL_ID_REFERENCE
+- Temporal / version disagreement: 92 conflicts across 92 parcels
+  Types: TEMPORAL_VERSION_MISMATCH, INCORRECT_MUTATION_ROLLED_BACK, OUTDATED_RETIRED_PARCEL_ACTIVE
+- Topology / spatial relationship: 28 conflicts across 28 parcels
+  Types: BUILDING_FOOTPRINT_CROSSES_PARCEL
+- Source disagreement / coverage: 46 conflicts across 46 parcels
+  Types: DDA_MUNICIPAL_LAND_USE, MISSING_SOURCE_RECORD
+- Survey discrepancy: 22 conflicts across 22 parcels
+  Types: GNSS_VS_OLD_CADASTRE
+- Split / merge relationship: 66 conflicts across 63 parcels
+  Types: ONE_TO_MANY_MATCH, REDEVELOPMENT_CONSOLIDATION, SPLIT_NOT_REFLECTED, MERGE_NOT_REFLECTED, INCORRECT_PARENT_REFERENCE
+
+Stage-5 aggregate nodes: 10
+Stage-5 incoming conflict edges: 24
+Inspector support: parcel, conflicting field, source A/B values, source provenance, reliability/confidence, geometry context where relevant, conflict evidence, reconciliation state.
+Conflict Explorer integration: event/callback handoff only; no duplicate investigation dashboard.
+Result: PASS

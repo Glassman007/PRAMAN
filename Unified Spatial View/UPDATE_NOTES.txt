@@ -1,0 +1,7 @@
+Stage 3 — full asset audit and calibration
+42-entry registry; original model hashes preserved.
+assets/apartments/ is the corrected directory; GLB filenames unchanged.
+Calibration viewer replaces the single test model.
+All calibrated dimensions and judgment calls: docs/STAGE3_ASSET_REPORT.md.
+Reproducible tests: npm ci; npm run test:install-browser; npm test.
+No city or parcel dataset imported.

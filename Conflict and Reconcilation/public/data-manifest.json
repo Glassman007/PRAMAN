@@ -1,0 +1,17 @@
+{
+  "files": [
+    "1 Source_inputs/SOURCE_METADATA.csv",
+    "1 Source_inputs/SOURCE_SPECIFIC_SCHEMA.csv",
+    "2 Source_geometry/SOURCE_GEOMETRIES.csv",
+    "4 Matching/SOURCE_OBSERVATIONS.csv",
+    "5 Conflicts/CONFLICTS.csv",
+    "5 Conflicts/CONFLICT_EVIDENCE.csv",
+    "5 Conflicts/CONFLICTS_REJECTED_PROVENANCE.csv",
+    "6 Reconciliation/RECONCILED_PARCELS.csv",
+    "7 Authoritative_state/CANONICAL_PARCELS.csv",
+    "7 Authoritative_state/GEOMETRY_VERSIONS.csv",
+    "8 History/HISTORICAL_PARCELS.csv",
+    "8 History/PARCEL_LINEAGE.csv",
+    "8 History/GEOGIT_EVENTS.csv"
+  ]
+}

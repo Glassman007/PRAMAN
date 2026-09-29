@@ -1,0 +1,78 @@
+PRAMAN LAYER 4 — PARCEL HISTORY & LINEAGE LANDING VALIDATION
+============================================================
+
+DATASET / ADAPTER REGRESSION
+----------------------------
+PASS  Existing Layer 4 history/lineage adapter test suite.
+PASS  canonical parcels: 1000
+PASS  historical retired parcels: 60
+PASS  lineage edges: 74
+PASS  geometry versions: 1143
+PASS  GeoGit events: 5602
+
+LANDING INDEX
+-------------
+PASS  Total parcel identity rows: 1060
+PASS  Current canonical rows: 1000
+PASS  Historical retired rows: 60
+PASS  Duplicate parcel IDs: 0
+PASS  Static parcel detail compatibility payloads: 1060
+PASS  Historical parcels with recorded descendants: 60
+
+STATE SEPARATION
+----------------
+PASS  ACTIVE marker count: 1000
+PASS  HISTORICAL marker count: 60
+PASS  PROPOSED marker count: 243
+PASS  SUPERSEDED marker count: 61
+PASS  A pending PROPOSED state never replaces an ACTIVE parcel's primary status.
+PASS  A SUPERSEDED geometry state never replaces an ACTIVE parcel's primary status.
+PASS  Historical rows use the historical identity state rather than recency inference.
+
+SEARCH / FILTER INDEX
+---------------------
+PASS  Search index contains canonical parcel ID.
+PASS  Search index contains source / legacy parcel IDs.
+PASS  Search index contains locality where authoritative locality exists.
+PASS  Search index contains cell.
+PASS  Owner is not exposed as a landing search field.
+PASS  Status filter values are dataset-derived.
+PASS  Land-use filter values are dataset-derived.
+PASS  Cell filter values are dataset-derived.
+PASS  History Type values are dataset-derived from normalized meaningful events.
+
+Current History Type values present in this dataset:
+- CONFLICT
+- GEOMETRY_CHANGE
+- MERGE
+- MUTATION
+- OFFICIAL_APPROVAL
+- SPLIT
+- SURVEY_OBSERVATION
+
+Historical source-ID search validation example:
+- source ID: SRC-H-1-101
+- resolved parcel: IN-DL-110054-1-101
+- descendant count: 2
+- duplicate matches: 0
+
+LATEST EVENT SEMANTICS
+----------------------
+PASS  ADMINISTRATIVE_METADATA is excluded from latest meaningful event.
+PASS  Latest meaningful event uses the latest dated meaningful event when dated evidence exists.
+PASS  Missing event dates are not fabricated.
+
+UI / ROUTING SOURCE CHECKS
+--------------------------
+PASS  New landing JSX/API files transpile successfully with the installed TypeScript parser.
+PASS  Search/filter values are URL-backed and preserved when a parcel is opened.
+PASS  Malformed / unknown parcel IDs resolve to the existing not-found state.
+PASS  Existing ParcelTimeline detail component is unchanged.
+PASS  Existing backend timeline files are unchanged.
+PASS  Landing CSS contains no gradients and no box shadows.
+
+FRONTEND BUNDLE NOTE
+--------------------
+NOT RUN  `vite build` could not be executed in this container because the project dependencies are not installed and `npm install` timed out before Vite became available.
+
+This is not recorded as a build pass. JSX syntax, generated data integrity, adapter regression tests, state semantics, file hashes, and landing-index tests were validated independently. On a normal development machine, install the declared npm dependencies before running `npm run build`.

@@ -1,0 +1,616 @@
+[
+  {
+    "id": "LIN-0001",
+    "type": "SPLIT",
+    "date": "2008-03-15",
+    "parentIds": [
+      "IN-DL-110054-8-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-8-91",
+      "IN-DL-110054-8-92"
+    ],
+    "parentAreaSqm": 1432.863978052793,
+    "childAreaSqm": 1432.8639780527933,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0003",
+    "type": "SPLIT",
+    "date": "2009-03-15",
+    "parentIds": [
+      "IN-DL-110054-1-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-1-91",
+      "IN-DL-110054-1-92"
+    ],
+    "parentAreaSqm": 1694.8354371862495,
+    "childAreaSqm": 1694.8354371862492,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0005",
+    "type": "SPLIT",
+    "date": "2009-03-15",
+    "parentIds": [
+      "IN-DL-110054-9-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-9-91",
+      "IN-DL-110054-9-92"
+    ],
+    "parentAreaSqm": 1448.4150030385713,
+    "childAreaSqm": 1448.4150030385713,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0007",
+    "type": "SPLIT",
+    "date": "2010-03-15",
+    "parentIds": [
+      "IN-DL-110054-10-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-10-91",
+      "IN-DL-110054-10-92"
+    ],
+    "parentAreaSqm": 1551.0286931363717,
+    "childAreaSqm": 1551.0286931363714,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0009",
+    "type": "SPLIT",
+    "date": "2010-03-15",
+    "parentIds": [
+      "IN-DL-110054-2-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-2-91",
+      "IN-DL-110054-2-92"
+    ],
+    "parentAreaSqm": 1409.3361189954587,
+    "childAreaSqm": 1409.3361189954587,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0011",
+    "type": "MERGE",
+    "date": "2010-07-10",
+    "parentIds": [
+      "IN-DL-110054-7-102",
+      "IN-DL-110054-7-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-7-93"
+    ],
+    "parentAreaSqm": 749.2220889368004,
+    "childAreaSqm": 749.2220889331109,
+    "symmetricDifferenceSqm": 0.00026614763906596117,
+    "sharedParentEdgeMetres": 25.684165647025658,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0013",
+    "type": "SPLIT",
+    "date": "2011-03-15",
+    "parentIds": [
+      "IN-DL-110054-3-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-3-91",
+      "IN-DL-110054-3-92"
+    ],
+    "parentAreaSqm": 1326.545657295153,
+    "childAreaSqm": 1326.545657295153,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0015",
+    "type": "MERGE",
+    "date": "2011-07-10",
+    "parentIds": [
+      "IN-DL-110054-1-102",
+      "IN-DL-110054-1-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-1-93"
+    ],
+    "parentAreaSqm": 741.5615980748047,
+    "childAreaSqm": 741.5615980739651,
+    "symmetricDifferenceSqm": 1.6271786488442075e-05,
+    "sharedParentEdgeMetres": 25.611511584290398,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0017",
+    "type": "MERGE",
+    "date": "2011-07-10",
+    "parentIds": [
+      "IN-DL-110054-8-102",
+      "IN-DL-110054-8-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-8-93"
+    ],
+    "parentAreaSqm": 609.4197176324586,
+    "childAreaSqm": 609.4197176411601,
+    "symmetricDifferenceSqm": 0.00017485109891568484,
+    "sharedParentEdgeMetres": 24.032527970524708,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0019",
+    "type": "SPLIT",
+    "date": "2012-03-15",
+    "parentIds": [
+      "IN-DL-110054-4-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-4-91",
+      "IN-DL-110054-4-92"
+    ],
+    "parentAreaSqm": 1525.5869512277284,
+    "childAreaSqm": 1525.5869512277282,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0021",
+    "type": "MERGE",
+    "date": "2012-07-10",
+    "parentIds": [
+      "IN-DL-110054-2-102",
+      "IN-DL-110054-2-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-2-93"
+    ],
+    "parentAreaSqm": 785.813561280825,
+    "childAreaSqm": 785.8135612772745,
+    "symmetricDifferenceSqm": 0.0002884453021123612,
+    "sharedParentEdgeMetres": 26.22734497816541,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0023",
+    "type": "MERGE",
+    "date": "2012-07-10",
+    "parentIds": [
+      "IN-DL-110054-9-102",
+      "IN-DL-110054-9-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-9-93"
+    ],
+    "parentAreaSqm": 734.1775077335526,
+    "childAreaSqm": 734.1775077398364,
+    "symmetricDifferenceSqm": 0.00023730046706105234,
+    "sharedParentEdgeMetres": 26.14982958077171,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0025",
+    "type": "SPLIT",
+    "date": "2013-03-15",
+    "parentIds": [
+      "IN-DL-110054-5-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-5-91",
+      "IN-DL-110054-5-92"
+    ],
+    "parentAreaSqm": 1632.5844798424102,
+    "childAreaSqm": 1632.5844798424102,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0027",
+    "type": "MERGE",
+    "date": "2013-07-10",
+    "parentIds": [
+      "IN-DL-110054-10-102",
+      "IN-DL-110054-10-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-10-93"
+    ],
+    "parentAreaSqm": 903.3064059302658,
+    "childAreaSqm": 903.3064059164607,
+    "symmetricDifferenceSqm": 0.00032670927944788986,
+    "sharedParentEdgeMetres": 28.92116293315332,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0029",
+    "type": "MERGE",
+    "date": "2013-07-10",
+    "parentIds": [
+      "IN-DL-110054-3-102",
+      "IN-DL-110054-3-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-3-93"
+    ],
+    "parentAreaSqm": 732.1388422304419,
+    "childAreaSqm": 732.1388422263044,
+    "symmetricDifferenceSqm": 0.00030276825692077125,
+    "sharedParentEdgeMetres": 24.04362203323199,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0031",
+    "type": "SPLIT",
+    "date": "2014-03-15",
+    "parentIds": [
+      "IN-DL-110054-6-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-6-91",
+      "IN-DL-110054-6-92"
+    ],
+    "parentAreaSqm": 1527.2758686346301,
+    "childAreaSqm": 1527.2758686346301,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0033",
+    "type": "MERGE",
+    "date": "2014-07-10",
+    "parentIds": [
+      "IN-DL-110054-4-102",
+      "IN-DL-110054-4-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-4-93"
+    ],
+    "parentAreaSqm": 666.3802935033233,
+    "childAreaSqm": 666.3802935060475,
+    "symmetricDifferenceSqm": 0.00018875939965723454,
+    "sharedParentEdgeMetres": 25.617753396198335,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0035",
+    "type": "SPLIT",
+    "date": "2015-03-15",
+    "parentIds": [
+      "IN-DL-110054-7-101"
+    ],
+    "childIds": [
+      "IN-DL-110054-7-91",
+      "IN-DL-110054-7-92"
+    ],
+    "parentAreaSqm": 1458.7728978267396,
+    "childAreaSqm": 1458.7728978267396,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0037",
+    "type": "MERGE",
+    "date": "2015-07-10",
+    "parentIds": [
+      "IN-DL-110054-5-102",
+      "IN-DL-110054-5-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-5-93"
+    ],
+    "parentAreaSqm": 762.152892931541,
+    "childAreaSqm": 762.152892928025,
+    "symmetricDifferenceSqm": 1.580894606956207e-05,
+    "sharedParentEdgeMetres": 26.628335673657325,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0039",
+    "type": "MERGE",
+    "date": "2016-07-10",
+    "parentIds": [
+      "IN-DL-110054-6-102",
+      "IN-DL-110054-6-103"
+    ],
+    "childIds": [
+      "IN-DL-110054-6-93"
+    ],
+    "parentAreaSqm": 887.5472804073536,
+    "childAreaSqm": 887.5472804105802,
+    "symmetricDifferenceSqm": 0.00031787791001258725,
+    "sharedParentEdgeMetres": 28.677091652967206,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0041",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2016-11-05",
+    "parentIds": [
+      "IN-DL-110054-10-104",
+      "IN-DL-110054-10-105",
+      "IN-DL-110054-10-106"
+    ],
+    "childIds": [
+      "IN-DL-110054-10-94"
+    ],
+    "parentAreaSqm": 812.2692127987601,
+    "childAreaSqm": 812.2692127978944,
+    "symmetricDifferenceSqm": 1.9335678523413335e-05,
+    "sharedParentEdgeMetres": 56.17126010786688,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0044",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2016-11-05",
+    "parentIds": [
+      "IN-DL-110054-5-104",
+      "IN-DL-110054-5-105"
+    ],
+    "childIds": [
+      "IN-DL-110054-5-94"
+    ],
+    "parentAreaSqm": 881.9040611989931,
+    "childAreaSqm": 881.9040612022097,
+    "symmetricDifferenceSqm": 0.00031370302563749064,
+    "sharedParentEdgeMetres": 28.621879352670593,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0046",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2017-11-05",
+    "parentIds": [
+      "IN-DL-110054-1-104",
+      "IN-DL-110054-1-105"
+    ],
+    "childIds": [
+      "IN-DL-110054-1-94"
+    ],
+    "parentAreaSqm": 857.8907899415353,
+    "childAreaSqm": 857.8907899456101,
+    "symmetricDifferenceSqm": 0.0002789440261845577,
+    "sharedParentEdgeMetres": 28.954234329498547,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0048",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2017-11-05",
+    "parentIds": [
+      "IN-DL-110054-6-104",
+      "IN-DL-110054-6-105",
+      "IN-DL-110054-6-106"
+    ],
+    "childIds": [
+      "IN-DL-110054-6-94"
+    ],
+    "parentAreaSqm": 849.9823842910433,
+    "childAreaSqm": 849.9823842860783,
+    "symmetricDifferenceSqm": 0.00033090922237555276,
+    "sharedParentEdgeMetres": 57.35419262558892,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0051",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2018-11-05",
+    "parentIds": [
+      "IN-DL-110054-2-104",
+      "IN-DL-110054-2-105"
+    ],
+    "childIds": [
+      "IN-DL-110054-2-94"
+    ],
+    "parentAreaSqm": 808.6319025927751,
+    "childAreaSqm": 808.6319025996141,
+    "symmetricDifferenceSqm": 0.00031428723675697157,
+    "sharedParentEdgeMetres": 26.227349258898165,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0053",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2018-11-05",
+    "parentIds": [
+      "IN-DL-110054-7-104",
+      "IN-DL-110054-7-105"
+    ],
+    "childIds": [
+      "IN-DL-110054-7-94"
+    ],
+    "parentAreaSqm": 651.3011622267942,
+    "childAreaSqm": 651.3011622247329,
+    "symmetricDifferenceSqm": 1.137672225026698e-05,
+    "sharedParentEdgeMetres": 25.35807766225783,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0055",
+    "type": "SPLIT",
+    "date": "2019-04-12",
+    "parentIds": [
+      "IN-DL-110054-1-106"
+    ],
+    "childIds": [
+      "IN-DL-110054-1-95",
+      "IN-DL-110054-1-96"
+    ],
+    "parentAreaSqm": 1954.1013195633682,
+    "childAreaSqm": 1954.1013195633682,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0057",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2019-11-05",
+    "parentIds": [
+      "IN-DL-110054-3-104",
+      "IN-DL-110054-3-105"
+    ],
+    "childIds": [
+      "IN-DL-110054-3-94"
+    ],
+    "parentAreaSqm": 630.6032463576922,
+    "childAreaSqm": 630.6032463608293,
+    "symmetricDifferenceSqm": 0.0001934671629795215,
+    "sharedParentEdgeMetres": 24.043625696712763,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0059",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2019-11-05",
+    "parentIds": [
+      "IN-DL-110054-8-104",
+      "IN-DL-110054-8-105"
+    ],
+    "childIds": [
+      "IN-DL-110054-8-94"
+    ],
+    "parentAreaSqm": 663.9246773239307,
+    "childAreaSqm": 663.9246773204512,
+    "symmetricDifferenceSqm": 0.0002260816982466718,
+    "sharedParentEdgeMetres": 24.03253139620854,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0061",
+    "type": "SPLIT",
+    "date": "2020-09-03",
+    "parentIds": [
+      "IN-DL-110054-3-106"
+    ],
+    "childIds": [
+      "IN-DL-110054-3-95",
+      "IN-DL-110054-3-96"
+    ],
+    "parentAreaSqm": 1630.684881640502,
+    "childAreaSqm": 1630.684881640502,
+    "symmetricDifferenceSqm": 0.0,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0063",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2020-11-05",
+    "parentIds": [
+      "IN-DL-110054-4-104",
+      "IN-DL-110054-4-105"
+    ],
+    "childIds": [
+      "IN-DL-110054-4-94"
+    ],
+    "parentAreaSqm": 672.1402522485696,
+    "childAreaSqm": 672.1402522453305,
+    "symmetricDifferenceSqm": 0.00019369148291614735,
+    "sharedParentEdgeMetres": 25.617757002826266,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0065",
+    "type": "REDEVELOPMENT_CONSOLIDATION",
+    "date": "2020-11-05",
+    "parentIds": [
+      "IN-DL-110054-9-104",
+      "IN-DL-110054-9-105"
+    ],
+    "childIds": [
+      "IN-DL-110054-9-94"
+    ],
+    "parentAreaSqm": 819.8147705989269,
+    "childAreaSqm": 819.8147705951916,
+    "symmetricDifferenceSqm": 0.0003304031039874644,
+    "sharedParentEdgeMetres": 26.149833768201226,
+    "crossCell": false
+  },
+  {
+    "id": "LIN-0067",
+    "type": "CROSS_CELL_SPLIT",
+    "date": "2021-02-18",
+    "parentIds": [
+      "IN-DL-110054-2-106"
+    ],
+    "childIds": [
+      "IN-DL-110054-2-100",
+      "IN-DL-110054-3-1"
+    ],
+    "parentAreaSqm": 22468.539265569234,
+    "childAreaSqm": 1370.8412485531858,
+    "symmetricDifferenceSqm": 21097.700229414204,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": true
+  },
+  {
+    "id": "LIN-0069",
+    "type": "CROSS_CELL_MERGE",
+    "date": "2022-06-27",
+    "parentIds": [
+      "IN-DL-110054-4-106",
+      "IN-DL-110054-5-106"
+    ],
+    "childIds": [
+      "IN-DL-110054-5-100"
+    ],
+    "parentAreaSqm": 733.3359995109889,
+    "childAreaSqm": 733.335999511596,
+    "symmetricDifferenceSqm": 0.00018038105989659492,
+    "sharedParentEdgeMetres": 28.621907374764582,
+    "crossCell": true
+  },
+  {
+    "id": "LIN-0071",
+    "type": "CROSS_CELL_MERGE",
+    "date": "2022-12-08",
+    "parentIds": [
+      "IN-DL-110054-8-106",
+      "IN-DL-110054-9-106"
+    ],
+    "childIds": [
+      "IN-DL-110054-9-100"
+    ],
+    "parentAreaSqm": 690.9771270540048,
+    "childAreaSqm": 690.9771270539857,
+    "symmetricDifferenceSqm": 0.0001978266455346933,
+    "sharedParentEdgeMetres": 26.149859266909885,
+    "crossCell": true
+  },
+  {
+    "id": "LIN-0073",
+    "type": "CROSS_CELL_SPLIT",
+    "date": "2023-01-16",
+    "parentIds": [
+      "IN-DL-110054-7-106"
+    ],
+    "childIds": [
+      "IN-DL-110054-7-100",
+      "IN-DL-110054-8-1"
+    ],
+    "parentAreaSqm": 24487.395647180252,
+    "childAreaSqm": 1551.2795720455874,
+    "symmetricDifferenceSqm": 22936.1188167786,
+    "sharedParentEdgeMetres": 0,
+    "crossCell": true
+  }
+]

@@ -1,0 +1,13 @@
+Standard glTF 2.0 GLB Compression Report
+All files validated with no extensionsUsed/extensionsRequired/nested extensions.
+
+building-1.glb: 2416544 -> 498812 bytes (79.4% smaller); triangles 28166 -> 20237; structure nodes/meshes/materials/images=10/9/9/2; PASS
+building-2.glb: 2652756 -> 476852 bytes (82.0% smaller); triangles 40961 -> 18287; structure nodes/meshes/materials/images=9/8/6/1; PASS
+building-3.glb: 1824796 -> 483996 bytes (73.5% smaller); triangles 27871 -> 23630; structure nodes/meshes/materials/images=9/8/6/2; PASS
+building-4.glb: 2975448 -> 459064 bytes (84.6% smaller); triangles 44997 -> 20254; structure nodes/meshes/materials/images=12/11/5/2; PASS
+building-5.glb: 2580364 -> 479904 bytes (81.4% smaller); triangles 35063 -> 19284; structure nodes/meshes/materials/images=19/18/8/4; PASS
+building-6.glb: 5367732 -> 463340 bytes (91.4% smaller); triangles 81284 -> 19067; structure nodes/meshes/materials/images=8/7/5/1; PASS
+building-7.glb: 3295952 -> 467024 bytes (85.8% smaller); triangles 39894 -> 17793; structure nodes/meshes/materials/images=15/14/8/5; PASS
+building-8.glb: 6980456 -> 453096 bytes (93.5% smaller); triangles 77756 -> 15803; structure nodes/meshes/materials/images=12/11/9/6; PASS
+building-9.glb: 9085076 -> 458052 bytes (95.0% smaller); triangles 28048 -> 16852; structure nodes/meshes/materials/images=108/65/15/10; PASS
+building-10.glb: 3029860 -> 465344 bytes (84.6% smaller); triangles 14336 -> 13457; structure nodes/meshes/materials/images=108/53/53/5; PASS

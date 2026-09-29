@@ -1,0 +1,9 @@
+PRAMAN Evidence Graph — History / Lineage HTTP smoke test
+STATUS: PASS
+Data-layer ERROR diagnostics: 0
+Split sample parent count: 1
+Split sample child count: 2
+Merge sample parent count: 2
+Merge sample result count: 1
+Direct GeoGit ↔ geometry edges: 0
+Focused history nodes: 8

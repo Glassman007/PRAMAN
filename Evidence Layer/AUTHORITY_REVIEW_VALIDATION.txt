@@ -1,0 +1,16 @@
+PRAMAN Evidence Graph — Authority / Review validation
+Principle: AI CONFIDENCE ≠ LEGAL / AUTHORITATIVE STATUS
+Data-layer ERROR diagnostics: 0
+Reconciliation/system inference rows: 1060
+Proposed-state rows: 1060
+Explicit governance events: 1000
+HUMAN_REVIEW: 243
+PROPOSAL_ACCEPTED: 731
+PROPOSAL_REJECTED: 26
+Authoritative-state counts: {"AUTHORITATIVE":817,"UNCHANGED_PENDING":243}
+System inference status counts: {"AUTO_MATCHED":508,"HUMAN_REVIEW_REQUIRED":118,"MATCHED_WITH_MINOR_CONFLICT":189,"TENTATIVE":100,"REJECTED_MATCH":26,"RECONCILED":56,"NEEDS_ADDITIONAL_EVIDENCE":63}
+Geometry authority counts: {"ACCEPTED":1060,"PENDING_HUMAN_APPROVAL":20,"SUPERSEDED":61,"REJECTED":2}
+Parcels without explicit governance event: 60
+Confidence/authority overlap: {"pendingCount":243,"authoritativeCount":817,"pendingOverallMatchRange":[0.666,0.94],"authoritativeOverallMatchRange":[0.461,0.94],"overlapExists":true}
+Stage-7 nodes: [{"label":"System inference","status":"SYSTEM_INFERENCE","role":"system-inference","count":1060},{"label":"Proposed state","status":"PROPOSED","role":"proposed-state","count":1060},{"label":"Policy gate","status":"POLICY_GATE","role":"policy-gate","count":1000},{"label":"Human / authorized review","status":"HUMAN_REVIEW","role":"human-review","count":243},{"label":"Proposal accepted","status":"PROPOSAL_ACCEPTED","role":"authorized-decision","count":731},{"label":"Proposal rejected","status":"PROPOSAL_REJECTED","role":"authorized-decision","count":26},{"label":"AUTHORITATIVE state","status":"AUTHORITATIVE","role":"authoritative-state","count":817},{"label":"UNCHANGED PENDING state","status":"UNCHANGED_PENDING","role":"authoritative-state","count":243}]
+Stage-7 edges: [{"type":"PROPOSED_STATE","count":1060,"from":"cluster:authority-review:system-inference","to":"cluster:authority-review:proposed-state"},{"type":"ENTERS_POLICY_GATE","count":1000,"from":"cluster:authority-review:proposed-state","to":"cluster:authority-review:policy-gate"},{"type":"GOVERNANCE_OUTCOME","count":243,"from":"cluster:authority-review:policy-gate","to":"cluster:authority-review:event:HUMAN_REVIEW"},{"type":"GOVERNANCE_OUTCOME","count":731,"from":"cluster:authority-review:policy-gate","to":"cluster:authority-review:event:PROPOSAL_ACCEPTED"},{"type":"GOVERNANCE_OUTCOME","count":26,"from":"cluster:authority-review:policy-gate","to":"cluster:authority-review:event:PROPOSAL_REJECTED"},{"type":"AUTHORITY_STATE","count":243,"from":"cluster:authority-review:event:HUMAN_REVIEW","to":"cluster:authority-review:state:UNCHANGED_PENDING"},{"type":"AUTHORITY_STATE","count":731,"from":"cluster:authority-review:event:PROPOSAL_ACCEPTED","to":"cluster:authority-review:state:AUTHORITATIVE"},{"type":"AUTHORITY_STATE","count":26,"from":"cluster:authority-review:event:PROPOSAL_REJECTED","to":"cluster:authority-review:state:AUTHORITATIVE"}]

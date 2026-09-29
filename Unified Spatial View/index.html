@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>Unified Spatial View — Spatial Evidence</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <script>document.body.classList.add('final-ui', 'ui-shell-booting');</script>
+  <header class="topbar">
+    <div class="topbar__left">
+      <a class="back-link" href="../layer1/index.html" aria-label="Back to Layer 1">←</a>
+      <div class="brand-mark" aria-hidden="true">PR</div>
+      <div>
+        <div class="eyebrow">SIH26013 · Layer 2</div>
+        <h1>Unified Spatial View</h1>
+      </div>
+    </div>
+    <div class="topbar__right">
+      <span class="topbar__descriptor">Spatial evidence & source reconciliation</span>
+    </div>
+  </header>
+
+  <main class="screen-grid">
+    <aside class="layer-sidebar" aria-label="Map layers">
+      <section class="sidebar-section">
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">Map controls</p>
+            <h2>Layers</h2>
+          </div>
+          <button id="clearLayersButton" class="text-button" type="button">Clear</button>
+        </div>
+        <p class="sidebar-help">Current locality. Authoritative parcels and dataset-backed evidence are shown as 2D geometry. Pan, zoom, search, and select parcels directly.</p>
+        <div id="layerList" class="layer-list"></div>
+      </section>
+
+      <section class="sidebar-section sidebar-section--stack">
+        <div class="section-heading-row">
+          <h3>Layer stack</h3>
+          <span id="activeLayerCount" class="count-badge">0</span>
+        </div>
+        <div id="layerStack" class="layer-stack empty-state-small">No layers selected</div>
+      </section>
+
+      <section class="sidebar-section sidebar-section--legend">
+        <h3>Conflict display</h3>
+        <div class="legend-row"><span class="legend-swatch legend-swatch--hatch"></span><span>Conflict relevant to selected layers</span></div>
+        <div class="legend-row"><span class="legend-dot legend-dot--high"></span><span>High / critical review</span></div>
+        <div class="legend-row"><span class="legend-dot legend-dot--medium"></span><span>Low / medium discrepancy</span></div>
+        <p class="legend-note">Source boundaries require explicit geometry and provenance. Missing boundaries are never fabricated.</p>
+      </section>
+    </aside>
+
+    <section class="map-section" aria-label="Unified Spatial View">
+      <div class="map-toolbar">
+        <div>
+          <p id="studyAreaLabel" class="eyebrow">Study area</p>
+          <div class="map-title-row">
+            <h2>Unified Spatial View</h2>
+            <span id="conflictCounter" class="map-chip">Map unavailable</span>
+          </div>
+        </div>
+        <div class="map-toolbar__actions">
+          <button id="boundaryModeButton" class="secondary-button" type="button" disabled>Boundary compare</button>
+          <button disabled title="Available when the new map is connected" id="fitButton" class="secondary-button" type="button">Fit all</button>
+        </div>
+      </div>
+
+      <div class="map-frame">
+        <div id="mapEmptyPrompt" class="map-empty-prompt" role="status" aria-live="polite">
+          <div class="map-empty-icon">◫</div>
+          <strong>Loading spatial view</strong>
+          <span id="mapEmptyDescription">Loading the current PRAMAN parcel view…</span>
+        </div>
+
+        <div class="map-footer-strip">
+          <div><span class="status-dot status-dot--pending"></span><span id="mapStatusText">Loading spatial view…</span></div>
+          <div id="datasetFooterSummary">Parcel dataset</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="utility-rail" aria-label="Map summary">
+      <section class="rail-card">
+        <p class="eyebrow">Selection</p>
+        <strong id="railSelectedParcel">None</strong>
+        <span id="railSelectedConflict">No parcel selected</span>
+      </section>
+      <section class="rail-card rail-card--metric">
+        <span>Selected layers</span>
+        <strong id="railLayerCount">0</strong>
+      </section>
+      <section class="rail-card rail-card--metric">
+        <span>Relevant conflicts</span>
+        <strong id="railConflictCount">0</strong>
+      </section>
+      <section class="rail-card rail-card--quality">
+        <p class="eyebrow">Coverage</p>
+        <strong id="coverageValue">—</strong>
+        <span id="coverageText">No dataset connected</span>
+      </section>
+      <button id="openSelectedButton" class="rail-action" type="button" disabled>Open parcel panel</button>
+    </aside>
+  </main>
+
+  <aside id="parcelPanel" class="parcel-panel" aria-label="Parcel Panel" aria-hidden="true">
+    <div class="parcel-panel__header">
+      <div>
+        <p class="eyebrow">Selected parcel</p>
+        <h2 id="panelParcelId">Parcel Panel</h2>
+        <span id="panelParcelName" class="panel-subtitle"></span>
+      </div>
+      <button id="closePanelButton" class="icon-button" type="button" aria-label="Close parcel panel">×</button>
+    </div>
+
+    <nav class="panel-tabs" aria-label="Parcel information tabs">
+      <button class="panel-tab is-active" type="button" data-tab="overview">Overview</button>
+      <button class="panel-tab" type="button" data-tab="sources">Sources</button>
+      <button class="panel-tab" type="button" data-tab="conflicts">Conflicts</button>
+      <button class="panel-tab" type="button" data-tab="evidence">Evidence</button>
+      <button class="panel-tab" type="button" data-tab="history">History</button>
+      <button class="panel-tab" type="button" data-tab="lineage">Lineage</button>
+      <button class="panel-tab" type="button" data-tab="documents">Documents</button>
+    </nav>
+
+    <div id="panelContent" class="parcel-panel__content"></div>
+  </aside>
+  <div id="panelScrim" class="panel-scrim" aria-hidden="true"></div>
+
+  <script src="./data/data-adapter.js"></script>
+  <script src="./app.js"></script>
+
+  <script type="module" src="./map/bootstrap.js"></script>
+</body>
+</html>

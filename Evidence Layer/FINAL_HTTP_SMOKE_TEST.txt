@@ -1,0 +1,6 @@
+PRAMAN Evidence Graph cleanup HTTP smoke test
+200 /
+200 /src/evidence-graph/dashboard/EvidenceGraphDashboard.mjs
+200 /src/evidence-graph/dashboard/EvidenceGraphRenderer.mjs
+200 /src/evidence-graph/replay/ReplayController.mjs
+200 /public/PRAMAN_DATA/7%20Authoritative_state/CANONICAL_PARCELS.csv

@@ -1,0 +1,5 @@
+1024x768: overflow, scrollbar gutter, small-delta wheel/trackpad-style scroll isolation, and last-field reachability PASS
+1366x768: overflow, scrollbar gutter, small-delta wheel/trackpad-style scroll isolation, and last-field reachability PASS
+1440x900: overflow, scrollbar gutter, small-delta wheel/trackpad-style scroll isolation, and last-field reachability PASS
+1000x768: overflow, scrollbar gutter, small-delta wheel/trackpad-style scroll isolation, and last-field reachability PASS
+1366x768 headed Chromium: native scrollbar drag PASS (scrollTop=1529)

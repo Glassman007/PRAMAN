@@ -1,0 +1,3540 @@
+[
+  {
+    "id": "apartments-app-1",
+    "path": "assets/apartments/app-1.glb",
+    "category": "apartments",
+    "sha256": "400b13f977499046cddc8418a5a2b48684c5721885a6ddf91528ab248262c8b3",
+    "bytes": 672836,
+    "nativeBounds": {
+      "min": [
+        -1.873746633529663,
+        -0.0011435747146606445,
+        -1.3717916011810303
+      ],
+      "max": [
+        1.873746633529663,
+        4.662140846252441,
+        1.3717916011810303
+      ]
+    },
+    "nativeWidth": 3.747493267059326,
+    "nativeDepth": 2.7435832023620605,
+    "nativeHeight": 4.663284420967102,
+    "meshCount": 7,
+    "triangleCount": 16620,
+    "materialCount": 7,
+    "textureCount": 0,
+    "lowestY": -0.0011435747146606445,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        2.3304986357688904,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.0011435747146606445,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "apartments-app-2",
+    "path": "assets/apartments/app-2.glb",
+    "category": "apartments",
+    "sha256": "3c70f9adced7dc6a4b635b94b2157e10347fe61af36156594cd8496c1b7bec49",
+    "bytes": 338396,
+    "nativeBounds": {
+      "min": [
+        -2.3525986671447754,
+        -0.013386726379394531,
+        -2.1953084468841553
+      ],
+      "max": [
+        2.3525986671447754,
+        5.663982391357422,
+        2.1953084468841553
+      ]
+    },
+    "nativeWidth": 4.705197334289551,
+    "nativeDepth": 4.3906168937683105,
+    "nativeHeight": 5.677369117736816,
+    "meshCount": 6,
+    "triangleCount": 7004,
+    "materialCount": 6,
+    "textureCount": 0,
+    "lowestY": -0.013386726379394531,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        2.8252978324890137,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.013386726379394531,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "apartments-app-3",
+    "path": "assets/apartments/app-3.glb",
+    "category": "apartments",
+    "sha256": "e2e234c96af3161dbc90d9e4c226c42848b2d2c82e6e08e5b2667607f64f04c4",
+    "bytes": 483880,
+    "nativeBounds": {
+      "min": [
+        -4,
+        -0.019999999552965164,
+        -1.3799999952316284
+      ],
+      "max": [
+        4,
+        4.659999847412109,
+        1.3799999952316284
+      ]
+    },
+    "nativeWidth": 8,
+    "nativeDepth": 2.759999990463257,
+    "nativeHeight": 4.6799998469650745,
+    "meshCount": 7,
+    "triangleCount": 38756,
+    "materialCount": 7,
+    "textureCount": 0,
+    "lowestY": -0.019999999552965164,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        2.319999923929572,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.019999999552965164,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "apartments-app-4",
+    "path": "assets/apartments/app-4.glb",
+    "category": "apartments",
+    "sha256": "2f37311aa85ff713cdfb1139bc7acacfe3f77dade0244b553ec459c5179f2e03",
+    "bytes": 269584,
+    "nativeBounds": {
+      "min": [
+        -1.5261023044586182,
+        -0.013386726379394531,
+        -2.200654983520508
+      ],
+      "max": [
+        1.5261023044586182,
+        5.663982391357422,
+        2.1953084468841553
+      ]
+    },
+    "nativeWidth": 3.0522046089172363,
+    "nativeDepth": 4.395963430404663,
+    "nativeHeight": 5.677369117736816,
+    "meshCount": 5,
+    "triangleCount": 5242,
+    "materialCount": 5,
+    "textureCount": 0,
+    "lowestY": -0.013386726379394531,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        2.8252978324890137,
+        -0.0026732683181762695
+      ],
+      "bottomCenter": [
+        0,
+        -0.013386726379394531,
+        -0.0026732683181762695
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "apartments-app-5",
+    "path": "assets/apartments/app-5.glb",
+    "category": "apartments",
+    "sha256": "7a026f8b81eed4505d81374540b679c0d66dbe251edce9c7ba1d505b9a9907de",
+    "bytes": 555004,
+    "nativeBounds": {
+      "min": [
+        -2.8582305908203125,
+        -0.012899041175842285,
+        -1.1097400188446045
+      ],
+      "max": [
+        2.8582305908203125,
+        5.904670715332031,
+        1.1097400188446045
+      ]
+    },
+    "nativeWidth": 5.716461181640625,
+    "nativeDepth": 2.219480037689209,
+    "nativeHeight": 5.9175697565078735,
+    "meshCount": 7,
+    "triangleCount": 15072,
+    "materialCount": 7,
+    "textureCount": 0,
+    "lowestY": -0.012899041175842285,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        2.9458858370780945,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.012899041175842285,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [
+      {
+        "name": "Building2_Large",
+        "type": "Group",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          0.5
+        ],
+        "determinant": 0.5,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      }
+    ],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 1,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "apartments-app-6",
+    "path": "assets/apartments/app-6.glb",
+    "category": "apartments",
+    "sha256": "b2f8e90af1d1cfeee987027707fc08181d331c6f1f2f8cd019b51982cbee7a76",
+    "bytes": 193980,
+    "nativeBounds": {
+      "min": [
+        -1.7919330596923828,
+        -0.022054553031921387,
+        -1.2430799007415771
+      ],
+      "max": [
+        1.7919330596923828,
+        4.945555210113525,
+        1.2430799007415771
+      ]
+    },
+    "nativeWidth": 3.5838661193847656,
+    "nativeDepth": 2.4861598014831543,
+    "nativeHeight": 4.967609763145447,
+    "meshCount": 7,
+    "triangleCount": 5160,
+    "materialCount": 7,
+    "textureCount": 0,
+    "lowestY": -0.022054553031921387,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        2.461750328540802,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.022054553031921387,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "apartments-app-7",
+    "path": "assets/apartments/app-7.glb",
+    "category": "apartments",
+    "sha256": "8644b05d1badd556dc8b1ef06d5aca2c96fe1b429e1b9cb392b9337a28621a1d",
+    "bytes": 361740,
+    "nativeBounds": {
+      "min": [
+        -2.3218958377838135,
+        -0.014585386961698532,
+        -1.9278957843780518
+      ],
+      "max": [
+        2.3218958377838135,
+        5.471932888031006,
+        1.9278957843780518
+      ]
+    },
+    "nativeWidth": 4.643791675567627,
+    "nativeDepth": 3.8557915687561035,
+    "nativeHeight": 5.486518274992704,
+    "meshCount": 7,
+    "triangleCount": 9740,
+    "materialCount": 7,
+    "textureCount": 0,
+    "lowestY": -0.014585386961698532,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        2.7286737505346537,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.014585386961698532,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-1",
+    "path": "assets/buildings/building-1.glb",
+    "category": "buildings",
+    "sha256": "dde0ce1fdb9a07e994cf4c22b8dbbaf37092deb585e1261f2989267c9148f3dd",
+    "bytes": 498812,
+    "nativeBounds": {
+      "min": [
+        -196.1154022216797,
+        1.5028326511383057,
+        -104.13253021240234
+      ],
+      "max": [
+        192.75526428222656,
+        376.8037414550781,
+        99.74092102050781
+      ]
+    },
+    "nativeWidth": 388.87066650390625,
+    "nativeDepth": 203.87345123291016,
+    "nativeHeight": 375.3009088039398,
+    "meshCount": 9,
+    "triangleCount": 20237,
+    "materialCount": 9,
+    "textureCount": 2,
+    "lowestY": 1.5028326511383057,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -1.6800689697265625,
+        189.15328705310822,
+        -2.1958045959472656
+      ],
+      "bottomCenter": [
+        -1.6800689697265625,
+        1.5028326511383057,
+        -2.1958045959472656
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-10",
+    "path": "assets/buildings/building-10.glb",
+    "category": "buildings",
+    "sha256": "dead8dd08cb23196b23cbfb7cdbcd056863d1968209e93868d1156974d813248",
+    "bytes": 465344,
+    "nativeBounds": {
+      "min": [
+        -81.3466796875,
+        -0.00000762939453125,
+        -79.42962646484378
+      ],
+      "max": [
+        87.48211669921875,
+        175.07359313964844,
+        80.20463562011719
+      ]
+    },
+    "nativeWidth": 168.82879638671875,
+    "nativeDepth": 159.63426208496097,
+    "nativeHeight": 175.07360076904297,
+    "meshCount": 53,
+    "triangleCount": 13457,
+    "materialCount": 53,
+    "textureCount": 5,
+    "lowestY": -0.00000762939453125,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        3.067718505859375,
+        87.53679275512695,
+        0.38750457763670454
+      ],
+      "bottomCenter": [
+        3.067718505859375,
+        -0.00000762939453125,
+        0.38750457763670454
+      ],
+      "groundedAtOrigin": true
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-2",
+    "path": "assets/buildings/building-2.glb",
+    "category": "buildings",
+    "sha256": "71c8f227bb4f8208bbf4af5aae12133c993949610cb10d9b13fede72c8b154db",
+    "bytes": 476852,
+    "nativeBounds": {
+      "min": [
+        -88.70475769042969,
+        3.4042248725891113,
+        -99.07948303222656
+      ],
+      "max": [
+        114.79363250732422,
+        739.3445434570312,
+        109.89728546142578
+      ]
+    },
+    "nativeWidth": 203.4983901977539,
+    "nativeDepth": 208.97676849365234,
+    "nativeHeight": 735.9403185844421,
+    "meshCount": 8,
+    "triangleCount": 18287,
+    "materialCount": 6,
+    "textureCount": 1,
+    "lowestY": 3.4042248725891113,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        13.044437408447266,
+        371.3743841648102,
+        5.408901214599609
+      ],
+      "bottomCenter": [
+        13.044437408447266,
+        3.4042248725891113,
+        5.408901214599609
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-3",
+    "path": "assets/buildings/building-3.glb",
+    "category": "buildings",
+    "sha256": "b72b6d652095dbd3c37aa07dc33444153c8c13b6f2d64179579df67c65d8fbf9",
+    "bytes": 483996,
+    "nativeBounds": {
+      "min": [
+        -83.14385986328125,
+        2.244237184524536,
+        -81.32799530029297
+      ],
+      "max": [
+        81.64981079101562,
+        479.8443603515625,
+        80.77896881103516
+      ]
+    },
+    "nativeWidth": 164.79367065429688,
+    "nativeDepth": 162.10696411132812,
+    "nativeHeight": 477.60012316703796,
+    "meshCount": 8,
+    "triangleCount": 23630,
+    "materialCount": 6,
+    "textureCount": 2,
+    "lowestY": 2.244237184524536,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -0.7470245361328125,
+        241.04429876804352,
+        -0.27451324462890625
+      ],
+      "bottomCenter": [
+        -0.7470245361328125,
+        2.244237184524536,
+        -0.27451324462890625
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-4",
+    "path": "assets/buildings/building-4.glb",
+    "category": "buildings",
+    "sha256": "aa8ae6adde622170ae54b4717a4a125223af57876415dbaa70001975823f0f51",
+    "bytes": 459064,
+    "nativeBounds": {
+      "min": [
+        -341.1382141113281,
+        -5.495819091796875,
+        -340.8981018066406
+      ],
+      "max": [
+        340.617919921875,
+        1172.66455078125,
+        339.5836486816406
+      ]
+    },
+    "nativeWidth": 681.7561340332031,
+    "nativeDepth": 680.4817504882812,
+    "nativeHeight": 1178.1603698730469,
+    "meshCount": 11,
+    "triangleCount": 20254,
+    "materialCount": 5,
+    "textureCount": 2,
+    "lowestY": -5.495819091796875,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -0.2601470947265625,
+        583.5843658447266,
+        -0.6572265625
+      ],
+      "bottomCenter": [
+        -0.2601470947265625,
+        -5.495819091796875,
+        -0.6572265625
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-5",
+    "path": "assets/buildings/building-5.glb",
+    "category": "buildings",
+    "sha256": "a4bb3ffebbc8b9c3efb1ea3777a053dfd074c508c66d3219e5e465321ec756bd",
+    "bytes": 479904,
+    "nativeBounds": {
+      "min": [
+        -108.47652435302734,
+        2.344221591949463,
+        -98.31327819824219
+      ],
+      "max": [
+        109.70878601074219,
+        1109.5252685546875,
+        98.25157165527344
+      ]
+    },
+    "nativeWidth": 218.18531036376953,
+    "nativeDepth": 196.56484985351562,
+    "nativeHeight": 1107.181046962738,
+    "meshCount": 18,
+    "triangleCount": 19284,
+    "materialCount": 8,
+    "textureCount": 4,
+    "lowestY": 2.344221591949463,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.6161308288574219,
+        555.9347450733185,
+        -0.030853271484375
+      ],
+      "bottomCenter": [
+        0.6161308288574219,
+        2.344221591949463,
+        -0.030853271484375
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-6",
+    "path": "assets/buildings/building-6.glb",
+    "category": "buildings",
+    "sha256": "e9fa472c8e08f5beced516cc054d91f138524aa27742328093d9e2f1e26722d5",
+    "bytes": 463340,
+    "nativeBounds": {
+      "min": [
+        -295.50433349609375,
+        -0.12002818286418915,
+        -254.1466064453125
+      ],
+      "max": [
+        254.85665893554688,
+        951.0809326171875,
+        220.760009765625
+      ]
+    },
+    "nativeWidth": 550.3609924316406,
+    "nativeDepth": 474.9066162109375,
+    "nativeHeight": 951.2009608000517,
+    "meshCount": 7,
+    "triangleCount": 19067,
+    "materialCount": 5,
+    "textureCount": 1,
+    "lowestY": -0.12002818286418915,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -20.323837280273438,
+        475.48045221716166,
+        -16.69329833984375
+      ],
+      "bottomCenter": [
+        -20.323837280273438,
+        -0.12002818286418915,
+        -16.69329833984375
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-7",
+    "path": "assets/buildings/building-7.glb",
+    "category": "buildings",
+    "sha256": "9596719f13303da4112baef6e4426e2b7a717cf8fabec7a249d04023c45f489f",
+    "bytes": 467024,
+    "nativeBounds": {
+      "min": [
+        -761.8844604492188,
+        -1.3060916662216187,
+        -556.7896118164062
+      ],
+      "max": [
+        1297.103759765625,
+        811.2906494140625,
+        609.9359130859375
+      ]
+    },
+    "nativeWidth": 2058.9882202148438,
+    "nativeDepth": 1166.7255249023438,
+    "nativeHeight": 812.5967410802841,
+    "meshCount": 14,
+    "triangleCount": 17793,
+    "materialCount": 8,
+    "textureCount": 5,
+    "lowestY": -1.3060916662216187,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        267.6096496582031,
+        404.99227887392044,
+        26.573150634765625
+      ],
+      "bottomCenter": [
+        267.6096496582031,
+        -1.3060916662216187,
+        26.573150634765625
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-8",
+    "path": "assets/buildings/building-8.glb",
+    "category": "buildings",
+    "sha256": "3d631d7e308d93eb8a86ae56f3fb803b8cfc2f68cc7bfc3d1847179e20205001",
+    "bytes": 453096,
+    "nativeBounds": {
+      "min": [
+        -486.9375915527344,
+        -1.1900770664215088,
+        -487.6351318359375
+      ],
+      "max": [
+        489.7026062011719,
+        1932.0003662109375,
+        489.0050964355469
+      ]
+    },
+    "nativeWidth": 976.6401977539062,
+    "nativeDepth": 976.6402282714844,
+    "nativeHeight": 1933.190443277359,
+    "meshCount": 11,
+    "triangleCount": 15803,
+    "materialCount": 9,
+    "textureCount": 6,
+    "lowestY": -1.1900770664215088,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        1.38250732421875,
+        965.405144572258,
+        0.6849822998046875
+      ],
+      "bottomCenter": [
+        1.38250732421875,
+        -1.1900770664215088,
+        0.6849822998046875
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "buildings-building-9",
+    "path": "assets/buildings/building-9.glb",
+    "category": "buildings",
+    "sha256": "ba82d06afa11dd64ce02c52b0931e1c38e9dd8edc46a6e22b0410a89df32d016",
+    "bytes": 458052,
+    "nativeBounds": {
+      "min": [
+        -13.94201015991211,
+        -1.3320399761390704,
+        -15.277509689331055
+      ],
+      "max": [
+        19.05963015991211,
+        34.62592014526368,
+        7.340009689331055
+      ]
+    },
+    "nativeWidth": 33.00164031982422,
+    "nativeDepth": 22.61751937866211,
+    "nativeHeight": 35.95796012140275,
+    "meshCount": 65,
+    "triangleCount": 16852,
+    "materialCount": 15,
+    "textureCount": 12,
+    "lowestY": -1.3320399761390704,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        2.5588100000000003,
+        16.646940084562303,
+        -3.96875
+      ],
+      "bottomCenter": [
+        2.5588100000000003,
+        -1.3320399761390704,
+        -3.96875
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "commercial-com-1",
+    "path": "assets/commercial/com-1.glb",
+    "category": "commercial",
+    "sha256": "a7c3129d53f560fb85361f00c3e32275ff8d7482aa5080784de56ba6928b8261",
+    "bytes": 405428,
+    "nativeBounds": {
+      "min": [
+        -24.13435173034668,
+        -1.6423542842869665,
+        -13.997328758239746
+      ],
+      "max": [
+        24.13435173034668,
+        44.44399715495433,
+        13.997328758239746
+      ]
+    },
+    "nativeWidth": 48.26870346069336,
+    "nativeDepth": 27.994657516479492,
+    "nativeHeight": 46.0863514392413,
+    "meshCount": 16,
+    "triangleCount": 20201,
+    "materialCount": 3,
+    "textureCount": 0,
+    "lowestY": -1.6423542842869665,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        21.400821435333683,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -1.6423542842869665,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [
+      {
+        "name": "Cube_0",
+        "type": "Object3D",
+        "position": [
+          0,
+          5.662958145141602,
+          0
+        ],
+        "scale": [
+          24.13435173034668,
+          5.421076774597168,
+          13.997328758239746
+        ],
+        "determinant": 1831.328941186496,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube001_1",
+        "type": "Object3D",
+        "position": [
+          -0.11369585990905762,
+          38.81211471557617,
+          -0.03605624660849571
+        ],
+        "scale": [
+          24.13435173034668,
+          5.421076774597168,
+          13.997328758239746
+        ],
+        "determinant": 1831.328941186496,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube002_2",
+        "type": "Object3D",
+        "position": [
+          14.486960411071777,
+          34.10900115966797,
+          12.340423583984375
+        ],
+        "scale": [
+          24.134351730346676,
+          5.421076774597167,
+          13.997328758239746
+        ],
+        "determinant": 1831.3289411864946,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube004_3",
+        "type": "Object3D",
+        "position": [
+          14.475642204284668,
+          30.52469253540039,
+          12.338764190673828
+        ],
+        "scale": [
+          24.13435173034668,
+          5.421076774597168,
+          13.997328758239746
+        ],
+        "determinant": 1831.328941186496,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube006_4",
+        "type": "Object3D",
+        "position": [
+          -0.21394412219524384,
+          0.6201187968254089,
+          -0.025621341541409492
+        ],
+        "scale": [
+          24.13435173034668,
+          4.090122222900391,
+          13.997328758239746
+        ],
+        "determinant": 1381.7105920519134,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube018_5",
+        "type": "Object3D",
+        "position": [
+          17.7514591217041,
+          30.52469253540039,
+          9.858061790466309
+        ],
+        "scale": [
+          24.13435173034668,
+          5.421076774597168,
+          13.997328758239746
+        ],
+        "determinant": 1831.328941186496,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube003_6",
+        "type": "Object3D",
+        "position": [
+          14.504892349243164,
+          30.52469253540039,
+          -12.37802505493164
+        ],
+        "scale": [
+          24.134351730346676,
+          5.421076774597168,
+          13.997328758239743
+        ],
+        "determinant": 1831.3289411864944,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube012_7",
+        "type": "Object3D",
+        "position": [
+          -18.160409927368164,
+          30.52469253540039,
+          -9.86994457244873
+        ],
+        "scale": [
+          24.134351730346676,
+          5.421076774597168,
+          13.997328758239744
+        ],
+        "determinant": 1831.328941186495,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube005_8",
+        "type": "Object3D",
+        "position": [
+          -18.51769256591797,
+          2.3036632537841797,
+          -0.08655592054128647
+        ],
+        "scale": [
+          24.134351730346676,
+          5.421076774597168,
+          13.997328758239744
+        ],
+        "determinant": 1831.328941186495,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      }
+    ],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 9,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "commercial-com-2",
+    "path": "assets/commercial/com-2.glb",
+    "category": "commercial",
+    "sha256": "f4e8945bf37c2f9407cbe653d0b3616e2421297f0a9ab3152a44d5ddee7ce4bc",
+    "bytes": 405032,
+    "nativeBounds": {
+      "min": [
+        -62.7358512878418,
+        -6.317811767075909e-7,
+        -68.17271423339844
+      ],
+      "max": [
+        67.72215270996094,
+        666.0001831054688,
+        62.285308837890625
+      ]
+    },
+    "nativeWidth": 130.45800399780273,
+    "nativeDepth": 130.45802307128906,
+    "nativeHeight": 666.0001837372499,
+    "meshCount": 5,
+    "triangleCount": 16602,
+    "materialCount": 3,
+    "textureCount": 0,
+    "lowestY": -6.317811767075909e-7,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        2.4931507110595703,
+        333.0000912368438,
+        -2.9437026977539062
+      ],
+      "bottomCenter": [
+        2.4931507110595703,
+        -6.317811767075909e-7,
+        -2.9437026977539062
+      ],
+      "groundedAtOrigin": true
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "commercial-com-3",
+    "path": "assets/commercial/com-3.glb",
+    "category": "commercial",
+    "sha256": "8550ad8f890b46311a5dea357f6e1ea303e9462f3e72263bebdb2c9e6b06e3fe",
+    "bytes": 407492,
+    "nativeBounds": {
+      "min": [
+        -111.69151306152344,
+        -30.45575714111328,
+        -111.77967071533203
+      ],
+      "max": [
+        111.87987518310547,
+        1007.7396240234375,
+        111.78851318359375
+      ]
+    },
+    "nativeWidth": 223.5713882446289,
+    "nativeDepth": 223.56818389892578,
+    "nativeHeight": 1038.1953811645508,
+    "meshCount": 8,
+    "triangleCount": 22308,
+    "materialCount": 6,
+    "textureCount": 0,
+    "lowestY": -30.45575714111328,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.09418106079101562,
+        488.6419334411621,
+        0.004421234130859375
+      ],
+      "bottomCenter": [
+        0.09418106079101562,
+        -30.45575714111328,
+        0.004421234130859375
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "government-gov-1",
+    "path": "assets/government/gov-1.glb",
+    "category": "government",
+    "sha256": "1d857f1b66b69b7504a8a28f6631aff3a37ed2d946efd3bc8632ac47b6dc72ac",
+    "bytes": 400320,
+    "nativeBounds": {
+      "min": [
+        -50.78689956665039,
+        0.00044974390458323493,
+        -36.26999958489964
+      ],
+      "max": [
+        50.78689956665039,
+        55.83860015869136,
+        40.014400700732466
+      ]
+    },
+    "nativeWidth": 101.57379913330078,
+    "nativeDepth": 76.2844002856321,
+    "nativeHeight": 55.838150414786774,
+    "meshCount": 1,
+    "triangleCount": 1945,
+    "materialCount": 1,
+    "textureCount": 1,
+    "lowestY": 0.00044974390458323493,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        27.91952495129797,
+        1.8722005579164147
+      ],
+      "bottomCenter": [
+        0,
+        0.00044974390458323493,
+        1.8722005579164147
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "government-gov-2",
+    "path": "assets/government/gov-2.glb",
+    "category": "government",
+    "sha256": "259fe03864a985d2fc006d16d0079a8f949d50c92cde61d0674bea1494ffc51c",
+    "bytes": 395656,
+    "nativeBounds": {
+      "min": [
+        -189.53929138183594,
+        -0.7000150680541992,
+        -186.759521484375
+      ],
+      "max": [
+        190.22740173339844,
+        805.1826782226562,
+        186.75953674316406
+      ]
+    },
+    "nativeWidth": 379.7666931152344,
+    "nativeDepth": 373.51905822753906,
+    "nativeHeight": 805.8826932907104,
+    "meshCount": 7,
+    "triangleCount": 15082,
+    "materialCount": 5,
+    "textureCount": 0,
+    "lowestY": -0.7000150680541992,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.34405517578125,
+        402.241331577301,
+        0.00000762939453125
+      ],
+      "bottomCenter": [
+        0.34405517578125,
+        -0.7000150680541992,
+        0.00000762939453125
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "government-gov-3",
+    "path": "assets/government/gov-3.glb",
+    "category": "government",
+    "sha256": "c83f139e5f7897200ba1a5d5ca1140f2217f320b030cc661bbc4a13cd0c6459a",
+    "bytes": 395308,
+    "nativeBounds": {
+      "min": [
+        -835213.683831519,
+        4.9999998882967125,
+        815744.0917666983
+      ],
+      "max": [
+        -835118.746333641,
+        67.80000535106228,
+        815875.0292637716
+      ]
+    },
+    "nativeWidth": 94.93749787798151,
+    "nativeDepth": 130.9374970733188,
+    "nativeHeight": 62.80000546276557,
+    "meshCount": 1,
+    "triangleCount": 108,
+    "materialCount": 1,
+    "textureCount": 1,
+    "lowestY": 4.9999998882967125,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -835166.21508258,
+        36.4000026196795,
+        815809.560515235
+      ],
+      "bottomCenter": [
+        -835166.21508258,
+        4.9999998882967125,
+        815809.560515235
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [
+      {
+        "name": "B351661581701062A0",
+        "type": "Object3D",
+        "position": [
+          83511264,
+          81579136,
+          500
+        ],
+        "scale": [
+          100,
+          100,
+          100
+        ],
+        "determinant": 0.9999999329447761,
+        "flags": [
+          "large native translation"
+        ]
+      }
+    ],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "parks-park-1",
+    "path": "assets/parks/park-1.glb",
+    "category": "parks",
+    "sha256": "351ca38657ae2bb1356eb629768ea9f7f496c418c594f16c88bf478bf0bbd66c",
+    "bytes": 394208,
+    "nativeBounds": {
+      "min": [
+        -0.9895833134651184,
+        -1.5770212936702254e-16,
+        -0.9895833134651184
+      ],
+      "max": [
+        1.0208333730697632,
+        1,
+        1.0208333730697632
+      ]
+    },
+    "nativeWidth": 2.0104166865348816,
+    "nativeDepth": 2.0104166865348816,
+    "nativeHeight": 1.0000000000000002,
+    "meshCount": 40,
+    "triangleCount": 11886,
+    "materialCount": 40,
+    "textureCount": 2,
+    "lowestY": -1.5770212936702254e-16,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.015625029802322388,
+        0.49999999999999994,
+        0.015625029802322388
+      ],
+      "bottomCenter": [
+        0.015625029802322388,
+        -1.5770212936702254e-16,
+        0.015625029802322388
+      ],
+      "groundedAtOrigin": true
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "parks-park-2",
+    "path": "assets/parks/park-2.glb",
+    "category": "parks",
+    "sha256": "4652d0c34dda7e5d8c4176978f269cda834ed1d337849d26842a43618fb4f63e",
+    "bytes": 393836,
+    "nativeBounds": {
+      "min": [
+        -77.31820400510833,
+        -2.808235887931857,
+        -65.02685232043814
+      ],
+      "max": [
+        85.12145232522835,
+        27.897812721068018,
+        44.65945567665858
+      ]
+    },
+    "nativeWidth": 162.43965633033667,
+    "nativeDepth": 109.68630799709672,
+    "nativeHeight": 30.706048608999875,
+    "meshCount": 3,
+    "triangleCount": 16110,
+    "materialCount": 1,
+    "textureCount": 1,
+    "lowestY": -2.808235887931857,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        3.9016241600600097,
+        12.54478841656808,
+        -10.183698321889779
+      ],
+      "bottomCenter": [
+        3.9016241600600097,
+        -2.808235887931857,
+        -10.183698321889779
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "parks-park-3",
+    "path": "assets/parks/park-3.glb",
+    "category": "parks",
+    "sha256": "25b73861d67227217a6f4ddc90fad256b6205328edcdec4ba970406601be4519",
+    "bytes": 398600,
+    "nativeBounds": {
+      "min": [
+        -28.677539786554803,
+        -0.9205841954346742,
+        -39.78802886990377
+      ],
+      "max": [
+        28.948030786437734,
+        16.332252536298448,
+        43.012673030724905
+      ]
+    },
+    "nativeWidth": 57.62557057299254,
+    "nativeDepth": 82.80070190062867,
+    "nativeHeight": 17.252836731733122,
+    "meshCount": 38,
+    "triangleCount": 15413,
+    "materialCount": 11,
+    "textureCount": 11,
+    "lowestY": -0.9205841954346742,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.1352454999414654,
+        7.705834170431887,
+        1.6123220804105678
+      ],
+      "bottomCenter": [
+        0.1352454999414654,
+        -0.9205841954346742,
+        1.6123220804105678
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [
+      {
+        "name": "Sign_10",
+        "type": "Object3D",
+        "position": [
+          16.31062126159668,
+          7.048544406890869,
+          -3.765613079071045
+        ],
+        "scale": [
+          -1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_31",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "SlideCurl_7",
+        "type": "Object3D",
+        "position": [
+          -20.67374610900879,
+          0,
+          20.48789405822754
+        ],
+        "scale": [
+          0.9497410655021672,
+          0.949741065502167,
+          0.8590847849845887
+        ],
+        "determinant": 0.7749014273416603,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      }
+    ],
+    "negativeTransforms": 2,
+    "nonUniformTransforms": 1,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "negative transforms",
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "props-barn",
+    "path": "assets/props/barn.glb",
+    "category": "props",
+    "sha256": "2eef4bff36333f0e77a546c3892a3bc9d7ba4675a708791dd5cc2c4bca8ff170",
+    "bytes": 182828,
+    "nativeBounds": {
+      "min": [
+        -3.8634450435638428,
+        -0.004004478454589844,
+        -4.062554359436035
+      ],
+      "max": [
+        3.8634486198425293,
+        7.882768154144287,
+        4.159892871975899
+      ]
+    },
+    "nativeWidth": 7.726893663406372,
+    "nativeDepth": 8.222447231411934,
+    "nativeHeight": 7.886772632598877,
+    "meshCount": 14,
+    "triangleCount": 4224,
+    "materialCount": 4,
+    "textureCount": 0,
+    "lowestY": -0.004004478454589844,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.0000017881393432617188,
+        3.9393818378448486,
+        0.04866925626993179
+      ],
+      "bottomCenter": [
+        0.0000017881393432617188,
+        -0.004004478454589844,
+        0.04866925626993179
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "props-bench",
+    "path": "assets/props/bench.glb",
+    "category": "props",
+    "sha256": "bf665eec6d0794acb93a58217d26f09813131811a24e48505e88eef2004d9469",
+    "bytes": 13508,
+    "nativeBounds": {
+      "min": [
+        -3.3248586654663086,
+        -1.1274577379226685,
+        -1.129154920578003
+      ],
+      "max": [
+        3.3248586654663086,
+        0.7290154695510864,
+        1.0900756120681763
+      ]
+    },
+    "nativeWidth": 6.649717330932617,
+    "nativeDepth": 2.219230532646179,
+    "nativeHeight": 1.8564732074737549,
+    "meshCount": 1,
+    "triangleCount": 276,
+    "materialCount": 1,
+    "textureCount": 0,
+    "lowestY": -1.1274577379226685,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        -0.19922113418579102,
+        -0.01953965425491333
+      ],
+      "bottomCenter": [
+        0,
+        -1.1274577379226685,
+        -0.01953965425491333
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "props-construction",
+    "path": "assets/props/construction.glb",
+    "category": "props",
+    "sha256": "52dbdc821bd279e58cf0f4088a84ebd9de1af4c5b33e30a98e7b7ebf52f26f07",
+    "bytes": 394144,
+    "nativeBounds": {
+      "min": [
+        -23.72040938990646,
+        -0.0172401772009515,
+        0.2909117252175913
+      ],
+      "max": [
+        -0.6001432367073365,
+        33.83311612545461,
+        13.361255804868284
+      ]
+    },
+    "nativeWidth": 23.120266153199125,
+    "nativeDepth": 13.070344079650692,
+    "nativeHeight": 33.85035630265556,
+    "meshCount": 13,
+    "triangleCount": 7559,
+    "materialCount": 13,
+    "textureCount": 9,
+    "lowestY": -0.0172401772009515,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -12.160276313306898,
+        16.907937974126828,
+        6.826083765042938
+      ],
+      "bottomCenter": [
+        -12.160276313306898,
+        -0.0172401772009515,
+        6.826083765042938
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "props-construction_prop",
+    "path": "assets/props/construction_prop.glb",
+    "category": "props",
+    "sha256": "55232244ed177f85a64a64db0d83097851d0edd0049bb75f61038d11b225ab33",
+    "bytes": 413340,
+    "nativeBounds": {
+      "min": [
+        -4.42041015625,
+        -1.4351490983566424e-15,
+        -6.724116802215576
+      ],
+      "max": [
+        4.499844074249268,
+        3.83110809326172,
+        6.463336944580078
+      ]
+    },
+    "nativeWidth": 8.920254230499268,
+    "nativeDepth": 13.187453746795654,
+    "nativeHeight": 3.8311080932617214,
+    "meshCount": 2,
+    "triangleCount": 14230,
+    "materialCount": 1,
+    "textureCount": 2,
+    "lowestY": -1.4351490983566424e-15,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.03971695899963379,
+        1.9155540466308594,
+        -0.13038992881774902
+      ],
+      "bottomCenter": [
+        0.03971695899963379,
+        -1.4351490983566424e-15,
+        -0.13038992881774902
+      ],
+      "groundedAtOrigin": true
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "props-lantern-2",
+    "path": "assets/props/lantern-2.glb",
+    "category": "props",
+    "sha256": "47f6bd2beb10d2bbb4a3dab682de0f064c012f3b6ca598dd51070332b3a8d7dd",
+    "bytes": 124472,
+    "nativeBounds": {
+      "min": [
+        -0.06585558503866196,
+        -0.00001417712883267086,
+        -0.15786629915237427
+      ],
+      "max": [
+        0.06585558503866196,
+        1.10025954246521,
+        0.15786629915237427
+      ]
+    },
+    "nativeWidth": 0.1317111700773239,
+    "nativeDepth": 0.31573259830474854,
+    "nativeHeight": 1.1002737195940426,
+    "meshCount": 3,
+    "triangleCount": 2486,
+    "materialCount": 3,
+    "textureCount": 0,
+    "lowestY": -0.00001417712883267086,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        0.5501226826681886,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.00001417712883267086,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "props-lantern-3",
+    "path": "assets/props/lantern-3.glb",
+    "category": "props",
+    "sha256": "081785509cd54d466b6b38d46d883c11a3fd7ee4975c498b2a27236edaabd402",
+    "bytes": 54748,
+    "nativeBounds": {
+      "min": [
+        -0.06585558503866196,
+        -0.00001417712883267086,
+        -0.06585558503866196
+      ],
+      "max": [
+        0.06585558503866196,
+        1.090367078781128,
+        0.06585558503866196
+      ]
+    },
+    "nativeWidth": 0.1317111700773239,
+    "nativeDepth": 0.1317111700773239,
+    "nativeHeight": 1.0903812559099606,
+    "meshCount": 3,
+    "triangleCount": 1028,
+    "materialCount": 3,
+    "textureCount": 0,
+    "lowestY": -0.00001417712883267086,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        0.5451764508261476,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.00001417712883267086,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "props-lantern",
+    "path": "assets/props/lantern.glb",
+    "category": "props",
+    "sha256": "bfaf93abc65bde18b8e8f3a5a7adafcfd5601fa2502eea64b5a88b1764cd4ff7",
+    "bytes": 426684,
+    "nativeBounds": {
+      "min": [
+        -0.9264607429504395,
+        -0.037934787571430206,
+        -0.2997967600822449
+      ],
+      "max": [
+        0.9264607429504395,
+        4.37581205368042,
+        0.2997967600822449
+      ]
+    },
+    "nativeWidth": 1.852921485900879,
+    "nativeDepth": 0.5995935201644897,
+    "nativeHeight": 4.41374684125185,
+    "meshCount": 5,
+    "triangleCount": 15056,
+    "materialCount": 4,
+    "textureCount": 0,
+    "lowestY": -0.037934787571430206,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        2.168938633054495,
+        0
+      ],
+      "bottomCenter": [
+        0,
+        -0.037934787571430206,
+        0
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "props-park_bench",
+    "path": "assets/props/park_bench.glb",
+    "category": "props",
+    "sha256": "2846db73e5fe14fa7146e861ab34d435ed0402e2655388816945265f3a6513d4",
+    "bytes": 390708,
+    "nativeBounds": {
+      "min": [
+        -102.53327178955078,
+        -0.4650559723377228,
+        -16.85211753845215
+      ],
+      "max": [
+        102.51988983154297,
+        59.649085998535156,
+        30.158143997192383
+      ]
+    },
+    "nativeWidth": 205.05316162109375,
+    "nativeDepth": 47.01026153564453,
+    "nativeHeight": 60.11414197087288,
+    "meshCount": 2,
+    "triangleCount": 2924,
+    "materialCount": 2,
+    "textureCount": 6,
+    "lowestY": -0.4650559723377228,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -0.00669097900390625,
+        29.592015013098717,
+        6.653013229370117
+      ],
+      "bottomCenter": [
+        -0.00669097900390625,
+        -0.4650559723377228,
+        6.653013229370117
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "props-parking_lot",
+    "path": "assets/props/parking_lot.glb",
+    "category": "props",
+    "sha256": "ff9ffe8dae3f9418509d759912b597bc84b14c05108f5890f9027d28760ea563",
+    "bytes": 410056,
+    "nativeBounds": {
+      "min": [
+        -17.91530233393678,
+        -0.08325583271855655,
+        -8.605870779323482
+      ],
+      "max": [
+        18.05240438165356,
+        6.978950649672357,
+        8.605870168971933
+      ]
+    },
+    "nativeWidth": 35.96770671559034,
+    "nativeDepth": 17.211740948295414,
+    "nativeHeight": 7.062206482390914,
+    "meshCount": 28,
+    "triangleCount": 7069,
+    "materialCount": 25,
+    "textureCount": 41,
+    "lowestY": -0.08325583271855655,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.06855102385839018,
+        3.4478474084769,
+        -3.0517577442878974e-7
+      ],
+      "bottomCenter": [
+        0.06855102385839018,
+        -0.08325583271855655,
+        -3.0517577442878974e-7
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [
+      {
+        "name": "gate2_static",
+        "type": "Object3D",
+        "position": [
+          1758.1240234375,
+          283.2776794433594,
+          54.95126724243164
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": 9.99999932944776e-7,
+        "flags": [
+          "large native translation"
+        ]
+      },
+      {
+        "name": "gate1_static",
+        "type": "Object3D",
+        "position": [
+          1758.1240234375,
+          -106.19466400146484,
+          54.95128631591797
+        ],
+        "scale": [
+          1.0000000000000002,
+          1.0000000000000002,
+          1
+        ],
+        "determinant": 9.999999329447773e-7,
+        "flags": [
+          "large native translation"
+        ]
+      },
+      {
+        "name": "Chair",
+        "type": "Object3D",
+        "position": [
+          1705.6488037109375,
+          -695.390380859375,
+          4.214416027069092
+        ],
+        "scale": [
+          0.9999999403953554,
+          0.9999999403953554,
+          1
+        ],
+        "determinant": 9.999998137354982e-7,
+        "flags": [
+          "large native translation"
+        ]
+      }
+    ],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "transparent materials require per-object sorting"
+    ],
+    "problems": []
+  },
+  {
+    "id": "props-toninos_parking_lots",
+    "path": "assets/props/toninos_parking_lots.glb",
+    "category": "props",
+    "sha256": "ed7f5dd794bcfb7c18fbf21624ca2b1e8385f5d26ef505be7b8c350b5ac310c3",
+    "bytes": 393992,
+    "nativeBounds": {
+      "min": [
+        -20,
+        -20.5,
+        -10
+      ],
+      "max": [
+        110.88870239257812,
+        4.192961692810059,
+        14.294218063354492
+      ]
+    },
+    "nativeWidth": 130.88870239257812,
+    "nativeDepth": 24.294218063354492,
+    "nativeHeight": 24.69296169281006,
+    "meshCount": 27,
+    "triangleCount": 18538,
+    "materialCount": 6,
+    "textureCount": 4,
+    "lowestY": -20.5,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        45.44435119628906,
+        -8.15351915359497,
+        2.147109031677246
+      ],
+      "bottomCenter": [
+        45.44435119628906,
+        -20.5,
+        2.147109031677246
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [
+      {
+        "name": "Cube001_14",
+        "type": "Object3D",
+        "position": [
+          59.395301818847656,
+          -19.5,
+          10.412426948547363
+        ],
+        "scale": [
+          -1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_44",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_43",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_42",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Cube002_13",
+        "type": "Object3D",
+        "position": [
+          14.444442749023438,
+          -19.31281852722168,
+          10.412426948547363
+        ],
+        "scale": [
+          0.6788192987442017,
+          0.9371820092201233,
+          0.678820013999939
+        ],
+        "determinant": 0.43184983909022545,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube005_12",
+        "type": "Object3D",
+        "position": [
+          60.44532012939453,
+          -19.31281852722168,
+          10.412426948547363
+        ],
+        "scale": [
+          0.6788192987442017,
+          0.9371820092201233,
+          0.678820013999939
+        ],
+        "determinant": 0.43184983909022545,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube006_11",
+        "type": "Object3D",
+        "position": [
+          15.494400024414062,
+          -19.5,
+          10.412426948547363
+        ],
+        "scale": [
+          -1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_36",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_35",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_34",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Cube007_10",
+        "type": "Object3D",
+        "position": [
+          61.49530029296875,
+          -19.5,
+          10.412426948547363
+        ],
+        "scale": [
+          -1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_32",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_31",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_30",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Cube008_9",
+        "type": "Object3D",
+        "position": [
+          105.3331298828125,
+          -19.31281852722168,
+          10.412426948547363
+        ],
+        "scale": [
+          0.6788192987442017,
+          0.9371820092201233,
+          0.678820013999939
+        ],
+        "determinant": 0.43184983909022545,
+        "flags": [
+          "native nonuniform scale"
+        ]
+      },
+      {
+        "name": "Cube009_8",
+        "type": "Object3D",
+        "position": [
+          104.28299713134766,
+          -19.5,
+          10.412426948547363
+        ],
+        "scale": [
+          -1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_26",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_25",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_24",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Cube010_7",
+        "type": "Object3D",
+        "position": [
+          13.394399642944336,
+          -19.5,
+          10.412426948547363
+        ],
+        "scale": [
+          -1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_22",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_21",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_20",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Cube011_6",
+        "type": "Object3D",
+        "position": [
+          106.38300323486328,
+          -19.5,
+          10.412426948547363
+        ],
+        "scale": [
+          -1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_18",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_17",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      },
+      {
+        "name": "Object_16",
+        "type": "Mesh",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "determinant": -1,
+        "flags": [
+          "negative world determinant"
+        ]
+      }
+    ],
+    "negativeTransforms": 24,
+    "nonUniformTransforms": 3,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": false,
+    "instancingReasons": [
+      "negative transforms"
+    ],
+    "problems": []
+  },
+  {
+    "id": "props-warehouse_building_construction_site",
+    "path": "assets/props/warehouse_building_construction_site.glb",
+    "category": "props",
+    "sha256": "aa6766baa7674c342a69f8772a52ecbf65434db56dcf09e617c53fdcad81431c",
+    "bytes": 440656,
+    "nativeBounds": {
+      "min": [
+        -848.9843139648438,
+        -1.5779285972468415e-13,
+        -962.0634765625
+      ],
+      "max": [
+        848.9843139648438,
+        617.5692138671876,
+        956.7919311523438
+      ]
+    },
+    "nativeWidth": 1697.9686279296875,
+    "nativeDepth": 1918.8554077148438,
+    "nativeHeight": 617.5692138671877,
+    "meshCount": 16,
+    "triangleCount": 10469,
+    "materialCount": 10,
+    "textureCount": 9,
+    "lowestY": -1.5779285972468415e-13,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0,
+        308.78460693359375,
+        -2.635772705078125
+      ],
+      "bottomCenter": [
+        0,
+        -1.5779285972468415e-13,
+        -2.635772705078125
+      ],
+      "groundedAtOrigin": true
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [
+      {
+        "name": "skp_camera_Last_Saved_SketchUp_View",
+        "type": "Object3D",
+        "position": [
+          -573.0159,
+          -1392.64,
+          235.6474
+        ],
+        "scale": [
+          0.9999999694079046,
+          0.9999999751034291,
+          1.0000000034135867
+        ],
+        "determinant": 0.9999999537370173,
+        "flags": [
+          "large native translation"
+        ]
+      }
+    ],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "props-windmill",
+    "path": "assets/props/windmill.glb",
+    "category": "props",
+    "sha256": "2958bafd09a8b0bcbd1fb16e239ebadd9aad308de831438fa0c0da3fba519f10",
+    "bytes": 318364,
+    "nativeBounds": {
+      "min": [
+        -3.94770884513855,
+        -0.03356506011914462,
+        -2.5857044383883476
+      ],
+      "max": [
+        3.9759602546691895,
+        11.379702091217041,
+        2.404893048107624
+      ]
+    },
+    "nativeWidth": 7.923669099807739,
+    "nativeDepth": 4.990597486495972,
+    "nativeHeight": 11.413267151336186,
+    "meshCount": 8,
+    "triangleCount": 7827,
+    "materialCount": 7,
+    "textureCount": 0,
+    "lowestY": -0.03356506011914462,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.014125704765319824,
+        5.673068515548948,
+        -0.09040569514036179
+      ],
+      "bottomCenter": [
+        0.014125704765319824,
+        -0.03356506011914462,
+        -0.09040569514036179
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "trees-tree-1",
+    "path": "assets/trees/tree-1.glb",
+    "category": "trees",
+    "sha256": "44b21292d5e4e1162ab9ef9e0a23c9086a2bf32aa8570e0efa0c5d554690e98b",
+    "bytes": 86724,
+    "nativeBounds": {
+      "min": [
+        -0.7043890953063965,
+        -0.07202762365341187,
+        -0.7918685078620911
+      ],
+      "max": [
+        0.5706475973129272,
+        3.3843424320220947,
+        0.7697545289993286
+      ]
+    },
+    "nativeWidth": 1.2750366926193237,
+    "nativeDepth": 1.5616230368614197,
+    "nativeHeight": 3.4563700556755066,
+    "meshCount": 3,
+    "triangleCount": 1584,
+    "materialCount": 3,
+    "textureCount": 0,
+    "lowestY": -0.07202762365341187,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -0.06687074899673462,
+        1.6561574041843414,
+        -0.011056989431381226
+      ],
+      "bottomCenter": [
+        -0.06687074899673462,
+        -0.07202762365341187,
+        -0.011056989431381226
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "trees-tree-2",
+    "path": "assets/trees/tree-2.glb",
+    "category": "trees",
+    "sha256": "5b42d9b09b0e5da740a42f65485ef28b4aa40ba1382355c8247f37f4f82131d0",
+    "bytes": 73288,
+    "nativeBounds": {
+      "min": [
+        -1.1021510362625122,
+        -0.10985685884952545,
+        -1.1183501482009888
+      ],
+      "max": [
+        0.4764954149723053,
+        2.674581527709961,
+        0.682347297668457
+      ]
+    },
+    "nativeWidth": 1.5786464512348175,
+    "nativeDepth": 1.8006974458694458,
+    "nativeHeight": 2.7844383865594864,
+    "meshCount": 3,
+    "triangleCount": 1352,
+    "materialCount": 3,
+    "textureCount": 0,
+    "lowestY": -0.10985685884952545,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        -0.31282781064510345,
+        1.2823623344302177,
+        -0.21800142526626587
+      ],
+      "bottomCenter": [
+        -0.31282781064510345,
+        -0.10985685884952545,
+        -0.21800142526626587
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "trees-tree-3",
+    "path": "assets/trees/tree-3.glb",
+    "category": "trees",
+    "sha256": "662ada5b78827c5764ba7c99236ba3551a209f1959f73c6d1735866ce5db1b80",
+    "bytes": 159004,
+    "nativeBounds": {
+      "min": [
+        -0.8198280930519104,
+        -0.05404417961835861,
+        -0.9372044801712036
+      ],
+      "max": [
+        0.8433607816696167,
+        3.068746328353882,
+        1.6037081480026245
+      ]
+    },
+    "nativeWidth": 1.663188874721527,
+    "nativeDepth": 2.540912628173828,
+    "nativeHeight": 3.1227905079722404,
+    "meshCount": 2,
+    "triangleCount": 2952,
+    "materialCount": 2,
+    "textureCount": 0,
+    "lowestY": -0.05404417961835861,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.01176634430885315,
+        1.5073510743677616,
+        0.33325183391571045
+      ],
+      "bottomCenter": [
+        0.01176634430885315,
+        -0.05404417961835861,
+        0.33325183391571045
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  },
+  {
+    "id": "trees-tree-4",
+    "path": "assets/trees/tree-4.glb",
+    "category": "trees",
+    "sha256": "3e7cf69e6cfb1f7263fbc8d8848f0ca6f328ee604cfae6bd59b9832d27853566",
+    "bytes": 155692,
+    "nativeBounds": {
+      "min": [
+        -0.9178823828697205,
+        -0.04246043041348457,
+        -1.1743383407592773
+      ],
+      "max": [
+        0.9712318181991577,
+        2.438101291656494,
+        1.5987976789474487
+      ]
+    },
+    "nativeWidth": 1.8891142010688782,
+    "nativeDepth": 2.773136019706726,
+    "nativeHeight": 2.4805617220699787,
+    "meshCount": 2,
+    "triangleCount": 2888,
+    "materialCount": 2,
+    "textureCount": 0,
+    "lowestY": -0.04246043041348457,
+    "pivot": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "boundsCenter": [
+        0.026674717664718628,
+        1.1978204306215048,
+        0.2122296690940857
+      ],
+      "bottomCenter": [
+        0.026674717664718628,
+        -0.04246043041348457,
+        0.2122296690940857
+      ],
+      "groundedAtOrigin": false
+    },
+    "orientation": {
+      "sceneUp": "Y (glTF convention)",
+      "semanticUpright": "requires visual review",
+      "rootRotationRadians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unusualTransforms": [],
+    "negativeTransforms": 0,
+    "nonUniformTransforms": 0,
+    "singularTransforms": 0,
+    "skinnedMeshes": 0,
+    "morphMeshes": 0,
+    "animationClips": 0,
+    "instancingAllowed": true,
+    "instancingReasons": [],
+    "problems": []
+  }
+]

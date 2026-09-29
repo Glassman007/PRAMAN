@@ -1,0 +1,92 @@
+PRAMAN EVIDENCE GRAPH — CROSS-DASHBOARD INTEGRATION VALIDATION
+===============================================================
+
+RESULT: PASS
+
+Scope
+-----
+Evidence Graph remains an additive explainability module. Existing target dashboard UI/layouts are not imported, embedded, or redesigned.
+
+Contextual actions implemented
+------------------------------
+PASS  View on Unified Spatial View
+PASS  Open Conflict Explorer
+PASS  Open Reconciliation
+PASS  View Source & Schema Mapping
+PASS  View Parcel History & Lineage
+
+Verified target contracts
+-------------------------
+Conflict Explorer / Reconciliation (current PRAMAN_Conflict_Reconcile_Final artifact):
+- Conflict view: /conflict-explorer?view=conflicts&parcel=<id>&conflict=<id>
+- Reconciliation view: /conflict-explorer?view=reconcile&parcel=<id>&conflict=<id>
+- Optional real context: open_conflicts=<comma-separated IDs>&context=parcel-conflict-case
+- Existing navigation updates the current URL without deleting unrelated parameters, so returnTo survives workspace navigation.
+
+Source & Schema Mapping (current Prompt-5 artifact):
+- Selected source: ssm_source=<source_id>
+- Internal view: ssm_view=<view>
+- Existing URL synchronization preserves unrelated parameters, including returnTo.
+
+Parcel History & Lineage (current Layer-4 integration contract):
+- parcel=<canonical-or-historical-id>
+- view=lineage
+- event=<event-id> where available
+- version=<version-id> is transferred as additional context
+- Existing Layer-4 integration already preserves returnTo.
+
+Unified Spatial View:
+- Evidence Graph transfers parcel, geometry, source and version IDs in the navigation URL/envelope.
+- Current spatial artifact exposes PRAMAN_SPATIAL_VIEW.selectParcel(parcelId, openPanel).
+- targetBridges.mjs provides applyUnifiedSpatialViewContext() so the shared shell can apply the transferred parcel after the map route mounts without changing the map UI.
+
+Evidence Graph return-state preservation
+----------------------------------------
+Before navigation the current Evidence Graph URL is updated with:
+- parcel
+- egMode
+- egStage
+- egPosition
+- egSpeed
+- egNode
+- egSearch
+- egSearchOpen
+
+Unrelated existing query parameters are retained, preserving host-level filters where practical.
+The exact serialized URL is attached to every target as returnTo.
+
+On Evidence Graph remount/return:
+PASS selected parcel restored
+PASS locality/parcel mode restored
+PASS selected replay stage restored
+PASS timeline/scrubber position restored
+PASS playback speed restored
+PASS selected evidence node restored when visible at restored stage
+PASS parcel search text/open state restored
+PASS inbound parcel/conflict/source/version/event context supported without inventing replay position
+
+Context correctness
+-------------------
+PASS reconciliation action requires a real parcel + conflict ID
+PASS stale conflict IDs are discarded when they belong to a different parcel
+PASS source links use actual source_id via ssm_source
+PASS version/event identifiers are transferred only when available
+PASS dashboard links carry only relevant target identifiers plus returnTo
+PASS no target dashboard component is imported into Evidence Graph
+
+Host integration hooks
+----------------------
+- praman:evidence-graph:navigate-dashboard
+- onNavigateDashboard(detail)
+- configurable dashboardPaths
+- targetBridges.readPramanNavigationContext()
+- targetBridges.applyUnifiedSpatialViewContext()
+- targetBridges.getEvidenceGraphReturnHref()
+
+Regression validation
+---------------------
+Full Evidence Graph suite: 83 / 83 PASS
+Failures: 0
+All JS/MJS syntax checks: PASS
+
+The integration changes no PRAMAN dataset file and no matching, conflict, reconciliation, authority, lineage, or canonical-state semantics.

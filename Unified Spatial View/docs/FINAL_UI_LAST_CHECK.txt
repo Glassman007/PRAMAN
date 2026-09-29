@@ -1,0 +1,1 @@
+PASS: actual responsive views, all toolbar groups, readable text, inspector no overlap, semantic parcel cases, cadastral inspection context and empty filter state.

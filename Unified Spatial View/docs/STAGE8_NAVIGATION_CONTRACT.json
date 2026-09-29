@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "workspace": {
+    "view": "reconcile",
+    "parcelId": "IN-DL-110054-3-69",
+    "selectedConflictId": "CNF-00358",
+    "openConflictIds": [
+      "CNF-00292",
+      "CNF-00358"
+    ],
+    "context": "parcel-conflict-case",
+    "explorerState": {
+      "filters": {
+        "search": "",
+        "status": "OPEN",
+        "conflictType": "OWNERSHIP_DISAGREEMENT",
+        "severity": "",
+        "criticality": "",
+        "humanReview": "",
+        "sourceType": "CADASTRAL_REVENUE",
+        "parcelKind": "",
+        "cell": ""
+      },
+      "sort": {
+        "key": "openConflicts",
+        "direction": "desc"
+      },
+      "page": 1
+    }
+  },
+  "evidenceGraph": {
+    "mode": "parcel",
+    "parcelId": "IN-DL-110054-3-69",
+    "stageId": null,
+    "timelinePosition": null,
+    "playbackSpeed": null,
+    "selectedNodeId": null,
+    "search": "",
+    "searchOpen": false,
+    "filters": {},
+    "inboundContext": {
+      "conflictId": "CNF-00358",
+      "sourceId": "SRC-A-REV",
+      "versionId": null,
+      "eventId": null
+    }
+  },
+  "scope": "Actual external URL readers imported from supplied dashboards; deployment not tested"
+}

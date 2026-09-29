@@ -1,0 +1,28 @@
+import {Group,Mesh,BufferGeometry,Float32BufferAttribute,MeshBasicMaterial,LineBasicMaterial,LineDashedMaterial,LineSegments,DoubleSide} from 'three';
+import {createParcel} from './parcel-renderer.js';
+export const TEMPORAL_STYLES=Object.freeze({historical:{color:0x80649d,opacity:.13,dashed:true},snapshot:{color:0x54769d,opacity:.42,dashed:true},proposed:{color:0xd88b18,opacity:.24,dashed:true},review:{color:0xbb6419,opacity:.18,dashed:true,dashSize:.8,gapSize:1.8},rejected:{color:0xbf4058,opacity:.12,dashed:true},before:{color:0x80649d,opacity:.35,dashed:true},after:{color:0x248a89,opacity:.48,dashed:false}});
+export const ringsOf=g=>g?.type==='Polygon'?g.coordinates:g?.type==='MultiPolygon'?g.coordinates.flat():[];
+export function segmentsOf(g){return ringsOf(g).flatMap(r=>r.slice(1).map((p,i)=>[r[i],p]));}
+const distance=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
+export function changedEdges(oldGeometry,newGeometry){const a=segmentsOf(oldGeometry),b=segmentsOf(newGeometry),same=(s,t)=>distance(s[0],t[0])<.0001&&distance(s[1],t[1])<.0001||distance(s[0],t[1])<.0001&&distance(s[1],t[0])<.0001;return {old:a.filter(s=>!b.some(t=>same(s,t))),next:b.filter(s=>!a.some(t=>same(s,t)))};}
+// Collinear overlap, including partially shared edges. Tolerance is for display only.
+export function sharedEdges(geometries){const result=[];for(let i=0;i<geometries.length;i++)for(let j=i+1;j<geometries.length;j++)for(const [a,b] of segmentsOf(geometries[i]))for(const [c,d] of segmentsOf(geometries[j])){const dx=b[0]-a[0],dz=b[1]-a[1],len=Math.hypot(dx,dz);if(!len)continue;const cross=p=>Math.abs((p[0]-a[0])*dz-(p[1]-a[1])*dx)/len;if(cross(c)>.001||cross(d)>.001)continue;const t=p=>((p[0]-a[0])*dx+(p[1]-a[1])*dz)/(len*len),lo=Math.max(0,Math.min(t(c),t(d))),hi=Math.min(1,Math.max(t(c),t(d)));if((hi-lo)*len>.001)result.push([[a[0]+lo*dx,a[1]+lo*dz],[a[0]+hi*dx,a[1]+hi*dz]]);}return result;}
+export function createTemporalRenderer({groups,interaction}){
+ const root=new Group();root.name='temporal-model-view';groups.historicalGeometry.add(root);let resources=[],unregister=[],records=[],emphasis=null,selectedRecord=null;
+ function clear(){unregister.forEach(f=>f());resources.forEach(r=>r.dispose());resources=[];unregister=[];root.clear();records=[];emphasis=null;selectedRecord=null;}
+ function draw(rows,extraEdges=[],selectedId=null){clear();records=rows;selectedRecord=rows.find(r=>r.id===selectedId)||null;const styles=new Map();for(const row of rows){if(!row.geometry)continue;if(!styles.has(row.style))styles.set(row.style,[]);styles.get(row.style).push(row);}
+  for(const [key,items] of styles){const spec=TEMPORAL_STYLES[key],positions=[],edges=[],faces=[];
+   for(const row of items){const parts=row.geometry.type==='Polygon'?[row.geometry.coordinates]:row.geometry.coordinates;
+    for(const rings of parts){const r=createParcel({id:row.id,outer:rings[0],holes:rings.slice(1)}),g=r.object.geometry.toNonIndexed();positions.push(...g.attributes.position.array);for(let n=0;n<g.attributes.position.count/3;n++)faces.push({kind:'parcel',id:row.id,geometryId:row.geometryId,temporalCategory:row.category,representation:'temporal geometry'});g.dispose();r.dispose();}
+    for(const [a,b] of segmentsOf(row.geometry))edges.push(a[0],.01,a[1],b[0],.01,b[1]);
+   }
+   const geometry=new BufferGeometry();geometry.setAttribute('position',new Float32BufferAttribute(positions,3));const material=new MeshBasicMaterial({color:spec.color,opacity:spec.opacity,transparent:true,depthWrite:false,side:DoubleSide});const mesh=new Mesh(geometry,material);mesh.position.y=.09;mesh.userData.selectionForFace=i=>faces[i];mesh.userData.baseOpacity=spec.opacity;root.add(mesh);unregister.push(interaction.register(mesh));
+   const edgeGeo=new BufferGeometry();edgeGeo.setAttribute('position',new Float32BufferAttribute(edges,3));const edgeMat=spec.dashed?new LineDashedMaterial({color:spec.color,dashSize:spec.dashSize||2,gapSize:spec.gapSize||1,transparent:true,opacity:.8,depthWrite:false}):new LineBasicMaterial({color:spec.color,transparent:true,opacity:.9,depthWrite:false});const lines=new LineSegments(edgeGeo,edgeMat);lines.position.y=.11;if(spec.dashed)lines.computeLineDistances();root.add(lines);resources.push(geometry,material,edgeGeo,edgeMat);
+  }
+  if(extraEdges.length){const g=new BufferGeometry();g.setAttribute('position',new Float32BufferAttribute(extraEdges.flatMap(([a,b])=>[a[0],.16,a[1],b[0],.16,b[1]]),3));const m=new LineBasicMaterial({color:0xe05917,transparent:true,depthTest:false});emphasis=new LineSegments(g,m);root.add(emphasis);resources.push(g,m);}
+  if(selectedRecord){const coords=segmentsOf(selectedRecord.geometry).flatMap(([a,b])=>[a[0],.19,a[1],b[0],.19,b[1]]),g=new BufferGeometry();g.setAttribute('position',new Float32BufferAttribute(coords,3));const mat=new LineDashedMaterial({color:0x352043,dashSize:1,gapSize:.6,depthTest:false,transparent:true,opacity:1}),line=new LineSegments(g,mat);line.computeLineDistances();line.name='selected-temporal-boundary';root.add(line);resources.push(g,mat);}
+  root.visible=true;groups.historicalGeometry.visible=true;
+ }
+ function animate(progress,{fade=false,reveal=false}={}){for(const o of root.children)if(o.isMesh)o.material.opacity=o.userData.baseOpacity*(fade?Math.max(.1,progress):1);if(emphasis){const count=emphasis.geometry.attributes.position.count;emphasis.geometry.setDrawRange(0,reveal?Math.floor(count*progress/2)*2:count);}}
+ return {root,draw,clear,animate,get records(){return records;},get selectedGeometryId(){return selectedRecord?.geometryId||null;},get emphasizedEdges(){return emphasis?emphasis.geometry.attributes.position.count/2:0;},dispose(){clear();root.removeFromParent();}};
+}

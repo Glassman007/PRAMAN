@@ -1,0 +1,5 @@
+PRAMAN Evidence Graph — Parcel History / Lineage ZIP integrity
+STATUS: PASS
+Archive: PRAMAN_Evidence_Graph_Parcel_History_Lineage.zip
+Archive test: no errors detected
+Files packaged: 84

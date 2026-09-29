@@ -1,0 +1,33 @@
+PRAMAN EVIDENCE GRAPH — INDIVIDUAL PARCEL MODE VALIDATION
+
+Scope
+- Added dataset-derived parcel autocomplete over active + historical parcel identifiers.
+- Added focused parcel graph projection independent of the locality-scale aggregate graph.
+- Added REPLAY THIS PARCEL using the existing reusable replay controller.
+- Added persistent nine-question parcel story summary.
+- Kept non-applicable stages empty rather than fabricating records.
+
+Dataset/runtime checks
+- Search universe: 1,060 IDs = 1,000 active CANONICAL_PARCELS + 60 HISTORICAL_PARCELS.
+- Data-layer ERROR diagnostics: 0.
+- Contributing SourceObservation nodes equal RECONCILED_PARCELS.matched_source_ids for the selected parcel.
+- Observations from other parcels are not imported merely because they list the selected parcel as an alternate candidate.
+- AdapterConcept nodes are architecture routes only; adapter execution records remain unavailable.
+- MatchCandidate nodes come only from the contributing observations' recorded primary/alternate candidate fields.
+- Pairwise match scores and pairwise acceptance/rejection decisions remain unavailable and are not fabricated.
+- Clean parcel sample has 0 Conflict nodes and conflict-detection is marked non-applicable.
+- Reviewed parcel sample retains its real HUMAN_REVIEW event and recorded authoritative state.
+- Historical parcel sample retains its real direct lineage events, geometry versions and relevant GeoGit events.
+
+Replay/UI checks
+- Parcel selection replaces the locality projection with the focused projection.
+- Replay This Parcel restarts/plays the parcel-mode state machine only.
+- Autocomplete uses actual dataset IDs.
+- Parcel-mode source inspector scopes record counts to that parcel's contributing observations.
+- Parcel summary answers all nine requested reviewer questions.
+- Global REPLAY RECONCILIATION remains available and clears the parcel-focused state.
+
+Automated validation
+- Full regression suite: 68 / 68 tests pass.
+- All .mjs modules pass node --check.
+- HTTP dataset-loader smoke test passes with 0 data-layer ERROR diagnostics.

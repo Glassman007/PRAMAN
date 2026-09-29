@@ -1,0 +1,36 @@
+{
+  "active": 1000,
+  "historical": 60,
+  "cells": 10,
+  "tables": {
+    "parcels": 1000,
+    "historicalParcels": 60,
+    "cells": 10,
+    "buildingFootprints": 765,
+    "buildingRecords": 961,
+    "sourceGeometry": 4312,
+    "observations": 4366,
+    "sources": 4366,
+    "conflicts": 715,
+    "history": 5602,
+    "lineage": 74,
+    "reconciliation": 1060,
+    "geoGitReferences": 5602,
+    "geometryVersions": 1143,
+    "conflictEvidence": 1715,
+    "sourceMetadata": 7,
+    "sourceSchema": 7
+  },
+  "canonicalOverlapsReported": 135,
+  "unresolvedSourceBuildingReferences": [
+    {
+      "observationId": "OBS-004358",
+      "buildingId": "SEM-BLD-01-043"
+    },
+    {
+      "observationId": "OBS-004359",
+      "buildingId": "SEM-BLD-02-023"
+    }
+  ],
+  "referenceErrors": []
+}

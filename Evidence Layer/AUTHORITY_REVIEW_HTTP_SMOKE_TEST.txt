@@ -1,0 +1,1 @@
+{"ok":true,"errors":0,"governanceEvents":1000,"reviewEvents":243,"accepted":731,"rejected":26,"authorityStates":{"AUTHORITATIVE":817,"UNCHANGED_PENDING":243},"stage7Nodes":8,"stage7Edges":8}

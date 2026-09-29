@@ -1,0 +1,49 @@
+PRAMAN Evidence Graph — Waterfall Visual Validation
+====================================================
+
+Scope
+-----
+Continued from PRAMAN_Evidence_Graph_Continuous_Lifecycle_Fixed_Validated.
+No rebuild. No PRAMAN_DATA modifications. Existing lifecycle controller retained.
+
+Implemented
+-----------
+- Replaced panel/section-style operation presentation with one continuous vertical evidence waterfall.
+- Added data-driven waterfall layout derived from actual graph edges and internal dependency depth.
+- Earlier rendered evidence remains visible as playback progresses.
+- Real branches fan outward and real convergence pulls downstream nodes toward contributing evidence.
+- Matching, authority, canonical-registry, and history/lineage dependencies can expand vertically inside one operation without becoming separate screens.
+- Operation names are lightweight wayfinding labels, not numbered stages or full-screen panels.
+- Active replay uses natural document flow; the graph surface grows vertically and the page remains scrollable.
+- Removed internal-canvas auto-follow behavior so manual scrolling is never trapped or overridden.
+- New nodes use a restrained reveal animation; reduced-motion disables it.
+- Provenance paths now use vertical cubic flow geometry with arrowheads for downstream relationships.
+- Semantic back-reference links (for example a history VERSION_OF link pointing to an earlier canonical state) are rendered as undirected dashed reference connectors rather than misleading upward arrows.
+- Clean parcel traces still omit conflict nodes entirely when no CONFLICTS rows exist.
+- Removed the last user-visible numbered-stage wording from the clean-parcel omission note.
+
+Validation
+----------
+- JavaScript syntax checks: PASS
+- Automated tests: 112/112 PASS
+- Final overview graph: 61 nodes / 146 edges
+- Final overview layout: every directional lifecycle edge is positioned downstream; no same-depth or backward overview edge layout
+- Real graph includes dataset-backed branching and convergence
+- Representative clean/reviewed/historical parcel layouts validated; clean parcel contains no fabricated conflict branch
+- Performance benchmark: PASS
+- Cached locality projection: sub-millisecond
+- 1000 same-operation replay progress ticks: a few milliseconds in benchmark run
+- HTTP smoke tests: 200 for app, renderer, stylesheet, and SOURCE_METADATA.csv
+- PRAMAN_DATA integrity: 14/14 files byte-for-byte unchanged from prior validated build
+- User-facing Stage 1/2/3, Previous Stage, Next Stage, stage-jump, scrubber, and lifecycle-section presentation strings/classes: absent from dashboard/parcel-mode UI implementation
+
+Production files changed from prior validated build
+--------------------------------------------------
+- src/evidence-graph/dashboard/EvidenceGraphRenderer.mjs
+- src/evidence-graph/dashboard/evidenceGraph.css
+- src/evidence-graph/replay/individualParcelMode.mjs (wording only; no data/logic change)
+
+Regression tests changed/added
+------------------------------
+- tests/ui-ux-cleanup.test.mjs
+- tests/waterfall-layout.test.mjs

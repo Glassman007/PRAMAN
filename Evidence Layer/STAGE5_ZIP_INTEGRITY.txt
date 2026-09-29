@@ -1,0 +1,84 @@
+Archive:  PRAMAN_Evidence_Graph_Stage5_Conflict_Detection.zip
+    testing: PRAMAN_Evidence_Graph_Dashboard/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE3_GLOBAL_NORMALIZATION_VALIDATION.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/integration/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/integration/navigation.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/integration/route.jsx   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/dashboard/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/dashboard/EvidenceGraphRenderer.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/dashboard/EvidenceGraphDashboard.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/dashboard/index.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/dashboard/evidenceGraph.css   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/react/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/react/EvidenceGraphPage.jsx   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/distortionAwareMatching.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/index.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/adapterProcessing.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/stages.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/ReplayController.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/projection.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/conflictDetection.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/sourceArrival.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/replay/globalNormalization.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/data/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/data/index.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/data/dataLayer.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/data/utils.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/data/loaders/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/data/loaders/browser.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/data/constants.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/src/evidence-graph/data/csv.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/package.json   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE5_CONFLICT_DETECTION_VALIDATION.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/5 Conflicts/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/5 Conflicts/CONFLICT_EVIDENCE.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/5 Conflicts/CONFLICTS.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/5 Conflicts/CONFLICTS_REJECTED_PROVENANCE.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/6 Reconciliation/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/6 Reconciliation/RECONCILED_PARCELS.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/2 Source_geometry/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/2 Source_geometry/SOURCE_GEOMETRIES.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/1 Source_inputs/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/1 Source_inputs/SOURCE_METADATA.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/1 Source_inputs/SOURCE_SPECIFIC_SCHEMA.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/4 Matching/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/4 Matching/SOURCE_OBSERVATIONS.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/3 Adapter/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/3 Adapter/MATCHING_INPUT_VIEW.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/8 History/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/8 History/HISTORICAL_PARCELS.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/8 History/GEOGIT_EVENTS.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/8 History/PARCEL_LINEAGE.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/7 Authoritative_state/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/7 Authoritative_state/CANONICAL_PARCELS.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/public/PRAMAN_DATA/7 Authoritative_state/GEOMETRY_VERSIONS.csv   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/SMOKE_TEST_RESULTS.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE4_HTTP_SMOKE_TEST.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE4_DISTORTION_AWARE_MATCHING_VALIDATION.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE4_SYNTAX_CHECK.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/adapter-processing.test.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/source-arrival.test.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/conflict-detection.test.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/replay-engine.test.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/global-normalization.test.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/distortion-aware-matching.test.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/dashboard-contract.test.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/tests/nodeLoader.mjs   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE2_ADAPTER_PROCESSING_VALIDATION.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE1_SOURCE_ARRIVAL_VALIDATION.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/TEST_RESULTS.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE5_HTTP_SMOKE_TEST.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/README.md   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE3_HTTP_SMOKE_TEST.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE5_SYNTAX_CHECK.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/FILE_MANIFEST.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/STAGE2_HTTP_SMOKE_TEST.txt   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/INTEGRATION.md   OK
+    testing: PRAMAN_Evidence_Graph_Dashboard/index.html   OK
+No errors detected in compressed data of PRAMAN_Evidence_Graph_Stage5_Conflict_Detection.zip.

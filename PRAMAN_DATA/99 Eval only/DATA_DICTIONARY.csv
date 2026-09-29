@@ -1,0 +1,276 @@
+﻿sheet_name,field_name,definition,data_type,enum_or_allowed_values
+CANONICAL_PARCELS,canonical_parcel_id,Globally unique PRAMAN canonical parcel identifier.,Text,
+CANONICAL_PARCELS,cell_id,Spatial cell identifier CELL-01 through CELL-10.,Text,
+CANONICAL_PARCELS,parcel_number,Parcel sequence number within a cell.,Integer,
+CANONICAL_PARCELS,locality,Locality.,Text,
+CANONICAL_PARCELS,parcel_status,Lifecycle status of the parcel in the active canonical registry.,Text,ACTIVE
+CANONICAL_PARCELS,land_use,Canonical functional land-use class.,Text,
+CANONICAL_PARCELS,property_type,Detailed parcel/property subtype.,Text,
+CANONICAL_PARCELS,ownership_category,High-level ownership or authority category.,Text,
+CANONICAL_PARCELS,owner_entity,Recorded canonical owner/entity name.,Text,
+CANONICAL_PARCELS,tenure_type,Legal/administrative tenure category.,Text,
+CANONICAL_PARCELS,area_sqm,Parcel or observed area in square metres.,Number,
+CANONICAL_PARCELS,built_up_area_sqm,Estimated canonical total built-up floor area in square metres.,Number,
+CANONICAL_PARCELS,building_count,Number of mapped structures associated with the parcel.,Integer,
+CANONICAL_PARCELS,floor_count,Canonical or observed floor count.,Integer,
+CANONICAL_PARCELS,society_name,Housing society/complex association where applicable.,Text,
+CANONICAL_PARCELS,government_agency,Responsible government/utility agency where applicable.,Text,
+CANONICAL_PARCELS,current_geometry_id,Geometry version currently authoritative in the canonical registry.,Foreign Key,References GEOMETRY_VERSIONS.geometry_id
+CANONICAL_PARCELS,authoritative_version,Legacy authoritative geometry-generation marker retained for backward compatibility. Do not use as the GeoGit/canonical-state version; use canonical_state_version.,Text,
+CANONICAL_PARCELS,latitude_centroid,Parcel centroid latitude in EPSG:4326.,Number,
+CANONICAL_PARCELS,longitude_centroid,Parcel centroid longitude in EPSG:4326.,Number,
+CANONICAL_PARCELS,special_condition,"Operational condition such as disputed, encroached, vacant, under construction or redevelopment.",Text,
+CANONICAL_PARCELS,municipal_ward,Municipal ward.,Text,
+HISTORICAL_PARCELS,canonical_parcel_id,Globally unique PRAMAN identifier for the retired historical parcel.,Text,
+HISTORICAL_PARCELS,cell_id,Spatial indexing cell associated with the historical parcel.,Text,
+HISTORICAL_PARCELS,parcel_number,Parcel number component within the historical parcel's cell.,Integer,
+HISTORICAL_PARCELS,record_status,Registry status identifying this row as a retired historical parcel.,Text,HISTORICAL_RETIRED
+HISTORICAL_PARCELS,lineage_status,"Historical lifecycle outcome such as split, merge, or redevelopment retirement.",Text,RETIRED_MERGED; RETIRED_REDEVELOPMENT; RETIRED_SPLIT
+HISTORICAL_PARCELS,former_owner,Recorded owner/entity before the parcel was retired.,Text,
+HISTORICAL_PARCELS,retired_date,Date the historical parcel ceased to be an active parcel identity.,Date/DateTime,
+HISTORICAL_PARCELS,retirement_reason,Reason the parcel identity was retired.,Text,
+HISTORICAL_PARCELS,historical_geometry_id,Foreign key to the retained HISTORICAL geometry row in GEOMETRY_VERSIONS.,Foreign Key,References GEOMETRY_VERSIONS.geometry_id
+RECONCILED_PARCELS,canonical_parcel_id,Globally unique PRAMAN canonical parcel identifier.,Foreign Key,References CANONICAL_PARCELS or HISTORICAL_PARCELS canonical_parcel_id
+RECONCILED_PARCELS,record_status,Current/stale/retired/duplicate source record status.,Text,ACTIVE;HISTORICAL_RETIRED;CURRENT;CURRENT_SUBUNIT;DUPLICATE_CANDIDATE;OUTDATED_RETIRED_PARCEL
+RECONCILED_PARCELS,lineage_status,Current or historical split/merge/redevelopment lifecycle status.,Text,CURRENT;RETIRED_SPLIT;RETIRED_MERGED;RETIRED_REDEVELOPMENT
+RECONCILED_PARCELS,parent_parcel_ids,Historical parent parcel IDs that produced this parcel.,JSON/List,
+RECONCILED_PARCELS,child_parcel_ids,Child parcel IDs produced from this historical parcel.,JSON/List,
+RECONCILED_PARCELS,match_status,Reconciliation pipeline outcome.,Text,AUTO_MATCHED;MATCHED_WITH_MINOR_CONFLICT;RECONCILED;TENTATIVE;NEEDS_ADDITIONAL_EVIDENCE;HUMAN_REVIEW_REQUIRED;REJECTED_MATCH
+RECONCILED_PARCELS,criticality_level,"Operational/legal importance of disagreement, independent of confidence.",Text,LOW;MEDIUM;HIGH;CRITICAL
+RECONCILED_PARCELS,criticality_reason,Human-readable explanation of why the case has its criticality.,Text,
+RECONCILED_PARCELS,source_count,Number of linked source observations.,Integer,
+RECONCILED_PARCELS,matched_source_ids,Observation IDs linked to the parcel.,JSON/List,
+RECONCILED_PARCELS,overall_match_confidence,Evidence-weighted identity linkage confidence from 0 to 1.,Decimal 0–1,0–1
+RECONCILED_PARCELS,geometry_confidence,Evidence-weighted spatial confidence from 0 to 1.,Decimal 0–1,0–1
+RECONCILED_PARCELS,ownership_confidence,Evidence-weighted ownership confidence from 0 to 1.,Decimal 0–1,0–1
+RECONCILED_PARCELS,land_use_confidence,Evidence-weighted land-use confidence from 0 to 1.,Decimal 0–1,0–1
+RECONCILED_PARCELS,lineage_confidence,Confidence in split/merge/redevelopment lineage from 0 to 1.,Decimal 0–1,0–1
+RECONCILED_PARCELS,reconciliation_confidence,Composite confidence after evidence fusion; not the same as criticality.,Decimal 0–1,0–1
+RECONCILED_PARCELS,proposed_state,"Machine-inferred canonical state before authority gates, stored as JSON text.",JSON/List,
+RECONCILED_PARCELS,authoritative_state,State allowed through policy/human gates; unresolved cases preserve the previous legal state.,JSON/List,
+RECONCILED_PARCELS,requires_human_review,TRUE when legal/operational authority intervention is required.,Boolean,TRUE; FALSE
+RECONCILED_PARCELS,unresolved_conflicts,Conflict IDs that remain open.,Text,
+RECONCILED_PARCELS,reconciliation_timestamp,Synthetic timestamp of the reconciliation run.,Date/DateTime,
+RECONCILED_PARCELS,benchmark_case_ids,TC01–TC25 labels used to retrieve benchmark cases.,JSON/List,Semicolon-delimited BENCHMARK_CASES.case_id values or null
+SOURCE_OBSERVATIONS,observation_id,Unique source-observation identifier.,Text,
+SOURCE_OBSERVATIONS,source_type,Source family/type.,Text,BUILDING_GIS; CADASTRAL_REVENUE; DDA_DEVELOPMENT_AUTHORITY; DRONE_ORTHOPHOTO; GNSS_CORS_SURVEY; MUNICIPAL_PROPERTY; UTILITY_INFRASTRUCTURE
+SOURCE_OBSERVATIONS,source_record_id,Native-like identifier within the synthetic source dataset.,Text,
+SOURCE_OBSERVATIONS,candidate_canonical_parcel_id,Evaluation/candidate-output parcel label retained in the enriched master observation table. Excluded from MATCHING_INPUT_VIEW and must not be used as a parcel-matching input feature.,Foreign Key,References CANONICAL_PARCELS or HISTORICAL_PARCELS canonical_parcel_id
+SOURCE_OBSERVATIONS,alternate_candidate_parcel_ids,Evaluation/candidate-generation alternatives retained for benchmark inspection. Excluded from MATCHING_INPUT_VIEW and not available to the matcher as an input label.,JSON/List,
+SOURCE_OBSERVATIONS,source_parcel_id,Synthetic source-side parcel/reference ID.,Text,
+SOURCE_OBSERVATIONS,owner_name,"Owner/occupier as claimed by the source, including deliberate variations.",Text,
+SOURCE_OBSERVATIONS,address,Source-reported property address.,Text,
+SOURCE_OBSERVATIONS,land_use,Canonical functional land-use class.,Text,
+SOURCE_OBSERVATIONS,geometry_id,Geometry identifier for source or canonical geometry.,Text,
+SOURCE_OBSERVATIONS,observed_area,Area claimed/inferred by the individual source observation.,Number,
+SOURCE_OBSERVATIONS,observation_date,Date represented by the observation.,Date/DateTime,
+SOURCE_OBSERVATIONS,source_reliability,Prior reliability of the source class from 0 to 1.,Decimal 0–1,0–1
+SOURCE_OBSERVATIONS,geometry_confidence,Evidence-weighted spatial confidence from 0 to 1.,Decimal 0–1,0–1
+SOURCE_OBSERVATIONS,attribute_confidence,Confidence in non-spatial source attributes from 0 to 1.,Decimal 0–1,0–1
+SOURCE_OBSERVATIONS,temporal_freshness,Freshness score derived from observation age from 0 to 1.,Decimal 0–1,0–1
+SOURCE_OBSERVATIONS,identifier_confidence,Confidence that the source observation refers to its candidate parcel.,Decimal 0–1,0–1
+SOURCE_OBSERVATIONS,positional_accuracy_m,Nominal spatial accuracy in metres.,Number,
+SOURCE_OBSERVATIONS,record_status,Current/stale/retired/duplicate source record status.,Text,ACTIVE;HISTORICAL_RETIRED;CURRENT;CURRENT_SUBUNIT;DUPLICATE_CANDIDATE;OUTDATED_RETIRED_PARCEL
+SOURCE_OBSERVATIONS,source_specific_details,"JSON payload containing only fields defined for the declared source_type in SOURCE_SPECIFIC_SCHEMA. Historical lifecycle metadata belongs in record_status, lineage_reference, and notes; unavailable historical source attributes use documented nulls.",JSON/List,
+SOURCE_OBSERVATIONS,lineage_reference,Source-side parent/child parcel ID references preserved separately from source-specific attribute JSON.,JSON/List,
+SOURCE_OBSERVATIONS,notes,Additional synthetic evidence/quality notes.,Text,
+CONFLICTS,conflict_id,Unique detected-conflict identifier.,Text,
+CONFLICTS,canonical_parcel_id,Globally unique PRAMAN canonical parcel identifier.,Foreign Key,References CANONICAL_PARCELS or HISTORICAL_PARCELS canonical_parcel_id
+CONFLICTS,conflict_type,Controlled conflict class used for reconciliation testing.,Text,
+CONFLICTS,source_a,First source/evidence side in a conflict.,Text,
+CONFLICTS,source_b,Second source/evidence side in a conflict.,Text,
+CONFLICTS,attribute_or_geometry,Field/domain affected by the conflict.,Text,
+CONFLICTS,source_a_value,Value represented by source A.,Text / Number,
+CONFLICTS,source_b_value,Value represented by source B.,Text / Number,
+CONFLICTS,severity,Technical magnitude of the disagreement.,Text,MINOR;MODERATE;MAJOR;SEVERE
+CONFLICTS,criticality,Operational/legal impact of the conflict.,Text,LOW;MEDIUM;HIGH;CRITICAL
+CONFLICTS,explanation,Known synthetic explanation for the disagreement.,Text,
+CONFLICTS,status,Conflict state such as OPEN or RESOLVED.,Text,OPEN;RESOLVED
+CONFLICTS,recommended_next_evidence,Evidence type that would best resolve the disagreement.,Text,
+CONFLICTS,human_review_required,TRUE when the conflict should be reviewed by an authorized person.,Boolean,TRUE; FALSE
+CONFLICTS,benchmark_case_ids,TC01–TC25 labels used to retrieve benchmark cases.,JSON/List,Semicolon-delimited BENCHMARK_CASES.case_id values or null
+CONFLICTS,source_a_observation_id,Exact SOURCE_OBSERVATIONS foreign key for source_a when observation-backed; blank for non-observation or missing evidence.,Foreign Key,References SOURCE_OBSERVATIONS.observation_id when source A is observation-backed
+CONFLICTS,source_b_observation_id,Exact SOURCE_OBSERVATIONS foreign key for source_b when observation-backed; blank for non-observation or missing evidence.,Foreign Key,References SOURCE_OBSERVATIONS.observation_id when source B is observation-backed
+PARCEL_LINEAGE,lineage_event_id,Unique many-to-many parcel lineage relationship ID.,Text,
+PARCEL_LINEAGE,event_type,Lifecycle or GeoGit event type.,Text,CROSS_CELL_MERGE; CROSS_CELL_SPLIT; MERGE; REDEVELOPMENT_CONSOLIDATION; SPLIT
+PARCEL_LINEAGE,parent_parcel_id,Retired/source parcel on the parent side of lineage.,Foreign Key,References canonical/historical parcel identifier
+PARCEL_LINEAGE,child_parcel_id,Resulting/current parcel on the child side of lineage.,Foreign Key,References canonical/historical parcel identifier
+PARCEL_LINEAGE,effective_date,Date the lineage or geometry event became effective.,Date/DateTime,
+PARCEL_LINEAGE,reason,Synthetic reason recorded for an event/change.,Text,
+PARCEL_LINEAGE,source,Source.,Text,
+PARCEL_LINEAGE,accepted_status,Authority status of a lineage/geometry change.,Text,ACCEPTED;SUPERSEDED;PENDING_HUMAN_APPROVAL
+GEOGIT_EVENTS,event_id,Unique GeoGit/history event ID.,Text,
+GEOGIT_EVENTS,parcel_id,Parcel affected by the event.,Foreign Key,References canonical/historical parcel identifier
+GEOGIT_EVENTS,timestamp,Chronological event timestamp.,Date/DateTime,
+GEOGIT_EVENTS,event_type,Lifecycle or GeoGit event type.,Text,CANONICAL_STATE_UPDATED; CONFLICT_DETECTED; EVIDENCE_ADDED; HUMAN_REVIEW; MATCH_PROPOSED; MERGE; MUTATION_RECORDED; PARCEL_CREATED; PROPOSAL_ACCEPTED; PROPOSAL_REJECTED; ROLLBACK; SOURCE_IMPORTED; SPLIT
+GEOGIT_EVENTS,previous_version,State/version before the event.,Text,
+GEOGIT_EVENTS,resulting_version,State/version after the event.,Text,
+GEOGIT_EVENTS,source,Source.,Text,
+GEOGIT_EVENTS,actor_type,"SYSTEM, SURVEYOR, AUTHORITY, or HUMAN_REVIEWER.",Text,AUTHORITY; HUMAN_REVIEWER; SURVEYOR; SYSTEM
+GEOGIT_EVENTS,reason,Synthetic reason recorded for an event/change.,Text,
+GEOGIT_EVENTS,related_parcel_ids,Other parcel IDs involved in the event.,JSON/List,
+BUILDINGS,building_id,Unique synthetic building identifier.,Text,
+BUILDINGS,canonical_parcel_id,Globally unique PRAMAN canonical parcel identifier.,Foreign Key,References CANONICAL_PARCELS.canonical_parcel_id
+BUILDINGS,building_type,Building/property class associated with the footprint.,Text,APARTMENT_BLOCK; BUILDER_FLOOR; COLLEGE_TRAINING_CENTRE; DDA_FLAT_BLOCK; ELECTRICAL_SUBSTATION; GOVERNMENT_LAND; GOVERNMENT_OFFICE; GREEN_BELT; GROUP_HOUSING_BLOCK; HOSPITAL_CLINIC; INDEPENDENT_HOUSE; LOCAL_SHOPPING_COMPLEX; MIXED_USE_BUILDING; MUNICIPAL_PROPERTY; OFFICE_COMMERCIAL_PLOT; PLAYGROUND; PUBLIC_PARK; REDEVELOPMENT_PARCEL; RELIGIOUS_COMMUNITY_PROPERTY; RETAIL_SHOP; SCHOOL; UNDER_CONSTRUCTION_PLOT; UTILITY_PARCEL; WATER_INFRASTRUCTURE
+BUILDINGS,footprint_area,Building footprint area in square metres.,Number,
+BUILDINGS,floors,Number of floors associated with the building.,Integer,
+BUILDINGS,construction_status,"Existing, under construction, or intentionally unauthorised/encroaching.",Text,EXISTING;UNDER_CONSTRUCTION;UNAUTHORISED_ENCROACHMENT
+BUILDINGS,source,Source.,Text,
+BUILDINGS,confidence,Source/extraction confidence from 0 to 1.,Decimal 0–1,0–1
+SOCIETIES_AND_COMPLEXES,complex_id,Unique society/complex identifier.,Text,
+SOCIETIES_AND_COMPLEXES,complex_name,"Synthetic named cluster such as a DDA pocket, society, market, or civic campus.",Text,
+SOCIETIES_AND_COMPLEXES,complex_type,Type of society/complex cluster.,Text,APARTMENT_SOCIETY; DDA_HOUSING_POCKET; GOVERNMENT_CIVIC_COMPLEX; GROUP_HOUSING_SOCIETY; LOCAL_SHOPPING_COMPLEX; REDEVELOPMENT_HOUSING
+SOCIETIES_AND_COMPLEXES,cell_id,Spatial cell identifier CELL-01 through CELL-10.,Text,
+SOCIETIES_AND_COMPLEXES,associated_parcel_ids,All active parcels belonging to the complex.,JSON/List,
+SOCIETIES_AND_COMPLEXES,number_of_buildings,Count of building records within the complex.,Integer,
+SOCIETIES_AND_COMPLEXES,number_of_units,Approximate synthetic dwelling/unit count.,Integer,
+SOCIETIES_AND_COMPLEXES,common_area_parcels,Common/service parcel IDs.,JSON/List,
+SOCIETIES_AND_COMPLEXES,park_parcels,Park/open-space parcel IDs associated with the complex.,JSON/List,
+SOCIETIES_AND_COMPLEXES,parking_parcels,Parking parcel IDs associated with the complex.,JSON/List,
+SOURCE_METADATA,source_id,Stable ID for a synthetic source dataset.,Text,
+SOURCE_METADATA,source_name,Display name of the synthetic source dataset.,Text,
+SOURCE_METADATA,source_type,Source family/type.,Text,BUILDING_GIS; CADASTRAL_REVENUE; DDA_DEVELOPMENT_AUTHORITY; DRONE_ORTHOPHOTO; GNSS_CORS_SURVEY; MUNICIPAL_PROPERTY; UTILITY_INFRASTRUCTURE
+SOURCE_METADATA,authority,Synthetic source authority/producer.,Text,
+SOURCE_METADATA,acquisition_date,Synthetic acquisition/extract date.,Date/DateTime,
+SOURCE_METADATA,nominal_accuracy,Nominal spatial or linkage accuracy.,Text,
+SOURCE_METADATA,temporal_currency,Years represented by the source.,Text,
+SOURCE_METADATA,reliability,Source-level reliability prior from 0 to 1.,Decimal 0–1,0–1
+SOURCE_METADATA,CRS,Coordinate reference system or linkage description.,Text,
+SOURCE_METADATA,update_frequency,Typical synthetic update cadence.,Text,
+DATA_DICTIONARY,sheet_name,Workbook sheet containing the documented field.,Text,One of the 19 workbook sheet names
+DATA_DICTIONARY,field_name,Field/column name being documented.,Text,Column name present on the documented sheet
+DATA_DICTIONARY,definition,Semantic definition of the workbook field.,Text,
+DATA_DICTIONARY,data_type,Semantic data type used by the field.,Text,Text; Number; Integer; Decimal 0–1; Boolean; Date/DateTime; JSON/List; Foreign Key; Text / Number
+DATA_DICTIONARY,enum_or_allowed_values,"Allowed values, range, referenced key, or other domain constraint where applicable.",Text,
+SOURCE_SPECIFIC_SCHEMA,source_type,Declared source family whose source_specific_details schema is defined by the row.,Text,BUILDING_GIS; CADASTRAL_REVENUE; DDA_DEVELOPMENT_AUTHORITY; DRONE_ORTHOPHOTO; GNSS_CORS_SURVEY; MUNICIPAL_PROPERTY; UTILITY_INFRASTRUCTURE
+SOURCE_SPECIFIC_SCHEMA,source_specific_keys,Allowed JSON keys for source_specific_details for this source type.,JSON/List,
+SOURCE_SPECIFIC_SCHEMA,required_keys,Keys that must be present; documented historical-nullable keys may be null for retired historical observations.,JSON/List,
+SOURCE_SPECIFIC_SCHEMA,historical_nullable_keys,Required keys allowed to be null when record_status=OUTDATED_RETIRED_PARCEL because the historical value is unavailable.,JSON/List,
+SOURCE_SPECIFIC_SCHEMA,lifecycle_metadata_fields,General fields that preserve historical/lifecycle semantics outside source-specific JSON.,JSON/List,record_status;lineage_reference;notes
+SOURCE_SPECIFIC_SCHEMA,purpose,Meaning and evidentiary role of the source-specific schema.,Text,
+GEOMETRY_VERSIONS,geometry_id,Geometry identifier for source or canonical geometry.,Text,
+GEOMETRY_VERSIONS,canonical_parcel_id,Globally unique PRAMAN canonical parcel identifier.,Foreign Key,References CANONICAL_PARCELS or HISTORICAL_PARCELS canonical_parcel_id
+GEOMETRY_VERSIONS,version_label,Human-readable geometry version such as G1/G2 for active parcels or H1 for reconstructed historical geometry.,Text,
+GEOMETRY_VERSIONS,effective_date,Date the lineage or geometry event became effective.,Date/DateTime,
+GEOMETRY_VERSIONS,geometry_status,Explicit geometry lifecycle state.,Text,AUTHORITATIVE;PROPOSED;SUPERSEDED;REJECTED;HISTORICAL
+GEOMETRY_VERSIONS,source_type,Source family/type.,Text,CANONICAL_BASELINE; GNSS_RESURVEY; RECONSTRUCTED_LINEAGE
+GEOMETRY_VERSIONS,area_sqm,Parcel or observed area in square metres.,Number,
+GEOMETRY_VERSIONS,change_reason,Why a geometry version was introduced.,Text,
+GEOMETRY_VERSIONS,accepted_status,Authority/acceptance status of the geometry version.,Text,ACCEPTED;SUPERSEDED;PENDING_HUMAN_APPROVAL;REJECTED
+GEOMETRY_VERSIONS,supersedes_geometry_id,Prior geometry this version proposes to replace or has replaced; actual authority is determined by geometry_status and accepted_status.,Foreign Key,References GEOMETRY_VERSIONS.geometry_id or null
+GEOMETRY_VERSIONS,geometry_wkt,WKT representation of retained parcel geometry.,Text,
+GEOMETRY_VERSIONS,crs,Coordinate reference system for geometry_wkt. All parcel WKT in this workbook uses EPSG:4326 longitude/latitude.,Text,EPSG:4326
+SYNTHETIC_GROUND_TRUTH,true_parcel_id,Synthetic world parcel identity used only for evaluation.,Foreign Key,References CANONICAL_PARCELS or HISTORICAL_PARCELS canonical_parcel_id
+SYNTHETIC_GROUND_TRUTH,is_active,Whether the ground-truth parcel is currently active.,Boolean,TRUE; FALSE
+SYNTHETIC_GROUND_TRUTH,true_source_mappings,Ground-truth list of SOURCE_OBSERVATIONS.observation_id values belonging to the parcel.,JSON/List,
+SYNTHETIC_GROUND_TRUTH,deliberate_anomalies_introduced,Human-readable description(s) of deliberate synthetic conditions/anomalies present for the parcel; contains no benchmark case IDs.,JSON/List,
+SYNTHETIC_GROUND_TRUTH,correct_lineage,Ground-truth parent/child lineage.,Text,
+SYNTHETIC_GROUND_TRUTH,true_ownership,Ground-truth owner/entity in the synthetic world.,Text,
+SYNTHETIC_GROUND_TRUTH,true_geometry_version,Ground-truth latest surveyed/physical geometry version.,Foreign Key,References GEOMETRY_VERSIONS.geometry_id
+SYNTHETIC_GROUND_TRUTH,expected_reconciliation_outcome,Expected pipeline outcome for testing.,Text,AUTO_MATCHED; HUMAN_REVIEW_REQUIRED; MATCHED_WITH_MINOR_CONFLICT; NEEDS_ADDITIONAL_EVIDENCE; RECONCILED; REJECTED_MATCH; TENTATIVE
+SYNTHETIC_GROUND_TRUTH,expected_conflict_types,List of conflict categories the evaluator is expected to discover for the parcel.,JSON/List,
+SYNTHETIC_GROUND_TRUTH,benchmark_case_ids,Benchmark scenario identifiers only; each ID must reference BENCHMARK_CASES.case_id.,JSON/List,Semicolon-delimited BENCHMARK_CASES.case_id values or null
+BENCHMARK_CASES,case_id,Unique benchmark scenario identifier referenced by benchmark_case_ids fields.,Text,Unique TC01–TC25 identifier
+BENCHMARK_CASES,case_name,Human-readable benchmark scenario name.,Text,
+BENCHMARK_CASES,instance_count,Number of SYNTHETIC_GROUND_TRUTH rows whose benchmark_case_ids include this case_id.,Integer,Non-negative integer; equals count of ground-truth references
+BENCHMARK_CASES,example_parcels,Representative parcel IDs associated with the benchmark case.,JSON/List,
+BENCHMARK_CASES,description,Short semantic description of the benchmark scenario.,Text,
+VALIDATION_SUMMARY,validation_check,Name of an integrity or semantic validation performed on the workbook.,Text,
+VALIDATION_SUMMARY,result,Outcome of the validation check.,Text / Number,PASS; FAIL; other explicit validation outcome; numeric metric value
+VALIDATION_SUMMARY,detail,"Supporting count, condition, or explanation for the validation result.",Text,
+INTEGRITY_REPAIR_AUDIT,repair_stage,Repair stage that produced the audit record.,Text,CONFLICT_EVIDENCE; GEOGIT_ANCESTRY; GEOMETRY_LIFECYCLE; GOVERNANCE_GATES; SOURCE_SPECIFIC_SCHEMA
+INTEGRITY_REPAIR_AUDIT,event_id,GeoGit event associated with the repair when applicable.,Foreign Key,References GEOGIT_EVENTS.event_id when populated
+INTEGRITY_REPAIR_AUDIT,parcel_id,Parcel affected by the repair when applicable.,Foreign Key,
+INTEGRITY_REPAIR_AUDIT,timestamp,Timestamp/date associated with the repaired evidence or event.,Date/DateTime,
+INTEGRITY_REPAIR_AUDIT,event_type,Event or repair-event category recorded by the audit row.,Text,
+INTEGRITY_REPAIR_AUDIT,old_previous_version,Previous-version reference before repair.,Text,
+INTEGRITY_REPAIR_AUDIT,new_previous_version,Previous-version reference after repair.,Text,
+INTEGRITY_REPAIR_AUDIT,resulting_version,Version produced or retained by the repaired event.,Text,
+INTEGRITY_REPAIR_AUDIT,reason,Evidence-based reason for the repair.,Text,
+INTEGRITY_REPAIR_AUDIT,predecessor_event_id,Earlier GeoGit event supporting the repaired ancestry or decision.,Foreign Key,References GEOGIT_EVENTS.event_id when populated
+INTEGRITY_REPAIR_AUDIT,validation_status,Validation outcome of the repair record.,Text,PASS; QUARANTINED
+INTEGRITY_REPAIR_AUDIT,conflict_id,Conflict associated with the repair when applicable.,JSON/List,Semicolon-delimited references to CONFLICTS and/or CONFLICTS_REJECTED_PROVENANCE conflict_id values when populated
+INTEGRITY_REPAIR_AUDIT,repair_action,Action applied by the repair stage.,Text,ADD_GEOMETRY_CRS_METADATA; ALIGN_GOVERNANCE_EVENT_TO_LATEST_PROPOSAL; CREATE_HISTORICAL_GEOMETRY; QUARANTINE_UNSUPPORTED_CONFLICT; REPAIR_CONFLICT_PROVENANCE; REPAIR_GEOMETRY_LIFECYCLE; REPAIR_GOVERNANCE_STATE; REPAIR_HISTORICAL_SOURCE_SCHEMA; RESOLVE_REJECTED_MATCH_AMBIGUITY
+INTEGRITY_REPAIR_AUDIT,repair_classification,Repair-specific classification or decision category.,Text,A; ACCEPTED_REPLACEMENT; C; CADASTRAL_REVENUE; D; LATEST_PROPOSAL_ALIGNMENT; MUNICIPAL_PROPERTY; PART_A_HISTORICAL_GEOMETRY; PART_C_CRS; PENDING_REPLACEMENT; PROVENANCE_BIND; REJECTED_CANDIDATE_CLOSED; REJECTED_PROPOSAL_GEOMETRY; REJECTED_REPLACEMENT; activate review gate; activate review gate; sync unresolved conflicts; activate review gate; sync unresolved conflicts; mark proposal rejected and retain authoritative state; clear obsolete review gate; sync unresolved conflicts; preserve non-authoritative tentative state; sync unresolved conflicts; sync unresolved conflicts; mark proposal rejected and retain authoritative state
+INTEGRITY_REPAIR_AUDIT,evidence_observation_ids,Observation IDs used as supporting evidence for the repair.,JSON/List,
+INTEGRITY_REPAIR_AUDIT,conflict_audit_notes,Additional explanation of conflict-provenance or repair reasoning.,Text,
+INTEGRITY_REPAIR_AUDIT,old_requires_human_review,Human-review gate before governance repair.,Boolean,TRUE; FALSE
+INTEGRITY_REPAIR_AUDIT,new_requires_human_review,Human-review gate after governance repair.,Boolean,TRUE; FALSE
+INTEGRITY_REPAIR_AUDIT,old_match_status,Parcel match/reconciliation status before repair.,Text,
+INTEGRITY_REPAIR_AUDIT,new_match_status,Parcel match/reconciliation status after repair.,Text,
+INTEGRITY_REPAIR_AUDIT,old_unresolved_conflicts,Unresolved conflict IDs before repair.,JSON/List,
+INTEGRITY_REPAIR_AUDIT,new_unresolved_conflicts,Unresolved conflict IDs after repair.,JSON/List,
+INTEGRITY_REPAIR_AUDIT,state_indicator_change,Structured summary of proposed/authoritative state-indicator changes.,JSON/List,
+INTEGRITY_REPAIR_AUDIT,geometry_id,Geometry version affected by the geometry repair.,Foreign Key,References GEOMETRY_VERSIONS.geometry_id when populated
+INTEGRITY_REPAIR_AUDIT,old_geometry_status,Geometry lifecycle status before repair.,Text,
+INTEGRITY_REPAIR_AUDIT,new_geometry_status,Geometry lifecycle status after repair.,Text,
+INTEGRITY_REPAIR_AUDIT,old_accepted_status,Geometry acceptance status before repair.,Text,
+INTEGRITY_REPAIR_AUDIT,new_accepted_status,Geometry acceptance status after repair.,Text,
+INTEGRITY_REPAIR_AUDIT,historical_geometry_id,Historical geometry created or validated by the repair.,Foreign Key,References GEOMETRY_VERSIONS.geometry_id when populated
+INTEGRITY_REPAIR_AUDIT,reconstruction_method,Method/evidence used to reconstruct historical geometry.,Text,
+INTEGRITY_REPAIR_AUDIT,crs,Coordinate reference system associated with the geometry repair.,Text,
+INTEGRITY_REPAIR_AUDIT,geometry_validation,Geometry-specific validation result.,Text,
+CONFLICTS_REJECTED_PROVENANCE,conflict_id,Conflict identifier quarantined because its evidence provenance could not be supported.,Text,
+CONFLICTS_REJECTED_PROVENANCE,canonical_parcel_id,Parcel associated with the quarantined conflict.,Foreign Key,References CANONICAL_PARCELS.canonical_parcel_id
+CONFLICTS_REJECTED_PROVENANCE,conflict_type,Conflict category recorded before provenance quarantine.,Text,
+CONFLICTS_REJECTED_PROVENANCE,source_a,Declared first evidence source of the quarantined conflict.,Text,
+CONFLICTS_REJECTED_PROVENANCE,source_b,Declared second evidence source of the quarantined conflict.,Text,
+CONFLICTS_REJECTED_PROVENANCE,attribute_or_geometry,Attribute or geometric aspect claimed to be in conflict.,Text,
+CONFLICTS_REJECTED_PROVENANCE,source_a_value,Recorded value from source A in the quarantined conflict.,Text / Number,
+CONFLICTS_REJECTED_PROVENANCE,source_b_value,Recorded value from source B in the quarantined conflict.,Text / Number,
+CONFLICTS_REJECTED_PROVENANCE,severity,Technical magnitude originally assigned to the conflict.,Text,MAJOR; MINOR; SEVERE
+CONFLICTS_REJECTED_PROVENANCE,criticality,Operational/legal impact originally assigned to the conflict.,Text,CRITICAL; HIGH; LOW
+CONFLICTS_REJECTED_PROVENANCE,explanation,Original conflict explanation.,Text,
+CONFLICTS_REJECTED_PROVENANCE,status,Original conflict resolution state.,Text,OPEN; RESOLVED
+CONFLICTS_REJECTED_PROVENANCE,recommended_next_evidence,Evidence recommended to resolve or validate the conflict.,Text,
+CONFLICTS_REJECTED_PROVENANCE,human_review_required,Whether the original conflict required human/authority review.,Boolean,TRUE; FALSE
+CONFLICTS_REJECTED_PROVENANCE,benchmark_case_ids,Benchmark case IDs associated with the quarantined conflict.,JSON/List,Semicolon-delimited BENCHMARK_CASES.case_id values or null
+CONFLICTS_REJECTED_PROVENANCE,repair_classification,Reason-class assigned during provenance repair.,Text,C
+CONFLICTS_REJECTED_PROVENANCE,quarantine_reason,Why the conflict was excluded from the active evidence-supported conflict set.,Text,
+CANONICAL_PARCELS,canonical_state_version,Current authoritative canonical-state version derived from accepted GeoGit canonical-state history.,Text,V1; V2 or later valid canonical-state version
+CANONICAL_PARCELS,authoritative_geometry_version,Version label of current_geometry_id in GEOMETRY_VERSIONS; explicitly separate from canonical-state versioning.,Text,G1; G2 or later geometry version label
+CONFLICTS_REJECTED_PROVENANCE,final_disposition,Final disposition of a conflict that was previously quarantined during structural repair.,Text,RESTORED_TO_ACTIVE
+CONFLICTS_REJECTED_PROVENANCE,final_repair_note,Explanation of the final semantic repair applied after the Prompt 8 audit.,Text,
+MATCHING_INPUT_VIEW,observation_id,Leakage-safe source-native matching input field,Text,
+MATCHING_INPUT_VIEW,source_type,Leakage-safe source-native matching input field,Text,
+MATCHING_INPUT_VIEW,source_record_id,Leakage-safe source-native matching input field,Text,
+MATCHING_INPUT_VIEW,source_parcel_id,Leakage-safe source-native matching input field,Text,
+MATCHING_INPUT_VIEW,owner_name,Leakage-safe source-native matching input field,Text,
+MATCHING_INPUT_VIEW,address,Leakage-safe source-native matching input field,Text,
+MATCHING_INPUT_VIEW,land_use,Leakage-safe source-native matching input field,Text,
+MATCHING_INPUT_VIEW,geometry_id,Leakage-safe source-native matching input field,Foreign Key,
+MATCHING_INPUT_VIEW,observed_area,Leakage-safe source-native matching input field,Decimal / Number,
+MATCHING_INPUT_VIEW,observation_date,Leakage-safe source-native matching input field,Date,
+MATCHING_INPUT_VIEW,source_reliability,Leakage-safe source-native matching input field,Decimal 0–1,
+MATCHING_INPUT_VIEW,geometry_confidence,Leakage-safe source-native matching input field,Decimal 0–1,
+MATCHING_INPUT_VIEW,attribute_confidence,Leakage-safe source-native matching input field,Decimal 0–1,
+MATCHING_INPUT_VIEW,temporal_freshness,Leakage-safe source-native matching input field,Decimal 0–1,
+MATCHING_INPUT_VIEW,identifier_confidence,Leakage-safe source-native matching input field,Decimal 0–1,
+MATCHING_INPUT_VIEW,positional_accuracy_m,Leakage-safe source-native matching input field,Decimal / Number,
+MATCHING_INPUT_VIEW,source_specific_details,Leakage-safe source-native matching input field,JSON/Text,
+CONFLICT_EVIDENCE,conflict_evidence_id,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,conflict_id,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,observation_id,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,evidence_role,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,source_type,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,attribute_name,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,observed_value,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,geometry_id,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,temporal_role,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,supports_or_contradicts,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,notes,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,evidence_type,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,evidence_id,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+CONFLICT_EVIDENCE,source_table,Generalized conflict evidence field supporting observation and non-observation provenance,Text,
+SOURCE_GEOMETRIES,geometry_id,Resolvable source-geometry field used by distortion-aware parcel matching,Text,
+SOURCE_GEOMETRIES,source_type,Resolvable source-geometry field used by distortion-aware parcel matching,Text,
+SOURCE_GEOMETRIES,observation_ids,Resolvable source-geometry field used by distortion-aware parcel matching,Text,
+SOURCE_GEOMETRIES,source_record_ids,Resolvable source-geometry field used by distortion-aware parcel matching,Text,
+SOURCE_GEOMETRIES,original_crs,Resolvable source-geometry field used by distortion-aware parcel matching,Text,
+SOURCE_GEOMETRIES,original_geometry_wkt,Resolvable source-geometry field used by distortion-aware parcel matching,WKT/Text,
+SOURCE_GEOMETRIES,normalized_crs,Resolvable source-geometry field used by distortion-aware parcel matching,Text,
+SOURCE_GEOMETRIES,normalized_geometry_wkt,Resolvable source-geometry field used by distortion-aware parcel matching,WKT/Text,
+SOURCE_GEOMETRIES,observed_area_sqm,Resolvable source-geometry field used by distortion-aware parcel matching,Decimal / Number,
+SOURCE_GEOMETRIES,positional_accuracy_m,Resolvable source-geometry field used by distortion-aware parcel matching,Decimal / Number,
+SOURCE_GEOMETRIES,normalization_method,Resolvable source-geometry field used by distortion-aware parcel matching,Text,
+SOURCE_GEOMETRIES,geometry_quality_flag,Resolvable source-geometry field used by distortion-aware parcel matching,Text,
