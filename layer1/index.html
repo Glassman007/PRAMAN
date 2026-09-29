@@ -12,109 +12,462 @@
 </head>
 <body>
   <div class="app-shell">
-    <header class="top-header"><h1 class="brand-name">P.R.A.M.A.N</h1><div class="header-line"></div><p class="brand-subtitle">Parcel Reconciliation and Multi-source Audit Network</p></header>
+
+    <header class="top-header">
+      <h1 class="brand-name">P.R.A.M.A.N</h1>
+      <div class="header-line"></div>
+      <p class="brand-subtitle">
+        Parcel Reconciliation and Multi-source Audit Network
+      </p>
+    </header>
 
     <main class="workspace">
+
       <section class="controls" aria-label="Parcel search and filters">
+
         <div class="search-row">
-          <details class="architecture-menu"><summary>Understand the Architecture <span aria-hidden="true">⌄</span></summary><div class="architecture-content"><strong>From source records to accepted parcels</strong><ol><li>Ingest imagery, spatial layers, surveys and records.</li><li>Harmonize source schemas and common references.</li><li>Match parcels using identifiers, geometry and supporting evidence.</li><li>Propose spatial corrections and reconcile conflicts.</li><li>Review evidence and authorize the canonical state.</li><li>Synchronize accepted changes and preserve parcel history.</li></ol></div></details><label class="search-box" aria-label="Search parcels">
+
+          <details class="architecture-menu">
+            <summary>
+              Understand the Architecture
+              <span aria-hidden="true">⌄</span>
+            </summary>
+
+            <div class="architecture-content">
+              <strong>From source records to accepted parcels</strong>
+
+              <ol>
+                <li>Ingest imagery, spatial layers, surveys and records.</li>
+                <li>Harmonize source schemas and common references.</li>
+                <li>Match parcels using identifiers, geometry and supporting evidence.</li>
+                <li>Propose spatial corrections and reconcile conflicts.</li>
+                <li>Review evidence and authorize the canonical state.</li>
+                <li>Synchronize accepted changes and preserve parcel history.</li>
+              </ol>
+            </div>
+          </details>
+
+          <label class="search-box" aria-label="Search parcels">
+
             <span class="blur-search-icon" aria-hidden="true">
-              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
                 <circle cx="11" cy="11" r="7"></circle>
                 <path d="M20 20l-3.6-3.6"></path>
               </svg>
             </span>
-            <input id="searchInput" type="search" placeholder="Search by parcel ID, owner, locality or address" autocomplete="off">
+
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search by parcel ID, owner, locality or address"
+              autocomplete="off"
+            >
+
           </label>
 
-          <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false" aria-controls="filterPanel">
+          <button
+            class="filter-toggle"
+            id="filterToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="filterPanel"
+          >
             <span class="filter-glyph" aria-hidden="true">≡</span>
             Filters
           </button>
-          <button class="clear-filters" id="clearFilters" type="button">Clear</button>
+
+          <button
+            class="clear-filters"
+            id="clearFilters"
+            type="button"
+          >
+            Clear
+          </button>
+
         </div>
 
-        <div class="filter-panel collapsed" id="filterPanel">
+        <div
+          class="filter-panel collapsed"
+          id="filterPanel"
+        >
+
           <label class="filter-field">
             <span>Cell</span>
-            <select id="cellFilter"><option value="">All cells</option></select>
+            <select id="cellFilter">
+              <option value="">All cells</option>
+            </select>
           </label>
+
           <label class="filter-field">
             <span>Land use</span>
-            <select id="landUseFilter"><option value="">All land uses</option></select>
+            <select id="landUseFilter">
+              <option value="">All land uses</option>
+            </select>
           </label>
+
           <label class="filter-field">
             <span>Locality</span>
-            <select id="areaFilter"><option value="">All localities</option></select>
+            <select id="areaFilter">
+              <option value="">All localities</option>
+            </select>
           </label>
+
         </div>
+
       </section>
-      <div id="datasetStatus" class="dataset-status" role="status" aria-live="polite"></div>
 
-      <div class="dashboard-grid"><section class="map-column" aria-label="Map and parcel summary"><div class="scope-preview">
-                <div id="india-map-root" class="current-view-map"></div>
-                
+      <div
+        id="datasetStatus"
+        class="dataset-status"
+        role="status"
+        aria-live="polite"
+      ></div>
+
+      <div class="dashboard-grid">
+
+        <section
+          class="map-column"
+          aria-label="Map and parcel summary"
+        >
+
+          <div class="scope-preview">
+            <div
+              id="india-map-root"
+              class="current-view-map"
+            ></div>
+          </div>
+
+          <section
+            class="metric-grid"
+            aria-label="Parcel summary"
+          >
+
+            <article class="metric-card">
+              <div class="metric-topline">
+                <span>Total Parcels</span>
+                <span class="metric-icon">▱</span>
               </div>
+              <div
+                class="metric-value"
+                id="totalParcels"
+              >—</div>
+            </article>
 
-              <section class="metric-grid" aria-label="Parcel summary">
-                <article class="metric-card">
-                  <div class="metric-topline"><span>Total Parcels</span><span class="metric-icon">▱</span></div>
-                  <div class="metric-value" id="totalParcels">—</div>
-                  </article>
-                <article class="metric-card">
-                  <div class="metric-topline"><span>Conflicted Parcels</span><span class="metric-icon">!</span></div>
-                  <div class="metric-value" id="conflictParcels">—</div>
-                  </article>
-                <article class="metric-card">
-                  <div class="metric-topline"><span>Integrated</span><span class="metric-icon">⇄</span></div>
-                  <div class="metric-value" id="integratedParcels">—</div>
-                  </article>
-                <article class="metric-card">
-                  <div class="metric-topline"><span>Needs Review</span><span class="metric-icon">?</span></div>
-                  <div class="metric-value" id="reviewParcels">—</div>
-                  </article>
-                <article class="metric-card">
-                  <div class="metric-topline"><span>Reviewed</span><span class="metric-icon">✓</span></div>
-                  <div class="metric-value" id="reviewedParcels">—</div>
-                  </article>
-                <article class="metric-card">
-                  <div class="metric-topline"><span>Cleared</span><span class="metric-icon">○</span></div>
-                  <div class="metric-value" id="clearedParcels">—</div>
-                  </article>
-              </section>
-            </section><section class="navigation-panel" aria-label="Dashboards"><nav class="nav-section"><a class="nav-item nav-card" data-page="map" href="../Unified%20Spatial%20View/index.html"><canvas id="cityModelCanvas" class="city-model-canvas" aria-hidden="true"></canvas><span class="nav-card-label">Unified Spatial View</span></a><a class="nav-item nav-card" data-page="conflicts" href="http://localhost:5174/"><img class="nav-card-image" src="assets/nav-cards/conflict-conveyor.png" alt=""><span class="nav-card-label">Conflict View</span></a><a class="nav-item nav-card" data-page="schema" href="http://localhost:5173/"><img class="nav-card-image" src="assets/nav-cards/schema-vessel.png" alt=""><span class="nav-card-label"><span>Source and</span><span>Schema Mapping</span></span></a><a class="nav-item nav-card" data-page="evidence" href="http://localhost:4173/"><canvas id="evidenceCardCanvas" class="evidence-card-canvas" aria-hidden="true"></canvas><span class="nav-card-label">Evidence Graph</span></a><a class="nav-item nav-card" data-page="timeline" href="http://localhost:5175/timeline/"><img class="nav-card-image" src="assets/nav-cards/parcel-roots-horizontal.png" alt=""><span class="nav-card-label">Parcel History</span></a></nav><section class="source-strip" aria-label="Data source coverage">
-            <div class="source-heading">
-              <span>Sources:</span>
-              <span class="source-heading-dot" aria-hidden="true"></span>
-            </div>
-            <div class="source-ticker" aria-label="Source coverage ticker">
-              <div class="source-items" id="sourceItems" aria-live="polite"></div>
-            </div>
+            <article class="metric-card">
+              <div class="metric-topline">
+                <span>Conflicted Parcels</span>
+                <span class="metric-icon">!</span>
+              </div>
+              <div
+                class="metric-value"
+                id="conflictParcels"
+              >—</div>
+            </article>
+
+            <article class="metric-card">
+              <div class="metric-topline">
+                <span>Integrated</span>
+                <span class="metric-icon">⇄</span>
+              </div>
+              <div
+                class="metric-value"
+                id="integratedParcels"
+              >—</div>
+            </article>
+
+            <article class="metric-card">
+              <div class="metric-topline">
+                <span>Needs Review</span>
+                <span class="metric-icon">?</span>
+              </div>
+              <div
+                class="metric-value"
+                id="reviewParcels"
+              >—</div>
+            </article>
+
+            <article class="metric-card">
+              <div class="metric-topline">
+                <span>Reviewed</span>
+                <span class="metric-icon">✓</span>
+              </div>
+              <div
+                class="metric-value"
+                id="reviewedParcels"
+              >—</div>
+            </article>
+
+            <article class="metric-card">
+              <div class="metric-topline">
+                <span>Cleared</span>
+                <span class="metric-icon">○</span>
+              </div>
+              <div
+                class="metric-value"
+                id="clearedParcels"
+              >—</div>
+            </article>
+
           </section>
 
-          </section></div>
+        </section>
+
+        <section
+          class="navigation-panel"
+          aria-label="Dashboards"
+        >
+
+          <nav class="nav-section">
+
+            <!-- Unified Spatial View -->
+            <a
+              class="nav-item nav-card"
+              data-page="map"
+              href="https://praman-qgn252r4g-simplyadityakarki-8875s-projects.vercel.app"
+            >
+              <canvas
+                id="cityModelCanvas"
+                class="city-model-canvas"
+                aria-hidden="true"
+              ></canvas>
+
+              <span class="nav-card-label">
+                Unified Spatial View
+              </span>
+            </a>
+
+            <!-- Conflict & Reconciliation -->
+            <a
+              class="nav-item nav-card"
+              data-page="conflicts"
+              href="https://praman-c3q9u23x2-simplyadityakarki-8875s-projects.vercel.app"
+            >
+              <img
+                class="nav-card-image"
+                src="assets/nav-cards/conflict-conveyor.png"
+                alt=""
+              >
+
+              <span class="nav-card-label">
+                Conflict View
+              </span>
+            </a>
+
+            <!-- Source & Schema Mapping -->
+            <a
+              class="nav-item nav-card"
+              data-page="schema"
+              href="https://praman-j3jnxgdx1-simplyadityakarki-8875s-projects.vercel.app/?ssm_source=SRC-A-REV&amp;ssm_view=overview"
+            >
+              <img
+                class="nav-card-image"
+                src="assets/nav-cards/schema-vessel.png"
+                alt=""
+              >
+
+              <span class="nav-card-label">
+                <span>Source and</span>
+                <span>Schema Mapping</span>
+              </span>
+            </a>
+
+            <!-- Evidence Graph -->
+            <a
+              class="nav-item nav-card"
+              data-page="evidence"
+              href="https://praman-gcm1kuiq6-simplyadityakarki-8875s-projects.vercel.app"
+            >
+              <canvas
+                id="evidenceCardCanvas"
+                class="evidence-card-canvas"
+                aria-hidden="true"
+              ></canvas>
+
+              <span class="nav-card-label">
+                Evidence Graph
+              </span>
+            </a>
+
+            <!-- Parcel History -->
+            <a
+              class="nav-item nav-card"
+              data-page="timeline"
+              href="https://praman-history-dufaymqpp-simplyadityakarki-8875s-projects.vercel.app"
+            >
+              <img
+                class="nav-card-image"
+                src="assets/nav-cards/parcel-roots-horizontal.png"
+                alt=""
+              >
+
+              <span class="nav-card-label">
+                Parcel History
+              </span>
+            </a>
+
+          </nav>
+
+          <section
+            class="source-strip"
+            aria-label="Data source coverage"
+          >
+
+            <div class="source-heading">
+              <span>Sources:</span>
+              <span
+                class="source-heading-dot"
+                aria-hidden="true"
+              ></span>
+            </div>
+
+            <div
+              class="source-ticker"
+              aria-label="Source coverage ticker"
+            >
+              <div
+                class="source-items"
+                id="sourceItems"
+                aria-live="polite"
+              ></div>
+            </div>
+
+          </section>
+
+        </section>
+
+      </div>
+
     </main>
 
-    <footer class="bottom-bar" aria-label="Secondary navigation"><div class="status-menu-wrapper data-sources-menu">
-        <button class="nav-item footer-nav" type="button" data-page="sources" aria-haspopup="true" aria-expanded="false" aria-controls="dataSourcesDropdown"><span class="nav-icon">▤</span><span>Data Sources</span></button>
-        <div class="status-dropdown" id="dataSourcesDropdown" role="status" aria-label="Primary data sources">
-          <div class="status-dropdown-title">Data Sources</div>
+    <footer
+      class="bottom-bar"
+      aria-label="Secondary navigation"
+    >
+
+      <div class="status-menu-wrapper data-sources-menu">
+
+        <button
+          class="nav-item footer-nav"
+          type="button"
+          data-page="sources"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="dataSourcesDropdown"
+        >
+          <span class="nav-icon">▤</span>
+          <span>Data Sources</span>
+        </button>
+
+        <div
+          class="status-dropdown"
+          id="dataSourcesDropdown"
+          role="status"
+          aria-label="Primary data sources"
+        >
+          <div class="status-dropdown-title">
+            Data Sources
+          </div>
+
           <div id="dataSourceRows"></div>
         </div>
+
       </div>
-      <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>PRAMAN</span><span class="footer-dot" aria-hidden="true">·</span><button type="button" data-info="contact">Contact Us</button><span class="footer-dot" aria-hidden="true">·</span><button type="button" data-info="terms">Terms of Use and Service</button><span class="footer-dot" aria-hidden="true">·</span></div><div class="footer-view" aria-label="Current local time">[ <time id="localTime" datetime="">--:--:--</time> ]</div>
-      </footer>
+
+      <div class="footer-brand">
+
+        <span
+          class="brand-mark"
+          aria-hidden="true"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+
+        <span>PRAMAN</span>
+
+        <span
+          class="footer-dot"
+          aria-hidden="true"
+        >·</span>
+
+        <button
+          type="button"
+          data-info="contact"
+        >
+          Contact Us
+        </button>
+
+        <span
+          class="footer-dot"
+          aria-hidden="true"
+        >·</span>
+
+        <button
+          type="button"
+          data-info="terms"
+        >
+          Terms of Use and Service
+        </button>
+
+        <span
+          class="footer-dot"
+          aria-hidden="true"
+        >·</span>
+
+      </div>
+
+      <div
+        class="footer-view"
+        aria-label="Current local time"
+      >
+        [
+        <time
+          id="localTime"
+          datetime=""
+        >--:--:--</time>
+        ]
+      </div>
+
+    </footer>
+
   </div>
 
-  <dialog id="infoDialog"><button class="dialog-close" type="button" aria-label="Close">×</button><h2 id="infoTitle"></h2><div id="infoBody"></div></dialog>
+  <dialog id="infoDialog">
+
+    <button
+      class="dialog-close"
+      type="button"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+    <h2 id="infoTitle"></h2>
+
+    <div id="infoBody"></div>
+
+  </dialog>
+
   <script src="assets/city_model_data.js"></script>
   <script src="city_model_viewer.js"></script>
+
   <script src="assets/evidence_graph_fallback.js"></script>
   <script src="evidence_card_viewer.js"></script>
+
   <script src="vendor/react.production.min.js"></script>
   <script src="vendor/react-dom.production.min.js"></script>
+
   <script src="assets/india-states.js"></script>
+
   <script src="praman_data_runtime.js"></script>
   <script src="app.js"></script>
+
 </body>
 </html>
